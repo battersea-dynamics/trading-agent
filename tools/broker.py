@@ -13,8 +13,12 @@ Why separate this out? Two reasons that matter once things get more complex:
 import os
 from dotenv import load_dotenv
 from alpaca.trading.client import TradingClient
-from alpaca.trading.requests import MarketOrderRequest
-from alpaca.trading.enums import OrderSide, TimeInForce
+from alpaca.trading.requests import (
+    MarketOrderRequest,
+    StopLossRequest,
+    TakeProfitRequest,
+)
+from alpaca.trading.enums import OrderClass, OrderSide, TimeInForce
 from alpaca.data.historical import StockHistoricalDataClient
 from alpaca.data.requests import StockLatestQuoteRequest
 
@@ -59,9 +63,10 @@ def get_quote(symbol: str):
 def place_market_order(symbol: str, qty: float, side: str):
     """
     Place a paper market order. side must be 'buy' or 'sell'.
-    Deliberately the ONLY function in this file that touches money —
-    every agent that wants to trade has to come through here, which
-    is where we'll later force every order through the risk agent.
+    One of only two functions in this file that touch money (the
+    other is place_bracket_order below) — every agent that wants to
+    trade has to come through here, which is where we'll later force
+    every order through the risk agent.
     """
     order_side = OrderSide.BUY if side.lower() == "buy" else OrderSide.SELL
     order_request = MarketOrderRequest(
@@ -77,6 +82,49 @@ def place_market_order(symbol: str, qty: float, side: str):
         "qty": order.qty,
         "side": order.side.value,
         "status": order.status.value,
+    }
+
+
+def place_bracket_order(
+    symbol: str,
+    qty: int,
+    take_profit_price: float,
+    stop_loss_price: float,
+):
+    """
+    Buy `qty` shares at market with an attached take-profit (limit
+    sell) and stop-loss (stop sell) in one atomic submission. Alpaca
+    holds and manages the exit legs server-side: whichever triggers
+    first fills and cancels the other (OCO). No agent needs to watch
+    the position after entry — that's the point.
+
+    Notes that shape the signature:
+      - qty is an int: Alpaca does not allow fractional bracket orders.
+      - exit prices are absolute dollars, not percentages. Converting
+        "take profit +4%" into a price requires a reference price and
+        rounding decisions, and that judgment belongs to the caller
+        (the execution agent), not the harness.
+      - long-only entry (buy), matching the system design.
+    """
+    order_request = MarketOrderRequest(
+        symbol=symbol,
+        qty=qty,
+        side=OrderSide.BUY,
+        time_in_force=TimeInForce.DAY,
+        order_class=OrderClass.BRACKET,
+        take_profit=TakeProfitRequest(limit_price=round(take_profit_price, 2)),
+        stop_loss=StopLossRequest(stop_price=round(stop_loss_price, 2)),
+    )
+    order = trading_client.submit_order(order_request)
+    return {
+        "id": str(order.id),
+        "symbol": order.symbol,
+        "qty": order.qty,
+        "side": order.side.value,
+        "status": order.status.value,
+        "take_profit": round(take_profit_price, 2),
+        "stop_loss": round(stop_loss_price, 2),
+        "legs": [str(leg.id) for leg in (order.legs or [])],
     }
 
 

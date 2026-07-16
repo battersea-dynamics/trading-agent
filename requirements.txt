@@ -1,12 +1,6 @@
 alpaca-py
 python-dotenv
 crewai
-# litellm 1.92.0+ ships Rust-compiled wheels for Linux only (no win_amd64
-# wheel), which forces a from-source build needing Cargo. Pin below that
-# until a Windows wheel is published again.
-litellm<1.92.0,>=1.84.0
-# crewai recognizes "gemini/*" model strings and eagerly imports its native
-# Gemini client to check availability, even when LLM(..., is_litellm=True)
-# is passed to force the LiteLLM path. google-genai has to be installed for
-# that import to succeed, whether or not the native client is actually used.
-google-genai~=1.65.0
+# 1.92.0+ ships Rust-compiled wheels with no Windows build - pin below it
+litellm>=1.84.0,<1.92
+requests
