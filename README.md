@@ -1,15 +1,37 @@
 # trading-agent
 
-A multi-agent trading system built from the ground up as a learning project — each agent is added and understood individually rather than pulled in as a black box. Runs against Alpaca's **paper trading** account only; nothing here places live trades.
+A multi-agent intraday trading system built from the ground up as a learning project — each piece is added and understood individually rather than pulled in as a black box. Runs against Alpaca's **paper trading** account only; nothing here places live trades.
 
-**Stack:** Python, [alpaca-py](https://github.com/alpacahq/alpaca-py) (paper only), [CrewAI](https://github.com/crewAIInc/crewAI) for agent orchestration, Google Gemini as the LLM backend.
+**Stack:** Python, [alpaca-py](https://github.com/alpacahq/alpaca-py) (paper only), [CrewAI](https://github.com/crewAIInc/crewAI) for agent orchestration, Google Gemini as the LLM, Finnhub for earnings/news.
 
-## Current state
+## Branches
 
-- **`tools/broker.py`** — the harness. Plain functions (`get_account`, `get_quote`, `place_market_order`) that talk to Alpaca directly, with no LLM involved. This is the only file that touches money, and the only place that will ever call `place_market_order`.
-- **`agents/signal_agent.py`** — the first (and so far only) agent. A single, isolated CrewAI `Agent` that takes a live quote and produces a structured opinion — `{symbol, signal, reasoning, confidence}` — as `buy`/`sell`/`hold`. It has no access to `place_market_order`: it can advise, not trade.
+- **`main`** — static 143-ticker universe, single-shot pipeline. The stable fallback.
+- **`dynamic-universe`** — dynamic liquidity-filtered universe (~2,300 symbols), catalyst pre-scan, earlier-detection scanner, and a two-stage `pipeline.py` entry point ready for scheduling.
 
-Planned next: a risk agent (sits between signal and execution, sizes/vetoes trades) and an execution agent (the only thing allowed to call `place_market_order`).
+## Pipeline (dynamic-universe branch)
+
+```
+stage 1: daily_scan          python pipeline.py scan
+  universe_builder  - all tradable US equities, filtered to price >= $3,
+                      avg volume >= 500k, real stocks only (no ETPs/OTC)
+  catalysts prescan - one bulk Finnhub call: who reports earnings in 1-3 days?
+  scanner           - rel volume + % change + MA distance, z-scored, plus
+                      an absolute-volume kicker (catches 1.5-2x builds
+                      early) and a boost for catalyst-flagged names
+  -> data/shortlist.json (the seam where a scheduler will plug in)
+
+stage 2: check_shortlist     python pipeline.py check [--live]
+  catalysts         - per-symbol earnings/dividends/news for the shortlist
+  signal agent      - LLM judgment: buy/hold + confidence + TP/SL percents
+  execution agent   - no LLM: filters, sizes, submits Alpaca bracket
+                      orders (dry-run unless --live)
+```
+
+Stage 1 is cheap and LLM-free; stage 2 spends LLM calls and (with `--live`)
+paper money. The JSON file between them is the scheduling seam and the audit
+trail. Exits are enforced broker-side via bracket orders (attached
+take-profit + stop-loss, OCO) — nothing watches positions after entry.
 
 ## Setup
 
@@ -20,12 +42,13 @@ python -m venv .venv
 .venv\Scripts\pip install -r requirements.txt
 ```
 
-Copy `.env.example` to `.env` and fill in your own keys — paper-trading Alpaca keys from the [Alpaca dashboard](https://app.alpaca.markets/paper/dashboard/overview), and a Gemini key from [Google AI Studio](https://aistudio.google.com/apikey). `.env` is gitignored; never commit real keys.
+Copy `.env.example` to `.env` and fill in your keys: paper-trading Alpaca keys from the [Alpaca dashboard](https://app.alpaca.markets/paper/dashboard/overview), a Gemini key from [Google AI Studio](https://aistudio.google.com/apikey), and a free Finnhub key from [finnhub.io](https://finnhub.io/register). `.env` is gitignored; never commit real keys.
 
 ## Running
 
 ```
-.venv\Scripts\python.exe -m agents.signal_agent AAPL
+.venv\Scripts\python.exe pipeline.py scan          # build/refresh shortlist
+.venv\Scripts\python.exe pipeline.py check         # judge + dry-run report
+.venv\Scripts\python.exe pipeline.py check --live  # submit paper bracket orders
+.venv\Scripts\python.exe pipeline.py all [--live]  # both stages
 ```
-
-Prints the signal agent's decision as JSON for the given symbol (defaults to `AAPL`).

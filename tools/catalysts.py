@@ -29,6 +29,8 @@ gathering evidence and judging evidence are separate stages.
 """
 
 import os
+import sys
+import time
 from datetime import date, timedelta
 
 import requests
@@ -50,20 +52,50 @@ _corp_actions_client = CorporateActionsClient(
 )
 
 
+# Finnhub's free tier allows 60 calls/min but also enforces a burst
+# limit - fire 30 calls back-to-back and it starts resetting
+# connections (found empirically: WinError 10054 mid-report). All
+# Finnhub traffic funnels through this one helper, so pacing and
+# retries live here and every caller inherits them.
+_MIN_CALL_INTERVAL = 1.1   # seconds; ~55 calls/min, under the 60 cap
+_RETRIES = 3
+_last_call_time = 0.0
+
+
 def _finnhub_get(path: str, params: dict) -> dict | list:
+    global _last_call_time
     key = os.getenv("FINNHUB_API_KEY")
     if not key:
         raise RuntimeError(
             "Missing FINNHUB_API_KEY - get a free key at "
             "https://finnhub.io/register and add it to .env"
         )
-    response = requests.get(
-        f"{FINNHUB_BASE}/{path}",
-        params={**params, "token": key},
-        timeout=15,
-    )
-    response.raise_for_status()
-    return response.json()
+
+    for attempt in range(_RETRIES):
+        wait = _MIN_CALL_INTERVAL - (time.monotonic() - _last_call_time)
+        if wait > 0:
+            time.sleep(wait)
+        _last_call_time = time.monotonic()
+
+        try:
+            response = requests.get(
+                f"{FINNHUB_BASE}/{path}",
+                params={**params, "token": key},
+                timeout=15,
+            )
+            if response.status_code == 429 and attempt < _RETRIES - 1:
+                print(f"[catalysts] 429 from finnhub/{path}, backing off",
+                      file=sys.stderr)
+                time.sleep(10 * (attempt + 1))
+                continue
+            response.raise_for_status()
+            return response.json()
+        except requests.exceptions.ConnectionError:
+            if attempt == _RETRIES - 1:
+                raise
+            print(f"[catalysts] connection reset on finnhub/{path}, retrying",
+                  file=sys.stderr)
+            time.sleep(5 * (attempt + 1))
 
 
 def get_upcoming_earnings(symbol: str) -> list[dict]:
@@ -138,6 +170,52 @@ def get_upcoming_dividends(symbols: list[str]) -> dict[str, list[dict]]:
             "rate": action.rate,
         })
     return dividends
+
+
+def prescan_earnings(
+    universe: list[str],
+    days_ahead: int = 3,
+) -> dict[str, dict]:
+    """
+    PRE-SCAN mode: which of the (possibly thousands of) universe
+    symbols report earnings in the next `days_ahead` days?
+
+    This is a different animal from get_upcoming_earnings above, and
+    the difference is why both exist. The shortlist-stage functions ask
+    Finnhub about ONE symbol in depth — fine for 15 names, impossible
+    for 2,000+ on a 60-calls/min free tier. But the earnings-calendar
+    endpoint called WITHOUT a symbol returns every company reporting
+    in the window in a single response, so the pre-scan is: one bulk
+    call, then intersect with our universe in memory. Rate limits stop
+    being a concern entirely.
+
+    Returns {symbol: {"date", "hour", "days_until"}} for flagged
+    symbols only. The scanner uses the keys as its boost set; the
+    values ride along into the shortlist file so the signal agent can
+    later see *why* something was flagged.
+    """
+    today = date.today()
+    data = _finnhub_get("calendar/earnings", {
+        "from": today.isoformat(),
+        "to": (today + timedelta(days=days_ahead)).isoformat(),
+    })
+    universe_set = set(universe)
+    flagged: dict[str, dict] = {}
+    for event in data.get("earningsCalendar", []):
+        symbol = event.get("symbol")
+        if symbol not in universe_set or not event.get("date"):
+            continue
+        event_date = date.fromisoformat(event["date"])
+        # keep the soonest event per symbol
+        existing = flagged.get(symbol)
+        if existing and existing["date"] <= event["date"]:
+            continue
+        flagged[symbol] = {
+            "date": event["date"],
+            "hour": event.get("hour"),  # bmo/amc/dmh or blank
+            "days_until": (event_date - today).days,
+        }
+    return flagged
 
 
 def build_catalyst_report(symbols: list[str]) -> dict[str, dict]:

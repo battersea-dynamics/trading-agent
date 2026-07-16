@@ -17,11 +17,24 @@ Metrics per stock, from daily bars:
   ma_distance  - how far the latest close sits from its own 20-day
                  moving average, in percent. Stretched = interesting.
 
-"Unusualness" score: each metric is z-scored across the universe (so
-they're comparable despite different units) and the absolute values
-are summed. Direction doesn't matter for the shortlist — a crash is as
-much of a candidate as a spike; the signal agent decides what to do
-with it.
+"Unusualness" score, three layers:
+
+  1. z-scores — each metric standardized across the universe and the
+     absolute values summed. Relative: "is this stock extreme
+     compared to everything else *today*?" Direction doesn't matter —
+     a crash is as much of a candidate as a spike.
+  2. volume kicker — a reward for rel_volume crossing an *absolute*
+     threshold (>1.2x, saturating at 4x). This is the
+     earlier-detection layer: z-scores only ever surface the day's
+     tail, so a stock quietly building 1.5-2x volume gets drowned out
+     by whatever is doing 8x. The kicker scores "unusual for itself"
+     independent of the cross-section, catching moves while they're
+     accelerating instead of after they've peaked.
+  3. catalyst boost — a flat bonus for symbols the catalyst pre-scan
+     flagged (earnings within days). Volume creeping up *into* a
+     known event is a fundamentally better lead than volume with no
+     known cause, so flagged names should make the shortlist on
+     softer numbers.
 
 Caveat worth knowing: if you run this during market hours, the latest
 daily bar is partial — its volume only covers the session so far, so
@@ -47,6 +60,13 @@ load_dotenv()
 
 LOOKBACK_DAYS = 20          # window for avg volume and moving average
 CALENDAR_BUFFER_DAYS = 45   # calendar days to fetch so we get ~20+ trading days
+CHUNK_SIZE = 500            # symbols per bars request
+
+# Sensitivity knobs for the score layers described above.
+VOLUME_KICKER_FLOOR = 1.2   # rel_volume where the kicker starts paying
+VOLUME_KICKER_CAP = 4.0     # ...and where it stops (z-scores own the tail)
+VOLUME_KICKER_WEIGHT = 1.5  # 1.5x vol -> +0.45, 2x -> +1.2, >=4x -> +4.2
+CATALYST_BOOST = 2.0        # flat bonus for pre-scan-flagged symbols
 
 _data_client = StockHistoricalDataClient(
     os.getenv("ALPACA_API_KEY"), os.getenv("ALPACA_SECRET_KEY")
@@ -61,7 +81,8 @@ class ScanResult:
     rel_volume: float     # 1.0 = normal volume
     pct_change: float     # day-over-day close, percent
     ma_distance: float    # percent above (+) / below (-) the 20d MA
-    score: float          # summed |z-scores|; higher = more unusual
+    score: float          # layered score; higher = more unusual
+    catalyst: dict | None = None  # pre-scan flag (earnings info), if any
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -69,20 +90,25 @@ class ScanResult:
 
 def fetch_bars(symbols: list[str]) -> dict[str, list]:
     """
-    One batched request for daily bars across the whole universe.
-    alpaca-py accepts a list of symbols and returns them keyed by
-    symbol — 143 tickers is one HTTP call, not 143.
+    Batched requests for daily bars across the whole universe, in
+    chunks of CHUNK_SIZE symbols. alpaca-py accepts a symbol list per
+    request (so 143 tickers was literally one HTTP call), but symbols
+    travel in the URL query string — a 2,300-symbol universe has to be
+    split. ~5 chunked calls, not 2,300 individual ones.
     """
-    request = StockBarsRequest(
-        symbol_or_symbols=symbols,
-        timeframe=TimeFrame.Day,
-        start=datetime.now() - timedelta(days=CALENDAR_BUFFER_DAYS),
-        # Split/dividend-adjusted bars. Without this a 2:1 split shows
-        # up as a -50% "move" and dominates the ranking.
-        adjustment=Adjustment.ALL,
-    )
-    barset = _data_client.get_stock_bars(request)
-    return barset.data  # dict: symbol -> list of Bar objects
+    bars: dict[str, list] = {}
+    start = datetime.now() - timedelta(days=CALENDAR_BUFFER_DAYS)
+    for i in range(0, len(symbols), CHUNK_SIZE):
+        request = StockBarsRequest(
+            symbol_or_symbols=symbols[i:i + CHUNK_SIZE],
+            timeframe=TimeFrame.Day,
+            start=start,
+            # Split/dividend-adjusted bars. Without this a 2:1 split
+            # shows up as a -50% "move" and dominates the ranking.
+            adjustment=Adjustment.ALL,
+        )
+        bars.update(_data_client.get_stock_bars(request).data)
+    return bars  # dict: symbol -> list of Bar objects
 
 
 def compute_metrics(bars_by_symbol: dict[str, list]) -> list[ScanResult]:
@@ -125,29 +151,53 @@ def _zscores(values: list[float]) -> list[float]:
     return [(v - mean) / std for v in values]
 
 
-def rank(results: list[ScanResult], top_n: int = 15) -> list[ScanResult]:
+def rank(
+    results: list[ScanResult],
+    top_n: int = 15,
+    catalyst_flags: dict[str, dict] | None = None,
+) -> list[ScanResult]:
     """
-    Score = |z(rel_volume)| + |z(pct_change)| + |z(ma_distance)|.
+    Score = |z(rel_volume)| + |z(pct_change)| + |z(ma_distance)|
+            + volume kicker + catalyst boost.
 
-    Z-scoring first means a metric only counts for how far it deviates
-    from the rest of the universe *today* — so on a day when everything
-    is up 2%, being up 2% scores near zero, but on a flat day it
-    stands out. Absolute values because unusual is unusual in either
-    direction.
+    Z-scoring means a metric only counts for how far it deviates from
+    the rest of the universe *today* — on a day when everything is up
+    2%, being up 2% scores near zero. Absolute values because unusual
+    is unusual in either direction. The kicker and boost layers are
+    explained in the module docstring: absolute-threshold volume
+    detection (catch 1.5-2x builds early) and pre-scan catalyst
+    awareness (volume into a known event beats volume from nowhere).
     """
     if not results:
         return []
+    catalyst_flags = catalyst_flags or {}
     z_vol = _zscores([r.rel_volume for r in results])
     z_chg = _zscores([r.pct_change for r in results])
     z_ma = _zscores([r.ma_distance for r in results])
     for r, zv, zc, zm in zip(results, z_vol, z_chg, z_ma):
-        r.score = abs(zv) + abs(zc) + abs(zm)
+        kicker = VOLUME_KICKER_WEIGHT * max(
+            0.0, min(r.rel_volume, VOLUME_KICKER_CAP) - VOLUME_KICKER_FLOOR
+        )
+        r.score = abs(zv) + abs(zc) + abs(zm) + kicker
+        if r.symbol in catalyst_flags:
+            r.catalyst = catalyst_flags[r.symbol]
+            r.score += CATALYST_BOOST
     return sorted(results, key=lambda r: r.score, reverse=True)[:top_n]
 
 
-def scan(top_n: int = 15) -> list[ScanResult]:
-    bars = fetch_bars(ALL_TICKERS)
-    return rank(compute_metrics(bars), top_n=top_n)
+def scan(
+    top_n: int = 15,
+    symbols: list[str] | None = None,
+    catalyst_flags: dict[str, dict] | None = None,
+) -> list[ScanResult]:
+    """
+    `symbols` and `catalyst_flags` are injected by the pipeline (the
+    dynamic universe and the pre-scan output). Defaults fall back to
+    the static list with no flags, so the scanner still runs standalone
+    for a quick manual look.
+    """
+    bars = fetch_bars(symbols if symbols is not None else ALL_TICKERS)
+    return rank(compute_metrics(bars), top_n=top_n, catalyst_flags=catalyst_flags)
 
 
 if __name__ == "__main__":
@@ -155,6 +205,7 @@ if __name__ == "__main__":
     print(f"{'SYM':6s} {'SECTOR':15s} {'CLOSE':>9s} {'RVOL':>6s} "
           f"{'CHG%':>7s} {'vsMA%':>7s} {'SCORE':>6s}")
     for r in shortlist:
+        flag = f" [earnings {r.catalyst['date']}]" if r.catalyst else ""
         print(f"{r.symbol:6s} {r.sector:15s} {r.close:9.2f} "
               f"{r.rel_volume:6.2f} {r.pct_change:+7.2f} "
-              f"{r.ma_distance:+7.2f} {r.score:6.2f}")
+              f"{r.ma_distance:+7.2f} {r.score:6.2f}{flag}")

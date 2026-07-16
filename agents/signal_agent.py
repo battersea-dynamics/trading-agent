@@ -37,6 +37,8 @@ position.
 """
 
 import json
+import sys
+import time
 from typing import Literal
 
 from crewai import LLM, Agent, Crew, Task
@@ -50,6 +52,15 @@ from tools.scanner import ScanResult
 # rather than relying on another module's load_dotenv() running first as a
 # side effect of imports.
 load_dotenv()
+
+# Gemini's free tier allows 5 requests/min on the flash model, and a
+# 15-stock shortlist is 15+ requests in a row - discovered the hard way
+# when the pipeline 429'd mid-run. Space the calls to stay under the
+# limit, and retry with a longer pause when a 429 still slips through
+# (CrewAI can make more than one request per task).
+CALL_SPACING_SECONDS = 13
+RATE_LIMIT_RETRIES = 3
+RATE_LIMIT_BACKOFF_SECONDS = 45
 
 
 class SignalDecision(BaseModel):
@@ -141,11 +152,40 @@ def analyze_shortlist(
     catalyst_report: dict[str, dict],
 ) -> list[SignalDecision]:
     decisions = []
-    for scan in shortlist:
+    for i, scan in enumerate(shortlist):
+        if i > 0:
+            time.sleep(CALL_SPACING_SECONDS)
+
         agent = build_signal_agent()
         task = build_stock_task(agent, scan, catalyst_report.get(scan.symbol, {}))
         crew = Crew(agents=[agent], tasks=[task], verbose=True)
-        result = crew.kickoff()
+
+        result = None
+        for attempt in range(RATE_LIMIT_RETRIES):
+            try:
+                result = crew.kickoff()
+                break
+            except Exception as exc:
+                # Retryable: rate limits (429) and transient capacity
+                # errors (503 "high demand"). Anything else is a real
+                # bug and should surface immediately.
+                retryable = ("RateLimitError", "ServiceUnavailable")
+                marker = type(exc).__name__ + str(exc)
+                if not any(m in marker for m in (*retryable, "429", "503")):
+                    raise
+                print(f"[signal] {scan.symbol}: rate-limited, waiting "
+                      f"{RATE_LIMIT_BACKOFF_SECONDS}s "
+                      f"(attempt {attempt + 1}/{RATE_LIMIT_RETRIES})",
+                      file=sys.stderr)
+                time.sleep(RATE_LIMIT_BACKOFF_SECONDS)
+
+        if result is None:
+            # Degrade safely: no decision means no trade for this stock.
+            # A missing opinion must never become an accidental buy.
+            print(f"[signal] {scan.symbol}: skipped - rate limit persisted",
+                  file=sys.stderr)
+            continue
+
         decision = result.tasks_output[0].pydantic
         # Trust nothing that crosses a process boundary: the LLM fills
         # the symbol field itself, so pin it to the stock we actually
