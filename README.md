@@ -6,10 +6,10 @@ A multi-agent intraday trading system built from the ground up as a learning pro
 
 ## Branches
 
-- **`main`** — static 143-ticker universe, single-shot pipeline. The stable fallback.
-- **`dynamic-universe`** — dynamic liquidity-filtered universe (~2,300 symbols), catalyst pre-scan, earlier-detection scanner, and a two-stage `pipeline.py` entry point ready for scheduling.
+- **`main`** — the current working version. Small changes commit straight here; only large rebuilds get a temporary working branch (merged into main and deleted when done).
+- **`previous`** — rolling one-step-back fallback. Before each new change lands on main, `previous` is moved to main's pre-change commit — so it always holds the last known-good version from before the most recent change.
 
-## Pipeline (dynamic-universe branch)
+## Pipeline
 
 ```
 stage 1: daily_scan          python pipeline.py scan
