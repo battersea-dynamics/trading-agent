@@ -1,66 +1,45 @@
 """
 agents/signal_agent.py
 
-The judgment stage of the daily pipeline. Stages 1-2 (scanner,
-catalysts) are deterministic code; this is where the LLM earns its
-keep — weighing "5x volume spike" against "earnings in two days" and
-"three negative headlines" is reading comprehension, not arithmetic.
+The judgment stage — restructured from one analyst into a debate:
 
-This agent still cannot place trades. It has no access to
-tools.broker's order functions, on purpose: it emits opinions, and the
-execution agent (a separate file, with the opposite asymmetry — orders
-but no judgment) acts on them. That separation is what makes each half
-independently testable and lets a risk layer slot between them later.
+  bull_agent   the strongest genuine case FOR buying   (LLM)
+  bear_agent   the strongest genuine case AGAINST      (LLM)
+  trader       deterministic referee: net score, buy/hold,
+               bear-tempered exit levels               (no LLM)
 
-CrewAI concepts in play (recap + one new one):
+Why a debate instead of one analyst? The single agent had to hold
+both sides in one head, and instruction-tuned models resolve that
+tension by hedging — nearly everything came back a cautious hold.
+Splitting advocacy into two committed, opposite mandates forces the
+evidence to actually be argued, and moves the final weighing into
+deterministic code (tools/trader.py) where the threshold is a number
+you can read and tune instead of a mood inside a prompt.
 
-  Agent   - persona (role/goal/backstory become the prompt) + an LLM.
-  Task    - one unit of work. NEW here: we build one Task *per stock*.
-  Crew    - the runner. We run one single-task Crew per stock in a
-            plain Python loop, NOT one big multi-task sequential Crew.
-            Two reasons. Architecturally: a sequential Crew feeds each
-            task the previous tasks' output as context, and stocks
-            should not influence each other's verdicts. Practically:
-            when we tried the multi-task form, CrewAI intermittently
-            returned the first task's output for later tasks
-            (duplicate decisions for the wrong symbol). Full isolation
-            fixes both. Multi-task Crews earn their keep when tasks
-            genuinely chain — e.g. a future risk-review task that
-            *should* see the signal task's output via `context=[...]`.
+This module keeps its old public surface on purpose:
+  SignalDecision       unchanged schema - execution_agent.py and its
+                       confidence gate work untouched
+  analyze_shortlist()  same signature - pipeline.py works untouched
+Everything behind that surface changed; nothing in front of it did.
 
-New in the output schema: take_profit_pct / stop_loss_pct. The agent
-doesn't just say "buy" — it sizes the exit brackets, because how far a
-trade can plausibly run (and how much room it needs before the thesis
-is dead) is part of the same judgment as whether to enter at all. The
-broker enforces these mechanically after entry; nobody watches the
-position.
+Skip policy: a stock only gets a decision if BOTH cases exist. If
+either side was rate-limited away, deciding on one opinion would
+defeat the whole design (a bull case with no bear check is exactly
+the hedged-optimism failure this restructure removes), so the stock
+is skipped — no decision, no trade.
 """
 
 import json
-import sys
-import time
 from typing import Literal
 
-from crewai import LLM, Agent, Crew, Task
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
+from agents.bear_agent import analyze_bear
+from agents.bull_agent import analyze_bull
 from tools.scanner import ScanResult
 
-# CrewAI's LLM class routes "gemini/..." models through LiteLLM, which reads
-# GEMINI_API_KEY from the environment on its own - load .env explicitly here
-# rather than relying on another module's load_dotenv() running first as a
-# side effect of imports.
 load_dotenv()
-
-# Gemini's free tier allows 5 requests/min on the flash model, and a
-# 15-stock shortlist is 15+ requests in a row - discovered the hard way
-# when the pipeline 429'd mid-run. Space the calls to stay under the
-# limit, and retry with a longer pause when a 429 still slips through
-# (CrewAI can make more than one request per task).
-CALL_SPACING_SECONDS = 13
-RATE_LIMIT_RETRIES = 3
-RATE_LIMIT_BACKOFF_SECONDS = 45
 
 
 class SignalDecision(BaseModel):
@@ -78,121 +57,32 @@ class SignalDecision(BaseModel):
     reasoning: str
 
 
-def build_signal_agent() -> Agent:
-    return Agent(
-        role="Intraday Signal Analyst",
-        goal=(
-            "For each candidate stock, decide buy or hold, and for buys "
-            "set realistic take-profit and stop-loss levels for a trade "
-            "held hours to a few days, entered at today's price."
-        ),
-        backstory=(
-            "You are a disciplined swing/intraday analyst. You know that "
-            "unusual volume without a catalyst is often noise, that "
-            "holding through an earnings report is a coin flip rather "
-            "than a trade, and that an ex-dividend date mechanically "
-            "drops the price. You would rather say 'hold' than force a "
-            "trade — most days most stocks are a 'hold'. You size "
-            "take-profits to what the current volatility plausibly "
-            "supports, and stops wide enough to survive normal noise "
-            "but tight enough to cap real losses. You do not place "
-            "trades — you only advise."
-        ),
-        # gemini-flash-latest is Google's rolling alias for the current
-        # flash-tier model - gemini-2.5-flash itself returns 404 for newly
-        # created API keys even though it's still listed in the model
-        # catalog. Swap to a dated snapshot instead if you want the model
-        # pinned rather than auto-updating.
-        #
-        # is_litellm=True: crewai has its own "native" Gemini client (a
-        # separate google-genai dependency) and prefers it by default for
-        # gemini/* models. Force the LiteLLM path instead, which is what
-        # reads GEMINI_API_KEY the way we've set up the environment.
-        llm=LLM(model="gemini/gemini-flash-latest", is_litellm=True),
-        tools=[],
-        allow_delegation=False,
-        verbose=True,
-    )
-
-
-def build_stock_task(agent: Agent, scan: ScanResult, catalysts: dict) -> Task:
-    return Task(
-        description=(
-            f"Evaluate {scan.symbol} ({scan.sector}) as an intraday/short "
-            f"swing long candidate.\n\n"
-            f"Scanner metrics (vs its own 20-day history):\n"
-            f"  Close: ${scan.close:.2f}\n"
-            f"  Relative volume: {scan.rel_volume:.2f}x normal\n"
-            f"  Day change: {scan.pct_change:+.2f}%\n"
-            f"  Distance from 20-day MA: {scan.ma_distance:+.2f}%\n\n"
-            f"Catalyst report (earnings within 14 days, ex-dividend "
-            f"dates within 14 days, headlines from the last 7 days):\n"
-            f"{json.dumps(catalysts, indent=2)}\n\n"
-            "Decide: buy or hold. Long-only — if the setup looks like a "
-            "short, that's a hold. If earnings land within the next 2 "
-            "trading days, lean strongly toward hold unless the setup is "
-            "exceptional, and say so. Always fill take_profit_pct and "
-            "stop_loss_pct even for holds (your hypothetical levels), "
-            "keep take_profit_pct larger than stop_loss_pct, and note "
-            "any ex-dividend date that falls inside the expected holding "
-            "window."
-        ),
-        expected_output=(
-            "A JSON object: symbol, signal (buy/hold), confidence "
-            "(0.0-1.0), take_profit_pct, stop_loss_pct, reasoning "
-            "(2-4 sentences citing the specific evidence)."
-        ),
-        agent=agent,
-        output_pydantic=SignalDecision,
-    )
-
-
 def analyze_shortlist(
     shortlist: list[ScanResult],
     catalyst_report: dict[str, dict],
 ) -> list[SignalDecision]:
+    # Imported here, not at module top: trader imports SignalDecision
+    # from this module, so a top-level import would be circular. By
+    # call time this module is fully initialized and the cycle is moot.
+    from tools.trader import decide
+
     decisions = []
-    for i, scan in enumerate(shortlist):
-        if i > 0:
-            time.sleep(CALL_SPACING_SECONDS)
+    for scan in shortlist:
+        catalysts = catalyst_report.get(scan.symbol, {})
 
-        agent = build_signal_agent()
-        task = build_stock_task(agent, scan, catalyst_report.get(scan.symbol, {}))
-        crew = Crew(agents=[agent], tasks=[task], verbose=True)
+        # Call pacing lives in llm_runner's global throttle - these
+        # two calls (and every pair after them) are automatically
+        # spaced, so no sleep is needed at this level.
+        bull = analyze_bull(scan, catalysts)
+        bear = analyze_bear(scan, catalysts)
 
-        result = None
-        for attempt in range(RATE_LIMIT_RETRIES):
-            try:
-                result = crew.kickoff()
-                break
-            except Exception as exc:
-                # Retryable: rate limits (429) and transient capacity
-                # errors (503 "high demand"). Anything else is a real
-                # bug and should surface immediately.
-                retryable = ("RateLimitError", "ServiceUnavailable")
-                marker = type(exc).__name__ + str(exc)
-                if not any(m in marker for m in (*retryable, "429", "503")):
-                    raise
-                print(f"[signal] {scan.symbol}: rate-limited, waiting "
-                      f"{RATE_LIMIT_BACKOFF_SECONDS}s "
-                      f"(attempt {attempt + 1}/{RATE_LIMIT_RETRIES})",
-                      file=sys.stderr)
-                time.sleep(RATE_LIMIT_BACKOFF_SECONDS)
-
-        if result is None:
-            # Degrade safely: no decision means no trade for this stock.
-            # A missing opinion must never become an accidental buy.
-            print(f"[signal] {scan.symbol}: skipped - rate limit persisted",
-                  file=sys.stderr)
+        if bull is None or bear is None:
+            missing = "bull" if bull is None else "bear"
+            print(f"[signal] {scan.symbol}: skipped - no {missing} case "
+                  f"(one-sided evidence must not become a trade)")
             continue
 
-        decision = result.tasks_output[0].pydantic
-        # Trust nothing that crosses a process boundary: the LLM fills
-        # the symbol field itself, so pin it to the stock we actually
-        # asked about before anything downstream trades on it.
-        if decision.symbol != scan.symbol:
-            decision.symbol = scan.symbol
-        decisions.append(decision)
+        decisions.append(decide(bull, bear))
     return decisions
 
 
@@ -202,10 +92,9 @@ if __name__ == "__main__":
     from tools.catalysts import build_catalyst_report
     from tools.scanner import scan
 
-    # Default to a small shortlist when run by hand: each stock is one
-    # Gemini call plus three catalyst API calls, so a full 15 takes a
-    # few minutes on free-tier rate limits.
-    top_n = int(sys.argv[1]) if len(sys.argv) > 1 else 5
+    # Small default when run by hand: each stock is now TWO Gemini
+    # calls at 13s spacing, so a full 15-stock run takes ~7 minutes.
+    top_n = int(sys.argv[1]) if len(sys.argv) > 1 else 3
 
     shortlist = scan(top_n=top_n)
     report = build_catalyst_report([s.symbol for s in shortlist])
