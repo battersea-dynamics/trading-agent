@@ -121,12 +121,17 @@ def place_bracket_order(
         rounding decisions, and that judgment belongs to the caller
         (the execution agent), not the harness.
       - long-only entry (buy), matching the system design.
+      - GTC, not DAY: the exit legs must outlive the trading day.
+        With DAY, an unfilled take-profit/stop-loss would expire at
+        the close, leaving the position held overnight with no
+        protection and no one watching. GTC keeps both legs live
+        until one of them fills (Alpaca caps GTC at 90 days).
     """
     order_request = MarketOrderRequest(
         symbol=symbol,
         qty=qty,
         side=OrderSide.BUY,
-        time_in_force=TimeInForce.DAY,
+        time_in_force=TimeInForce.GTC,
         order_class=OrderClass.BRACKET,
         take_profit=TakeProfitRequest(limit_price=round(take_profit_price, 2)),
         stop_loss=StopLossRequest(stop_price=round(stop_loss_price, 2)),
