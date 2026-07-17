@@ -15,11 +15,14 @@ What changed in the prompt vs the regular-session bull, and why:
   into the open (building, not fading), and does the candle agent's
   structure read support continuation rather than exhaustion.
 
-  The catalyst argument is footprint-only. This agent is not given
-  headlines, so the prompt explicitly frames the catalyst question
-  as "does the evidence imply one" — an LLM asked to discuss news it
-  doesn't have will happily invent it, and an invented catalyst is
-  worse than none.
+  News is part of the evidence (added after the first live runs).
+  Footprint-only argument produced templated cases — every gapper
+  got the same volume/gap language because there was nothing
+  stock-specific to cite. The prompt now REQUIRES engaging with the
+  news block: cite the headline that explains the gap, or state
+  plainly that none does — and a no-story stock must be scored low
+  (<= 0.4) rather than dressed in a narrative. "Nothing here" is an
+  explicitly correct output.
 
   Exit levels think in gap terms. Pre-market winners are exited
   against gap-and-go continuation, not 20-day swing ranges — the
@@ -36,7 +39,10 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 from agents.llm_runner import gemini_llm, run_task
-from agents.premarket_case_format import format_premarket_evidence
+from agents.premarket_case_format import (
+    format_premarket_evidence,
+    load_session_news,
+)
 from tools.market_calendar import ET, is_market_open_today
 
 load_dotenv()
@@ -80,7 +86,13 @@ def build_premarket_bull_agent() -> Agent:
             "that the footprint implies one), and your confidence "
             "score is your honest professional rating, not part of the "
             "advocacy. A thin case argued well is still thin; score "
-            "it low."
+            "it low. One more standard: a bull case that could be "
+            "pasted onto any gapping stock is worthless. Your case "
+            "must name what is specific to THIS stock today — a "
+            "headline, a dated event, a number — or admit there is "
+            "nothing specific. 'Nothing here, low confidence' is a "
+            "correct, professional output; a dramatic narrative built "
+            "on generic gap mechanics is a failure."
         ),
         llm=gemini_llm(),
         tools=[],
@@ -90,19 +102,28 @@ def build_premarket_bull_agent() -> Agent:
 
 
 def build_premarket_bull_task(
-    agent: Agent, scan_row: dict, candle: dict | None
+    agent: Agent, scan_row: dict, candle: dict | None,
+    news: list[dict] | None = None,
 ) -> Task:
     return Task(
         description=(
             f"Make the strongest genuine bull case for buying "
             f"{scan_row['symbol']} at today's open (bracket exit, held "
             f"hours to a few days).\n\n"
-            + format_premarket_evidence(scan_row, candle) +
+            + format_premarket_evidence(scan_row, candle, news) +
             "\n\nGround the case in pre-market-specific strength: the "
             "volume signature (is it consistent with a real catalyst — "
             "heavy and sustained, not one spike on a dead tape), the "
             "gap's behavior (holding/building vs fading), and the "
             "candle read (does the structure support continuation).\n\n"
+            "Requirement: engage with the news block. Either cite the "
+            "specific headline (with its date) that explains this gap "
+            "and argue from it, or state plainly that no headline "
+            "explains the move. If nothing in the evidence is specific "
+            "to this stock — no headline, no dated event, just generic "
+            "gap-and-volume mechanics — say exactly that and score the "
+            "case 0.4 or below. Do not dress a no-story stock in a "
+            "story.\n\n"
             "Then rate the case:\n"
             "  0.9+  exceptional - volume signature, holding gap, and "
             "supportive structure all align\n"
@@ -125,10 +146,10 @@ def build_premarket_bull_task(
 
 
 def analyze_premarket_bull(
-    scan_row: dict, candle: dict | None
+    scan_row: dict, candle: dict | None, news: list[dict] | None = None,
 ) -> PremarketBullCase | None:
     agent = build_premarket_bull_agent()
-    task = build_premarket_bull_task(agent, scan_row, candle)
+    task = build_premarket_bull_task(agent, scan_row, candle, news)
     return run_task(agent, task, label="pm-bull", symbol=scan_row["symbol"])
 
 
@@ -150,11 +171,14 @@ def run_premarket_bulls(output_path: Path = OUTPUT_PATH) -> dict[str, dict]:
     scan = json.loads(SCAN_PATH.read_text())
     candles = (json.loads(CANDLES_PATH.read_text()).get("reads", {})
                if CANDLES_PATH.exists() else {})
+    news = load_session_news(scan.get("session_date"), label="pm-bull")
 
     cases: dict[str, dict] = {}
     for row in scan["shortlist"]:
         row = {**row, "session_date": scan.get("session_date")}
-        case = analyze_premarket_bull(row, candles.get(row["symbol"]))
+        case = analyze_premarket_bull(
+            row, candles.get(row["symbol"]), news.get(row["symbol"])
+        )
         if case is not None:
             cases[row["symbol"]] = case.model_dump()
 

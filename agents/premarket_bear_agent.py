@@ -24,9 +24,14 @@ bear that names the specific way THIS trade dies produces signal; a
 bear that says "gaps are risky" shifts every score down by a
 constant and produces nothing.
 
-Like the pre-market bull, this agent sees no headlines — the prompt
-keeps it arguing from the footprint (volume pattern, gap behavior,
-candle structure), never from invented news.
+News is part of the evidence (added after the first live runs, same
+motive as the bull: footprint-only argument produced templated
+cases). The bear's news requirement has a deliberate asymmetry: for
+a bull, "no headline explains the gap" caps the score low; for a
+bear it's affirmative evidence — an unexplained gap is the classic
+gap-fade setup — so the prompt says to cite the absence as support,
+not write around it. Headlines that do exist must be addressed by
+name: stale? priced in? weaker than the move implies?
 """
 
 import json
@@ -38,7 +43,10 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 from agents.llm_runner import gemini_llm, run_task
-from agents.premarket_case_format import format_premarket_evidence
+from agents.premarket_case_format import (
+    format_premarket_evidence,
+    load_session_news,
+)
 from tools.market_calendar import ET, is_market_open_today
 
 load_dotenv()
@@ -79,7 +87,12 @@ def build_premarket_bear_agent() -> Agent:
             "sees the same data. Only evidence in front of you (no "
             "invented news), and your risk score is your honest rating "
             "— if the setup is genuinely clean, scoring it low is "
-            "doing your job."
+            "doing your job. One more standard: a bear case that could "
+            "be pasted onto any gapper is worthless. Tie every risk "
+            "you name to something specific in THIS stock's evidence — "
+            "a headline, its date, a number — and when the honest read "
+            "is 'ordinary gap, ordinary risks', say that plainly at "
+            "middling risk instead of inventing drama."
         ),
         llm=gemini_llm(),
         tools=[],
@@ -89,14 +102,22 @@ def build_premarket_bear_agent() -> Agent:
 
 
 def build_premarket_bear_task(
-    agent: Agent, scan_row: dict, candle: dict | None
+    agent: Agent, scan_row: dict, candle: dict | None,
+    news: list[dict] | None = None,
 ) -> Task:
     return Task(
         description=(
             f"Make the strongest genuine bear case against buying "
             f"{scan_row['symbol']} at today's open.\n\n"
-            + format_premarket_evidence(scan_row, candle) +
-            "\n\nPre-market failure modes to check the evidence "
+            + format_premarket_evidence(scan_row, candle, news) +
+            "\n\nRequirement: engage with the news block. If headlines "
+            "exist, your case must address the strongest one by name — "
+            "is it stale (check its date against the gap), already "
+            "priced in, or weaker than the move implies? If NO headline "
+            "explains the gap, that absence is itself evidence: cite it "
+            "explicitly as support for the gap-fade failure mode rather "
+            "than writing around it.\n\n"
+            "Pre-market failure modes to check the evidence "
             "against (cite the ones that apply — do not pad):\n"
             "  - gap fade: no sign of a durable catalyst in the volume "
             "signature; the open becomes the high of the day\n"
@@ -130,10 +151,10 @@ def build_premarket_bear_task(
 
 
 def analyze_premarket_bear(
-    scan_row: dict, candle: dict | None
+    scan_row: dict, candle: dict | None, news: list[dict] | None = None,
 ) -> PremarketBearCase | None:
     agent = build_premarket_bear_agent()
-    task = build_premarket_bear_task(agent, scan_row, candle)
+    task = build_premarket_bear_task(agent, scan_row, candle, news)
     return run_task(agent, task, label="pm-bear", symbol=scan_row["symbol"])
 
 
@@ -149,11 +170,14 @@ def run_premarket_bears(output_path: Path = OUTPUT_PATH) -> dict[str, dict]:
     scan = json.loads(SCAN_PATH.read_text())
     candles = (json.loads(CANDLES_PATH.read_text()).get("reads", {})
                if CANDLES_PATH.exists() else {})
+    news = load_session_news(scan.get("session_date"), label="pm-bear")
 
     cases: dict[str, dict] = {}
     for row in scan["shortlist"]:
         row = {**row, "session_date": scan.get("session_date")}
-        case = analyze_premarket_bear(row, candles.get(row["symbol"]))
+        case = analyze_premarket_bear(
+            row, candles.get(row["symbol"]), news.get(row["symbol"])
+        )
         if case is not None:
             cases[row["symbol"]] = case.model_dump()
 
