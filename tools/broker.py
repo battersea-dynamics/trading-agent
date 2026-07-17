@@ -49,6 +49,22 @@ def get_account():
     }
 
 
+def get_positions():
+    """
+    Return currently held positions: symbol, quantity, current value.
+    Quantity stays a float — Alpaca reports fractional shares (e.g.
+    from partial fills), and rounding here would misstate holdings.
+    """
+    return [
+        {
+            "symbol": p.symbol,
+            "qty": float(p.qty),
+            "market_value": float(p.market_value),
+        }
+        for p in trading_client.get_all_positions()
+    ]
+
+
 def get_quote(symbol: str):
     """Return the latest bid/ask quote for a symbol."""
     request = StockLatestQuoteRequest(symbol_or_symbols=symbol)
