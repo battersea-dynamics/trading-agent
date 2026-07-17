@@ -105,7 +105,11 @@ def run_task(agent: Agent, task: Task, label: str, symbol: str):
                 output.symbol = symbol
             return output
         except Exception as exc:
-            retryable = ("RateLimitError", "ServiceUnavailable")
+            # APIConnectionError ("Server disconnected") observed in
+            # live pre-market runs: a transient network drop, not a
+            # bug - retry it like a 503 rather than crashing the run.
+            retryable = ("RateLimitError", "ServiceUnavailable",
+                         "APIConnectionError")
             marker = type(exc).__name__ + str(exc)
             if "PerDay" in marker or "per day" in marker:
                 print(f"[{label}] {symbol}: DAILY quota exhausted - "
