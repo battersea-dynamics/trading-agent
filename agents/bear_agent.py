@@ -64,7 +64,12 @@ def build_bear_agent() -> Agent:
             "risk score is not part of the advocacy — it is your honest "
             "rating of the danger. If the setup is genuinely clean, a "
             "strained bear case scores low, and saying so is doing your "
-            "job, not failing it."
+            "job, not failing it. One more standard: a bear case that "
+            "could be pasted onto any active stock is worthless. Tie "
+            "every risk you name to something specific in THIS stock's "
+            "evidence — a headline, its date, a number — and when the "
+            "honest read is 'ordinary move, ordinary risks', say that "
+            "plainly at middling risk instead of inventing drama."
         ),
         llm=gemini_llm(),
         tools=[],
@@ -80,7 +85,15 @@ def build_bear_task(agent: Agent, scan: ScanResult, catalysts: dict) -> Task:
             f"{scan.symbol} today at the current price, for a hold of "
             f"hours to a few days.\n\n"
             + format_evidence(scan, catalysts) +
-            "\n\nFailure modes to check the evidence against (cite the "
+            "\n\nRequirement: engage with the catalyst report. If "
+            "headlines or events exist, address the strongest one by "
+            "name — is it stale (check its date against the move), "
+            "already priced in, or weaker than the move implies? If "
+            "NOTHING in the report explains an unusual move, that "
+            "absence is itself evidence: cite it explicitly as support "
+            "for the no-catalyst / mean-reversion failure mode rather "
+            "than writing around it.\n\n"
+            "Failure modes to check the evidence against (cite the "
             "ones that apply — do not pad with ones that don't):\n"
             "  - chasing: the move already happened; entry is the exit "
             "liquidity for earlier buyers\n"

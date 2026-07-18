@@ -190,6 +190,13 @@ def run_premarket_bulls(output_path: Path = OUTPUT_PATH) -> dict[str, dict]:
     }, indent=2))
     print(f"premarket_bulls: {len(cases)}/{len(scan['shortlist'])} argued "
           f"-> {output_path}")
+
+    # Numeric fact-check every case just written (deterministic, no
+    # LLM) - adds numbers_verified/unverified_numbers to the file.
+    # Partial safeguard: numbers only, see tools/case_verifier.py.
+    if output_path == OUTPUT_PATH:
+        from tools.case_verifier import verify_premarket_case_file
+        cases = verify_premarket_case_file("bull")
     return cases
 
 

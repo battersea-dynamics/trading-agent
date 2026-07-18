@@ -77,7 +77,14 @@ def build_bull_agent() -> Agent:
             "of you, never invented facts. And your confidence score is "
             "not part of the advocacy — it is your honest professional "
             "rating of the case you just made. A thin case argued well "
-            "is still a thin case; score it low."
+            "is still a thin case; score it low. One more standard: a "
+            "bull case that could be pasted onto any active stock is "
+            "worthless. Your case must name what is specific to THIS "
+            "stock today — a headline, a dated event, a number — or "
+            "admit there is nothing specific. 'Nothing here, low "
+            "confidence' is a correct, professional output; a "
+            "confident-sounding narrative built on generic or absent "
+            "evidence is a failure, not just weak reasoning."
         ),
         llm=gemini_llm(),
         tools=[],
@@ -93,7 +100,15 @@ def build_bull_task(agent: Agent, scan: ScanResult, catalysts: dict) -> Task:
             f"{scan.symbol} today, entered at the current price, held "
             f"hours to a few days.\n\n"
             + format_evidence(scan, catalysts) +
-            "\n\nThen rate the case on this scale:\n"
+            "\n\nRequirement: engage with the catalyst report. Either "
+            "cite the specific headline or event (with its date) that "
+            "supports buying, or state plainly that nothing in the "
+            "report explains or supports this move. If nothing in the "
+            "evidence is specific to this stock — no headline, no "
+            "dated event, just generic volume-and-momentum mechanics — "
+            "say exactly that and score the case 0.4 or below. Do not "
+            "dress a no-story stock in a story.\n\n"
+            "Then rate the case on this scale:\n"
             "  0.9+  exceptional - volume, catalyst, and room to run "
             "all align\n"
             "  0.7   solid - clear evidence, one leg missing\n"
