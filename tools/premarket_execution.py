@@ -32,9 +32,72 @@ from pathlib import Path
 
 from agents.execution_agent import execute_signals
 from agents.signal_agent import SignalDecision
+from tools.broker import get_quote
 from tools.market_calendar import ET, is_market_open_today
 
 DECISIONS_PATH = Path("data/premarket_decisions.json")
+SCAN_PATH = Path("data/premarket_scan.json")
+
+# Price deviation guard: a pre-market decision was argued against a
+# specific price (the scan's last_pm_price). If the live ask has
+# moved more than this far from it - EITHER direction - the stock
+# the debate judged no longer exists and the decision doesn't
+# transfer. Symmetric on purpose: a drop isn't "more room to rise",
+# it's evidence something changed since the thesis was formed.
+MAX_PRICE_DEVIATION_PCT = 2.0
+
+
+def _reference_prices() -> dict[str, float]:
+    """last_pm_price per symbol from the scan the debate argued over."""
+    if not SCAN_PATH.exists():
+        return {}
+    scan = json.loads(SCAN_PATH.read_text())
+    return {r["symbol"]: r["last_pm_price"] for r in scan["shortlist"]}
+
+
+def _apply_deviation_guard(
+    decisions: list[SignalDecision],
+) -> tuple[list[SignalDecision], list[dict]]:
+    """
+    Split decisions into (pass-through, guard-report-entries).
+    Only buys are price-checked - holds never execute anyway. A buy
+    with no findable reference price is dropped too: an unverifiable
+    price basis fails safe, same philosophy as the dead-quote guard.
+    A dead ask (<= 0) passes through so execute_signals can report
+    it with its own, more precise reason.
+    """
+    references = _reference_prices()
+    survivors, guard_entries = [], []
+    for decision in decisions:
+        if decision.signal != "buy":
+            survivors.append(decision)
+            continue
+        reference = references.get(decision.symbol)
+        if not reference or reference <= 0:
+            guard_entries.append({
+                "symbol": decision.symbol, "action": "skipped",
+                "reason": "price guard: no reference price in "
+                          f"{SCAN_PATH} for this symbol",
+            })
+            continue
+        ask = get_quote(decision.symbol)["ask"]
+        if not ask or ask <= 0:
+            survivors.append(decision)  # dead-quote guard's job
+            continue
+        deviation_pct = (ask - reference) / reference * 100
+        if abs(deviation_pct) > MAX_PRICE_DEVIATION_PCT:
+            guard_entries.append({
+                "symbol": decision.symbol, "action": "skipped",
+                "reason": (
+                    f"price guard: ask ${ask:.2f} is "
+                    f"{deviation_pct:+.2f}% vs decision basis "
+                    f"${reference:.2f} (limit "
+                    f"±{MAX_PRICE_DEVIATION_PCT}%)"
+                ),
+            })
+            continue
+        survivors.append(decision)
+    return survivors, guard_entries
 
 
 def execute_premarket_decisions(
@@ -63,7 +126,8 @@ def execute_premarket_decisions(
         )
 
     decisions = [SignalDecision(**d) for d in payload["decisions"]]
-    report = execute_signals(decisions, live=live)
+    decisions, guard_entries = _apply_deviation_guard(decisions)
+    report = guard_entries + execute_signals(decisions, live=live)
 
     print(json.dumps(report, indent=2))
     if not live:
