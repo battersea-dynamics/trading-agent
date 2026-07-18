@@ -80,7 +80,8 @@ The JSON file between every pair of stages is both the scheduling seam and the a
 | One-sided-evidence skip | signal orchestrators + premarket trader | a stock with only a bull case (or only a bear case) can never become a trade |
 | Confidence threshold (>= 0.6) | execution agent | buys below the trader's net-score bar never execute (thresholds aligned by construction) |
 | Numeric fact-checker | after every debate, both pipelines | cited numbers that don't trace to source data get flagged (`numbers_verified`) — numbers only, an invented *qualitative* claim passes; tripwire, not filter |
-| Position sizing cap | execution agent | max $1,000 per position, whole shares, never the last 5% of buying power |
+| Position sizing cap | execution agent (shared by both pipelines) | max 20% of live account value per position (scales with the account), whole shares, never the last 5% of buying power; if one share busts the cap, the trade is skipped |
+| Exit ceilings (asymmetric) | execution agent (shared by both pipelines) | take-profit above 12% is clamped down and proceeds (capping upside is safe); stop-loss above 5% skips the trade entirely — a wide stop is the bear's honest volatility read, and tightening it would convert noise into stop-outs |
 | Dead-quote guard | execution agent | market buys are never sized off a 0/absent ask (closed market, thin tape) |
 | Price deviation guard (±2%) | premarket execution | the live open has moved >2% (either direction) from the price the debate argued about — the thesis no longer applies |
 | Stale-decisions guard | premarket execution | yesterday's gap thesis can never execute today |

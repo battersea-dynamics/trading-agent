@@ -6,9 +6,14 @@ bracket orders. Deliberately almost no code of its own — it
 rehydrates the decisions into SignalDecision objects and hands them
 to the existing, tested execute_signals(), which brings along the
 whole safety apparatus for free: the 0.6 confidence gate, the
-per-position dollar cap, whole-share sizing, the dead-quote guard,
-dry-run-by-default, and place_bracket_order (GTC brackets) at the
-end. New execution code would mean re-testing all of that; reused
+position cap (MAX_POSITION_PCT of live account value), the exit
+ceilings (take-profit clamped at MAX_TAKE_PROFIT_PCT; stop-loss
+above MAX_STOP_LOSS_PCT skips the trade), whole-share sizing, the
+dead-quote guard, dry-run-by-default, and place_bracket_order (GTC
+brackets) at the end. Those constants live in
+agents/execution_agent.py ON PURPOSE - both pipelines share the one
+sizing path, so a calibration change lands in both by editing one
+file. New execution code would mean re-testing all of that; reused
 code means it stays tested.
 
 Timing is explicitly NOT this module's job. Bracket orders can't be
