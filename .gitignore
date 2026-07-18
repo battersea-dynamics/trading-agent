@@ -3,4 +3,8 @@ __pycache__/
 *.pyc
 .venv/
 .claude/settings.local.json
-data/
+# Runtime artifacts stay out of git - EXCEPT daily reports, which the
+# Actions workflow commits at end of day as the persistent audit trail.
+# (data/* not data/: git can't re-include files under an ignored dir.)
+data/*
+!data/daily_report_*.json

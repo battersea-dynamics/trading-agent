@@ -1,0 +1,118 @@
+# Automation layer: runs the orchestrator's tick mode on a schedule.
+# No trading logic lives here - the orchestrator decides what (if
+# anything) is due on each wake-up, in ET, against Alpaca's calendar.
+#
+# TIMEZONE NOTE: GitHub cron is UTC only. The trading window we need
+# to cover is 8:45-15:15 ET, which is 12:45-19:15 UTC in summer (EDT)
+# and 13:45-20:15 UTC in winter (EST). Rather than chase the DST
+# shift, the cron fires every 15 minutes across the UNION of both
+# (12:00-20:45 UTC, weekdays); off-window and off-season ticks hit
+# the orchestrator's calendar/window gates and exit in seconds. The
+# cron is deliberately dumb; the orchestrator is the only clock that
+# matters.
+#
+# LIVE MODE is never on by accident:
+#   - scheduled runs are dry-run unless the repo VARIABLE
+#     TRADING_LIVE is set to exactly 'true'
+#     (Settings -> Secrets and variables -> Actions -> Variables)
+#   - manual runs are dry-run unless the 'live' checkbox is ticked
+#
+# STATE between ticks: each run restores data/ from the most recent
+# cache (state file + all pipeline file seams), and saves its own
+# cache at the end. If a cache is ever lost mid-day the orchestrator
+# degrades safely: idempotent stages re-run, execution's
+# attempted-means-done rule plus the stale-decisions and deviation
+# guards protect the order path.
+
+name: trading
+
+on:
+  schedule:
+    - cron: "*/15 12-20 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: "What to run"
+        type: choice
+        default: tick
+        options: [tick, premarket, premarket_exec, daily_scan, check]
+      live:
+        description: "Submit real paper orders (default: dry-run)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: trading
+  cancel-in-progress: false   # queue ticks, never kill a running stage
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
+      ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Restore the most recent data/ (state + file seams) so this
+      # fresh VM continues the same trading day the last tick left.
+      - name: Restore pipeline state
+        uses: actions/cache/restore@v4
+        with:
+          path: data
+          key: trading-data-${{ github.run_id }}   # never matches; forces restore-keys
+          restore-keys: trading-data-
+
+      - name: Run orchestrator
+        run: |
+          LIVE_FLAG=""
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ vars.TRADING_LIVE }}" = "true" ]; then
+            LIVE_FLAG="--live"
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.live }}" = "true" ]; then
+            LIVE_FLAG="--live"
+          fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.stage }}" != "tick" ]; then
+            python -m orchestrator --force "${{ inputs.stage }}" $LIVE_FLAG
+          else
+            python -m orchestrator --tick $LIVE_FLAG
+          fi
+
+      - name: Save pipeline state
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data
+          key: trading-data-${{ github.run_id }}
+
+      # One commit per day: only after the orchestrator marks the day
+      # complete, and only if the report differs from what's already
+      # committed (later ticks exit before touching the report, so
+      # this is naturally idempotent).
+      - name: Commit daily report (end of day)
+        if: github.event_name == 'schedule'
+        run: |
+          if [ -f data/orchestrator_state.json ] && [ "$(jq -r '.day_complete' data/orchestrator_state.json)" = "true" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/daily_report_*.json
+            if ! git diff --cached --quiet; then
+              git commit -m "daily report $(jq -r '.date' data/orchestrator_state.json)"
+              git pull --rebase origin main
+              git push origin main
+            fi
+          fi

@@ -46,9 +46,11 @@ into cron lines.
 """
 
 import argparse
+import json
 import sys
 import time
 from datetime import datetime, timedelta
+from pathlib import Path
 
 from tools.market_calendar import ET, todays_session
 
@@ -61,6 +63,18 @@ OPEN_POLL_INTERVAL_SEC = 20    # how often to ask "is it open yet?"
 OPEN_POLL_MAX_MIN = 5          # give up on execution this long after
                                # the scheduled open if still closed
 SLEEP_CHUNK_SEC = 60           # wake at least this often while waiting
+
+# ----- tick mode (scheduler-driven, e.g. GitHub Actions cron) -----
+# A tick wakes up, runs whatever stage is due NOW, and exits. The
+# cron only needs to fire more often than the narrowest window below;
+# all precise timing stays in here, in ET, where it already lives.
+EXEC_WINDOW_MIN = 15           # premarket exec must start within this
+                               # after open - later, the gap thesis is
+                               # stale and no orders is the safe answer
+CHECK_DEDUP_MARGIN_MIN = 25    # min gap between check runs, slightly
+                               # under CHECK_INTERVAL so cron jitter
+                               # can't skip a slot or double-run one
+STATE_PATH = Path("data/orchestrator_state.json")
 
 
 # ----- stages: one import + one call each, lazily imported so the -----
@@ -79,22 +93,27 @@ def stage_premarket():
     run_candle_agent()
     run_premarket_bulls()
     run_premarket_bears()
-    decide_premarket_trades()
+    decisions = decide_premarket_trades()
+    return {
+        "decisions": len(decisions),
+        "buys": sum(1 for d in decisions if d.signal == "buy"),
+    }
 
 
 def stage_premarket_exec(live: bool = False):
     from tools.premarket_execution import execute_premarket_decisions
-    execute_premarket_decisions(live=live)
+    return execute_premarket_decisions(live=live)
 
 
 def stage_daily_scan():
     from pipeline import daily_scan
-    daily_scan()
+    shortlist = daily_scan()
+    return {"shortlist": [r.symbol for r in shortlist]}
 
 
 def stage_check(live: bool = False):
     from pipeline import check_shortlist
-    check_shortlist(live=live)
+    return check_shortlist(live=live)
 
 
 STAGES = {
@@ -143,6 +162,131 @@ def _poll_until_open(scheduled_open: datetime) -> bool:
              f"{OPEN_POLL_INTERVAL_SEC}s")
         time.sleep(OPEN_POLL_INTERVAL_SEC)
     return False
+
+
+# ----- tick mode: one bounded wake-up for external schedulers -----
+
+def _load_state(today) -> dict:
+    if STATE_PATH.exists():
+        state = json.loads(STATE_PATH.read_text())
+        if state.get("date") == today.isoformat():
+            return state
+    return {"date": today.isoformat(), "premarket_done": False,
+            "exec_done": False, "daily_scan_done": False,
+            "last_check_at": None, "session_recorded": False,
+            "day_complete": False}
+
+
+def _save_state(state: dict):
+    STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    STATE_PATH.write_text(json.dumps(state, indent=2))
+
+
+def run_tick(live: bool = False):
+    """
+    Scheduler entry point (GitHub Actions cron, or any cron): decide
+    what's due right now, run it, record it, exit. Never sleeps
+    between stages - the next cron firing is the next wake-up. State
+    lives in data/orchestrator_state.json so a fleet of short-lived
+    runners behaves like one long-running orchestrator, as long as
+    data/ is carried between runs (the workflow uses actions/cache).
+
+    Failure policy per stage: the pre-market chain and daily_scan are
+    idempotent (they rewrite their files), so they're only marked
+    done on success - a failed run retries on the next tick while its
+    window is open. Execution is marked done on ATTEMPT: retrying a
+    possibly-half-submitted order loop is how you double-order, and
+    "no more orders today" is always the safe failure mode.
+    """
+    from tools import daily_report
+
+    session = todays_session()
+    if session is None:
+        _log("tick: no trading session today - exiting")
+        return
+    session_open, session_close = session
+    today = _now().date()
+
+    state = _load_state(today)
+    if state["day_complete"]:
+        _log("tick: trading day already complete - exiting")
+        return
+
+    premarket_at = session_open - timedelta(minutes=PREMARKET_LEAD_MIN)
+    daily_scan_at = session_open + timedelta(minutes=DAILY_SCAN_DELAY_MIN)
+    last_check_at = session_close - timedelta(
+        minutes=LAST_CHECK_BEFORE_CLOSE_MIN)
+    exec_deadline = session_open + timedelta(minutes=EXEC_WINDOW_MIN)
+
+    if not state["session_recorded"]:
+        daily_report.append_event(today, "session", {
+            "open_et": f"{session_open:%H:%M}",
+            "close_et": f"{session_close:%H:%M}",
+            "live_mode": live,
+        })
+        state["session_recorded"] = True
+
+    def record(stage_name: str, fn) -> bool:
+        try:
+            result = fn()
+            detail = (daily_report.summarize_execution(result)
+                      if isinstance(result, list) else result)
+            daily_report.append_event(today, stage_name,
+                                      {"ok": True, **(detail or {})})
+            return True
+        except Exception as exc:  # report the error, keep the day alive
+            daily_report.append_event(today, stage_name, {
+                "ok": False, "error": f"{type(exc).__name__}: {exc}"})
+            _log(f"tick stage {stage_name} FAILED: {exc}")
+            return False
+
+    now = _now()
+
+    if not state["premarket_done"] and premarket_at <= now < session_open:
+        _log("tick stage: premarket chain")
+        state["premarket_done"] = record("premarket_chain", stage_premarket)
+
+    now = _now()
+    if not state["exec_done"] and session_open <= now <= exec_deadline:
+        if _poll_until_open(session_open):
+            _log("tick stage: premarket execution")
+            record("premarket_execution",
+                   lambda: stage_premarket_exec(live=live))
+        else:
+            daily_report.append_event(today, "premarket_execution", {
+                "ok": False,
+                "error": "market not open at scheduled time - skipped"})
+        state["exec_done"] = True  # attempted = done, never retry orders
+
+    now = _now()
+    if not state["daily_scan_done"] and now >= daily_scan_at:
+        _log("tick stage: daily_scan")
+        state["daily_scan_done"] = record("daily_scan", stage_daily_scan)
+
+    now = _now()
+    first_check_at = daily_scan_at + timedelta(minutes=CHECK_INTERVAL_MIN)
+    check_due = (
+        state["daily_scan_done"]
+        and first_check_at <= now <= last_check_at
+        and (state["last_check_at"] is None
+             or (now - datetime.fromisoformat(state["last_check_at"]))
+             >= timedelta(minutes=CHECK_DEDUP_MARGIN_MIN))
+    )
+    if check_due:
+        _log("tick stage: check_shortlist")
+        record("check_shortlist", lambda: stage_check(live=live))
+        state["last_check_at"] = now.isoformat(timespec="seconds")
+
+    if _now() > last_check_at:
+        state["day_complete"] = True
+        daily_report.append_event(today, "day_complete", {
+            "premarket_done": state["premarket_done"],
+            "exec_done": state["exec_done"],
+            "daily_scan_done": state["daily_scan_done"],
+        })
+        _log("tick: trading day complete")
+
+    _save_state(state)
 
 
 # ----- the scheduled day -----
@@ -197,6 +341,9 @@ if __name__ == "__main__":
         description="Timing layer for the trading pipeline")
     parser.add_argument("--force", choices=sorted(STAGES),
                         help="run one stage immediately, skip all waiting")
+    parser.add_argument("--tick", action="store_true",
+                        help="one bounded scheduler wake-up: run whatever "
+                             "is due now, then exit (for cron/CI)")
     parser.add_argument("--live", action="store_true",
                         help="execution stages submit real paper orders")
     args = parser.parse_args()
@@ -205,6 +352,8 @@ if __name__ == "__main__":
         _log(f"forced stage: {args.force}"
              + (" | LIVE ORDERS" if args.live else " | dry-run"))
         STAGES[args.force](args.live)
+    elif args.tick:
+        run_tick(live=args.live)
     else:
         try:
             run_day(live=args.live)

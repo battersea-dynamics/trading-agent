@@ -117,11 +117,19 @@ Start it before open−45min (13:45 UK time on normal days). All schedule math i
 .venv\Scripts\python.exe -m tools.case_verifier
 ```
 
+## Automation (GitHub Actions)
+
+`.github/workflows/trading.yml` runs the orchestrator's **tick mode** every 15 minutes (UTC cron covering the ET trading day in both DST regimes — off-window ticks exit in seconds; the orchestrator's ET logic is the only clock that matters). Each tick is a fresh VM: `data/` (state file + all pipeline file seams) is carried between ticks via `actions/cache`, so short-lived runners behave like one long-running orchestrator. Execution is marked done on *attempt*, never retried — a possibly-half-submitted order loop must not double-order.
+
+- **Dry-run by default, everywhere.** Scheduled runs submit orders only if the repo *variable* `TRADING_LIVE` is exactly `true`; manual runs only if the `live` checkbox is ticked. Neither exists by accident.
+- **Manual testing:** Actions → trading → "Run workflow" — pick a stage (`tick`, `premarket`, `daily_scan`, ...) and run it immediately.
+- **Daily report:** tick mode appends every stage outcome, order, guard trigger, and error to `data/daily_report_<date>.json` (deterministic, no LLM); the workflow commits it once at end of day, so each day's audit trail is readable on GitHub without opening Action logs.
+- Credentials live in encrypted repository secrets (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `GEMINI_API_KEY`, `FINNHUB_API_KEY`), referenced by name in the workflow only.
+
 ## Deliberately not built yet
 
 So this README never implies more automation or safety than exists:
 
-- **No hosted scheduling.** GitHub Actions is not wired up — the orchestrator only runs while your machine runs it. Its stage entry points and named schedule constants are shaped to translate directly into workflow cron lines when that day comes.
 - **No calibration.** Every threshold (net-score 0.2, confidence 0.6, ±2% deviation, $1,000 cap, TP/SL tempering) is a reasoned first guess, deliberately deferred until there's live paper history to calibrate against.
 - **No portfolio-level risk manager.** Nothing limits sector concentration, total simultaneous exposure, or correlated positions — each trade is judged alone. This is the planned "risk agent" slot between signal and execution, not started.
 - **Numbers-only fact-checking.** The case verifier cannot catch an invented qualitative claim (a fabricated catalyst) — only numeric drift.
