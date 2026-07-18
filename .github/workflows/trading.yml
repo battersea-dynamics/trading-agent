@@ -77,6 +77,9 @@ jobs:
           key: trading-data-${{ github.run_id }}   # never matches; forces restore-keys
           restore-keys: trading-data-
 
+      - name: Ensure data dir exists (cache save needs it)
+        run: mkdir -p data
+
       - name: Run orchestrator
         run: |
           LIVE_FLAG=""
