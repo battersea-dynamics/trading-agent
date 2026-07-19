@@ -24,9 +24,8 @@ every producer's internals.
 """
 
 import json
-from pathlib import Path
 
-NEWS_PATH = Path("data/premarket_news.json")
+from tools.datapaths import list_path
 
 
 def load_session_news(session_date: str | None, label: str) -> dict[str, list]:
@@ -37,11 +36,12 @@ def load_session_news(session_date: str | None, label: str) -> dict[str, list]:
     stale headlines presented as current would be worse than none, so
     a date mismatch degrades to "no news" with a warning.
     """
-    if not NEWS_PATH.exists():
-        print(f"[{label}] {NEWS_PATH} not found - arguing without news "
+    news_path = list_path("premarket_news.json")
+    if not news_path.exists():
+        print(f"[{label}] {news_path} not found - arguing without news "
               f"(run tools.premarket_news first for differentiated cases)")
         return {}
-    payload = json.loads(NEWS_PATH.read_text())
+    payload = json.loads(news_path.read_text())
     if session_date and payload.get("session_date") != session_date:
         print(f"[{label}] news file is for {payload.get('session_date')}, "
               f"scan is for {session_date} - ignoring stale news")

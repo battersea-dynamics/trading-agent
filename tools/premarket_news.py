@@ -27,13 +27,12 @@ from datetime import datetime
 from pathlib import Path
 
 from tools.catalysts import get_recent_news
+from tools.datapaths import list_path
 from tools.market_calendar import ET, is_market_open_today
 
-SCAN_PATH = Path("data/premarket_scan.json")
-OUTPUT_PATH = Path("data/premarket_news.json")
 
 
-def run_premarket_news(output_path: Path = OUTPUT_PATH) -> dict[str, list]:
+def run_premarket_news(output_path: Path | None = None) -> dict[str, list]:
     """
     Entry point. Headlines for every stock in the pre-market scan's
     shortlist -> data/premarket_news.json. One Finnhub call per
@@ -42,11 +41,14 @@ def run_premarket_news(output_path: Path = OUTPUT_PATH) -> dict[str, list]:
     if not is_market_open_today():
         print("premarket_news: market closed today - nothing to do")
         return {}
-    if not SCAN_PATH.exists():
-        raise SystemExit(f"{SCAN_PATH} not found - run the premarket "
+    scan_path = list_path("premarket_scan.json")
+    if output_path is None:
+        output_path = list_path("premarket_news.json")
+    if not scan_path.exists():
+        raise SystemExit(f"{scan_path} not found - run the premarket "
                          f"scanner first")
 
-    scan = json.loads(SCAN_PATH.read_text())
+    scan = json.loads(scan_path.read_text())
     news: dict[str, list] = {}
     for row in scan["shortlist"]:
         symbol = row["symbol"]

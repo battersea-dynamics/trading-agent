@@ -38,10 +38,9 @@ from pathlib import Path
 from agents.execution_agent import execute_signals
 from agents.signal_agent import SignalDecision
 from tools.broker import get_quote
+from tools.datapaths import list_path
 from tools.market_calendar import ET, is_market_open_today
 
-DECISIONS_PATH = Path("data/premarket_decisions.json")
-SCAN_PATH = Path("data/premarket_scan.json")
 
 # Price deviation guard: a pre-market decision was argued against a
 # specific price (the scan's last_pm_price). If the live ask has
@@ -54,9 +53,10 @@ MAX_PRICE_DEVIATION_PCT = 2.0
 
 def _reference_prices() -> dict[str, float]:
     """last_pm_price per symbol from the scan the debate argued over."""
-    if not SCAN_PATH.exists():
+    scan_path = list_path("premarket_scan.json")
+    if not scan_path.exists():
         return {}
-    scan = json.loads(SCAN_PATH.read_text())
+    scan = json.loads(scan_path.read_text())
     return {r["symbol"]: r["last_pm_price"] for r in scan["shortlist"]}
 
 
@@ -82,7 +82,7 @@ def _apply_deviation_guard(
             guard_entries.append({
                 "symbol": decision.symbol, "action": "skipped",
                 "reason": "price guard: no reference price in "
-                          f"{SCAN_PATH} for this symbol",
+                          "the session scan for this symbol",
             })
             continue
         ask = get_quote(decision.symbol)["ask"]
@@ -106,7 +106,7 @@ def _apply_deviation_guard(
 
 
 def execute_premarket_decisions(
-    input_path: Path = DECISIONS_PATH,
+    input_path: Path | None = None,
     live: bool = False,
 ) -> list[dict]:
     """
@@ -116,6 +116,8 @@ def execute_premarket_decisions(
     if not is_market_open_today():
         print("premarket_execution: market closed today - nothing to do")
         return []
+    if input_path is None:
+        input_path = list_path("premarket_decisions.json")
     if not input_path.exists():
         raise SystemExit(f"{input_path} not found - run the premarket "
                          f"trader first")

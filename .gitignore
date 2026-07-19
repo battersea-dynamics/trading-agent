@@ -3,8 +3,13 @@ __pycache__/
 *.pyc
 .venv/
 .claude/settings.local.json
-# Runtime artifacts stay out of git - EXCEPT daily reports, which the
-# Actions workflow commits at end of day as the persistent audit trail.
+# Loose files in data/ are genuinely runtime-only (universe cache,
+# orchestrator state, portfolio snapshot) and stay out of git. The
+# dated subfolders are the historical record for the active review
+# period and ARE committed (see tools/datapaths.py for the layout and
+# the note that this arrangement is temporary).
 # (data/* not data/: git can't re-include files under an ignored dir.)
 data/*
-!data/daily_report_*.json
+!data/lists/
+!data/reports/
+!data/weekly/

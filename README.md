@@ -123,7 +123,11 @@ Start it before open−45min (13:45 UK time on normal days). All schedule math i
 
 - **Dry-run by default, everywhere.** Scheduled runs submit orders only if the repo *variable* `TRADING_LIVE` is exactly `true`; manual runs only if the `live` checkbox is ticked. Neither exists by accident.
 - **Manual testing:** Actions → trading → "Run workflow" — pick a stage (`tick`, `premarket`, `daily_scan`, ...) and run it immediately.
-- **Daily report:** tick mode appends every stage outcome, order, guard trigger, and error to `data/daily_report_<date>.json` (deterministic, no LLM); the workflow commits it once at end of day, so each day's audit trail is readable on GitHub without opening Action logs.
+- **Daily report:** tick mode appends every stage outcome, order, guard trigger, and error to `data/reports/daily_report_<date>.json` (deterministic, no LLM); the workflow commits each day's full record (report + lists) once at end of day, so the audit trail is readable on GitHub without opening Action logs.
+
+### Data layout (temporary, for the active review period)
+
+Per-run artifacts are partitioned by ET session date instead of being overwritten: `data/lists/<date>/` holds every list/case/decision file (shortlist, pre-market scan/news/candles/cases/decisions, per-check `check_decisions_<HHMM>.json`), `data/reports/` holds the daily reports, and `data/weekly/` is reserved for the future weekly summary. These dated folders are **committed** — they're the record being actively reviewed over the coming weeks. This is explicitly **not a permanent design**: once the review period ends, revisit (likely revert to plain overwritten files, or add retention) — see the note in `tools/datapaths.py`. Loose files in `data/` (universe cache, orchestrator state, portfolio snapshot) remain runtime-only and gitignored.
 - Credentials live in encrypted repository secrets (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `GEMINI_API_KEY`, `FINNHUB_API_KEY`), referenced by name in the workflow only.
 
 ## Deliberately not built yet

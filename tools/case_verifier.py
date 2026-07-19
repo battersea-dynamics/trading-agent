@@ -42,15 +42,8 @@ Design choices:
 
 import json
 import re
-from pathlib import Path
 
-PM_SCAN_PATH = Path("data/premarket_scan.json")
-PM_NEWS_PATH = Path("data/premarket_news.json")
-PM_CANDLES_PATH = Path("data/premarket_candles.json")
-PM_CASE_FILES = {
-    "bull": Path("data/premarket_bull_cases.json"),
-    "bear": Path("data/premarket_bear_cases.json"),
-}
+from tools.datapaths import list_path
 
 REL_TOLERANCE = 0.06
 ABS_TOLERANCE = 0.12
@@ -140,19 +133,22 @@ def verify_premarket_case_file(side: str) -> dict[str, dict]:
     automatically by the bull/bear runners after they write; also
     runnable standalone to re-check by hand.
     """
-    case_path = PM_CASE_FILES[side]
+    case_path = list_path(f"premarket_{side}_cases.json")
     if not case_path.exists():
         raise SystemExit(f"{case_path} not found")
     payload = json.loads(case_path.read_text())
 
+    scan_path = list_path("premarket_scan.json")
+    news_path = list_path("premarket_news.json")
+    candles_path = list_path("premarket_candles.json")
     scan_rows = {}
-    if PM_SCAN_PATH.exists():
-        scan = json.loads(PM_SCAN_PATH.read_text())
+    if scan_path.exists():
+        scan = json.loads(scan_path.read_text())
         scan_rows = {r["symbol"]: r for r in scan["shortlist"]}
-    news = (json.loads(PM_NEWS_PATH.read_text()).get("news", {})
-            if PM_NEWS_PATH.exists() else {})
-    candles = (json.loads(PM_CANDLES_PATH.read_text()).get("reads", {})
-               if PM_CANDLES_PATH.exists() else {})
+    news = (json.loads(news_path.read_text()).get("news", {})
+            if news_path.exists() else {})
+    candles = (json.loads(candles_path.read_text()).get("reads", {})
+               if candles_path.exists() else {})
 
     text_key = "bull_case" if side == "bull" else "bear_case"
     flagged = 0
@@ -177,8 +173,8 @@ def verify_premarket_case_file(side: str) -> dict[str, dict]:
 
 
 if __name__ == "__main__":
-    for side, path in PM_CASE_FILES.items():
-        if path.exists():
+    for side in ("bull", "bear"):
+        if list_path(f"premarket_{side}_cases.json").exists():
             verify_premarket_case_file(side)
         else:
-            print(f"[verify:{side}] {path} not found - skipped")
+            print(f"[verify:{side}] no {side} case file for today - skipped")

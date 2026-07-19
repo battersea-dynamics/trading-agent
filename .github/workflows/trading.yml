@@ -103,18 +103,19 @@ jobs:
           key: trading-data-${{ github.run_id }}
 
       # One commit per day: only after the orchestrator marks the day
-      # complete, and only if the report differs from what's already
-      # committed (later ticks exit before touching the report, so
-      # this is naturally idempotent).
-      - name: Commit daily report (end of day)
+      # complete, and only if the records differ from what's already
+      # committed (later ticks exit before touching them, so this is
+      # naturally idempotent). Commits the whole dated record: the
+      # day's lists/cases/decisions and the daily report.
+      - name: Commit daily records (end of day)
         if: github.event_name == 'schedule'
         run: |
           if [ -f data/orchestrator_state.json ] && [ "$(jq -r '.day_complete' data/orchestrator_state.json)" = "true" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/daily_report_*.json
+            git add data/lists data/reports
             if ! git diff --cached --quiet; then
-              git commit -m "daily report $(jq -r '.date' data/orchestrator_state.json)"
+              git commit -m "daily records $(jq -r '.date' data/orchestrator_state.json)"
               git pull --rebase origin main
               git push origin main
             fi

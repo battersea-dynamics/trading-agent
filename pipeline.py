@@ -38,12 +38,12 @@ from datetime import datetime
 from pathlib import Path
 
 from tools.broker import get_account, get_positions
+from tools.datapaths import list_path
 from tools.catalysts import build_catalyst_report, prescan_earnings
 from tools.scanner import ScanResult, scan
 from tools.universe_builder import load_universe
 
-SHORTLIST_PATH = Path("data/shortlist.json")
-PORTFOLIO_STATE_PATH = Path("data/portfolio_state.json")
+PORTFOLIO_STATE_PATH = Path("data/portfolio_state.json")  # runtime state, overwritten on purpose
 TOP_N = 15
 
 
@@ -79,10 +79,12 @@ def held_symbols() -> set[str]:
 
 
 def daily_scan(
-    output_path: Path = SHORTLIST_PATH,
+    output_path: Path | None = None,
     top_n: int = TOP_N,
 ) -> list[ScanResult]:
     """Stage 1: cheap, deterministic, LLM-free. Safe to run on a timer."""
+    if output_path is None:
+        output_path = list_path("shortlist.json")
     held = held_symbols()               # no state file written here
     universe = load_universe()          # cached daily, rebuilt when stale
     flagged = prescan_earnings(universe, days_ahead=3)
@@ -112,7 +114,7 @@ def daily_scan(
 
 
 def check_shortlist(
-    input_path: Path = SHORTLIST_PATH,
+    input_path: Path | None = None,
     live: bool = False,
 ) -> list[dict]:
     """
@@ -135,6 +137,8 @@ def check_shortlist(
           f"{len(state['positions'])} position(s) "
           f"-> {PORTFOLIO_STATE_PATH}")
 
+    if input_path is None:
+        input_path = list_path("shortlist.json")
     if not input_path.exists():
         raise SystemExit(f"{input_path} not found - run `pipeline.py scan` first")
 
@@ -151,6 +155,20 @@ def check_shortlist(
     catalyst_report = build_catalyst_report(symbols)
     decisions = analyze_shortlist(shortlist, catalyst_report)
     report = execute_signals(decisions, live=live)
+
+    # Review record for the by-date archive: the regular pipeline's
+    # debate is in-memory (no separate bull/bear case files exist -
+    # each decision's reasoning embeds both cases verbatim), so this
+    # decisions file IS the daily equivalent of the premarket case/
+    # decision files. Timestamped because checks run many times a day.
+    check_record = list_path(
+        f"check_decisions_{datetime.now().strftime('%H%M')}.json")
+    check_record.write_text(json.dumps({
+        "generated_at": datetime.now().isoformat(timespec="seconds"),
+        "live": live,
+        "decisions": [d.model_dump() for d in decisions],
+        "execution_report": report,
+    }, indent=2))
 
     print(json.dumps(report, indent=2))
     if not live:

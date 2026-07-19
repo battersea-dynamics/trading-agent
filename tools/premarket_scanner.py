@@ -41,12 +41,12 @@ from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
 from tools.broker import data_client
+from tools.datapaths import list_path
 from tools.market_calendar import ET, is_market_open_today, is_trading_day
 from tools.universe_builder import load_universe
 
 load_dotenv()
 
-OUTPUT_PATH = Path("data/premarket_scan.json")
 PM_START = dtime(4, 0)    # ET; Alpaca's earliest extended-hours prints
 PM_END = dtime(9, 30)     # regular session open
 BASELINE_CALENDAR_DAYS = 14   # ~10 trading days of pre-market history
@@ -128,7 +128,7 @@ def _prev_closes(symbols: list[str], today: date) -> dict[str, float]:
 
 def run_premarket_scan(
     target_date: date | None = None,
-    output_path: Path = OUTPUT_PATH,
+    output_path: Path | None = None,
     top_n: int = TOP_N,
 ) -> list[PremarketScanResult]:
     """
@@ -145,6 +145,9 @@ def run_premarket_scan(
     elif not is_trading_day(target_date):
         print(f"premarket_scan: {target_date} was not a trading day")
         return []
+
+    if output_path is None:
+        output_path = list_path("premarket_scan.json", target_date)
 
     universe = load_universe()
 

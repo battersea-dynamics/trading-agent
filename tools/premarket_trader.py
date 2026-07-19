@@ -31,11 +31,9 @@ from datetime import datetime
 from pathlib import Path
 
 from agents.signal_agent import SignalDecision
+from tools.datapaths import list_path
 from tools.market_calendar import ET, is_market_open_today
 
-BULL_PATH = Path("data/premarket_bull_cases.json")
-BEAR_PATH = Path("data/premarket_bear_cases.json")
-OUTPUT_PATH = Path("data/premarket_decisions.json")
 
 # Keep in sync with tools/trader.py (see module docstring)
 BUY_THRESHOLD = 0.2
@@ -46,7 +44,7 @@ def _clamp(value: float, lo: float, hi: float) -> float:
     return max(lo, min(hi, value))
 
 
-def decide_premarket_trades(output_path: Path = OUTPUT_PATH) -> list[SignalDecision]:
+def decide_premarket_trades(output_path: Path | None = None) -> list[SignalDecision]:
     """
     Entry point. Reads both case files, combines per symbol, writes
     final decisions. Symbols present in only one file are skipped —
@@ -56,13 +54,17 @@ def decide_premarket_trades(output_path: Path = OUTPUT_PATH) -> list[SignalDecis
     if not is_market_open_today():
         print("premarket_trader: market closed today - nothing to do")
         return []
-    for path in (BULL_PATH, BEAR_PATH):
+    bull_path = list_path("premarket_bull_cases.json")
+    bear_path = list_path("premarket_bear_cases.json")
+    if output_path is None:
+        output_path = list_path("premarket_decisions.json")
+    for path in (bull_path, bear_path):
         if not path.exists():
             raise SystemExit(f"{path} not found - run the premarket "
                              f"bull/bear agents first")
 
-    bulls = json.loads(BULL_PATH.read_text())["cases"]
-    bears = json.loads(BEAR_PATH.read_text())["cases"]
+    bulls = json.loads(bull_path.read_text())["cases"]
+    bears = json.loads(bear_path.read_text())["cases"]
 
     decisions: list[SignalDecision] = []
     for symbol in sorted(bulls.keys() | bears.keys()):

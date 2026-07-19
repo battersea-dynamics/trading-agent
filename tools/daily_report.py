@@ -18,13 +18,8 @@ import json
 from datetime import date, datetime
 from pathlib import Path
 
+from tools.datapaths import report_path
 from tools.market_calendar import ET
-
-REPORT_DIR = Path("data")
-
-
-def report_path(day: date) -> Path:
-    return REPORT_DIR / f"daily_report_{day.isoformat()}.json"
 
 
 def append_event(day: date, event_type: str, detail: dict | None = None):

@@ -43,6 +43,7 @@ from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
 from agents.llm_runner import gemini_llm, run_task
+from tools.datapaths import list_path
 from agents.premarket_case_format import (
     format_premarket_evidence,
     load_session_news,
@@ -51,9 +52,6 @@ from tools.market_calendar import ET, is_market_open_today
 
 load_dotenv()
 
-SCAN_PATH = Path("data/premarket_scan.json")
-CANDLES_PATH = Path("data/premarket_candles.json")
-OUTPUT_PATH = Path("data/premarket_bear_cases.json")
 
 
 class PremarketBearCase(BaseModel):
@@ -158,18 +156,23 @@ def analyze_premarket_bear(
     return run_task(agent, task, label="pm-bear", symbol=scan_row["symbol"])
 
 
-def run_premarket_bears(output_path: Path = OUTPUT_PATH) -> dict[str, dict]:
+def run_premarket_bears(output_path: Path | None = None) -> dict[str, dict]:
     """Entry point: bear cases for the whole pre-market shortlist."""
     if not is_market_open_today():
         print("premarket_bears: market closed today - nothing to do")
         return {}
-    if not SCAN_PATH.exists():
-        raise SystemExit(f"{SCAN_PATH} not found - run the premarket "
+    auto_verify = output_path is None
+    if output_path is None:
+        output_path = list_path("premarket_bear_cases.json")
+    scan_path = list_path("premarket_scan.json")
+    candles_path = list_path("premarket_candles.json")
+    if not scan_path.exists():
+        raise SystemExit(f"{scan_path} not found - run the premarket "
                          f"scanner first")
 
-    scan = json.loads(SCAN_PATH.read_text())
-    candles = (json.loads(CANDLES_PATH.read_text()).get("reads", {})
-               if CANDLES_PATH.exists() else {})
+    scan = json.loads(scan_path.read_text())
+    candles = (json.loads(candles_path.read_text()).get("reads", {})
+               if candles_path.exists() else {})
     news = load_session_news(scan.get("session_date"), label="pm-bear")
 
     cases: dict[str, dict] = {}
@@ -193,7 +196,7 @@ def run_premarket_bears(output_path: Path = OUTPUT_PATH) -> dict[str, dict]:
     # Numeric fact-check every case just written (deterministic, no
     # LLM) - adds numbers_verified/unverified_numbers to the file.
     # Partial safeguard: numbers only, see tools/case_verifier.py.
-    if output_path == OUTPUT_PATH:
+    if auto_verify:
         from tools.case_verifier import verify_premarket_case_file
         cases = verify_premarket_case_file("bear")
     return cases

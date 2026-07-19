@@ -42,12 +42,11 @@ from alpaca.data.enums import Adjustment
 from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 from tools.broker import data_client
+from tools.datapaths import list_path
 from tools.market_calendar import ET, is_market_open_today, is_trading_day
 
 load_dotenv()
 
-SCAN_PATH = Path("data/premarket_scan.json")
-OUTPUT_PATH = Path("data/premarket_candles.json")
 PM_START = dtime(4, 0)
 PM_END = dtime(9, 30)
 
@@ -171,7 +170,7 @@ def _build_candle_task(agent: Agent, pair: CandlePair) -> Task:
 def run_candle_agent(
     symbols: list[str] | None = None,
     target_date: date | None = None,
-    output_path: Path = OUTPUT_PATH,
+    output_path: Path | None = None,
 ) -> dict[str, dict]:
     """
     Entry point. `symbols=None` reads the pre-market scan's shortlist
@@ -187,11 +186,14 @@ def run_candle_agent(
         print(f"candle_agent: {target_date} was not a trading day")
         return {}
 
+    if output_path is None:
+        output_path = list_path("premarket_candles.json", target_date)
     if symbols is None:
-        if not SCAN_PATH.exists():
-            raise SystemExit(f"{SCAN_PATH} not found - run the "
+        scan_path = list_path("premarket_scan.json", target_date)
+        if not scan_path.exists():
+            raise SystemExit(f"{scan_path} not found - run the "
                              f"premarket scanner first, or pass symbols")
-        payload = json.loads(SCAN_PATH.read_text())
+        payload = json.loads(scan_path.read_text())
         symbols = [r["symbol"] for r in payload["shortlist"]]
 
     reads: dict[str, dict] = {}

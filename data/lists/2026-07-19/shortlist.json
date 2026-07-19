@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-07-19T09:22:16",
+  "universe_size": 2349,
+  "catalyst_flagged": 114,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "KLRS",
+      "sector": "unknown",
+      "close": 4.38,
+      "rel_volume": 154.816159672959,
+      "pct_change": -4.9891540130151935,
+      "ma_distance": -2.9309102997395975,
+      "score": 52.93510625907386,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDOT",
+      "sector": "unknown",
+      "close": 25.3,
+      "rel_volume": 5.22779044669549,
+      "pct_change": 77.54385964912281,
+      "ma_distance": 0.3440651244881247,
+      "score": 29.785415548454456,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEE",
+      "sector": "unknown",
+      "close": 38.7,
+      "rel_volume": 1.0446242189318997,
+      "pct_change": 6.965174129353242,
+      "ma_distance": 269.8924731182796,
+      "score": 24.95428515081136,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIYA",
+      "sector": "unknown",
+      "close": 4.14,
+      "rel_volume": 8.085782251978634,
+      "pct_change": 36.18421052631578,
+      "ma_distance": -3.5223657993777966,
+      "score": 18.02282059532726,
+      "catalyst": null
+    },
+    {
+      "symbol": "LEDS",
+      "sector": "unknown",
+      "close": 3.01,
+      "rel_volume": 2.102527606466857,
+      "pct_change": 22.85714285714284,
+      "ma_distance": 68.93503577943034,
+      "score": 14.742799775761068,
+      "catalyst": null
+    },
+    {
+      "symbol": "OPI",
+      "sector": "unknown",
+      "close": 18.0,
+      "rel_volume": 23.54433726703312,
+      "pct_change": -4.3062200956937735,
+      "ma_distance": 15.938295062960941,
+      "score": 13.674791049636594,
+      "catalyst": null
+    },
+    {
+      "symbol": "PESI",
+      "sector": "unknown",
+      "close": 17.46,
+      "rel_volume": 5.524903964960511,
+      "pct_change": 13.597918022121025,
+      "ma_distance": 31.753697555086024,
+      "score": 12.64891758392353,
+      "catalyst": null
+    },
+    {
+      "symbol": "NXTC",
+      "sector": "unknown",
+      "close": 5.99,
+      "rel_volume": 0.13375178720765746,
+      "pct_change": -2.917341977309558,
+      "ma_distance": 134.05294519878873,
+      "score": 12.272206626932302,
+      "catalyst": null
+    },
+    {
+      "symbol": "GPRE",
+      "sector": "unknown",
+      "close": 19.23,
+      "rel_volume": 3.8682807750807706,
+      "pct_change": 11.737361998837882,
+      "ma_distance": 21.88629016923369,
+      "score": 10.540196114056346,
+      "catalyst": null
+    },
+    {
+      "symbol": "ISRG",
+      "sector": "unknown",
+      "close": 345.42,
+      "rel_volume": 3.894104920122271,
+      "pct_change": -14.14510476474535,
+      "ma_distance": -14.971759409119937,
+      "score": 10.412591341116897,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLBK",
+      "sector": "unknown",
+      "close": 23.42,
+      "rel_volume": 15.06701780447737,
+      "pct_change": 2.0479302832244115,
+      "ma_distance": 11.884771106784994,
+      "score": 10.320840657306402,
+      "catalyst": null
+    },
+    {
+      "symbol": "FBRX",
+      "sector": "unknown",
+      "close": 48.86,
+      "rel_volume": 0.650684404340982,
+      "pct_change": 8.60191153589686,
+      "ma_distance": 82.55866088775969,
+      "score": 9.850615954979482,
+      "catalyst": null
+    },
+    {
+      "symbol": "SG",
+      "sector": "unknown",
+      "close": 7.08,
+      "rel_volume": 2.826530496911341,
+      "pct_change": 13.826366559485537,
+      "ma_distance": -14.025500910746805,
+      "score": 8.588698250459357,
+      "catalyst": null
+    },
+    {
+      "symbol": "ATPC",
+      "sector": "unknown",
+      "close": 3.07,
+      "rel_volume": 0.28410016466674304,
+      "pct_change": -26.90476190476191,
+      "ma_distance": 1.4037985136251028,
+      "score": 8.56958478000283,
+      "catalyst": null
+    },
+    {
+      "symbol": "LCID",
+      "sector": "tech",
+      "close": 7.36,
+      "rel_volume": 1.9536059760159266,
+      "pct_change": 13.931888544891645,
+      "ma_distance": 27.617148554337,
+      "score": 8.243129767704751,
+      "catalyst": null
+    }
+  ]
+}
