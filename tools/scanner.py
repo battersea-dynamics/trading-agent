@@ -130,6 +130,11 @@ def compute_metrics(bars_by_symbol: dict[str, list]) -> list[ScanResult]:
             continue
 
         results.append(ScanResult(
+            # Placeholder only. SECTOR_OF is the retired static
+            # 143-ticker map; the dynamic universe's symbols mostly
+            # aren't in it, so nearly everything would resolve to
+            # "unknown" here. Real sector is filled in on the
+            # shortlist by _enrich_sectors (see scan()).
             symbol=symbol,
             sector=SECTOR_OF.get(symbol, "unknown"),
             close=latest.close,
@@ -185,6 +190,31 @@ def rank(
     return sorted(results, key=lambda r: r.score, reverse=True)[:top_n]
 
 
+def _enrich_sectors(results: list[ScanResult]) -> None:
+    """
+    Fill in a real sector for each shortlisted result, in place.
+
+    Sector is resolved HERE (post-ranking, ~15 names) and not on the
+    whole universe because it costs one Finnhub call per symbol —
+    fine for a shortlist, prohibitive for ~2,300 symbols. Finnhub is
+    the source because Alpaca's asset metadata has no sector field
+    (see tools.catalysts.get_sector). The static SECTOR_OF map is a
+    free fallback for the handful of big names it still covers, used
+    only when Finnhub returns nothing (e.g. it's down or rate-limited).
+    Best-effort throughout: a labelling gap never breaks the scan.
+
+    Lazy import keeps the pure-math core (compute_metrics/rank) free of
+    any Finnhub dependency — only this enrichment step reaches out.
+    """
+    from tools.catalysts import get_sector
+
+    for r in results:
+        sector = get_sector(r.symbol)
+        if sector == "unknown":
+            sector = SECTOR_OF.get(r.symbol, "unknown")
+        r.sector = sector
+
+
 def scan(
     top_n: int = 15,
     symbols: list[str] | None = None,
@@ -197,7 +227,10 @@ def scan(
     for a quick manual look.
     """
     bars = fetch_bars(symbols if symbols is not None else ALL_TICKERS)
-    return rank(compute_metrics(bars), top_n=top_n, catalyst_flags=catalyst_flags)
+    shortlist = rank(compute_metrics(bars), top_n=top_n,
+                     catalyst_flags=catalyst_flags)
+    _enrich_sectors(shortlist)
+    return shortlist
 
 
 if __name__ == "__main__":

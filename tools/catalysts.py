@@ -137,6 +137,28 @@ def get_recent_news(symbol: str) -> list[dict]:
     ]
 
 
+def get_sector(symbol: str) -> str:
+    """
+    Finnhub's industry classification for `symbol` (e.g. "Technology",
+    "Biotechnology"), or "unknown" if Finnhub has no profile for it or
+    the call fails. Best-effort: a missing sector is a labelling gap,
+    never a reason to abort the scan.
+
+    Why Finnhub and not Alpaca: Alpaca's asset metadata carries no
+    sector/industry field at all (only symbol, name, exchange,
+    tradable...), so the dynamic universe has no sector attached. This
+    is the one source that fills it, at one call per symbol — which is
+    why sector is resolved on the ~15-name shortlist, not the ~2,300
+    symbol universe (that would be ~2,300 calls / ~40 min, well past
+    the free tier).
+    """
+    try:
+        profile = _finnhub_get("stock/profile2", {"symbol": symbol})
+    except Exception:
+        return "unknown"
+    return (profile or {}).get("finnhubIndustry") or "unknown"
+
+
 def get_upcoming_dividends(symbols: list[str]) -> dict[str, list[dict]]:
     """
     Cash dividends with ex-dates in the next two weeks, for all
