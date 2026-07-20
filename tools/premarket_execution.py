@@ -107,11 +107,11 @@ def _apply_deviation_guard(
 
 def execute_premarket_decisions(
     input_path: Path | None = None,
-    live: bool = False,
+    submit: bool = False,
 ) -> list[dict]:
     """
     Entry point. Assumes regular market hours have begun (the
-    orchestrator's promise); dry-run unless live=True.
+    orchestrator's promise); dry-run unless submit=True (paper orders).
     """
     if not is_market_open_today():
         print("premarket_execution: market closed today - nothing to do")
@@ -134,14 +134,14 @@ def execute_premarket_decisions(
 
     decisions = [SignalDecision(**d) for d in payload["decisions"]]
     decisions, guard_entries = _apply_deviation_guard(decisions)
-    report = guard_entries + execute_signals(decisions, live=live)
+    report = guard_entries + execute_signals(decisions, submit=submit)
 
     print(json.dumps(report, indent=2))
-    if not live:
-        print("\n(dry run - pass --live / live=True to submit paper "
+    if not submit:
+        print("\n(dry run - pass --submit / submit=True to submit paper "
               "orders)", file=sys.stderr)
     return report
 
 
 if __name__ == "__main__":
-    execute_premarket_decisions(live="--live" in sys.argv)
+    execute_premarket_decisions(submit="--submit" in sys.argv)

@@ -12,7 +12,7 @@ The two entry points of the system, kept deliberately separate:
 Why a JSON file between them instead of one function calling the
 other? Because the seam is where scheduling will live. daily_scan is
 cheap and LLM-free — it can run pre-market on a timer with no risk.
-check_shortlist spends LLM calls and (in live mode) money — you may
+check_shortlist spends LLM calls and (in submit mode) money — you may
 want it minutes later, market-hours only, after a manual look at the
 file, or triggered more than once a day against the same shortlist.
 Two processes with a file handoff means adding a scheduler later is
@@ -28,8 +28,8 @@ to bottom and know the whole system.
 Usage:
   python pipeline.py scan            # stage 1, writes the shortlist
   python pipeline.py check           # stage 2, dry-run (no orders)
-  python pipeline.py check --live    # stage 2, submits paper orders
-  python pipeline.py all [--live]    # both stages back to back
+  python pipeline.py check --submit  # stage 2, submits paper orders
+  python pipeline.py all [--submit]  # both stages back to back
 """
 
 import json
@@ -115,7 +115,7 @@ def daily_scan(
 
 def check_shortlist(
     input_path: Path | None = None,
-    live: bool = False,
+    submit: bool = False,
 ) -> list[dict]:
     """
     Stage 2: judgment and (optionally) money. Reads whatever stage 1
@@ -154,7 +154,7 @@ def check_shortlist(
 
     catalyst_report = build_catalyst_report(symbols)
     decisions = analyze_shortlist(shortlist, catalyst_report)
-    report = execute_signals(decisions, live=live)
+    report = execute_signals(decisions, submit=submit)
 
     # Review record for the by-date archive: the regular pipeline's
     # debate is in-memory (no separate bull/bear case files exist -
@@ -165,29 +165,29 @@ def check_shortlist(
         f"check_decisions_{datetime.now().strftime('%H%M')}.json")
     check_record.write_text(json.dumps({
         "generated_at": datetime.now().isoformat(timespec="seconds"),
-        "live": live,
+        "submit": submit,
         "decisions": [d.model_dump() for d in decisions],
         "execution_report": report,
     }, indent=2))
 
     print(json.dumps(report, indent=2))
-    if not live:
-        print("\n(dry run - pass --live to submit paper orders)",
+    if not submit:
+        print("\n(dry run - pass --submit to submit paper orders)",
               file=sys.stderr)
     return report
 
 
 if __name__ == "__main__":
     args = set(sys.argv[1:])
-    live = "--live" in args
+    submit = "--submit" in args
     command = next((a for a in sys.argv[1:] if not a.startswith("--")), None)
 
     if command == "scan":
         daily_scan()
     elif command == "check":
-        check_shortlist(live=live)
+        check_shortlist(submit=submit)
     elif command == "all":
         daily_scan()
-        check_shortlist(live=live)
+        check_shortlist(submit=submit)
     else:
         raise SystemExit(__doc__)

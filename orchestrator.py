@@ -29,15 +29,15 @@ The default day:
                execution stage; a session that never opens means
                something is wrong and no orders is the right number
                of orders)
-  open+0       pre-market execution (bracket orders; --live only)
+  open+0       pre-market execution (bracket orders; --submit only)
   open+30min   daily_scan()
   every 30min  check_shortlist(), last run no later than close-45min
 
 Manual override: any stage can be run immediately with
   python -m orchestrator --force premarket
-  python -m orchestrator --force premarket_exec [--live]
+  python -m orchestrator --force premarket_exec [--submit]
   python -m orchestrator --force daily_scan
-  python -m orchestrator --force check [--live]
+  python -m orchestrator --force check [--submit]
 so testing never waits for the clock. (Component-level calendar
 gates still apply on non-trading days.) A future GitHub Actions
 workflow calls these same entry points on its own cron — this file
@@ -100,9 +100,9 @@ def stage_premarket():
     }
 
 
-def stage_premarket_exec(live: bool = False):
+def stage_premarket_exec(submit: bool = False):
     from tools.premarket_execution import execute_premarket_decisions
-    return execute_premarket_decisions(live=live)
+    return execute_premarket_decisions(submit=submit)
 
 
 def stage_daily_scan():
@@ -111,15 +111,15 @@ def stage_daily_scan():
     return {"shortlist": [r.symbol for r in shortlist]}
 
 
-def stage_check(live: bool = False):
+def stage_check(submit: bool = False):
     from pipeline import check_shortlist
-    return check_shortlist(live=live)
+    return check_shortlist(submit=submit)
 
 
 STAGES = {
-    "premarket": lambda live: stage_premarket(),
+    "premarket": lambda submit: stage_premarket(),
     "premarket_exec": stage_premarket_exec,
-    "daily_scan": lambda live: stage_daily_scan(),
+    "daily_scan": lambda submit: stage_daily_scan(),
     "check": stage_check,
 }
 
@@ -182,7 +182,7 @@ def _save_state(state: dict):
     STATE_PATH.write_text(json.dumps(state, indent=2))
 
 
-def run_tick(live: bool = False):
+def run_tick(submit: bool = False):
     """
     Scheduler entry point (GitHub Actions cron, or any cron): decide
     what's due right now, run it, record it, exit. Never sleeps
@@ -222,7 +222,7 @@ def run_tick(live: bool = False):
         daily_report.append_event(today, "session", {
             "open_et": f"{session_open:%H:%M}",
             "close_et": f"{session_close:%H:%M}",
-            "live_mode": live,
+            "submit_mode": submit,
         })
         state["session_recorded"] = True
 
@@ -251,7 +251,7 @@ def run_tick(live: bool = False):
         if _poll_until_open(session_open):
             _log("tick stage: premarket execution")
             record("premarket_execution",
-                   lambda: stage_premarket_exec(live=live))
+                   lambda: stage_premarket_exec(submit=submit))
         else:
             daily_report.append_event(today, "premarket_execution", {
                 "ok": False,
@@ -274,7 +274,7 @@ def run_tick(live: bool = False):
     )
     if check_due:
         _log("tick stage: check_shortlist")
-        record("check_shortlist", lambda: stage_check(live=live))
+        record("check_shortlist", lambda: stage_check(submit=submit))
         state["last_check_at"] = now.isoformat(timespec="seconds")
 
     if _now() > last_check_at:
@@ -291,7 +291,7 @@ def run_tick(live: bool = False):
 
 # ----- the scheduled day -----
 
-def run_day(live: bool = False):
+def run_day(submit: bool = False):
     session = todays_session()
     if session is None:
         _log("no trading session today - exiting")
@@ -307,7 +307,7 @@ def run_day(live: bool = False):
          f"premarket {premarket_at:%H:%M}, exec ~{session_open:%H:%M}, "
          f"daily_scan {daily_scan_at:%H:%M}, checks every "
          f"{CHECK_INTERVAL_MIN}min until {last_check_at:%H:%M}"
-         + (" | LIVE ORDERS" if live else " | dry-run"))
+         + (" | SUBMITTING paper orders" if submit else " | dry-run"))
 
     if _now() < premarket_at:
         _sleep_until(premarket_at, "pre-market chain")
@@ -317,7 +317,7 @@ def run_day(live: bool = False):
     _sleep_until(session_open, "market open")
     if _poll_until_open(session_open):
         _log("stage: premarket execution")
-        stage_premarket_exec(live=live)
+        stage_premarket_exec(submit=submit)
     else:
         _log(f"market still closed {OPEN_POLL_MAX_MIN}min after "
              f"scheduled open - SKIPPING premarket execution")
@@ -331,7 +331,7 @@ def run_day(live: bool = False):
             minutes=CHECK_INTERVAL_MIN)) <= last_check_at:
         _sleep_until(check_at, "shortlist check")
         _log("stage: check_shortlist")
-        stage_check(live=live)
+        stage_check(submit=submit)
 
     _log("trading day schedule complete")
 
@@ -344,19 +344,20 @@ if __name__ == "__main__":
     parser.add_argument("--tick", action="store_true",
                         help="one bounded scheduler wake-up: run whatever "
                              "is due now, then exit (for cron/CI)")
-    parser.add_argument("--live", action="store_true",
-                        help="execution stages submit real paper orders")
+    parser.add_argument("--submit", action="store_true",
+                        help="execution stages submit paper orders "
+                             "(default: dry-run; paper account only)")
     args = parser.parse_args()
 
     if args.force:
         _log(f"forced stage: {args.force}"
-             + (" | LIVE ORDERS" if args.live else " | dry-run"))
-        STAGES[args.force](args.live)
+             + (" | SUBMITTING paper orders" if args.submit else " | dry-run"))
+        STAGES[args.force](args.submit)
     elif args.tick:
-        run_tick(live=args.live)
+        run_tick(submit=args.submit)
     else:
         try:
-            run_day(live=args.live)
+            run_day(submit=args.submit)
         except KeyboardInterrupt:
             _log("interrupted - exiting")
             sys.exit(130)

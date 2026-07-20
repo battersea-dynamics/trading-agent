@@ -29,8 +29,8 @@ uniformly:
     shares only (Alpaca forbids fractional bracket orders); if one
     share busts the cap, skip
   - skip anything that can't be sized or quoted, rather than improvise
-  - dry-run by default; pass live=True (or --live on the CLI) to
-    actually submit
+  - dry-run by default; pass submit=True (or --submit on the CLI) to
+    actually submit (paper) orders
 """
 
 import json
@@ -66,12 +66,13 @@ MAX_STOP_LOSS_PCT = 5.0
 
 def execute_signals(
     decisions: list[SignalDecision],
-    live: bool = False,
+    submit: bool = False,
 ) -> list[dict]:
     """
-    Filter, size, and (if live) submit one bracket order per approved
+    Filter, size, and (if submit) submit one bracket order per approved
     buy. Returns a report of what was done or would be done — the
-    dry-run output is the exact order that live mode would submit.
+    dry-run output is the exact order that submit mode would place.
+    (Paper account only — 'submit' means a paper order, never real money.)
     """
     account = get_account()
     position_cap = account["portfolio_value"] * MAX_POSITION_PCT
@@ -150,7 +151,7 @@ def execute_signals(
                 f"capped at {MAX_TAKE_PROFIT_PCT:.0f}%"
             )
 
-        if live:
+        if submit:
             result = place_bracket_order(
                 decision.symbol, qty, take_profit, stop_loss
             )
@@ -168,15 +169,15 @@ if __name__ == "__main__":
     from tools.scanner import scan
     from agents.signal_agent import analyze_shortlist
 
-    live = "--live" in sys.argv
+    submit = "--submit" in sys.argv
     top_n = 5
 
     shortlist = scan(top_n=top_n)
     catalysts = build_catalyst_report([s.symbol for s in shortlist])
     decisions = analyze_shortlist(shortlist, catalysts)
 
-    report = execute_signals(decisions, live=live)
+    report = execute_signals(decisions, submit=submit)
     print(json.dumps(report, indent=2))
-    if not live:
-        print("\n(dry run - re-run with --live to submit paper orders)",
+    if not submit:
+        print("\n(dry run - re-run with --submit to submit paper orders)",
               file=sys.stderr)

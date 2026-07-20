@@ -11,11 +11,13 @@
 # cron is deliberately dumb; the orchestrator is the only clock that
 # matters.
 #
-# LIVE MODE is never on by accident:
+# ORDER SUBMISSION is never on by accident (paper account only - even
+# "submit" means a PAPER order, never real money; the flag is named
+# --submit precisely so it never reads as "real money"):
 #   - scheduled runs are dry-run unless the repo VARIABLE
-#     TRADING_LIVE is set to exactly 'true'
+#     TRADING_SUBMIT is set to exactly 'true'
 #     (Settings -> Secrets and variables -> Actions -> Variables)
-#   - manual runs are dry-run unless the 'live' checkbox is ticked
+#   - manual runs are dry-run unless the 'submit' checkbox is ticked
 #
 # STATE between ticks: each run restores data/ from the most recent
 # cache (state file + all pipeline file seams), and saves its own
@@ -36,8 +38,8 @@ on:
         type: choice
         default: tick
         options: [tick, premarket, premarket_exec, daily_scan, check]
-      live:
-        description: "Submit real paper orders (default: dry-run)"
+      submit:
+        description: "Submit paper orders (default: dry-run)"
         type: boolean
         default: false
 
@@ -82,17 +84,17 @@ jobs:
 
       - name: Run orchestrator
         run: |
-          LIVE_FLAG=""
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ vars.TRADING_LIVE }}" = "true" ]; then
-            LIVE_FLAG="--live"
+          SUBMIT_FLAG=""
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "${{ vars.TRADING_SUBMIT }}" = "true" ]; then
+            SUBMIT_FLAG="--submit"
           fi
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.live }}" = "true" ]; then
-            LIVE_FLAG="--live"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.submit }}" = "true" ]; then
+            SUBMIT_FLAG="--submit"
           fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.stage }}" != "tick" ]; then
-            python -m orchestrator --force "${{ inputs.stage }}" $LIVE_FLAG
+            python -m orchestrator --force "${{ inputs.stage }}" $SUBMIT_FLAG
           else
-            python -m orchestrator --tick $LIVE_FLAG
+            python -m orchestrator --tick $SUBMIT_FLAG
           fi
 
       - name: Save pipeline state

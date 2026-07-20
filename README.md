@@ -40,7 +40,7 @@ bear agents        for and against, on identical evidence, anchored 0-1
 premarket_trader   no LLM: net = bull - bear, buy at net >= 0.2,
                    bear-risk-tempered TP/SL -> data/premarket_decisions.json
 premarket_execution reads decisions, applies guards (below), submits GTC
-                   bracket orders - dry-run unless --live
+                   bracket orders - dry-run unless --submit
 ```
 
 ### Regular-session pipeline
@@ -59,7 +59,7 @@ stage 1: daily_scan          python pipeline.py scan
                        an absolute-volume kicker and a catalyst boost
   -> data/shortlist.json
 
-stage 2: check_shortlist     python pipeline.py check [--live]
+stage 2: check_shortlist     python pipeline.py check [--submit]
   catalysts          - per-symbol earnings/dividends/news for the shortlist
   bull/bear debate   - same adversarial structure as pre-market (committed
                        one-sided cases, honest anchored scores, must cite
@@ -67,7 +67,7 @@ stage 2: check_shortlist     python pipeline.py check [--live]
   case verifier      - deterministic numeric fact-check of both case texts
   trader             - no LLM: net score -> buy/hold + tempered TP/SL
   execution agent    - no LLM: filters, sizes, submits GTC bracket orders
-                       (dry-run unless --live)
+                       (dry-run unless --submit)
 ```
 
 The JSON file between every pair of stages is both the scheduling seam and the audit trail: each run leaves a record of what the system saw, argued, and decided. Exits are enforced broker-side via bracket orders (attached take-profit + stop-loss, one-cancels-other) — nothing watches positions after entry; the broker does.
@@ -86,7 +86,7 @@ The JSON file between every pair of stages is both the scheduling seam and the a
 | Price deviation guard (±2%) | premarket execution | the live open has moved >2% (either direction) from the price the debate argued about — the thesis no longer applies |
 | Stale-decisions guard | premarket execution | yesterday's gap thesis can never execute today |
 | GTC bracket orders | broker | exit legs never expire at the close, leaving an unprotected overnight position (Alpaca caps GTC at 90 days) |
-| Dry-run by default | both execution paths | orders are only submitted with an explicit `--live` |
+| Dry-run by default | both execution paths | orders are only submitted with an explicit `--submit` (paper account only — even "submit" is a paper order, never real money; the flag is named `--submit`, not `--live`, so it never reads as real money) |
 | Daily-quota latch | LLM runner | a burned Gemini daily quota fast-fails the run instead of retry-sleeping through guaranteed failures |
 
 ## Running
@@ -95,7 +95,7 @@ The JSON file between every pair of stages is both the scheduling seam and the a
 
 ```
 .venv\Scripts\python.exe -m orchestrator            # full scheduled day, dry-run
-.venv\Scripts\python.exe -m orchestrator --live     # ...with real paper orders
+.venv\Scripts\python.exe -m orchestrator --submit   # ...submitting paper orders
 ```
 
 Start it before open−45min (13:45 UK time on normal days). All schedule math is US Eastern; log lines show both ET and your local time, so you never convert.
@@ -104,15 +104,15 @@ Start it before open−45min (13:45 UK time on normal days). All schedule math i
 
 ```
 .venv\Scripts\python.exe -m orchestrator --force premarket
-.venv\Scripts\python.exe -m orchestrator --force premarket_exec [--live]
+.venv\Scripts\python.exe -m orchestrator --force premarket_exec [--submit]
 .venv\Scripts\python.exe -m orchestrator --force daily_scan
-.venv\Scripts\python.exe -m orchestrator --force check [--live]
+.venv\Scripts\python.exe -m orchestrator --force check [--submit]
 ```
 
 **Or the underlying entry points directly:**
 
 ```
-.venv\Scripts\python.exe pipeline.py scan | check [--live] | all [--live]
+.venv\Scripts\python.exe pipeline.py scan | check [--submit] | all [--submit]
 .venv\Scripts\python.exe -m tools.premarket_scanner [YYYY-MM-DD]
 .venv\Scripts\python.exe -m tools.case_verifier
 ```
@@ -121,7 +121,7 @@ Start it before open−45min (13:45 UK time on normal days). All schedule math i
 
 `.github/workflows/trading.yml` runs the orchestrator's **tick mode** every 15 minutes (UTC cron covering the ET trading day in both DST regimes — off-window ticks exit in seconds; the orchestrator's ET logic is the only clock that matters). Each tick is a fresh VM: `data/` (state file + all pipeline file seams) is carried between ticks via `actions/cache`, so short-lived runners behave like one long-running orchestrator. Execution is marked done on *attempt*, never retried — a possibly-half-submitted order loop must not double-order.
 
-- **Dry-run by default, everywhere.** Scheduled runs submit orders only if the repo *variable* `TRADING_LIVE` is exactly `true`; manual runs only if the `live` checkbox is ticked. Neither exists by accident.
+- **Dry-run by default, everywhere.** Scheduled runs submit orders only if the repo *variable* `TRADING_SUBMIT` is exactly `true`; manual runs only if the `submit` checkbox is ticked. Neither exists by accident. (Everything is a paper account — the flag/variable are named `submit`, not `live`, so nothing ever reads as "real money".)
 - **Manual testing:** Actions → trading → "Run workflow" — pick a stage (`tick`, `premarket`, `daily_scan`, ...) and run it immediately.
 - **Daily report:** tick mode appends every stage outcome, order, guard trigger, and error to `data/reports/daily_report_<date>.json` (deterministic, no LLM); the workflow commits each day's full record (report + lists) once at end of day, so the audit trail is readable on GitHub without opening Action logs.
 
@@ -130,13 +130,24 @@ Start it before open−45min (13:45 UK time on normal days). All schedule math i
 Per-run artifacts are partitioned by ET session date instead of being overwritten: `data/lists/<date>/` holds every list/case/decision file (shortlist, pre-market scan/news/candles/cases/decisions, per-check `check_decisions_<HHMM>.json`), `data/reports/` holds the daily reports, and `data/weekly/` is reserved for the future weekly summary. These dated folders are **committed** — they're the record being actively reviewed over the coming weeks. This is explicitly **not a permanent design**: once the review period ends, revisit (likely revert to plain overwritten files, or add retention) — see the note in `tools/datapaths.py`. Loose files in `data/` (universe cache, orchestrator state, portfolio snapshot) remain runtime-only and gitignored.
 - Credentials live in encrypted repository secrets (`ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `GEMINI_API_KEY`, `FINNHUB_API_KEY`), referenced by name in the workflow only.
 
-## Deliberately not built yet
+## Roadmap / known gaps
 
-So this README never implies more automation or safety than exists:
+Nothing in this section is built yet — it exists so the README never implies more safety or automation than exists, and so the ordering below has a recorded rationale.
 
-- **No calibration.** Every threshold (net-score 0.2, confidence 0.6, ±2% deviation, $1,000 cap, TP/SL tempering) is a reasoned first guess, deliberately deferred until there's live paper history to calibrate against.
-- **No portfolio-level risk manager.** Nothing limits sector concentration, total simultaneous exposure, or correlated positions — each trade is judged alone. This is the planned "risk agent" slot between signal and execution, not started.
-- **Numbers-only fact-checking.** The case verifier cannot catch an invented qualitative claim (a fabricated catalyst) — only numeric drift.
+**On the external review (July 2026):** an outside architecture review validated the core design — the separation of *evidence gathering → judgment → decision → execution* into distinct stages, the deterministic (no-LLM) trader and execution layers, and the dry-run-by-default posture — and flagged **portfolio-level risk as the main missing piece**. The priority order below reflects that review together with our own assessment; it's why the list is ordered the way it is, not just what's on it.
+
+**Priority order for what comes next:**
+
+1. **Portfolio-level risk manager** — limits on total simultaneous exposure, maximum number of open positions, and sector/correlation concentration. Today every trade is judged alone; nothing sees the portfolio as a whole. Confirmed as the next major build both independently and by the review — the planned "risk agent" slot between signal and execution.
+2. **A/B evaluation: scanner-alone vs. scanner + bull/bear debate** — measure whether the LLM debate layer actually improves outcomes over the deterministic scanner on its own, *before* investing further in it.
+3. **Broker reconciliation + idempotent order submission** — deterministic client order IDs, and checking Alpaca's actual state before retrying. A real gap in the current "mark execution done on attempt" design: that rule prevents double-submission by never retrying, but it never reconciles against what the broker actually did. Relevant once submitting multiple orders in earnest.
+4. **Protective-order integrity monitoring** — actively confirm every open position's bracket legs (take-profit + stop-loss) are intact, rather than assuming GTC silently handles everything. A dropped or cancelled leg would currently go unnoticed.
+5. **Persistent transactional state (e.g. SQLite)** — for operational state specifically, alongside the existing JSON audit files. Not urgent at current scale; noted as a future consideration.
+
+**Other known limitations (documented for honesty, not necessarily on the build path):**
+
+- **No calibration.** Every threshold (net-score 0.2, confidence 0.6, ±2% deviation, 20%-of-account position cap, 12%/5% exit ceilings, TP/SL tempering) is a reasoned first guess, deliberately deferred until there's real paper-trading history to calibrate against.
+- **Numbers-only fact-checking.** The case verifier cannot catch an invented *qualitative* claim (a fabricated catalyst) — only numeric drift.
 
 ## Setup
 
