@@ -43,6 +43,7 @@ from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 from tools.broker import data_client
 from tools.datapaths import list_path
+from tools.market_data import sip_safe_end
 from tools.market_calendar import ET, is_market_open_today, is_trading_day
 
 load_dotenv()
@@ -74,14 +75,15 @@ def _fetch_candle_pair(symbol: str, session: date) -> CandlePair | None:
         symbol_or_symbols=symbol,
         timeframe=TimeFrame.Day,
         start=datetime.combine(session - timedelta(days=7), dtime(0, 0), tzinfo=ET),
-        end=datetime.combine(session, dtime(0, 0), tzinfo=ET),
+        # Capped to the free plan's SIP entitlement (tools/market_data.py)
+        end=sip_safe_end(datetime.combine(session, dtime(0, 0), tzinfo=ET)),
         adjustment=Adjustment.ALL,
     )).data.get(symbol, [])
     pm_bars = data_client.get_stock_bars(StockBarsRequest(
         symbol_or_symbols=symbol,
         timeframe=TimeFrame.Minute,
         start=datetime.combine(session, PM_START, tzinfo=ET),
-        end=datetime.combine(session, PM_END, tzinfo=ET),
+        end=sip_safe_end(datetime.combine(session, PM_END, tzinfo=ET)),
     )).data.get(symbol, [])
     if not daily_bars or not pm_bars:
         return None

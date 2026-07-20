@@ -42,6 +42,7 @@ from alpaca.data.timeframe import TimeFrame
 
 from tools.broker import data_client
 from tools.datapaths import list_path
+from tools.market_data import sip_safe_end
 from tools.market_calendar import ET, is_market_open_today, is_trading_day
 from tools.universe_builder import load_universe
 
@@ -97,7 +98,17 @@ def _pm_window(day: date) -> tuple[datetime, datetime]:
 
 
 def _fetch_pm_bars(symbols: list[str], start: datetime, end: datetime) -> dict:
-    """Minute bars for [start, end), chunked, keyed by symbol."""
+    """
+    Minute bars for [start, end), chunked, keyed by symbol.
+
+    `end` is capped to the free plan's SIP entitlement. This is the
+    call that was failing every scheduled run: today's window ends at
+    09:30 but the chain runs at 08:45, so the request always reached
+    into the last 15 minutes (see tools/market_data.py).
+    """
+    end = sip_safe_end(end)
+    if end <= start:
+        return {}   # window entirely inside the delay - nothing visible yet
     bars: dict[str, list] = {}
     for chunk in _chunked(symbols, CHUNK_SIZE):
         request = StockBarsRequest(
@@ -118,7 +129,8 @@ def _prev_closes(symbols: list[str], today: date) -> dict[str, float]:
             symbol_or_symbols=chunk,
             timeframe=TimeFrame.Day,
             start=datetime.combine(today - timedelta(days=7), dtime(0, 0), tzinfo=ET),
-            end=datetime.combine(today, dtime(0, 0), tzinfo=ET),
+            end=sip_safe_end(
+                datetime.combine(today, dtime(0, 0), tzinfo=ET)),
         )
         for symbol, bars in data_client.get_stock_bars(request).data.items():
             if bars:

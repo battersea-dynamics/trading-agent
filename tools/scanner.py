@@ -55,6 +55,7 @@ from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
 from config.universe import ALL_TICKERS, SECTOR_OF
+from tools.market_data import sip_safe_end
 
 load_dotenv()
 
@@ -103,6 +104,10 @@ def fetch_bars(symbols: list[str]) -> dict[str, list]:
             symbol_or_symbols=symbols[i:i + CHUNK_SIZE],
             timeframe=TimeFrame.Day,
             start=start,
+            # Never request data newer than the free plan may see, or
+            # the whole call 403s once the window touches "now" (see
+            # tools/market_data.py).
+            end=sip_safe_end(),
             # Split/dividend-adjusted bars. Without this a 2:1 split
             # shows up as a -50% "move" and dominates the ranking.
             adjustment=Adjustment.ALL,

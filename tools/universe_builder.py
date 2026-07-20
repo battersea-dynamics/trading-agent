@@ -42,6 +42,8 @@ from alpaca.trading.client import TradingClient
 from alpaca.trading.enums import AssetClass, AssetStatus
 from alpaca.trading.requests import GetAssetsRequest
 
+from tools.market_data import sip_safe_end
+
 load_dotenv()
 
 MIN_PRICE = 3.0
@@ -109,6 +111,7 @@ def filter_by_liquidity(symbols: list[str]) -> list[dict]:
             symbol_or_symbols=chunk,
             timeframe=TimeFrame.Day,
             start=start,
+            end=sip_safe_end(),   # free-tier SIP limit, see tools/market_data.py
             adjustment=Adjustment.ALL,
         )
         bars_by_symbol = _data_client.get_stock_bars(request).data
