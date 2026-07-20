@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-07-20T14:37:36",
+  "universe_size": 2348,
+  "catalyst_flagged": 189,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "BIYA",
+      "sector": "Professional Services",
+      "close": 8.43,
+      "rel_volume": 10.216945663329707,
+      "pct_change": 103.62318840579712,
+      "ma_distance": 98.26430536936428,
+      "score": 85.24458638383175,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLBK",
+      "sector": "Banking",
+      "close": 24.72,
+      "rel_volume": 6.263255888828055,
+      "pct_change": 5.550811272416725,
+      "ma_distance": 17.09396648706257,
+      "score": 31.093424288894106,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEE",
+      "sector": "Leisure Products",
+      "close": 29.995,
+      "rel_volume": 0.11011193792294234,
+      "pct_change": -22.493540051679588,
+      "ma_distance": 147.6469616908851,
+      "score": 21.662886175044882,
+      "catalyst": null
+    },
+    {
+      "symbol": "SKYQ",
+      "sector": "Energy",
+      "close": 4.6932,
+      "rel_volume": 0.506421014736766,
+      "pct_change": 23.505263157894742,
+      "ma_distance": 57.59570181329751,
+      "score": 14.766784221322798,
+      "catalyst": null
+    },
+    {
+      "symbol": "NXTC",
+      "sector": "Biotechnology",
+      "close": 5.865,
+      "rel_volume": 0.04493993736936946,
+      "pct_change": -2.0868113522537564,
+      "ma_distance": 113.36971350613914,
+      "score": 12.056754376506088,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDOT",
+      "sector": "Food Products",
+      "close": 31.0001,
+      "rel_volume": 0.7233474159542688,
+      "pct_change": 22.530039525691695,
+      "ma_distance": 21.003151926773807,
+      "score": 11.696513539037888,
+      "catalyst": null
+    },
+    {
+      "symbol": "SECZ",
+      "sector": "N/A",
+      "close": 6.445,
+      "rel_volume": 0.815733605518695,
+      "pct_change": -10.236768802228404,
+      "ma_distance": -33.95839737678041,
+      "score": 8.951633132829741,
+      "catalyst": null
+    },
+    {
+      "symbol": "STAA",
+      "sector": "Health Care",
+      "close": 25.01,
+      "rel_volume": 1.595632542858115,
+      "pct_change": -5.408472012102873,
+      "ma_distance": -11.703442188879075,
+      "score": 8.783809825527001,
+      "catalyst": null
+    },
+    {
+      "symbol": "NUAI",
+      "sector": "Energy",
+      "close": 4.815,
+      "rel_volume": 0.7555041810541993,
+      "pct_change": 18.15950920245399,
+      "ma_distance": -5.998340572990365,
+      "score": 8.76518053001925,
+      "catalyst": null
+    },
+    {
+      "symbol": "XNCR",
+      "sector": "Biotechnology",
+      "close": 19.28,
+      "rel_volume": 0.8068245132143224,
+      "pct_change": 10.360618202633098,
+      "ma_distance": 27.115990044338957,
+      "score": 8.735911012513714,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMPG",
+      "sector": "Electrical Equipment",
+      "close": 5.5236,
+      "rel_volume": 0.5622076875734933,
+      "pct_change": -16.813253012048186,
+      "ma_distance": -19.9013921113689,
+      "score": 8.709559202205636,
+      "catalyst": null
+    },
+    {
+      "symbol": "IREN",
+      "sector": "Technology",
+      "close": 38.7302,
+      "rel_volume": 0.7785078586175802,
+      "pct_change": 15.199881023200495,
+      "ma_distance": -12.421676258098065,
+      "score": 8.538567747123722,
+      "catalyst": null
+    },
+    {
+      "symbol": "FBRX",
+      "sector": "Biotechnology",
+      "close": 49.555,
+      "rel_volume": 0.10814830372273197,
+      "pct_change": 1.422431436758085,
+      "ma_distance": 74.93601623863738,
+      "score": 8.099505293116557,
+      "catalyst": null
+    },
+    {
+      "symbol": "EDBL",
+      "sector": "Food Products",
+      "close": 3.6001,
+      "rel_volume": 0.10712906110384475,
+      "pct_change": 11.458204334365321,
+      "ma_distance": -40.77808850139826,
+      "score": 7.763025545808713,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSNL",
+      "sector": "Life Sciences Tools & Services",
+      "close": 13.53,
+      "rel_volume": 1.067907565358615,
+      "pct_change": -12.08576998050683,
+      "ma_distance": 0.11839573775344098,
+      "score": 7.376456551182385,
+      "catalyst": null
+    }
+  ]
+}
