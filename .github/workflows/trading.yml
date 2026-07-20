@@ -47,8 +47,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: trading
-  cancel-in-progress: false   # queue ticks, never kill a running stage
+  group: trading-${{ github.event_name }}
+  cancel-in-progress: false
 
 jobs:
   trade:
