@@ -1,0 +1,79 @@
+{
+  "date": "2026-07-21",
+  "events": [
+    {
+      "at_et": "2026-07-21T01:34:57-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": true
+      }
+    },
+    {
+      "at_et": "2026-07-21T09:22:28-04:00",
+      "type": "premarket_chain",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-21T11:22:50-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "UTZ",
+          "ZYBT",
+          "CLBK",
+          "MGY",
+          "DHR",
+          "VEEE",
+          "FWRD",
+          "XXI",
+          "NXTC",
+          "HELP",
+          "CCRN",
+          "FBRX",
+          "AGEN",
+          "BXBL",
+          "HAS"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-07-21T11:23:23-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-21T12:53:44-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-21T14:13:03-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-21T15:51:37-04:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}

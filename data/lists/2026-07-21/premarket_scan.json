@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-07-21T09:22:15-04:00",
+  "session_date": "2026-07-21",
+  "universe_size": 2325,
+  "phase1_active": 100,
+  "shortlist": [
+    {
+      "symbol": "UTZ",
+      "prev_close": 7.45,
+      "last_pm_price": 14.06,
+      "pm_gap_pct": 88.72,
+      "pm_volume": 22822461,
+      "avg_pm_volume": 1185,
+      "rel_pm_volume": 19247.86,
+      "score": 20.528
+    },
+    {
+      "symbol": "CLBK",
+      "prev_close": 24.5,
+      "last_pm_price": 10.8,
+      "pm_gap_pct": -55.92,
+      "pm_volume": 152380,
+      "avg_pm_volume": 2491,
+      "rel_pm_volume": 61.15,
+      "score": 8.4
+    },
+    {
+      "symbol": "ZYBT",
+      "prev_close": 8.01,
+      "last_pm_price": 4.12,
+      "pm_gap_pct": -48.56,
+      "pm_volume": 23459227,
+      "avg_pm_volume": 2145286,
+      "rel_pm_volume": 10.94,
+      "score": 7.849
+    },
+    {
+      "symbol": "MGY",
+      "prev_close": 25.53,
+      "last_pm_price": 24.11,
+      "pm_gap_pct": -5.56,
+      "pm_volume": 3387284,
+      "avg_pm_volume": 1923,
+      "rel_pm_volume": 1760.75,
+      "score": 5.172
+    },
+    {
+      "symbol": "DHR",
+      "prev_close": 201.11,
+      "last_pm_price": 172.0,
+      "pm_gap_pct": -14.47,
+      "pm_volume": 472604,
+      "avg_pm_volume": 1202,
+      "rel_pm_volume": 392.89,
+      "score": 5.158
+    },
+    {
+      "symbol": "FWRD",
+      "prev_close": 13.2,
+      "last_pm_price": 15.4341,
+      "pm_gap_pct": 16.93,
+      "pm_volume": 52184,
+      "avg_pm_volume": 10298,
+      "rel_pm_volume": 5.07,
+      "score": 5.105
+    },
+    {
+      "symbol": "AGIO",
+      "prev_close": 40.06,
+      "last_pm_price": 34.7,
+      "pm_gap_pct": -13.38,
+      "pm_volume": 149612,
+      "avg_pm_volume": 1167,
+      "rel_pm_volume": 128.17,
+      "score": 5.03
+    },
+    {
+      "symbol": "CALX",
+      "prev_close": 38.35,
+      "last_pm_price": 34.7,
+      "pm_gap_pct": -9.52,
+      "pm_volume": 104463,
+      "avg_pm_volume": 1592,
+      "rel_pm_volume": 65.59,
+      "score": 4.76
+    },
+    {
+      "symbol": "ORLY",
+      "prev_close": 84.53,
+      "last_pm_price": 91.15,
+      "pm_gap_pct": 7.83,
+      "pm_volume": 150079,
+      "avg_pm_volume": 4197,
+      "rel_pm_volume": 35.75,
+      "score": 4.376
+    },
+    {
+      "symbol": "HAL",
+      "prev_close": 35.11,
+      "last_pm_price": 33.79,
+      "pm_gap_pct": -3.76,
+      "pm_volume": 194631,
+      "avg_pm_volume": 20639,
+      "rel_pm_volume": 9.43,
+      "score": 4.338
+    },
+    {
+      "symbol": "MMM",
+      "prev_close": 159.11,
+      "last_pm_price": 170.0,
+      "pm_gap_pct": 6.84,
+      "pm_volume": 141684,
+      "avg_pm_volume": 3979,
+      "rel_pm_volume": 35.61,
+      "score": 4.298
+    },
+    {
+      "symbol": "HELP",
+      "prev_close": 7.11,
+      "last_pm_price": 7.5,
+      "pm_gap_pct": 5.49,
+      "pm_volume": 180785,
+      "avg_pm_volume": 37093,
+      "rel_pm_volume": 4.87,
+      "score": 4.078
+    }
+  ]
+}

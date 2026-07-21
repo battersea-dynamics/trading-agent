@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-07-21T15:22:50",
+  "universe_size": 2325,
+  "catalyst_flagged": 194,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "UTZ",
+      "sector": "Food Products",
+      "close": 14.125,
+      "rel_volume": 22.238289875532264,
+      "pct_change": 89.59731543624162,
+      "ma_distance": 85.19732529172677,
+      "score": 75.97090509887673,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZYBT",
+      "sector": "Pharmaceuticals",
+      "close": 3.0356,
+      "rel_volume": 3.703517362043899,
+      "pct_change": -62.102372034956296,
+      "ma_distance": 177.82379294091805,
+      "score": 44.61768168287415,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLBK",
+      "sector": "Banking",
+      "close": 10.965,
+      "rel_volume": 6.725297072660423,
+      "pct_change": -55.24489795918367,
+      "ma_distance": -48.60497545084897,
+      "score": 35.13467307012131,
+      "catalyst": null
+    },
+    {
+      "symbol": "MGY",
+      "sector": "Energy",
+      "close": 24.695,
+      "rel_volume": 5.96825700366634,
+      "pct_change": -3.270661966314144,
+      "ma_distance": -5.909471919530589,
+      "score": 16.62814289831703,
+      "catalyst": null
+    },
+    {
+      "symbol": "DHR",
+      "sector": "Life Sciences Tools & Services",
+      "close": 173.57,
+      "rel_volume": 2.896094706152839,
+      "pct_change": -13.693998309382934,
+      "ma_distance": -10.815261652926104,
+      "score": 14.240093183573101,
+      "catalyst": {
+        "date": "2026-07-21",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "VEEE",
+      "sector": "Leisure Products",
+      "close": 28.0,
+      "rel_volume": 0.08055081663791196,
+      "pct_change": -5.052560189894875,
+      "ma_distance": 110.4946624567734,
+      "score": 13.663643575171427,
+      "catalyst": null
+    },
+    {
+      "symbol": "FWRD",
+      "sector": "Logistics & Transportation",
+      "close": 15.905,
+      "rel_volume": 2.003715396851513,
+      "pct_change": 20.492424242424246,
+      "ma_distance": 18.65860937033721,
+      "score": 11.234758806483306,
+      "catalyst": null
+    },
+    {
+      "symbol": "XXI",
+      "sector": "Financial Services",
+      "close": 4.6051,
+      "rel_volume": 2.4943261992146972,
+      "pct_change": -13.437969924812032,
+      "ma_distance": -14.132015662875261,
+      "score": 11.1786468609948,
+      "catalyst": null
+    },
+    {
+      "symbol": "NXTC",
+      "sector": "Biotechnology",
+      "close": 4.855,
+      "rel_volume": 0.05854904972306914,
+      "pct_change": -10.09259259259259,
+      "ma_distance": 66.39533887413246,
+      "score": 10.173329499857598,
+      "catalyst": null
+    },
+    {
+      "symbol": "HELP",
+      "sector": "Pharmaceuticals",
+      "close": 8.38,
+      "rel_volume": 1.397921155180919,
+      "pct_change": 17.862165963431792,
+      "ma_distance": 32.762991128010164,
+      "score": 10.073935434371572,
+      "catalyst": null
+    },
+    {
+      "symbol": "CCRN",
+      "sector": "Health Care",
+      "close": 13.25,
+      "rel_volume": 3.5112176508883834,
+      "pct_change": 0.0755287009063428,
+      "ma_distance": 0.31419161903319226,
+      "score": 9.9297177461074,
+      "catalyst": null
+    },
+    {
+      "symbol": "FBRX",
+      "sector": "Biotechnology",
+      "close": 51.2585,
+      "rel_volume": 0.3789933990346236,
+      "pct_change": 7.935354811539262,
+      "ma_distance": 71.9535718479008,
+      "score": 9.693814031211781,
+      "catalyst": null
+    },
+    {
+      "symbol": "AGEN",
+      "sector": "Biotechnology",
+      "close": 5.7887,
+      "rel_volume": 0.1235449872466305,
+      "pct_change": 16.47283702213281,
+      "ma_distance": 52.35425713909727,
+      "score": 9.553007963468215,
+      "catalyst": null
+    },
+    {
+      "symbol": "BXBL",
+      "sector": "unknown",
+      "close": 7.9,
+      "rel_volume": 1.3194477118513686,
+      "pct_change": -19.551934826883908,
+      "ma_distance": -21.936758893280636,
+      "score": 9.520607861009024,
+      "catalyst": null
+    },
+    {
+      "symbol": "HAS",
+      "sector": "Leisure Products",
+      "close": 87.45,
+      "rel_volume": 2.109736159531129,
+      "pct_change": 7.182252727049883,
+      "ma_distance": 7.962962962962966,
+      "score": 9.24285109785928,
+      "catalyst": {
+        "date": "2026-07-21",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
