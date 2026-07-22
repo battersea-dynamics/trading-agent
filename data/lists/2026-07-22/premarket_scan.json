@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-07-22T09:26:44-04:00",
+  "session_date": "2026-07-22",
+  "universe_size": 2302,
+  "phase1_active": 100,
+  "shortlist": [
+    {
+      "symbol": "SMCIP",
+      "prev_close": 45.86,
+      "last_pm_price": 51.19,
+      "pm_gap_pct": 11.62,
+      "pm_volume": 750600,
+      "avg_pm_volume": 446,
+      "rel_pm_volume": 1680.13,
+      "score": 14.406
+    },
+    {
+      "symbol": "BLFS",
+      "prev_close": 29.19,
+      "last_pm_price": 29.85,
+      "pm_gap_pct": 2.26,
+      "pm_volume": 456340,
+      "avg_pm_volume": 628,
+      "rel_pm_volume": 726.14,
+      "score": 7.882
+    },
+    {
+      "symbol": "ADTN",
+      "prev_close": 12.14,
+      "last_pm_price": 9.5,
+      "pm_gap_pct": -21.75,
+      "pm_volume": 395532,
+      "avg_pm_volume": 4371,
+      "rel_pm_volume": 90.49,
+      "score": 7.523
+    },
+    {
+      "symbol": "ARWR",
+      "prev_close": 74.52,
+      "last_pm_price": 88.14,
+      "pm_gap_pct": 18.28,
+      "pm_volume": 357165,
+      "avg_pm_volume": 3342,
+      "rel_pm_volume": 106.85,
+      "score": 7.322
+    },
+    {
+      "symbol": "PEGA",
+      "prev_close": 30.94,
+      "last_pm_price": 24.89,
+      "pm_gap_pct": -19.55,
+      "pm_volume": 510773,
+      "avg_pm_volume": 4925,
+      "rel_pm_volume": 103.69,
+      "score": 7.226
+    },
+    {
+      "symbol": "AIRJ",
+      "prev_close": 3.77,
+      "last_pm_price": 4.4,
+      "pm_gap_pct": 16.71,
+      "pm_volume": 250778,
+      "avg_pm_volume": 14758,
+      "rel_pm_volume": 16.99,
+      "score": 6.856
+    },
+    {
+      "symbol": "PCG",
+      "prev_close": 17.49,
+      "last_pm_price": 17.58,
+      "pm_gap_pct": 0.51,
+      "pm_volume": 2751044,
+      "avg_pm_volume": 4880,
+      "rel_pm_volume": 563.72,
+      "score": 6.745
+    },
+    {
+      "symbol": "CALM",
+      "prev_close": 87.25,
+      "last_pm_price": 81.05,
+      "pm_gap_pct": -7.11,
+      "pm_volume": 77984,
+      "avg_pm_volume": 237,
+      "rel_pm_volume": 328.77,
+      "score": 6.329
+    },
+    {
+      "symbol": "SMCI",
+      "prev_close": 25.5,
+      "last_pm_price": 28.74,
+      "pm_gap_pct": 12.71,
+      "pm_volume": 10450632,
+      "avg_pm_volume": 730706,
+      "rel_pm_volume": 14.3,
+      "score": 6.205
+    },
+    {
+      "symbol": "CPHI",
+      "prev_close": 8.1,
+      "last_pm_price": 6.94,
+      "pm_gap_pct": -14.32,
+      "pm_volume": 4858535,
+      "avg_pm_volume": 306319,
+      "rel_pm_volume": 15.86,
+      "score": 6.174
+    },
+    {
+      "symbol": "ADVB",
+      "prev_close": 7.08,
+      "last_pm_price": 8.6099,
+      "pm_gap_pct": 21.61,
+      "pm_volume": 4101375,
+      "avg_pm_volume": 1318385,
+      "rel_pm_volume": 3.11,
+      "score": 5.853
+    },
+    {
+      "symbol": "TEL",
+      "prev_close": 209.01,
+      "last_pm_price": 195.0,
+      "pm_gap_pct": -6.7,
+      "pm_volume": 98582,
+      "avg_pm_volume": 457,
+      "rel_pm_volume": 215.45,
+      "score": 5.671
+    }
+  ]
+}

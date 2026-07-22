@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-07-22T15:21:18",
+  "universe_size": 2302,
+  "catalyst_flagged": 154,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "ADVB",
+      "sector": "Health Care",
+      "close": 10.7756,
+      "rel_volume": 3.6575758166494468,
+      "pct_change": 52.19774011299436,
+      "ma_distance": 103.78383285171793,
+      "score": 46.209780932671364,
+      "catalyst": null
+    },
+    {
+      "symbol": "CPHI",
+      "sector": "Pharmaceuticals",
+      "close": 1.95,
+      "rel_volume": 0.9849794073147791,
+      "pct_change": -75.92592592592592,
+      "ma_distance": 75.89118198874299,
+      "score": 34.98612376993714,
+      "catalyst": null
+    },
+    {
+      "symbol": "BLFS",
+      "sector": "Life Sciences Tools & Services",
+      "close": 30.61,
+      "rel_volume": 5.888351578506319,
+      "pct_change": 4.864679684823563,
+      "ma_distance": 8.820078922108848,
+      "score": 30.17025359624914,
+      "catalyst": null
+    },
+    {
+      "symbol": "AIRJ",
+      "sector": "Machinery",
+      "close": 4.67,
+      "rel_volume": 2.9469464301575825,
+      "pct_change": 23.872679045092834,
+      "ma_distance": 4.773122440966959,
+      "score": 21.654700396777326,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMCI",
+      "sector": "Technology",
+      "close": 31.825,
+      "rel_volume": 2.2484507815394883,
+      "pct_change": 24.803921568627448,
+      "ma_distance": 13.868116927260358,
+      "score": 19.13323379843599,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMCIP",
+      "sector": "Technology",
+      "close": 55.25,
+      "rel_volume": 1.791849352837465,
+      "pct_change": 20.475359790667248,
+      "ma_distance": 11.795712305622168,
+      "score": 15.034988300791797,
+      "catalyst": null
+    },
+    {
+      "symbol": "PEGA",
+      "sector": "Technology",
+      "close": 26.46,
+      "rel_volume": 2.0609200000861594,
+      "pct_change": -14.479638009049776,
+      "ma_distance": -14.864180052928353,
+      "score": 14.86798602688684,
+      "catalyst": null
+    },
+    {
+      "symbol": "UTZ",
+      "sector": "Food Products",
+      "close": 14.08,
+      "rel_volume": 1.3996815517925505,
+      "pct_change": 0.14224751066856028,
+      "ma_distance": 76.2754303599374,
+      "score": 14.730866219816042,
+      "catalyst": null
+    },
+    {
+      "symbol": "ADTN",
+      "sector": "Communications",
+      "close": 10.155,
+      "rel_volume": 1.6332861705295403,
+      "pct_change": -16.350906095551903,
+      "ma_distance": -21.6676951558161,
+      "score": 13.862075799992535,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARWR",
+      "sector": "Biotechnology",
+      "close": 90.68,
+      "rel_volume": 1.2587615753472752,
+      "pct_change": 21.685453569511555,
+      "ma_distance": 15.247624161585618,
+      "score": 12.829856730578785,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 5.6,
+      "rel_volume": 0.37032734353245356,
+      "pct_change": -14.764079147640802,
+      "ma_distance": -64.15759139014142,
+      "score": 12.778664347719749,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEE",
+      "sector": "Leisure Products",
+      "close": 19.5,
+      "rel_volume": 0.03168118187270092,
+      "pct_change": -25.71428571428571,
+      "ma_distance": 36.059168294725104,
+      "score": 12.762217118249975,
+      "catalyst": null
+    },
+    {
+      "symbol": "WAB",
+      "sector": "Machinery",
+      "close": 293.64,
+      "rel_volume": 1.332146344244632,
+      "pct_change": 11.425644139187195,
+      "ma_distance": 11.033174961194723,
+      "score": 11.679978669665585,
+      "catalyst": {
+        "date": "2026-07-22",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "MF",
+      "sector": "unknown",
+      "close": 5.5,
+      "rel_volume": 0.45560019158363435,
+      "pct_change": 31.894484412470025,
+      "ma_distance": -2.5859015232022653,
+      "score": 10.816071274290254,
+      "catalyst": null
+    },
+    {
+      "symbol": "TEL",
+      "sector": "Electrical Equipment",
+      "close": 195.4,
+      "rel_volume": 1.4894067882598747,
+      "pct_change": -6.511650160279406,
+      "ma_distance": -2.549230343396766,
+      "score": 9.787108523897574,
+      "catalyst": {
+        "date": "2026-07-22",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
