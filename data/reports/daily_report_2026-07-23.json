@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-23",
+  "events": [
+    {
+      "at_et": "2026-07-23T09:29:26-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-07-23T09:31:37-04:00",
+      "type": "premarket_chain",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-23T11:32:31-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-07-23T11:33:50-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "DOMO",
+          "ADVB",
+          "ZCMD",
+          "NVCR",
+          "BXBL",
+          "ACI",
+          "SKYQ",
+          "PN",
+          "SSTK",
+          "IMAX",
+          "NVVE",
+          "DFNS",
+          "STM",
+          "DGX",
+          "CLF"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-07-23T11:34:25-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-23T13:05:20-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-23T14:23:36-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-07-23T15:54:21-04:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}

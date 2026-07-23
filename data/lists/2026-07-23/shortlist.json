@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-07-23T15:33:50",
+  "universe_size": 2289,
+  "catalyst_flagged": 87,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "DOMO",
+      "sector": "Technology",
+      "close": 3.94,
+      "rel_volume": 12.794328855644086,
+      "pct_change": 25.07936507936508,
+      "ma_distance": 20.01218397806884,
+      "score": 50.74402721893432,
+      "catalyst": null
+    },
+    {
+      "symbol": "ADVB",
+      "sector": "Health Care",
+      "close": 14.5,
+      "rel_volume": 2.3662605107427552,
+      "pct_change": 18.367346938775512,
+      "ma_distance": 156.88769047336427,
+      "score": 30.989870849102466,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZCMD",
+      "sector": "Diversified Consumer Services",
+      "close": 2.04,
+      "rel_volume": 1.9794058088669655,
+      "pct_change": -52.44755244755245,
+      "ma_distance": 19.351290632093793,
+      "score": 23.875445173418278,
+      "catalyst": null
+    },
+    {
+      "symbol": "NVCR",
+      "sector": "Health Care",
+      "close": 19.255,
+      "rel_volume": 2.6904291365209616,
+      "pct_change": 23.66730892742453,
+      "ma_distance": 19.47383116681662,
+      "score": 21.190427022544995,
+      "catalyst": {
+        "date": "2026-07-23",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "BXBL",
+      "sector": "unknown",
+      "close": 4.7506,
+      "rel_volume": 2.616173286179146,
+      "pct_change": -22.121311475409826,
+      "ma_distance": -50.307531380753126,
+      "score": 20.33496254981575,
+      "catalyst": null
+    },
+    {
+      "symbol": "ACI",
+      "sector": "Retail",
+      "close": 11.305,
+      "rel_volume": 2.760515887054551,
+      "pct_change": -22.568493150684933,
+      "ma_distance": -20.99654075963521,
+      "score": 17.940331782326158,
+      "catalyst": null
+    },
+    {
+      "symbol": "SKYQ",
+      "sector": "Energy",
+      "close": 5.1686,
+      "rel_volume": 1.0998543161306877,
+      "pct_change": 25.147699757869248,
+      "ma_distance": 52.466076696165196,
+      "score": 16.381735466585432,
+      "catalyst": null
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 8.55,
+      "rel_volume": 0.6461348844947413,
+      "pct_change": -8.458244111349028,
+      "ma_distance": 107.32298739088262,
+      "score": 15.022593159630262,
+      "catalyst": null
+    },
+    {
+      "symbol": "SSTK",
+      "sector": "Media",
+      "close": 5.61,
+      "rel_volume": 1.1913235511696023,
+      "pct_change": -23.983739837398367,
+      "ma_distance": -42.52049180327868,
+      "score": 13.830997250763492,
+      "catalyst": null
+    },
+    {
+      "symbol": "IMAX",
+      "sector": "Media",
+      "close": 42.905,
+      "rel_volume": 2.1869705729431854,
+      "pct_change": 9.173027989821895,
+      "ma_distance": 8.77584392865745,
+      "score": 13.437022773250092,
+      "catalyst": {
+        "date": "2026-07-23",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "NVVE",
+      "sector": "Electrical Equipment",
+      "close": 7.96,
+      "rel_volume": 0.5805779433839484,
+      "pct_change": 37.47841105354058,
+      "ma_distance": -8.516262498563389,
+      "score": 13.405469311832043,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 3.95,
+      "rel_volume": 0.2780920430543832,
+      "pct_change": -15.957446808510637,
+      "ma_distance": -73.08705146505233,
+      "score": 12.065371021935338,
+      "catalyst": null
+    },
+    {
+      "symbol": "STM",
+      "sector": "Semiconductors",
+      "close": 54.165,
+      "rel_volume": 1.7322023014279442,
+      "pct_change": -17.644822867568795,
+      "ma_distance": -21.563090557594975,
+      "score": 12.004481805954985,
+      "catalyst": null
+    },
+    {
+      "symbol": "DGX",
+      "sector": "Health Care",
+      "close": 228.24,
+      "rel_volume": 1.8124536335166914,
+      "pct_change": 8.773769241767143,
+      "ma_distance": 9.285745066962882,
+      "score": 11.730478051492138,
+      "catalyst": {
+        "date": "2026-07-23",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CLF",
+      "sector": "Metals & Mining",
+      "close": 10.845,
+      "rel_volume": 1.3064688548515357,
+      "pct_change": 14.761904761904777,
+      "ma_distance": 12.505835364904828,
+      "score": 11.676750374528178,
+      "catalyst": {
+        "date": "2026-07-23",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
