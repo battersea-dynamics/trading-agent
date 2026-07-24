@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-07-24T15:13:22",
+  "universe_size": 2281,
+  "catalyst_flagged": 45,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "JEM",
+      "sector": "Distributors",
+      "close": 5.57,
+      "rel_volume": 3.112431686802598,
+      "pct_change": 17.51054852320675,
+      "ma_distance": -62.15312695349658,
+      "score": 30.09785969315702,
+      "catalyst": null
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 10.1295,
+      "rel_volume": 2.1393831861791814,
+      "pct_change": 7.304025423728822,
+      "ma_distance": 129.66783811359258,
+      "score": 27.50531101896808,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZVRA",
+      "sector": "Pharmaceuticals",
+      "close": 9.855,
+      "rel_volume": 2.7608793060422196,
+      "pct_change": -21.285942492012776,
+      "ma_distance": -26.237790501852466,
+      "score": 25.281405894628662,
+      "catalyst": null
+    },
+    {
+      "symbol": "ADVB",
+      "sector": "Health Care",
+      "close": 18.0451,
+      "rel_volume": 0.6586597213738102,
+      "pct_change": 7.539332538736593,
+      "ma_distance": 188.93009195435428,
+      "score": 24.48405045592028,
+      "catalyst": null
+    },
+    {
+      "symbol": "RNG",
+      "sector": "Technology",
+      "close": 47.5977,
+      "rel_volume": 2.208094686874689,
+      "pct_change": 23.2462454686691,
+      "ma_distance": 19.491633926217887,
+      "score": 21.794586269359183,
+      "catalyst": null
+    },
+    {
+      "symbol": "LODE",
+      "sector": "Energy",
+      "close": 3.005,
+      "rel_volume": 2.014733204249897,
+      "pct_change": -22.551546391752577,
+      "ma_distance": -26.40215527798188,
+      "score": 20.663842574181608,
+      "catalyst": null
+    },
+    {
+      "symbol": "THC",
+      "sector": "Health Care",
+      "close": 240.65,
+      "rel_volume": 1.593840893110966,
+      "pct_change": 20.917495729072453,
+      "ma_distance": 22.63701431232307,
+      "score": 19.21032530789008,
+      "catalyst": {
+        "date": "2026-07-24",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "WSE",
+      "sector": "Financial Services",
+      "close": 11.445,
+      "rel_volume": 2.0828053833772815,
+      "pct_change": -5.256622516556289,
+      "ma_distance": -8.712038126383376,
+      "score": 13.695184922476075,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 4.47,
+      "rel_volume": 0.6002315163682612,
+      "pct_change": 14.615384615384611,
+      "ma_distance": -67.56038883990291,
+      "score": 13.630139464512498,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 3.7,
+      "rel_volume": 0.9551725636103673,
+      "pct_change": 20.915032679738566,
+      "ma_distance": 25.253893026404896,
+      "score": 13.528060140722346,
+      "catalyst": null
+    },
+    {
+      "symbol": "WKC",
+      "sector": "Energy",
+      "close": 40.26,
+      "rel_volume": 1.5998357368688265,
+      "pct_change": 11.000827129859372,
+      "ma_distance": 15.764502911365113,
+      "score": 13.327996141762826,
+      "catalyst": null
+    },
+    {
+      "symbol": "DLR",
+      "sector": "Real Estate",
+      "close": 205.985,
+      "rel_volume": 1.3559236078246493,
+      "pct_change": 14.857254377160706,
+      "ma_distance": 15.147788414506339,
+      "score": 12.865716347681218,
+      "catalyst": null
+    },
+    {
+      "symbol": "SKYQ",
+      "sector": "Energy",
+      "close": 5.05,
+      "rel_volume": 0.9963342391117547,
+      "pct_change": -10.460992907801417,
+      "ma_distance": 42.61508048573851,
+      "score": 12.177084560669966,
+      "catalyst": null
+    },
+    {
+      "symbol": "MXL",
+      "sector": "Semiconductors",
+      "close": 76.67,
+      "rel_volume": 1.1868867603476216,
+      "pct_change": -15.968873301183685,
+      "ma_distance": -16.835248751227077,
+      "score": 11.96697386515793,
+      "catalyst": null
+    },
+    {
+      "symbol": "CHTR",
+      "sector": "Media",
+      "close": 121.06,
+      "rel_volume": 1.5487799932874733,
+      "pct_change": -4.300395256916994,
+      "ma_distance": -9.273498508625984,
+      "score": 11.832319404555065,
+      "catalyst": {
+        "date": "2026-07-24",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
