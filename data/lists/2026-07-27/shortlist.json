@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-07-27T14:15:50",
+  "universe_size": 2216,
+  "catalyst_flagged": 460,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "ENTX",
+      "sector": "Biotechnology",
+      "close": 3.49,
+      "rel_volume": 148.0528947530382,
+      "pct_change": 70.24390243902442,
+      "ma_distance": 93.91582164189472,
+      "score": 73.8235336275957,
+      "catalyst": null
+    },
+    {
+      "symbol": "CAPR",
+      "sector": "Biotechnology",
+      "close": 6.94,
+      "rel_volume": 5.204229449723708,
+      "pct_change": -64.7715736040609,
+      "ma_distance": -67.67883755588673,
+      "score": 25.830503010408272,
+      "catalyst": null
+    },
+    {
+      "symbol": "FBRX",
+      "sector": "Biotechnology",
+      "close": 76.42,
+      "rel_volume": 9.040666915031693,
+      "pct_change": 39.503468419131075,
+      "ma_distance": 105.33351246053604,
+      "score": 25.325778275576173,
+      "catalyst": null
+    },
+    {
+      "symbol": "MPLT",
+      "sector": "Biotechnology",
+      "close": 13.955,
+      "rel_volume": 4.2280280009776385,
+      "pct_change": -61.82986870897156,
+      "ma_distance": -61.9635580631533,
+      "score": 24.35880430304333,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 6.57,
+      "rel_volume": 14.662194519513797,
+      "pct_change": 51.03448275862071,
+      "ma_distance": -49.00830070356127,
+      "score": 23.65768598005371,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIYA",
+      "sector": "Professional Services",
+      "close": 3.58,
+      "rel_volume": 4.085977946332358,
+      "pct_change": 85.49222797927463,
+      "ma_distance": -9.45076068948945,
+      "score": 23.47197166582458,
+      "catalyst": null
+    },
+    {
+      "symbol": "EDBL",
+      "sector": "Food Products",
+      "close": 4.66,
+      "rel_volume": 20.470828035529312,
+      "pct_change": 48.40764331210191,
+      "ma_distance": -1.2617728385121414,
+      "score": 20.198834925126825,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEE",
+      "sector": "Leisure Products",
+      "close": 21.7001,
+      "rel_volume": 0.3724570412310217,
+      "pct_change": 67.30994602929836,
+      "ma_distance": 36.81419834814955,
+      "score": 17.305618813583855,
+      "catalyst": null
+    },
+    {
+      "symbol": "ADVB",
+      "sector": "Health Care",
+      "close": 17.9799,
+      "rel_volume": 0.048361405364306144,
+      "pct_change": -5.269230769230767,
+      "ma_distance": 158.89022158419235,
+      "score": 17.208146166981113,
+      "catalyst": null
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 9.85,
+      "rel_volume": 0.1605500012249083,
+      "pct_change": 23.433583959899735,
+      "ma_distance": 112.8119261099708,
+      "score": 15.846144324199159,
+      "catalyst": null
+    },
+    {
+      "symbol": "STAK",
+      "sector": "Energy",
+      "close": 3.07,
+      "rel_volume": 0.5128882311067846,
+      "pct_change": -66.8824163969795,
+      "ma_distance": -10.775267020271748,
+      "score": 14.956327019480703,
+      "catalyst": null
+    },
+    {
+      "symbol": "WLDS",
+      "sector": "Technology",
+      "close": 3.0013,
+      "rel_volume": 0.19399315618859478,
+      "pct_change": -14.977337110481578,
+      "ma_distance": 78.27739827739828,
+      "score": 11.151905883942122,
+      "catalyst": null
+    },
+    {
+      "symbol": "AGPU",
+      "sector": "Health Care",
+      "close": 7.8399,
+      "rel_volume": 4.578691179646577,
+      "pct_change": 14.451094890510957,
+      "ma_distance": 6.195733152726039,
+      "score": 8.989966313683993,
+      "catalyst": null
+    },
+    {
+      "symbol": "BXBL",
+      "sector": "N/A",
+      "close": 4.11,
+      "rel_volume": 0.3668116424594329,
+      "pct_change": -16.293279022403254,
+      "ma_distance": -54.66328387844024,
+      "score": 8.934068836194779,
+      "catalyst": null
+    },
+    {
+      "symbol": "TRAX",
+      "sector": "Biotechnology",
+      "close": 42.33,
+      "rel_volume": 0.9067404571059319,
+      "pct_change": 19.172297297297284,
+      "ma_distance": 44.94465702765863,
+      "score": 8.450651085178968,
+      "catalyst": null
+    }
+  ]
+}
