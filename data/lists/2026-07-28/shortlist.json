@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-07-28T16:02:29",
+  "universe_size": 2235,
+  "catalyst_flagged": 485,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "EGG",
+      "sector": "Professional Services",
+      "close": 4.42,
+      "rel_volume": 159.18646593384406,
+      "pct_change": 115.60975609756099,
+      "ma_distance": -34.44324965701362,
+      "score": 58.204514497240794,
+      "catalyst": null
+    },
+    {
+      "symbol": "FIRY",
+      "sector": "Media",
+      "close": 10.88,
+      "rel_volume": 197.47194389548073,
+      "pct_change": 30.143540669856478,
+      "ma_distance": 22.92396339396678,
+      "score": 48.484638999282,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 28.89,
+      "rel_volume": 3.8036068164121217,
+      "pct_change": 120.53435114503819,
+      "ma_distance": 131.60265994332187,
+      "score": 38.61321532017239,
+      "catalyst": null
+    },
+    {
+      "symbol": "INLF",
+      "sector": "Machinery",
+      "close": 5.59,
+      "rel_volume": 7.311239933084635,
+      "pct_change": 70.42682926829269,
+      "ma_distance": 23.617868199911534,
+      "score": 20.66349568211527,
+      "catalyst": null
+    },
+    {
+      "symbol": "WLDS",
+      "sector": "Technology",
+      "close": 4.0498,
+      "rel_volume": 1.381223853649784,
+      "pct_change": 27.352201257861637,
+      "ma_distance": 130.69211050982628,
+      "score": 17.083634501207197,
+      "catalyst": null
+    },
+    {
+      "symbol": "REPL",
+      "sector": "Biotechnology",
+      "close": 6.205,
+      "rel_volume": 3.894623484063541,
+      "pct_change": -28.099652375434538,
+      "ma_distance": -41.339131667887784,
+      "score": 13.568256968697956,
+      "catalyst": null
+    },
+    {
+      "symbol": "FFAI",
+      "sector": "Automobiles",
+      "close": 4.1015,
+      "rel_volume": 2.227318893774862,
+      "pct_change": -19.892578125000007,
+      "ma_distance": -83.13562632347197,
+      "score": 12.927706019414895,
+      "catalyst": null
+    },
+    {
+      "symbol": "CAPR",
+      "sector": "Biotechnology",
+      "close": 5.84,
+      "rel_volume": 2.3185116917685624,
+      "pct_change": -16.51179413867048,
+      "ma_distance": -71.51184770545981,
+      "score": 11.422442963076946,
+      "catalyst": null
+    },
+    {
+      "symbol": "ITRI",
+      "sector": "Electrical Equipment",
+      "close": 101.79,
+      "rel_volume": 3.176689620261092,
+      "pct_change": 20.06369426751593,
+      "ma_distance": 20.28005081090663,
+      "score": 10.978373992357934,
+      "catalyst": {
+        "date": "2026-07-28",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "KNSA",
+      "sector": "Biotechnology",
+      "close": 78.925,
+      "rel_volume": 2.093547571970378,
+      "pct_change": 24.222869284646258,
+      "ma_distance": 24.774717804407626,
+      "score": 10.325048364527856,
+      "catalyst": {
+        "date": "2026-07-28",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 9.4501,
+      "rel_volume": 0.036703129202609,
+      "pct_change": -6.803747534516762,
+      "ma_distance": 90.93039700979901,
+      "score": 9.524425268790235,
+      "catalyst": null
+    },
+    {
+      "symbol": "ENTX",
+      "sector": "Biotechnology",
+      "close": 3.64,
+      "rel_volume": 0.7101636887179228,
+      "pct_change": -7.142857142857138,
+      "ma_distance": 90.15280135823433,
+      "score": 9.451235544097255,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLW",
+      "sector": "Electrical Equipment",
+      "close": 122.005,
+      "rel_volume": 2.1186741018496966,
+      "pct_change": -14.896065848214295,
+      "ma_distance": -33.144648229227755,
+      "score": 9.387894591414419,
+      "catalyst": {
+        "date": "2026-07-28",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ADVB",
+      "sector": "Health Care",
+      "close": 10.9,
+      "rel_volume": 0.027884234179767535,
+      "pct_change": -24.094707520891358,
+      "ma_distance": 46.535116670184415,
+      "score": 8.818100941923824,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMKR",
+      "sector": "Semiconductors",
+      "close": 46.46,
+      "rel_volume": 1.97431168110457,
+      "pct_change": -23.472245099654092,
+      "ma_distance": -32.67056982203929,
+      "score": 8.700695885388042,
+      "catalyst": null
+    }
+  ]
+}
