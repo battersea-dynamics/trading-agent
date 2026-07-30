@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-07-30T15:37:29",
+  "universe_size": 2264,
+  "catalyst_flagged": 213,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "NUWE",
+      "sector": "Health Care",
+      "close": 4.08,
+      "rel_volume": 134.003418191439,
+      "pct_change": 115.8730158730159,
+      "ma_distance": 47.799311718891516,
+      "score": 72.7198018257893,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 78.03,
+      "rel_volume": 0.7610839755708573,
+      "pct_change": 55.37634408602151,
+      "ma_distance": 456.0880704392476,
+      "score": 40.03699005509064,
+      "catalyst": null
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 18.0,
+      "rel_volume": 7.5137348039298075,
+      "pct_change": 67.91044776119402,
+      "ma_distance": 223.33393209987426,
+      "score": 32.72244806654528,
+      "catalyst": null
+    },
+    {
+      "symbol": "STKH",
+      "sector": "Food Products",
+      "close": 3.6,
+      "rel_volume": 7.7031905308718684,
+      "pct_change": 32.84132841328414,
+      "ma_distance": 103.5163095709198,
+      "score": 19.032085553190367,
+      "catalyst": null
+    },
+    {
+      "symbol": "CAPR",
+      "sector": "Biotechnology",
+      "close": 3.3199,
+      "rel_volume": 4.090409366517736,
+      "pct_change": -49.468797564687975,
+      "ma_distance": -82.30589865558086,
+      "score": 18.981809245855995,
+      "catalyst": null
+    },
+    {
+      "symbol": "MKTX",
+      "sector": "Financial Services",
+      "close": 163.15,
+      "rel_volume": 8.898638423396969,
+      "pct_change": 29.762188817306928,
+      "ma_distance": 40.458869613878015,
+      "score": 14.659469148968629,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRX",
+      "sector": "Technology",
+      "close": 3.2901,
+      "rel_volume": 8.514369904456803,
+      "pct_change": 24.624999999999986,
+      "ma_distance": 20.318156884256723,
+      "score": 14.332987996413426,
+      "catalyst": {
+        "date": "2026-07-30",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CMCO",
+      "sector": "Machinery",
+      "close": 20.695,
+      "rel_volume": 1.8624425602152512,
+      "pct_change": 41.55266757865938,
+      "ma_distance": 43.55577136514983,
+      "score": 13.07542774010548,
+      "catalyst": {
+        "date": "2026-07-30",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "FFAI",
+      "sector": "Automobiles",
+      "close": 4.84,
+      "rel_volume": 5.669228443670046,
+      "pct_change": 4.761904761904756,
+      "ma_distance": -77.07247749881573,
+      "score": 11.874056751783467,
+      "catalyst": null
+    },
+    {
+      "symbol": "BHC",
+      "sector": "Pharmaceuticals",
+      "close": 5.95,
+      "rel_volume": 4.7251372009649835,
+      "pct_change": 27.136752136752147,
+      "ma_distance": 25.912601841075038,
+      "score": 11.786387223378927,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALNY",
+      "sector": "Biotechnology",
+      "close": 204.95,
+      "rel_volume": 2.3286743931828844,
+      "pct_change": -28.49417347009979,
+      "ma_distance": -29.18326658811578,
+      "score": 10.894142057439389,
+      "catalyst": {
+        "date": "2026-07-30",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "TDOC",
+      "sector": "Health Care",
+      "close": 6.6523,
+      "rel_volume": 3.1418528589781283,
+      "pct_change": -27.53485838779956,
+      "ma_distance": -28.2267896639154,
+      "score": 10.180946228454705,
+      "catalyst": null
+    },
+    {
+      "symbol": "CORT",
+      "sector": "Pharmaceuticals",
+      "close": 121.0705,
+      "rel_volume": 1.7016637833699364,
+      "pct_change": 30.253362022592782,
+      "ma_distance": 31.8154352003571,
+      "score": 8.178021121338078,
+      "catalyst": null
+    },
+    {
+      "symbol": "RTO",
+      "sector": "Commercial Services & Supplies",
+      "close": 23.875,
+      "rel_volume": 3.082103748455164,
+      "pct_change": -18.875297315664287,
+      "ma_distance": -19.52066338569407,
+      "score": 8.097760088705783,
+      "catalyst": null
+    },
+    {
+      "symbol": "WLDS",
+      "sector": "Technology",
+      "close": 3.4498,
+      "rel_volume": 0.18295536171041965,
+      "pct_change": 16.154882154882156,
+      "ma_distance": 78.69981869981872,
+      "score": 8.01889929457281,
+      "catalyst": null
+    }
+  ]
+}
