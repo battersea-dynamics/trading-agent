@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-08-03T14:22:22",
+  "universe_size": 2245,
+  "catalyst_flagged": 691,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "EZRA",
+      "sector": "Insurance",
+      "close": 3.9901,
+      "rel_volume": 657.7402831539318,
+      "pct_change": 119.23626373626372,
+      "ma_distance": 68.02189704179389,
+      "score": 81.84109676467006,
+      "catalyst": null
+    },
+    {
+      "symbol": "FCUV",
+      "sector": "Electrical Equipment",
+      "close": 14.7329,
+      "rel_volume": 1.4754255678775818,
+      "pct_change": 27.007758620689664,
+      "ma_distance": 387.92515317105483,
+      "score": 35.42413138835238,
+      "catalyst": null
+    },
+    {
+      "symbol": "UPC",
+      "sector": "Pharmaceuticals",
+      "close": 6.285,
+      "rel_volume": 21.49037429480868,
+      "pct_change": 98.89240506329114,
+      "ma_distance": 42.840909090909086,
+      "score": 29.82431494815936,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 44.6029,
+      "rel_volume": 0.42616624952825904,
+      "pct_change": 61.13764450867052,
+      "ma_distance": 152.2510243496899,
+      "score": 24.3394887679813,
+      "catalyst": null
+    },
+    {
+      "symbol": "ATKR",
+      "sector": "Electrical Equipment",
+      "close": 93.41,
+      "rel_volume": 11.721324379850804,
+      "pct_change": 28.029057017543867,
+      "ma_distance": 28.327185553059813,
+      "score": 14.815425850991096,
+      "catalyst": {
+        "date": "2026-08-04",
+        "hour": "bmo",
+        "days_until": 1
+      }
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 5.9,
+      "rel_volume": 0.12893256414764867,
+      "pct_change": -34.444444444444436,
+      "ma_distance": -86.25733718438461,
+      "score": 14.336048419760283,
+      "catalyst": null
+    },
+    {
+      "symbol": "STKH",
+      "sector": "Food Products",
+      "close": 3.2201,
+      "rel_volume": 1.6604824931405375,
+      "pct_change": 34.17083333333334,
+      "ma_distance": 73.82925315123215,
+      "score": 13.361463149305793,
+      "catalyst": null
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 8.475,
+      "rel_volume": 0.1882680909065693,
+      "pct_change": -50.92646207295889,
+      "ma_distance": 17.301038062283737,
+      "score": 12.523074029083286,
+      "catalyst": null
+    },
+    {
+      "symbol": "LBGJ",
+      "sector": "Machinery",
+      "close": 3.45,
+      "rel_volume": 0.18047898842043775,
+      "pct_change": -7.754010695187167,
+      "ma_distance": -97.82980650680624,
+      "score": 9.486500340368865,
+      "catalyst": null
+    },
+    {
+      "symbol": "ITGR",
+      "sector": "Health Care",
+      "close": 124.54,
+      "rel_volume": 7.277330476112063,
+      "pct_change": 2.7472980777163705,
+      "ma_distance": 27.79100311935643,
+      "score": 9.031346229548188,
+      "catalyst": {
+        "date": "2026-08-06",
+        "hour": "bmo",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "WLDS",
+      "sector": "Technology",
+      "close": 3.15,
+      "rel_volume": 0.07377875588627072,
+      "pct_change": 23.046874999999993,
+      "ma_distance": 54.0719002201027,
+      "score": 8.72543754426737,
+      "catalyst": null
+    },
+    {
+      "symbol": "FOSL",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 6.0275,
+      "rel_volume": 1.1111316454711624,
+      "pct_change": 21.76767676767676,
+      "ma_distance": 42.916419679905175,
+      "score": 7.619083861991495,
+      "catalyst": null
+    },
+    {
+      "symbol": "FFAI",
+      "sector": "Automobiles",
+      "close": 5.579,
+      "rel_volume": 1.4479257081171113,
+      "pct_change": -5.919055649241146,
+      "ma_distance": -69.01244167962675,
+      "score": 7.321314501131556,
+      "catalyst": null
+    },
+    {
+      "symbol": "STFS",
+      "sector": "Media",
+      "close": 3.925,
+      "rel_volume": 0.027694461639890002,
+      "pct_change": -8.294392523364495,
+      "ma_distance": -59.8774755214267,
+      "score": 6.72674116502094,
+      "catalyst": null
+    },
+    {
+      "symbol": "BCAR",
+      "sector": "N/A",
+      "close": 4.51,
+      "rel_volume": 0.05113766013625843,
+      "pct_change": -11.220472440944887,
+      "ma_distance": -50.82056594515022,
+      "score": 6.663931417558409,
+      "catalyst": null
+    }
+  ]
+}
