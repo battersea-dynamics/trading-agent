@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-04T16:12:21",
+  "universe_size": 2280,
+  "catalyst_flagged": 699,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "AMIX",
+      "sector": "Health Care",
+      "close": 12.1,
+      "rel_volume": 15.056910966338206,
+      "pct_change": 231.50684931506848,
+      "ma_distance": 165.327602841856,
+      "score": 59.29116490899408,
+      "catalyst": null
+    },
+    {
+      "symbol": "MOVE",
+      "sector": "Technology",
+      "close": 14.3239,
+      "rel_volume": 159.86181025321466,
+      "pct_change": 33.121747211895915,
+      "ma_distance": 5.423954603498225,
+      "score": 56.53765371580609,
+      "catalyst": null
+    },
+    {
+      "symbol": "FCUV",
+      "sector": "Electrical Equipment",
+      "close": 10.3,
+      "rel_volume": 0.25807332321106663,
+      "pct_change": -10.434782608695645,
+      "ma_distance": 198.8539097635283,
+      "score": 19.36420637886554,
+      "catalyst": null
+    },
+    {
+      "symbol": "AHCO",
+      "sector": "Health Care",
+      "close": 6.53,
+      "rel_volume": 8.699439199265067,
+      "pct_change": -39.7045244690674,
+      "ma_distance": -38.69408064591842,
+      "score": 18.840785380253113,
+      "catalyst": {
+        "date": "2026-08-04",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 45.6,
+      "rel_volume": 0.1994433441214341,
+      "pct_change": -25.85365853658536,
+      "ma_distance": 130.86328185318413,
+      "score": 15.803453453152674,
+      "catalyst": null
+    },
+    {
+      "symbol": "BLZE",
+      "sector": "Technology",
+      "close": 21.48,
+      "rel_volume": 3.4020178744029503,
+      "pct_change": 37.780628608082104,
+      "ma_distance": 51.00706527470209,
+      "score": 14.155606471964944,
+      "catalyst": null
+    },
+    {
+      "symbol": "LBGJ",
+      "sector": "Machinery",
+      "close": 3.18,
+      "rel_volume": 0.29879309713946295,
+      "pct_change": -24.10501193317423,
+      "ma_distance": -97.83055842654086,
+      "score": 13.03975629832669,
+      "catalyst": null
+    },
+    {
+      "symbol": "LIFE",
+      "sector": "Insurance",
+      "close": 28.5,
+      "rel_volume": 3.9801679631642277,
+      "pct_change": 24.83574244415244,
+      "ma_distance": 47.06641209556739,
+      "score": 12.795387488913216,
+      "catalyst": null
+    },
+    {
+      "symbol": "INHD",
+      "sector": "Metals & Mining",
+      "close": 8.851,
+      "rel_volume": 3.5875372576251805,
+      "pct_change": -6.040339702760075,
+      "ma_distance": -76.02134807108798,
+      "score": 12.685453219633045,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 5.345,
+      "rel_volume": 0.18784806239681864,
+      "pct_change": -19.985029940119762,
+      "ma_distance": -86.51903602910576,
+      "score": 11.418836894851662,
+      "catalyst": null
+    },
+    {
+      "symbol": "W",
+      "sector": "Retail",
+      "close": 116.14,
+      "rel_volume": 2.1291865883339938,
+      "pct_change": 30.04142873138506,
+      "ma_distance": 31.016977832929083,
+      "score": 10.874980507685219,
+      "catalyst": {
+        "date": "2026-08-04",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "JBGS",
+      "sector": "Real Estate",
+      "close": 11.695,
+      "rel_volume": 2.653489573927589,
+      "pct_change": -17.814476458186927,
+      "ma_distance": -19.47810520517764,
+      "score": 9.86653292225902,
+      "catalyst": {
+        "date": "2026-08-04",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "KNF",
+      "sector": "Construction",
+      "close": 70.425,
+      "rel_volume": 3.562090696000502,
+      "pct_change": -10.673515981735166,
+      "ma_distance": -10.777066190304255,
+      "score": 9.597157658715894,
+      "catalyst": {
+        "date": "2026-08-04",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CLPT",
+      "sector": "Health Care",
+      "close": 12.83,
+      "rel_volume": 3.816025023852636,
+      "pct_change": -16.579973992197665,
+      "ma_distance": -17.430897448273637,
+      "score": 9.577351223659726,
+      "catalyst": null
+    },
+    {
+      "symbol": "BWEN",
+      "sector": "Electrical Equipment",
+      "close": 5.3754,
+      "rel_volume": 2.9569914802958217,
+      "pct_change": 31.749999999999996,
+      "ma_distance": 19.102642220129614,
+      "score": 9.577153509697043,
+      "catalyst": null
+    }
+  ]
+}
