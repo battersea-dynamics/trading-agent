@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-05T15:58:45",
+  "universe_size": 2316,
+  "catalyst_flagged": 525,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "YXT",
+      "sector": "Technology",
+      "close": 12.65,
+      "rel_volume": 7431.780808012451,
+      "pct_change": 386.53846153846155,
+      "ma_distance": 292.16902019747954,
+      "score": 111.9451753496471,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZYBT",
+      "sector": "Pharmaceuticals",
+      "close": 3.2796,
+      "rel_volume": 2.9836542696174613,
+      "pct_change": 156.21874999999997,
+      "ma_distance": 110.90336168228805,
+      "score": 26.175004896860706,
+      "catalyst": null
+    },
+    {
+      "symbol": "INLF",
+      "sector": "Machinery",
+      "close": 7.29,
+      "rel_volume": 9.538468147204412,
+      "pct_change": 129.2452830188679,
+      "ma_distance": 111.18192352259564,
+      "score": 25.115161559542056,
+      "catalyst": null
+    },
+    {
+      "symbol": "JLHL",
+      "sector": "Construction",
+      "close": 12.44,
+      "rel_volume": 4.450539265635082,
+      "pct_change": 129.52029520295204,
+      "ma_distance": 65.07430997876858,
+      "score": 21.623262185528173,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMIX",
+      "sector": "Health Care",
+      "close": 13.3765,
+      "rel_volume": 1.1117093591230212,
+      "pct_change": -31.4025641025641,
+      "ma_distance": 156.8994987420538,
+      "score": 14.733729465284465,
+      "catalyst": null
+    },
+    {
+      "symbol": "FCUV",
+      "sector": "Electrical Equipment",
+      "close": 10.01,
+      "rel_volume": 0.033484618330288866,
+      "pct_change": -5.566037735849055,
+      "ma_distance": 161.2553830092653,
+      "score": 12.541939906073353,
+      "catalyst": null
+    },
+    {
+      "symbol": "BLMN",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 12.07,
+      "rel_volume": 3.610454004545873,
+      "pct_change": 35.313901345291484,
+      "ma_distance": 42.66296318184505,
+      "score": 12.121467234858287,
+      "catalyst": {
+        "date": "2026-08-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "GTE",
+      "sector": "Energy",
+      "close": 9.84,
+      "rel_volume": 55.833792125662,
+      "pct_change": 44.07027818448023,
+      "ma_distance": 45.28274029233721,
+      "score": 12.09782572558137,
+      "catalyst": null
+    },
+    {
+      "symbol": "APPS",
+      "sector": "Technology",
+      "close": 13.07,
+      "rel_volume": 4.875651799139029,
+      "pct_change": 37.43427970557309,
+      "ma_distance": 44.296320830228254,
+      "score": 11.044573987037557,
+      "catalyst": null
+    },
+    {
+      "symbol": "SEDG",
+      "sector": "Semiconductors",
+      "close": 37.55,
+      "rel_volume": 3.7385101059463275,
+      "pct_change": -22.990155865463496,
+      "ma_distance": -22.089778303403783,
+      "score": 9.90338006502223,
+      "catalyst": {
+        "date": "2026-08-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 47.82,
+      "rel_volume": 0.26783674588443873,
+      "pct_change": 0.9712837837837857,
+      "ma_distance": 125.28496286472775,
+      "score": 9.413558531406748,
+      "catalyst": null
+    },
+    {
+      "symbol": "VPG",
+      "sector": "Electrical Equipment",
+      "close": 76.95,
+      "rel_volume": 2.8458194181858145,
+      "pct_change": -23.811881188118807,
+      "ma_distance": -24.96270075768657,
+      "score": 8.86642318326854,
+      "catalyst": {
+        "date": "2026-08-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "BV",
+      "sector": "Commercial Services & Supplies",
+      "close": 10.56,
+      "rel_volume": 4.040040584718952,
+      "pct_change": -19.512195121951212,
+      "ma_distance": -24.681716058628446,
+      "score": 8.153209536111802,
+      "catalyst": null
+    },
+    {
+      "symbol": "PODD",
+      "sector": "Health Care",
+      "close": 132.13,
+      "rel_volume": 2.7923115240467267,
+      "pct_change": -20.794868720776886,
+      "ma_distance": -19.14401458871334,
+      "score": 8.051378586803745,
+      "catalyst": {
+        "date": "2026-08-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "LBGJ",
+      "sector": "Machinery",
+      "close": 3.71,
+      "rel_volume": 0.43224356155011484,
+      "pct_change": 4.2134831460674125,
+      "ma_distance": -97.2346348935409,
+      "score": 8.001900597528754,
+      "catalyst": null
+    }
+  ]
+}
