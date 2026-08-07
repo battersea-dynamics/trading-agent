@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-08-07T00:07:20",
+  "universe_size": 2411,
+  "catalyst_flagged": 89,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "WYHG",
+      "sector": "unknown",
+      "close": 9.83,
+      "rel_volume": 1126.1765743431426,
+      "pct_change": 194.25851643417352,
+      "ma_distance": 158.35922182097258,
+      "score": 89.47374145526618,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLRO",
+      "sector": "Communications",
+      "close": 9.8,
+      "rel_volume": 79.71247885565893,
+      "pct_change": 166.304347826087,
+      "ma_distance": 63.87959866220736,
+      "score": 34.38592489107749,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZTG",
+      "sector": "Professional Services",
+      "close": 10.05,
+      "rel_volume": 6.112032114750923,
+      "pct_change": 47.79411764705884,
+      "ma_distance": 187.2659711304845,
+      "score": 25.363064996879626,
+      "catalyst": null
+    },
+    {
+      "symbol": "DSY",
+      "sector": "Consumer products",
+      "close": 3.45,
+      "rel_volume": 281.1106313726793,
+      "pct_change": 3.293413173652705,
+      "ma_distance": 1.2842549955889948,
+      "score": 16.432352653486245,
+      "catalyst": null
+    },
+    {
+      "symbol": "TDUP",
+      "sector": "Retail",
+      "close": 3.11,
+      "rel_volume": 16.366317233651756,
+      "pct_change": -50.477707006369435,
+      "ma_distance": -49.90940205355346,
+      "score": 15.610805811970554,
+      "catalyst": null
+    },
+    {
+      "symbol": "YXT",
+      "sector": "Technology",
+      "close": 7.95,
+      "rel_volume": 1.0541159910471227,
+      "pct_change": -66.06914212548016,
+      "ma_distance": 88.29269448030033,
+      "score": 15.59254346814171,
+      "catalyst": null
+    },
+    {
+      "symbol": "LBGJ",
+      "sector": "Machinery",
+      "close": 4.12,
+      "rel_volume": 11.871013963199577,
+      "pct_change": 16.384180790960453,
+      "ma_distance": -96.61007187141311,
+      "score": 14.616829511734384,
+      "catalyst": null
+    },
+    {
+      "symbol": "WLDS",
+      "sector": "Technology",
+      "close": 4.24,
+      "rel_volume": 2.0022719815178185,
+      "pct_change": 46.71280276816609,
+      "ma_distance": 88.06830782878686,
+      "score": 14.200509323796656,
+      "catalyst": null
+    },
+    {
+      "symbol": "PAVS",
+      "sector": "Consumer products",
+      "close": 6.88,
+      "rel_volume": 24.687901609926918,
+      "pct_change": 40.12219959266802,
+      "ma_distance": 42.54635864498083,
+      "score": 13.67337690224861,
+      "catalyst": null
+    },
+    {
+      "symbol": "HNST",
+      "sector": "Consumer products",
+      "close": 5.42,
+      "rel_volume": 16.929913483695874,
+      "pct_change": 40.77922077922078,
+      "ma_distance": 41.008130081300806,
+      "score": 13.313170144568176,
+      "catalyst": null
+    },
+    {
+      "symbol": "ASPN",
+      "sector": "Chemicals",
+      "close": 6.89,
+      "rel_volume": 15.416592915463431,
+      "pct_change": 37.5249500998004,
+      "ma_distance": 39.191919191919176,
+      "score": 12.674844619882261,
+      "catalyst": null
+    },
+    {
+      "symbol": "IOVA",
+      "sector": "Biotechnology",
+      "close": 6.21,
+      "rel_volume": 4.501043835244552,
+      "pct_change": 43.08755760368664,
+      "ma_distance": 33.98780948271211,
+      "score": 12.541893346064755,
+      "catalyst": null
+    },
+    {
+      "symbol": "BLLN",
+      "sector": "Health Care",
+      "close": 91.65,
+      "rel_volume": 5.85252604250936,
+      "pct_change": -38.8877775555111,
+      "ma_distance": -30.437224623628577,
+      "score": 12.093344744227132,
+      "catalyst": null
+    },
+    {
+      "symbol": "FCUV",
+      "sector": "Electrical Equipment",
+      "close": 8.21,
+      "rel_volume": 0.05248482400000068,
+      "pct_change": -19.58863858961802,
+      "ma_distance": 95.49946422193122,
+      "score": 12.047551802159603,
+      "catalyst": {
+        "date": "2026-08-10",
+        "hour": "",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "BYAH",
+      "sector": "Retail",
+      "close": 3.22,
+      "rel_volume": 102.91787581894853,
+      "pct_change": 21.923513820522537,
+      "ma_distance": -5.234192209779696,
+      "score": 11.939515142809189,
+      "catalyst": null
+    }
+  ]
+}

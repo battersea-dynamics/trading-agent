@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-06",
+  "events": [
+    {
+      "at_et": "2026-08-06T09:46:23-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-08-06T20:07:20-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "WYHG",
+          "CLRO",
+          "ZTG",
+          "DSY",
+          "TDUP",
+          "YXT",
+          "LBGJ",
+          "WLDS",
+          "PAVS",
+          "HNST",
+          "ASPN",
+          "IOVA",
+          "BLLN",
+          "FCUV",
+          "BYAH"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-08-06T20:07:20-04:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}
