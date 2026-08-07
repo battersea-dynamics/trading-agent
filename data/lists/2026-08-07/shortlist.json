@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-08-07T14:03:12",
+  "universe_size": 2411,
+  "catalyst_flagged": 90,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "DSY",
+      "sector": "Consumer products",
+      "close": 5.74,
+      "rel_volume": 44.76397027076694,
+      "pct_change": 66.3768115942029,
+      "ma_distance": 70.74415000498252,
+      "score": 70.32953359828245,
+      "catalyst": null
+    },
+    {
+      "symbol": "DOCS",
+      "sector": "Health Care",
+      "close": 32.11,
+      "rel_volume": 6.75266614704327,
+      "pct_change": 55.42110358180058,
+      "ma_distance": 50.011679514132204,
+      "score": 27.05683632776246,
+      "catalyst": null
+    },
+    {
+      "symbol": "PN",
+      "sector": "Electrical Equipment",
+      "close": 3.0946,
+      "rel_volume": 0.6588344708894355,
+      "pct_change": -62.67068757539204,
+      "ma_distance": -61.2957288474767,
+      "score": 20.067193385684728,
+      "catalyst": null
+    },
+    {
+      "symbol": "DV",
+      "sector": "Media",
+      "close": 13.305,
+      "rel_volume": 8.264448740524806,
+      "pct_change": 13.620836891545677,
+      "ma_distance": 16.55205641452411,
+      "score": 16.50413957449313,
+      "catalyst": null
+    },
+    {
+      "symbol": "AXIA",
+      "sector": "Utilities",
+      "close": 10.22,
+      "rel_volume": 9.79547073166713,
+      "pct_change": -2.387774594078319,
+      "ma_distance": 0.4570698383054011,
+      "score": 15.082571591796858,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRSR",
+      "sector": "Technology",
+      "close": 14.4903,
+      "rel_volume": 1.7772589587604861,
+      "pct_change": 36.57210179076343,
+      "ma_distance": 42.06524669722297,
+      "score": 13.73816719782158,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZTG",
+      "sector": "Professional Services",
+      "close": 9.985,
+      "rel_volume": 0.40155663065959984,
+      "pct_change": -0.6467661691542416,
+      "ma_distance": 158.54479544277575,
+      "score": 13.550571354489545,
+      "catalyst": null
+    },
+    {
+      "symbol": "LBGJ",
+      "sector": "Machinery",
+      "close": 3.2498,
+      "rel_volume": 0.15165284956120573,
+      "pct_change": -21.121359223300974,
+      "ma_distance": -97.0332975785654,
+      "score": 13.246981053874098,
+      "catalyst": null
+    },
+    {
+      "symbol": "WYHG",
+      "sector": "unknown",
+      "close": 5.215,
+      "rel_volume": 0.3286710778278846,
+      "pct_change": -46.94811800610377,
+      "ma_distance": 27.544157425931452,
+      "score": 12.91341042721674,
+      "catalyst": null
+    },
+    {
+      "symbol": "FIGS",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 15.335,
+      "rel_volume": 1.1310943088057457,
+      "pct_change": 36.43238434163701,
+      "ma_distance": 49.29659738110306,
+      "score": 12.777621877235749,
+      "catalyst": null
+    },
+    {
+      "symbol": "XPOF",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 4.81,
+      "rel_volume": 2.599497404273695,
+      "pct_change": -24.37106918238995,
+      "ma_distance": -26.67124018598979,
+      "score": 12.739119621469325,
+      "catalyst": null
+    },
+    {
+      "symbol": "TEAM",
+      "sector": "Technology",
+      "close": 143.62,
+      "rel_volume": 1.528829491410014,
+      "pct_change": 30.36216755922665,
+      "ma_distance": 49.00233691522003,
+      "score": 12.301271204072886,
+      "catalyst": null
+    },
+    {
+      "symbol": "EMBC",
+      "sector": "Health Care",
+      "close": 4.44,
+      "rel_volume": 1.680101540909241,
+      "pct_change": 26.85714285714287,
+      "ma_distance": 29.474374863308295,
+      "score": 12.278120204103223,
+      "catalyst": {
+        "date": "2026-08-07",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "TTD",
+      "sector": "Media",
+      "close": 13.915,
+      "rel_volume": 2.7001097798694316,
+      "pct_change": -21.25070741369554,
+      "ma_distance": -24.856895993087814,
+      "score": 12.146515322121504,
+      "catalyst": null
+    },
+    {
+      "symbol": "SEZL",
+      "sector": "Financial Services",
+      "close": 121.93,
+      "rel_volume": 1.6104686183707762,
+      "pct_change": -31.703355178401388,
+      "ma_distance": -27.713271933386885,
+      "score": 11.960621461330184,
+      "catalyst": null
+    }
+  ]
+}
