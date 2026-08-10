@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-10T14:17:15",
+  "universe_size": 2422,
+  "catalyst_flagged": 232,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "SION",
+      "sector": "Biotechnology",
+      "close": 4.25,
+      "rel_volume": 27.41848410283028,
+      "pct_change": -91.67319749216301,
+      "ma_distance": -90.8715029801858,
+      "score": 68.13452049917879,
+      "catalyst": null
+    },
+    {
+      "symbol": "TENX",
+      "sector": "Biotechnology",
+      "close": 1.475,
+      "rel_volume": 16.986112384644972,
+      "pct_change": -89.02529761904762,
+      "ma_distance": -90.05830216021299,
+      "score": 53.77508056224208,
+      "catalyst": null
+    },
+    {
+      "symbol": "SLN",
+      "sector": "Biotechnology",
+      "close": 16.65,
+      "rel_volume": 16.979870547776816,
+      "pct_change": 39.33054393305439,
+      "ma_distance": 50.95879232966134,
+      "score": 39.05490318827344,
+      "catalyst": null
+    },
+    {
+      "symbol": "ABCL",
+      "sector": "Life Sciences Tools & Services",
+      "close": 9.41,
+      "rel_volume": 4.46059016008973,
+      "pct_change": 35.786435786435796,
+      "ma_distance": 57.1804401386395,
+      "score": 22.297768414793957,
+      "catalyst": null
+    },
+    {
+      "symbol": "INHD",
+      "sector": "Metals & Mining",
+      "close": 6.1657,
+      "rel_volume": 3.313863706556692,
+      "pct_change": 19.83867832847426,
+      "ma_distance": -79.86299244743826,
+      "score": 18.350365415362475,
+      "catalyst": null
+    },
+    {
+      "symbol": "AIOT",
+      "sector": "Electrical Equipment",
+      "close": 3.0814,
+      "rel_volume": 3.30511389700528,
+      "pct_change": -30.12698412698413,
+      "ma_distance": -24.990262901655303,
+      "score": 18.25977046559179,
+      "catalyst": {
+        "date": "2026-08-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CLRO",
+      "sector": "Communications",
+      "close": 12.794,
+      "rel_volume": 0.20045912583524314,
+      "pct_change": 25.80137659783678,
+      "ma_distance": 110.5488356784333,
+      "score": 16.365618153382655,
+      "catalyst": {
+        "date": "2026-08-12",
+        "hour": "",
+        "days_until": 2
+      }
+    },
+    {
+      "symbol": "STFS",
+      "sector": "Media",
+      "close": 4.3702,
+      "rel_volume": 2.6622288316622416,
+      "pct_change": 24.507122507122507,
+      "ma_distance": -34.25339267808881,
+      "score": 14.04552538361277,
+      "catalyst": null
+    },
+    {
+      "symbol": "VATE",
+      "sector": "Construction",
+      "close": 6.51,
+      "rel_volume": 1.131591560096184,
+      "pct_change": -46.24277456647399,
+      "ma_distance": -24.08163265306122,
+      "score": 13.864547476315956,
+      "catalyst": null
+    },
+    {
+      "symbol": "NABL",
+      "sector": "Technology",
+      "close": 3.26,
+      "rel_volume": 0.8107796838328938,
+      "pct_change": -34.669338677354716,
+      "ma_distance": -29.368432455855277,
+      "score": 13.207229673227175,
+      "catalyst": {
+        "date": "2026-08-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ZTG",
+      "sector": "Professional Services",
+      "close": 9.87,
+      "rel_volume": 0.4221168686143424,
+      "pct_change": 7.282608695652174,
+      "ma_distance": 136.0396986727251,
+      "score": 12.3999993557697,
+      "catalyst": null
+    },
+    {
+      "symbol": "YJ",
+      "sector": "Retail",
+      "close": 2.39,
+      "rel_volume": 0.3594720484375543,
+      "pct_change": -29.70588235294117,
+      "ma_distance": 67.12936092249815,
+      "score": 11.937357539511858,
+      "catalyst": null
+    },
+    {
+      "symbol": "ACHR",
+      "sector": "Aerospace & Defense",
+      "close": 6.79,
+      "rel_volume": 1.418514551734028,
+      "pct_change": 21.466905187835426,
+      "ma_distance": 37.784090909090914,
+      "score": 11.653342874743077,
+      "catalyst": {
+        "date": "2026-08-10",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "MB",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 5.91,
+      "rel_volume": 0.18568546978513764,
+      "pct_change": -33.74439461883408,
+      "ma_distance": 41.868316916056465,
+      "score": 10.67228593143529,
+      "catalyst": null
+    },
+    {
+      "symbol": "SXTC",
+      "sector": "Pharmaceuticals",
+      "close": 3.95,
+      "rel_volume": 0.1325665188216335,
+      "pct_change": 8.516483516483518,
+      "ma_distance": -95.24500273863767,
+      "score": 9.703149609672984,
+      "catalyst": null
+    }
+  ]
+}
