@@ -1,0 +1,174 @@
+{
+  "generated_at": "2026-08-11T14:08:29",
+  "universe_size": 2438,
+  "catalyst_flagged": 157,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "ELPW",
+      "sector": "Electrical Equipment",
+      "close": 4.7,
+      "rel_volume": 11.778399745490173,
+      "pct_change": 17.20698254364091,
+      "ma_distance": -46.93253092309169,
+      "score": 46.71709489014947,
+      "catalyst": null
+    },
+    {
+      "symbol": "QMCO",
+      "sector": "Technology",
+      "close": 18.5,
+      "rel_volume": 5.475263363392075,
+      "pct_change": 57.045840407470294,
+      "ma_distance": 67.40566464573342,
+      "score": 43.34512567948644,
+      "catalyst": null
+    },
+    {
+      "symbol": "RNW",
+      "sector": "Utilities",
+      "close": 6.815,
+      "rel_volume": 8.005986647782914,
+      "pct_change": 11.174551386623174,
+      "ma_distance": 10.185933710590135,
+      "score": 32.58626344422155,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "",
+        "days_until": 2
+      }
+    },
+    {
+      "symbol": "WYHG",
+      "sector": "unknown",
+      "close": 7.5801,
+      "rel_volume": 2.6223337917068545,
+      "pct_change": 32.519230769230774,
+      "ma_distance": 81.43846731996418,
+      "score": 26.125433371707064,
+      "catalyst": null
+    },
+    {
+      "symbol": "ONON",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 31.3,
+      "rel_volume": 3.0938393152632173,
+      "pct_change": -19.288292934502323,
+      "ma_distance": -16.133008225931793,
+      "score": 21.404710966216616,
+      "catalyst": {
+        "date": "2026-08-11",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SION",
+      "sector": "Biotechnology",
+      "close": 5.24,
+      "rel_volume": 2.3409314158286443,
+      "pct_change": 16.44444444444445,
+      "ma_distance": -88.24716833015587,
+      "score": 20.610200302311,
+      "catalyst": null
+    },
+    {
+      "symbol": "NIQ",
+      "sector": "Media",
+      "close": 15.36,
+      "rel_volume": 1.2184643662653711,
+      "pct_change": 31.506849315068493,
+      "ma_distance": 36.78867218808441,
+      "score": 16.172721323994505,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOPN",
+      "sector": "Semiconductors",
+      "close": 5.36,
+      "rel_volume": 0.9480686270053417,
+      "pct_change": 27.315914489311172,
+      "ma_distance": 40.41522038116446,
+      "score": 14.266171468536704,
+      "catalyst": null
+    },
+    {
+      "symbol": "LIF",
+      "sector": "Technology",
+      "close": 47.36,
+      "rel_volume": 1.0923995378425848,
+      "pct_change": -26.698653459216843,
+      "ma_distance": -15.545073982764857,
+      "score": 13.348517967333306,
+      "catalyst": null
+    },
+    {
+      "symbol": "BWEN",
+      "sector": "Electrical Equipment",
+      "close": 5.39,
+      "rel_volume": 1.223029363294212,
+      "pct_change": 20.852017937219724,
+      "ma_distance": 17.56366214079285,
+      "score": 13.098276021994947,
+      "catalyst": {
+        "date": "2026-08-11",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "FRMI",
+      "sector": "Real Estate",
+      "close": 7.195,
+      "rel_volume": 1.1388802718961009,
+      "pct_change": 22.363945578231302,
+      "ma_distance": 13.656109312060666,
+      "score": 13.02225433567233,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 2
+      }
+    },
+    {
+      "symbol": "ACVA",
+      "sector": "Commercial Services & Supplies",
+      "close": 6.975,
+      "rel_volume": 2.8771979028670747,
+      "pct_change": -3.925619834710746,
+      "ma_distance": -9.150113969391086,
+      "score": 12.769343952985155,
+      "catalyst": null
+    },
+    {
+      "symbol": "BW",
+      "sector": "Electrical Equipment",
+      "close": 10.445,
+      "rel_volume": 1.9479794106294905,
+      "pct_change": 17.623873873873865,
+      "ma_distance": 6.4784137825577295,
+      "score": 12.271268722366095,
+      "catalyst": null
+    },
+    {
+      "symbol": "JWEL",
+      "sector": "Retail",
+      "close": 3.23,
+      "rel_volume": 0.12836588934829163,
+      "pct_change": -19.25,
+      "ma_distance": 65.81662119115884,
+      "score": 11.579919963050804,
+      "catalyst": null
+    },
+    {
+      "symbol": "STKH",
+      "sector": "Food Products",
+      "close": 3.48,
+      "rel_volume": 0.08935488874467055,
+      "pct_change": -19.069767441860463,
+      "ma_distance": 61.54113960775211,
+      "score": 11.241486337748142,
+      "catalyst": null
+    }
+  ]
+}
