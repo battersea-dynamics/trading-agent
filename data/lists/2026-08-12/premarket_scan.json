@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-08-12T08:51:23-04:00",
+  "session_date": "2026-08-12",
+  "universe_size": 2434,
+  "phase1_active": 100,
+  "shortlist": [
+    {
+      "symbol": "DFTX",
+      "prev_close": 40.91,
+      "last_pm_price": 47.7999,
+      "pm_gap_pct": 16.84,
+      "pm_volume": 731079,
+      "avg_pm_volume": 3806,
+      "rel_pm_volume": 192.07,
+      "score": 13.577
+    },
+    {
+      "symbol": "GLBE",
+      "prev_close": 40.86,
+      "last_pm_price": 42.99,
+      "pm_gap_pct": 5.21,
+      "pm_volume": 142125,
+      "avg_pm_volume": 1652,
+      "rel_pm_volume": 86.0,
+      "score": 7.731
+    },
+    {
+      "symbol": "PLAG",
+      "prev_close": 5.81,
+      "last_pm_price": 1.29,
+      "pm_gap_pct": -77.8,
+      "pm_volume": 10983997,
+      "avg_pm_volume": 8103074,
+      "rel_pm_volume": 1.36,
+      "score": 6.895
+    },
+    {
+      "symbol": "SVV",
+      "prev_close": 11.8,
+      "last_pm_price": 10.45,
+      "pm_gap_pct": -11.44,
+      "pm_volume": 155347,
+      "avg_pm_volume": 3212,
+      "rel_pm_volume": 48.36,
+      "score": 6.827
+    },
+    {
+      "symbol": "HYLN",
+      "prev_close": 3.92,
+      "last_pm_price": 5.14,
+      "pm_gap_pct": 31.12,
+      "pm_volume": 691657,
+      "avg_pm_volume": 62365,
+      "rel_pm_volume": 11.09,
+      "score": 6.379
+    },
+    {
+      "symbol": "SMWB",
+      "prev_close": 7.25,
+      "last_pm_price": 8.25,
+      "pm_gap_pct": 13.79,
+      "pm_volume": 79454,
+      "avg_pm_volume": 2147,
+      "rel_pm_volume": 37.0,
+      "score": 6.165
+    },
+    {
+      "symbol": "CAVA",
+      "prev_close": 60.81,
+      "last_pm_price": 71.5707,
+      "pm_gap_pct": 17.7,
+      "pm_volume": 200636,
+      "avg_pm_volume": 11592,
+      "rel_pm_volume": 17.31,
+      "score": 5.574
+    },
+    {
+      "symbol": "VELO",
+      "prev_close": 13.69,
+      "last_pm_price": 16.92,
+      "pm_gap_pct": 23.59,
+      "pm_volume": 174673,
+      "avg_pm_volume": 35438,
+      "rel_pm_volume": 4.93,
+      "score": 5.56
+    },
+    {
+      "symbol": "NRGV",
+      "prev_close": 3.58,
+      "last_pm_price": 4.15,
+      "pm_gap_pct": 15.92,
+      "pm_volume": 451336,
+      "avg_pm_volume": 24294,
+      "rel_pm_volume": 18.58,
+      "score": 5.488
+    },
+    {
+      "symbol": "UAMY",
+      "prev_close": 6.58,
+      "last_pm_price": 5.402,
+      "pm_gap_pct": -17.9,
+      "pm_volume": 818697,
+      "avg_pm_volume": 117846,
+      "rel_pm_volume": 6.95,
+      "score": 5.44
+    },
+    {
+      "symbol": "ANNX",
+      "prev_close": 5.34,
+      "last_pm_price": 5.0,
+      "pm_gap_pct": -6.37,
+      "pm_volume": 130622,
+      "avg_pm_volume": 6011,
+      "rel_pm_volume": 21.73,
+      "score": 5.185
+    },
+    {
+      "symbol": "OCTV",
+      "prev_close": 19.72,
+      "last_pm_price": 17.2135,
+      "pm_gap_pct": -12.71,
+      "pm_volume": 123817,
+      "avg_pm_volume": 14589,
+      "rel_pm_volume": 8.49,
+      "score": 5.089
+    }
+  ]
+}

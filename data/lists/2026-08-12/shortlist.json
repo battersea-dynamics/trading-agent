@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-08-12T14:18:11",
+  "universe_size": 2434,
+  "catalyst_flagged": 105,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "PLAG",
+      "sector": "Food Products",
+      "close": 1.2589,
+      "rel_volume": 1.156109746262073,
+      "pct_change": -78.33218588640275,
+      "ma_distance": 31.143613142488075,
+      "score": 33.01036392567923,
+      "catalyst": {
+        "date": "2026-08-12",
+        "hour": "",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ZTG",
+      "sector": "Professional Services",
+      "close": 10.24,
+      "rel_volume": 2.605228833859631,
+      "pct_change": 10.463861920172606,
+      "ma_distance": 111.63583755296065,
+      "score": 27.025123719109253,
+      "catalyst": null
+    },
+    {
+      "symbol": "RSKD",
+      "sector": "Technology",
+      "close": 5.745,
+      "rel_volume": 2.4979663268735246,
+      "pct_change": 9.013282732447829,
+      "ma_distance": 10.300470384947685,
+      "score": 19.830448761424183,
+      "catalyst": {
+        "date": "2026-08-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SVV",
+      "sector": "Retail",
+      "close": 11.04,
+      "rel_volume": 2.886979163323379,
+      "pct_change": -6.440677966101707,
+      "ma_distance": 6.852497096399538,
+      "score": 19.489268867704848,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 4.43,
+      "rel_volume": 0.3240384100182549,
+      "pct_change": 24.089635854341733,
+      "ma_distance": 139.9939324333109,
+      "score": 19.005886415479335,
+      "catalyst": null
+    },
+    {
+      "symbol": "CZR",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 29.675,
+      "rel_volume": 2.6567534181651027,
+      "pct_change": -0.21856086079353643,
+      "ma_distance": -0.8387355476842803,
+      "score": 16.074710045730612,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRWV",
+      "sector": "Technology",
+      "close": 108.965,
+      "rel_volume": 1.3812394436861377,
+      "pct_change": 20.643268379096558,
+      "ma_distance": 38.09294485913796,
+      "score": 15.839398706103177,
+      "catalyst": null
+    },
+    {
+      "symbol": "EROC",
+      "sector": "Electrical Equipment",
+      "close": 14.1287,
+      "rel_volume": 1.2343880045690423,
+      "pct_change": 25.58844444444445,
+      "ma_distance": 28.92325942148007,
+      "score": 15.578099334247662,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMWB",
+      "sector": "Technology",
+      "close": 8.26,
+      "rel_volume": 1.5352231271221264,
+      "pct_change": 13.931034482758617,
+      "ma_distance": 17.52988047808764,
+      "score": 15.268282249261453,
+      "catalyst": {
+        "date": "2026-08-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "OCTV",
+      "sector": "Technology",
+      "close": 18.105,
+      "rel_volume": 1.9231507266047316,
+      "pct_change": -8.189655172413786,
+      "ma_distance": 2.0531826444767103,
+      "score": 15.189801932480972,
+      "catalyst": {
+        "date": "2026-08-12",
+        "hour": "",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SION",
+      "sector": "Biotechnology",
+      "close": 5.835,
+      "rel_volume": 0.8377728639058369,
+      "pct_change": 14.41176470588236,
+      "ma_distance": -86.33825405930627,
+      "score": 15.11698199755609,
+      "catalyst": null
+    },
+    {
+      "symbol": "NBIS",
+      "sector": "Technology",
+      "close": 232.96,
+      "rel_volume": 0.9265347851560345,
+      "pct_change": 20.56098949438494,
+      "ma_distance": 20.313177846179283,
+      "score": 13.700188248097373,
+      "catalyst": {
+        "date": "2026-08-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "WXM",
+      "sector": "Building",
+      "close": 4.94,
+      "rel_volume": 0.11752235789644987,
+      "pct_change": -37.46835443037975,
+      "ma_distance": 33.081896551724164,
+      "score": 13.638214668940638,
+      "catalyst": null
+    },
+    {
+      "symbol": "UAMY",
+      "sector": "Metals & Mining",
+      "close": 5.24,
+      "rel_volume": 1.2933404313693775,
+      "pct_change": -20.364741641337382,
+      "ma_distance": -8.678982223771351,
+      "score": 13.34660091757001,
+      "catalyst": null
+    },
+    {
+      "symbol": "ATRO",
+      "sector": "Aerospace & Defense",
+      "close": 88.755,
+      "rel_volume": 1.1905630525398656,
+      "pct_change": 18.482178614337204,
+      "ma_distance": 24.79962878596136,
+      "score": 12.850509801187611,
+      "catalyst": null
+    }
+  ]
+}
