@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-08-13T14:19:49",
+  "universe_size": 2413,
+  "catalyst_flagged": 50,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "ARX",
+      "sector": "Insurance",
+      "close": 19.535,
+      "rel_volume": 14.684504305329197,
+      "pct_change": 43.534166054371795,
+      "ma_distance": 50.142187379909295,
+      "score": 61.851617391238236,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CLBT",
+      "sector": "Technology",
+      "close": 10.2182,
+      "rel_volume": 9.183423770231958,
+      "pct_change": -32.995409836065576,
+      "ma_distance": -32.52307133541347,
+      "score": 44.01485650307605,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "OMER",
+      "sector": "Pharmaceuticals",
+      "close": 17.06,
+      "rel_volume": 3.351486857850407,
+      "pct_change": 24.434719183078027,
+      "ma_distance": 47.37387698686937,
+      "score": 23.4613600390037,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMPY",
+      "sector": "Energy",
+      "close": 4.96,
+      "rel_volume": 3.7078766154075,
+      "pct_change": 12.984054669703879,
+      "ma_distance": 24.03100775193798,
+      "score": 18.773036707969588,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRMD",
+      "sector": "Pharmaceuticals",
+      "close": 8.49,
+      "rel_volume": 1.9667779903375378,
+      "pct_change": 19.577464788732403,
+      "ma_distance": 10.936887495099956,
+      "score": 15.258637594064234,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SECZ",
+      "sector": "Financial Services",
+      "close": 6.22,
+      "rel_volume": 1.852366936408194,
+      "pct_change": -20.86513994910942,
+      "ma_distance": -14.070594736478558,
+      "score": 14.646164255797922,
+      "catalyst": null
+    },
+    {
+      "symbol": "GMRS",
+      "sector": "Health Care",
+      "close": 13.27,
+      "rel_volume": 3.4375430531284668,
+      "pct_change": 3.188180404354589,
+      "ma_distance": 4.013168208183105,
+      "score": 14.469469175019903,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 5.5,
+      "rel_volume": 0.1155161516233156,
+      "pct_change": 2.8037383177570163,
+      "ma_distance": 173.64817800067667,
+      "score": 14.31045264381018,
+      "catalyst": null
+    },
+    {
+      "symbol": "BOXL",
+      "sector": "Technology",
+      "close": 6.57,
+      "rel_volume": 0.2660702887317177,
+      "pct_change": -16.51842439644218,
+      "ma_distance": 87.47324868026823,
+      "score": 13.322530644144004,
+      "catalyst": null
+    },
+    {
+      "symbol": "TPR",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 128.6,
+      "rel_volume": 1.333119186651292,
+      "pct_change": -16.35228307532198,
+      "ma_distance": -14.889674251148271,
+      "score": 12.967060485454327,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "HLIT",
+      "sector": "Communications",
+      "close": 13.9112,
+      "rel_volume": 1.8976467282788634,
+      "pct_change": 15.926666666666659,
+      "ma_distance": 18.888983847534384,
+      "score": 12.256283593621545,
+      "catalyst": null
+    },
+    {
+      "symbol": "YETI",
+      "sector": "Leisure Products",
+      "close": 44.68,
+      "rel_volume": 1.3401335033147557,
+      "pct_change": -12.116443745082618,
+      "ma_distance": -12.564456316474393,
+      "score": 11.235961878804474,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "AVAH",
+      "sector": "Health Care",
+      "close": 10.735,
+      "rel_volume": 0.845390637408863,
+      "pct_change": 18.618784530386726,
+      "ma_distance": 13.041646922550395,
+      "score": 11.138605944743128,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "YXT",
+      "sector": "Technology",
+      "close": 5.1008,
+      "rel_volume": 1.6101672887701084,
+      "pct_change": 12.600441501103738,
+      "ma_distance": 6.349752410737554,
+      "score": 10.882267207190466,
+      "catalyst": {
+        "date": "2026-08-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "LBGJ",
+      "sector": "Machinery",
+      "close": 2.9288,
+      "rel_volume": 0.06729017030480743,
+      "pct_change": -6.428115015974442,
+      "ma_distance": -94.40892647493962,
+      "score": 10.615375862644031,
+      "catalyst": null
+    }
+  ]
+}
