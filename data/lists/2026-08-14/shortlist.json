@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-08-14T14:13:15",
+  "universe_size": 2414,
+  "catalyst_flagged": 9,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 9.6501,
+      "rel_volume": 40.43590078116761,
+      "pct_change": 167.31578947368425,
+      "ma_distance": -41.37954076053943,
+      "score": 87.27773157748675,
+      "catalyst": null
+    },
+    {
+      "symbol": "MVIS",
+      "sector": "Electrical Equipment",
+      "close": 2.065,
+      "rel_volume": 9.6762894963548,
+      "pct_change": -45.225464190981434,
+      "ma_distance": -47.33553512452022,
+      "score": 28.229204269846708,
+      "catalyst": null
+    },
+    {
+      "symbol": "CAPR",
+      "sector": "Biotechnology",
+      "close": 7.39,
+      "rel_volume": 5.013528845558169,
+      "pct_change": 75.53444180522565,
+      "ma_distance": -18.833575880721597,
+      "score": 27.011056894255365,
+      "catalyst": null
+    },
+    {
+      "symbol": "SXTC",
+      "sector": "Pharmaceuticals",
+      "close": 3.835,
+      "rel_volume": 9.18436669351318,
+      "pct_change": 16.212121212121218,
+      "ma_distance": -91.14635638512773,
+      "score": 24.92069793488854,
+      "catalyst": null
+    },
+    {
+      "symbol": "INV",
+      "sector": "Financial Services",
+      "close": 1.825,
+      "rel_volume": 4.783591073844234,
+      "pct_change": -49.30555555555556,
+      "ma_distance": -44.533090190714994,
+      "score": 23.40939308137596,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 3.095,
+      "rel_volume": 0.23480717905012619,
+      "pct_change": -24.51219512195121,
+      "ma_distance": 176.74699333840036,
+      "score": 18.603143661715613,
+      "catalyst": null
+    },
+    {
+      "symbol": "HTFL",
+      "sector": "Health Care",
+      "close": 40.67,
+      "rel_volume": 2.879153453447062,
+      "pct_change": 31.15124153498871,
+      "ma_distance": 52.93210746987047,
+      "score": 15.768164426375131,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 5.85,
+      "rel_volume": 0.05849733627038524,
+      "pct_change": 6.460418562329381,
+      "ma_distance": 167.84119992857563,
+      "score": 14.036610607472525,
+      "catalyst": null
+    },
+    {
+      "symbol": "IMXI",
+      "sector": "Financial Services",
+      "close": 13.82,
+      "rel_volume": 4.94414937152187,
+      "pct_change": 18.11965811965813,
+      "ma_distance": 10.156826016778593,
+      "score": 13.740277658928031,
+      "catalyst": null
+    },
+    {
+      "symbol": "BOXL",
+      "sector": "Technology",
+      "close": 8.04,
+      "rel_volume": 0.8328470685274287,
+      "pct_change": 18.23529411764705,
+      "ma_distance": 120.21364009860311,
+      "score": 13.48260323214426,
+      "catalyst": null
+    },
+    {
+      "symbol": "FGI",
+      "sector": "Trading Companies & Distributors",
+      "close": 11.47,
+      "rel_volume": 0.2812617300100433,
+      "pct_change": -2.1331058020477816,
+      "ma_distance": 139.7951183818533,
+      "score": 11.153434412643982,
+      "catalyst": null
+    },
+    {
+      "symbol": "QMCO",
+      "sector": "Technology",
+      "close": 27.31,
+      "rel_volume": 0.6258820733100543,
+      "pct_change": 10.656401944894647,
+      "ma_distance": 112.46717883886024,
+      "score": 11.079745073017579,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMPG",
+      "sector": "Electrical Equipment",
+      "close": 4.05,
+      "rel_volume": 1.3834698717037417,
+      "pct_change": -32.3873121869783,
+      "ma_distance": -28.009598720170647,
+      "score": 10.906826973071903,
+      "catalyst": null
+    },
+    {
+      "symbol": "NMAX",
+      "sector": "Media",
+      "close": 11.215,
+      "rel_volume": 2.4014623860896274,
+      "pct_change": 18.17702845100105,
+      "ma_distance": 36.162204820008505,
+      "score": 10.52978632329623,
+      "catalyst": null
+    },
+    {
+      "symbol": "YXT",
+      "sector": "Technology",
+      "close": 3.7,
+      "rel_volume": 0.0740800485065631,
+      "pct_change": -34.51327433628319,
+      "ma_distance": -24.532150323797865,
+      "score": 9.49564210509205,
+      "catalyst": null
+    }
+  ]
+}
