@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-08-17T14:31:57",
+  "universe_size": 2410,
+  "catalyst_flagged": 61,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "EYPT",
+      "sector": "Pharmaceuticals",
+      "close": 4.4401,
+      "rel_volume": 12.844373836869309,
+      "pct_change": -69.89762711864405,
+      "ma_distance": -65.22614245996004,
+      "score": 46.41370045174736,
+      "catalyst": null
+    },
+    {
+      "symbol": "OABI",
+      "sector": "Life Sciences Tools & Services",
+      "close": 4.02,
+      "rel_volume": 19.976585018720634,
+      "pct_change": 18.93491124260354,
+      "ma_distance": 65.50020584602717,
+      "score": 45.57701213602118,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 19.8,
+      "rel_volume": 2.8261910511690878,
+      "pct_change": 140.87591240875912,
+      "ma_distance": 47.535486755337004,
+      "score": 43.41428260915297,
+      "catalyst": null
+    },
+    {
+      "symbol": "XPON",
+      "sector": "Electrical Equipment",
+      "close": 4.7262,
+      "rel_volume": 16.736722305861317,
+      "pct_change": 29.840659340659347,
+      "ma_distance": 34.76187421141553,
+      "score": 40.50108298672697,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 7.05,
+      "rel_volume": 0.08737063985474881,
+      "pct_change": 19.897959183673468,
+      "ma_distance": 197.13861832649843,
+      "score": 20.093100897249485,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZTG",
+      "sector": "Professional Services",
+      "close": 3.6,
+      "rel_volume": 0.10450478832563227,
+      "pct_change": -63.34012219959268,
+      "ma_distance": -39.0965995601421,
+      "score": 18.259574933611695,
+      "catalyst": null
+    },
+    {
+      "symbol": "FIEE",
+      "sector": "Communications",
+      "close": 5.95,
+      "rel_volume": 2.684656226105585,
+      "pct_change": 19.000000000000004,
+      "ma_distance": 72.22465041290499,
+      "score": 18.240100805153254,
+      "catalyst": {
+        "date": "2026-08-19",
+        "hour": "",
+        "days_until": 2
+      }
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 3.64,
+      "rel_volume": 0.07266522708636901,
+      "pct_change": -4.210526315789466,
+      "ma_distance": 188.86481682082055,
+      "score": 15.624282007851964,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTNM",
+      "sector": "Pharmaceuticals",
+      "close": 15.09,
+      "rel_volume": 4.047735107251805,
+      "pct_change": 6.34249471458774,
+      "ma_distance": 2.1319796954314687,
+      "score": 12.13102244614856,
+      "catalyst": null
+    },
+    {
+      "symbol": "SXTC",
+      "sector": "Pharmaceuticals",
+      "close": 3.69,
+      "rel_volume": 0.1185266477480508,
+      "pct_change": -14.780600461893767,
+      "ma_distance": -89.06083244397011,
+      "score": 10.735173374404221,
+      "catalyst": null
+    },
+    {
+      "symbol": "JDZG",
+      "sector": "Diversified Consumer Services",
+      "close": 4.2,
+      "rel_volume": 0.8601148410014818,
+      "pct_change": 9.090909090909092,
+      "ma_distance": -82.84874224109768,
+      "score": 10.103648960287627,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFSC",
+      "sector": "Aerospace & Defense",
+      "close": 2.7011,
+      "rel_volume": 1.1393179344448807,
+      "pct_change": -9.96333333333334,
+      "ma_distance": 77.75540287978097,
+      "score": 9.674754222243617,
+      "catalyst": null
+    },
+    {
+      "symbol": "INHD",
+      "sector": "Metals & Mining",
+      "close": 7.26,
+      "rel_volume": 0.09313019198424988,
+      "pct_change": -14.184397163120579,
+      "ma_distance": -68.03275981638652,
+      "score": 8.98532320776032,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 4.13,
+      "rel_volume": 2.797939157397906,
+      "pct_change": 2.992518703241898,
+      "ma_distance": -9.46456951827698,
+      "score": 8.433090814941497,
+      "catalyst": null
+    },
+    {
+      "symbol": "ENVX",
+      "sector": "Electrical Equipment",
+      "close": 3.685,
+      "rel_volume": 1.546350342325848,
+      "pct_change": -16.059225512528467,
+      "ma_distance": -15.679881013671991,
+      "score": 7.944992222836389,
+      "catalyst": null
+    }
+  ]
+}
