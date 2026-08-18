@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-08-18T14:05:46",
+  "universe_size": 2400,
+  "catalyst_flagged": 58,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "SLE",
+      "sector": "Media",
+      "close": 5.6902,
+      "rel_volume": 27.13737741729818,
+      "pct_change": 88.41721854304635,
+      "ma_distance": 100.88293596507796,
+      "score": 76.90850531161172,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 41.345,
+      "rel_volume": 0.7798847194108918,
+      "pct_change": 68.137454249695,
+      "ma_distance": 279.7822991778809,
+      "score": 39.07183234761611,
+      "catalyst": null
+    },
+    {
+      "symbol": "WEAV",
+      "sector": "Technology",
+      "close": 7.305,
+      "rel_volume": 13.722836213891712,
+      "pct_change": 32.097649186256774,
+      "ma_distance": 19.061201206095678,
+      "score": 35.16847841775191,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMLX",
+      "sector": "Pharmaceuticals",
+      "close": 31.4392,
+      "rel_volume": 4.761728949185203,
+      "pct_change": 46.70648623425105,
+      "ma_distance": 50.38362192671961,
+      "score": 27.402261611745722,
+      "catalyst": null
+    },
+    {
+      "symbol": "SXTC",
+      "sector": "Pharmaceuticals",
+      "close": 4.575,
+      "rel_volume": 4.069234349088074,
+      "pct_change": 22.000000000000007,
+      "ma_distance": -81.09465071592389,
+      "score": 22.261092910931534,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPST",
+      "sector": "Beverages",
+      "close": 8.41,
+      "rel_volume": 0.20083112992229965,
+      "pct_change": 13.802435723951293,
+      "ma_distance": 240.3129179303633,
+      "score": 20.797687508485616,
+      "catalyst": null
+    },
+    {
+      "symbol": "KLAR",
+      "sector": "Financial Services",
+      "close": 15.5451,
+      "rel_volume": 2.8863535607263686,
+      "pct_change": -20.322398769861618,
+      "ma_distance": -19.302826589145276,
+      "score": 15.75507905420161,
+      "catalyst": {
+        "date": "2026-08-18",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "DUOT",
+      "sector": "Technology",
+      "close": 12.585,
+      "rel_volume": 2.3628205184748308,
+      "pct_change": 22.422178988326863,
+      "ma_distance": 44.680117261596855,
+      "score": 14.30551220938678,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 3.97,
+      "rel_volume": 0.01047556414712797,
+      "pct_change": 1.5345268542199502,
+      "ma_distance": 181.8391245239084,
+      "score": 13.39482392866772,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 6.89,
+      "rel_volume": 0.01910826910085489,
+      "pct_change": -6.3858695652174005,
+      "ma_distance": 161.0214310338949,
+      "score": 13.044816386843939,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZTG",
+      "sector": "Professional Services",
+      "close": 2.41,
+      "rel_volume": 0.21652408244150084,
+      "pct_change": -26.29969418960244,
+      "ma_distance": -59.25957231003296,
+      "score": 11.523936398468848,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIDU",
+      "sector": "Media",
+      "close": 94.345,
+      "rel_volume": 1.8136364545990533,
+      "pct_change": -9.388205916250485,
+      "ma_distance": -12.281272663034386,
+      "score": 9.049809316478994,
+      "catalyst": {
+        "date": "2026-08-18",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "EYPT",
+      "sector": "Pharmaceuticals",
+      "close": 5.285,
+      "rel_volume": 1.3949040398291128,
+      "pct_change": 8.521560574948666,
+      "ma_distance": -57.30672913805639,
+      "score": 8.89732437211727,
+      "catalyst": null
+    },
+    {
+      "symbol": "MYSZ",
+      "sector": "Technology",
+      "close": 2.4055,
+      "rel_volume": 0.6597902809053489,
+      "pct_change": -21.89935064935065,
+      "ma_distance": -24.471725956858926,
+      "score": 8.559621520277306,
+      "catalyst": null
+    },
+    {
+      "symbol": "FIEE",
+      "sector": "Communications",
+      "close": 4.77,
+      "rel_volume": 0.11706782810343759,
+      "pct_change": -15.275310834813505,
+      "ma_distance": 34.22290005881044,
+      "score": 8.264853390434782,
+      "catalyst": {
+        "date": "2026-08-19",
+        "hour": "",
+        "days_until": 1
+      }
+    }
+  ]
+}

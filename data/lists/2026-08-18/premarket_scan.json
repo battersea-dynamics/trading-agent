@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-08-18T09:25:38-04:00",
+  "session_date": "2026-08-18",
+  "universe_size": 2400,
+  "phase1_active": 100,
+  "shortlist": [
+    {
+      "symbol": "AMLX",
+      "prev_close": 21.43,
+      "last_pm_price": 28.86,
+      "pm_gap_pct": 34.67,
+      "pm_volume": 3621016,
+      "avg_pm_volume": 3908,
+      "rel_pm_volume": 926.4,
+      "score": 16.467
+    },
+    {
+      "symbol": "SLE",
+      "prev_close": 3.02,
+      "last_pm_price": 5.1903,
+      "pm_gap_pct": 71.86,
+      "pm_volume": 10057766,
+      "avg_pm_volume": 2681194,
+      "rel_pm_volume": 3.75,
+      "score": 8.514
+    },
+    {
+      "symbol": "KLAR",
+      "prev_close": 19.51,
+      "last_pm_price": 15.4941,
+      "pm_gap_pct": -20.58,
+      "pm_volume": 3374291,
+      "avg_pm_volume": 22416,
+      "rel_pm_volume": 150.53,
+      "score": 6.753
+    },
+    {
+      "symbol": "WETO",
+      "prev_close": 24.59,
+      "last_pm_price": 43.69,
+      "pm_gap_pct": 77.67,
+      "pm_volume": 3146702,
+      "avg_pm_volume": 2869180,
+      "rel_pm_volume": 1.1,
+      "score": 6.454
+    },
+    {
+      "symbol": "AS",
+      "prev_close": 32.57,
+      "last_pm_price": 34.84,
+      "pm_gap_pct": 6.97,
+      "pm_volume": 1061491,
+      "avg_pm_volume": 13201,
+      "rel_pm_volume": 80.41,
+      "score": 5.204
+    },
+    {
+      "symbol": "DUOT",
+      "prev_close": 10.28,
+      "last_pm_price": 11.5,
+      "pm_gap_pct": 11.87,
+      "pm_volume": 255359,
+      "avg_pm_volume": 19574,
+      "rel_pm_volume": 13.05,
+      "score": 4.898
+    },
+    {
+      "symbol": "FN",
+      "prev_close": 598.58,
+      "last_pm_price": 521.5,
+      "pm_gap_pct": -12.88,
+      "pm_volume": 64182,
+      "avg_pm_volume": 5178,
+      "rel_pm_volume": 12.39,
+      "score": 4.702
+    },
+    {
+      "symbol": "VNET",
+      "prev_close": 7.92,
+      "last_pm_price": 7.2281,
+      "pm_gap_pct": -8.74,
+      "pm_volume": 641950,
+      "avg_pm_volume": 19578,
+      "rel_pm_volume": 32.79,
+      "score": 4.551
+    },
+    {
+      "symbol": "HSAI",
+      "prev_close": 18.07,
+      "last_pm_price": 16.149,
+      "pm_gap_pct": -10.63,
+      "pm_volume": 386449,
+      "avg_pm_volume": 32086,
+      "rel_pm_volume": 12.04,
+      "score": 4.527
+    },
+    {
+      "symbol": "BIDU",
+      "prev_close": 104.12,
+      "last_pm_price": 94.3469,
+      "pm_gap_pct": -9.39,
+      "pm_volume": 1012374,
+      "avg_pm_volume": 48757,
+      "rel_pm_volume": 20.76,
+      "score": 4.474
+    },
+    {
+      "symbol": "HD",
+      "prev_close": 337.88,
+      "last_pm_price": 345.72,
+      "pm_gap_pct": 2.32,
+      "pm_volume": 329591,
+      "avg_pm_volume": 7499,
+      "rel_pm_volume": 43.95,
+      "score": 4.444
+    },
+    {
+      "symbol": "AUR",
+      "prev_close": 6.97,
+      "last_pm_price": 6.45,
+      "pm_gap_pct": -7.46,
+      "pm_volume": 1094259,
+      "avg_pm_volume": 78784,
+      "rel_pm_volume": 13.89,
+      "score": 4.255
+    }
+  ]
+}
