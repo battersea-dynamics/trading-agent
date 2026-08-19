@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-08-19T09:27:24-04:00",
+  "session_date": "2026-08-19",
+  "universe_size": 2381,
+  "phase1_active": 100,
+  "shortlist": [
+    {
+      "symbol": "ARCT",
+      "prev_close": 8.21,
+      "last_pm_price": 10.09,
+      "pm_gap_pct": 22.9,
+      "pm_volume": 1383610,
+      "avg_pm_volume": 1896,
+      "rel_pm_volume": 729.75,
+      "score": 12.134
+    },
+    {
+      "symbol": "TNON",
+      "prev_close": 5.45,
+      "last_pm_price": 11.8,
+      "pm_gap_pct": 116.51,
+      "pm_volume": 15043972,
+      "avg_pm_volume": 131468,
+      "rel_pm_volume": 114.43,
+      "score": 11.375
+    },
+    {
+      "symbol": "MRNA",
+      "prev_close": 62.96,
+      "last_pm_price": 120.99,
+      "pm_gap_pct": 92.17,
+      "pm_volume": 19906199,
+      "avg_pm_volume": 95612,
+      "rel_pm_volume": 208.2,
+      "score": 10.889
+    },
+    {
+      "symbol": "BNTX",
+      "prev_close": 92.75,
+      "last_pm_price": 107.3,
+      "pm_gap_pct": 15.69,
+      "pm_volume": 1110525,
+      "avg_pm_volume": 2492,
+      "rel_pm_volume": 445.62,
+      "score": 8.774
+    },
+    {
+      "symbol": "YMM",
+      "prev_close": 8.8,
+      "last_pm_price": 8.6,
+      "pm_gap_pct": -2.27,
+      "pm_volume": 630445,
+      "avg_pm_volume": 2043,
+      "rel_pm_volume": 308.54,
+      "score": 7.047
+    },
+    {
+      "symbol": "EL",
+      "prev_close": 84.27,
+      "last_pm_price": 96.0,
+      "pm_gap_pct": 13.92,
+      "pm_volume": 343757,
+      "avg_pm_volume": 1715,
+      "rel_pm_volume": 200.4,
+      "score": 6.141
+    },
+    {
+      "symbol": "MRK",
+      "prev_close": 135.17,
+      "last_pm_price": 145.75,
+      "pm_gap_pct": 7.83,
+      "pm_volume": 1609962,
+      "avg_pm_volume": 7191,
+      "rel_pm_volume": 223.88,
+      "score": 6.019
+    },
+    {
+      "symbol": "WYFI",
+      "prev_close": 27.07,
+      "last_pm_price": 21.3,
+      "pm_gap_pct": -21.32,
+      "pm_volume": 876064,
+      "avg_pm_volume": 66762,
+      "rel_pm_volume": 13.12,
+      "score": 5.492
+    },
+    {
+      "symbol": "TJX",
+      "prev_close": 150.85,
+      "last_pm_price": 144.89,
+      "pm_gap_pct": -3.95,
+      "pm_volume": 456087,
+      "avg_pm_volume": 3229,
+      "rel_pm_volume": 141.22,
+      "score": 5.423
+    },
+    {
+      "symbol": "TOYO",
+      "prev_close": 5.72,
+      "last_pm_price": 4.62,
+      "pm_gap_pct": -19.23,
+      "pm_volume": 412697,
+      "avg_pm_volume": 8069,
+      "rel_pm_volume": 51.14,
+      "score": 5.405
+    },
+    {
+      "symbol": "MRVI",
+      "prev_close": 5.74,
+      "last_pm_price": 6.948,
+      "pm_gap_pct": 21.05,
+      "pm_volume": 257998,
+      "avg_pm_volume": 5825,
+      "rel_pm_volume": 44.28,
+      "score": 4.957
+    },
+    {
+      "symbol": "ALH",
+      "prev_close": 24.0,
+      "last_pm_price": 24.4,
+      "pm_gap_pct": 1.67,
+      "pm_volume": 840856,
+      "avg_pm_volume": 6688,
+      "rel_pm_volume": 125.71,
+      "score": 4.927
+    }
+  ]
+}

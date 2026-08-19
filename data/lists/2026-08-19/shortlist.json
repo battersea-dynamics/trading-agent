@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-08-19T14:07:07",
+  "universe_size": 2381,
+  "catalyst_flagged": 38,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "TNON",
+      "sector": "Health Care",
+      "close": 10.75,
+      "rel_volume": 32.78218747055252,
+      "pct_change": 97.24770642201834,
+      "ma_distance": 73.4430461439174,
+      "score": 73.59313527126345,
+      "catalyst": null
+    },
+    {
+      "symbol": "MRNA",
+      "sector": "Biotechnology",
+      "close": 141.555,
+      "rel_volume": 10.099613987081074,
+      "pct_change": 124.83322744599745,
+      "ma_distance": 142.45512469169637,
+      "score": 53.39794408432725,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPST",
+      "sector": "Beverages",
+      "close": 10.25,
+      "rel_volume": 0.13038122507916483,
+      "pct_change": -34.96192893401015,
+      "ma_distance": 226.04321901674913,
+      "score": 23.680735808255037,
+      "catalyst": null
+    },
+    {
+      "symbol": "PFSA",
+      "sector": "Health Care",
+      "close": 14.7599,
+      "rel_volume": 0.25901527896571186,
+      "pct_change": -46.288573508005825,
+      "ma_distance": 161.07082213103158,
+      "score": 21.414535547955005,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARCT",
+      "sector": "Biotechnology",
+      "close": 10.3,
+      "rel_volume": 5.743938789177222,
+      "pct_change": 25.456760048721065,
+      "ma_distance": 55.108802048038555,
+      "score": 20.66743060197618,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 20.53,
+      "rel_volume": 0.07559120186340762,
+      "pct_change": -37.78787878787879,
+      "ma_distance": 140.49669068119252,
+      "score": 18.099911576966917,
+      "catalyst": null
+    },
+    {
+      "symbol": "RCON",
+      "sector": "Energy",
+      "close": 4.14,
+      "rel_volume": 2.5215058211889714,
+      "pct_change": 23.952095808383227,
+      "ma_distance": -90.89949881297811,
+      "score": 16.775527349389105,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNTX",
+      "sector": "Biotechnology",
+      "close": 114.405,
+      "rel_volume": 3.3855116142725055,
+      "pct_change": 23.347708894878707,
+      "ma_distance": 24.239824508057858,
+      "score": 13.849194844187782,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 4.02,
+      "rel_volume": 0.005913467507743015,
+      "pct_change": -6.074766355140202,
+      "ma_distance": 155.1805783458331,
+      "score": 12.745722621718663,
+      "catalyst": null
+    },
+    {
+      "symbol": "TOYO",
+      "sector": "Semiconductors",
+      "close": 4.49,
+      "rel_volume": 2.090327520234046,
+      "pct_change": -21.503496503496496,
+      "ma_distance": -15.45848239502918,
+      "score": 11.949451419773865,
+      "catalyst": {
+        "date": "2026-08-19",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CDTG",
+      "sector": "Commercial Services & Supplies",
+      "close": 3.44,
+      "rel_volume": 0.14452042907425852,
+      "pct_change": 4.559270516717322,
+      "ma_distance": 147.9323951782915,
+      "score": 11.310958900760019,
+      "catalyst": null
+    },
+    {
+      "symbol": "WYFI",
+      "sector": "Technology",
+      "close": 20.1036,
+      "rel_volume": 2.072829781291714,
+      "pct_change": -25.734761728851126,
+      "ma_distance": -21.976247768376926,
+      "score": 11.244382559991404,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 6.8381,
+      "rel_volume": 0.012090042332221152,
+      "pct_change": 3.764795144157815,
+      "ma_distance": 138.4166687005122,
+      "score": 10.629202221062902,
+      "catalyst": null
+    },
+    {
+      "symbol": "MRVI",
+      "sector": "Life Sciences Tools & Services",
+      "close": 7.385,
+      "rel_volume": 1.9080176495428995,
+      "pct_change": 28.658536585365844,
+      "ma_distance": 16.60219467908739,
+      "score": 10.1553816877099,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALH",
+      "sector": "Machinery",
+      "close": 24.32,
+      "rel_volume": 3.9482151186034113,
+      "pct_change": 1.3333333333333344,
+      "ma_distance": -7.06028470430878,
+      "score": 10.097088894712932,
+      "catalyst": null
+    }
+  ]
+}
