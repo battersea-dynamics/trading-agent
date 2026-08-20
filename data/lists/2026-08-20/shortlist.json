@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-08-20T14:24:30",
+  "universe_size": 2294,
+  "catalyst_flagged": 14,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "SGLY",
+      "sector": "Transportation Infrastructure",
+      "close": 3.38,
+      "rel_volume": 38.546101834661435,
+      "pct_change": 13.422818791946305,
+      "ma_distance": -35.35492631800404,
+      "score": 52.42450554440278,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPST",
+      "sector": "Beverages",
+      "close": 13.3,
+      "rel_volume": 0.2349277803597582,
+      "pct_change": 57.396449704142036,
+      "ma_distance": 286.03818875525906,
+      "score": 35.584820442633976,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 31.515,
+      "rel_volume": 0.4864012935950536,
+      "pct_change": 51.80635838150288,
+      "ma_distance": 255.1386071670048,
+      "score": 32.20838698036593,
+      "catalyst": null
+    },
+    {
+      "symbol": "CDTG",
+      "sector": "Commercial Services & Supplies",
+      "close": 4.5302,
+      "rel_volume": 1.8172983106295135,
+      "pct_change": 50.504983388704325,
+      "ma_distance": 205.06910890755736,
+      "score": 30.898501051430145,
+      "catalyst": null
+    },
+    {
+      "symbol": "WBS",
+      "sector": "Banking",
+      "close": 77.57,
+      "rel_volume": 13.974111585561568,
+      "pct_change": -0.5130178273695084,
+      "ma_distance": -0.0058008752876361125,
+      "score": 19.411395406165425,
+      "catalyst": null
+    },
+    {
+      "symbol": "LBRDK",
+      "sector": "Media",
+      "close": 36.02,
+      "rel_volume": 11.622629877604556,
+      "pct_change": 2.884890031419609,
+      "ma_distance": 5.355523706455301,
+      "score": 17.919268625085444,
+      "catalyst": null
+    },
+    {
+      "symbol": "EVAX",
+      "sector": "Biotechnology",
+      "close": 3.29,
+      "rel_volume": 8.482226239277969,
+      "pct_change": 4.444444444444449,
+      "ma_distance": 9.364274447818453,
+      "score": 17.224728255875696,
+      "catalyst": {
+        "date": "2026-08-20",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "MRNA",
+      "sector": "Biotechnology",
+      "close": 142.2747,
+      "rel_volume": 2.265912565498592,
+      "pct_change": -18.411113659823375,
+      "ma_distance": 121.61340820411372,
+      "score": 16.814272143565205,
+      "catalyst": null
+    },
+    {
+      "symbol": "PCLA",
+      "sector": "Communications",
+      "close": 9.13,
+      "rel_volume": 0.2006427481424752,
+      "pct_change": 42.65625000000001,
+      "ma_distance": 49.16960077117255,
+      "score": 15.666025764737594,
+      "catalyst": null
+    },
+    {
+      "symbol": "AAP",
+      "sector": "Retail",
+      "close": 44.045,
+      "rel_volume": 2.7244268497782578,
+      "pct_change": -21.6002135991456,
+      "ma_distance": -22.153783614206553,
+      "score": 14.623111258617808,
+      "catalyst": {
+        "date": "2026-08-20",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ZSTK",
+      "sector": "Health Care",
+      "close": 4.2,
+      "rel_volume": 0.6699988601769229,
+      "pct_change": -15.322580645161285,
+      "ma_distance": 129.36030319247695,
+      "score": 13.105663092120604,
+      "catalyst": null
+    },
+    {
+      "symbol": "PFSA",
+      "sector": "Health Care",
+      "close": 8.91,
+      "rel_volume": 0.11434087770019295,
+      "pct_change": -34.340456890198965,
+      "ma_distance": 49.695065607096666,
+      "score": 12.850316711431114,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNON",
+      "sector": "Health Care",
+      "close": 6.76,
+      "rel_volume": 0.3626042678824153,
+      "pct_change": -40.753724802804555,
+      "ma_distance": 5.232024159778314,
+      "score": 11.898796856505918,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 4.45,
+      "rel_volume": 0.012260616356836108,
+      "pct_change": 2.7713625866050835,
+      "ma_distance": 154.92594258151183,
+      "score": 11.314196343579848,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 7.8,
+      "rel_volume": 0.014143145808508244,
+      "pct_change": 2.094240837696337,
+      "ma_distance": 147.96304714794812,
+      "score": 10.657525155119695,
+      "catalyst": null
+    }
+  ]
+}
