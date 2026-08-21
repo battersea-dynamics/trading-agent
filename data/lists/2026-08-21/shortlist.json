@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-08-21T15:57:28",
+  "universe_size": 2299,
+  "catalyst_flagged": 6,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "JUNS",
+      "sector": "Pharmaceuticals",
+      "close": 8.325,
+      "rel_volume": 615.9563318431359,
+      "pct_change": 61.02514506769825,
+      "ma_distance": 33.039288539444335,
+      "score": 58.15129022431336,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 7.6,
+      "rel_volume": 59.53600016851911,
+      "pct_change": 89.99999999999999,
+      "ma_distance": 235.9116022099447,
+      "score": 48.18706409278474,
+      "catalyst": null
+    },
+    {
+      "symbol": "ADXN",
+      "sector": "Pharmaceuticals",
+      "close": 4.89,
+      "rel_volume": 533.5976853966804,
+      "pct_change": 7.002188183807426,
+      "ma_distance": -14.161583358932727,
+      "score": 38.070266990320164,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDOT",
+      "sector": "Food Products",
+      "close": 15.185,
+      "rel_volume": 70.03667890501056,
+      "pct_change": 79.91706161137444,
+      "ma_distance": 19.954182794849512,
+      "score": 30.339403656682418,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZSTK",
+      "sector": "Health Care",
+      "close": 5.14,
+      "rel_volume": 0.2515304982924469,
+      "pct_change": -11.835334476843917,
+      "ma_distance": 151.26119432169253,
+      "score": 14.334695572016422,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 25.9,
+      "rel_volume": 0.036589183629282734,
+      "pct_change": -5.903723887375114,
+      "ma_distance": 167.6103634438044,
+      "score": 13.972551608101156,
+      "catalyst": null
+    },
+    {
+      "symbol": "MRNA",
+      "sector": "Biotechnology",
+      "close": 146.705,
+      "rel_volume": 2.618152653116979,
+      "pct_change": 10.039753975397554,
+      "ma_distance": 115.69665291959805,
+      "score": 12.836025200857238,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPST",
+      "sector": "Beverages",
+      "close": 9.925,
+      "rel_volume": 0.10711935013561519,
+      "pct_change": -3.734238603297767,
+      "ma_distance": 158.41273395465217,
+      "score": 12.721591859720297,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARCT",
+      "sector": "Biotechnology",
+      "close": 13.34,
+      "rel_volume": 1.8309504873160984,
+      "pct_change": 21.38307552320291,
+      "ma_distance": 87.4121944366395,
+      "score": 12.543788211798717,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 4.25,
+      "rel_volume": 0.005542166737761136,
+      "pct_change": -8.008658008658012,
+      "ma_distance": 121.22684600789651,
+      "score": 11.139894812536815,
+      "catalyst": null
+    },
+    {
+      "symbol": "RCON",
+      "sector": "Energy",
+      "close": 3.1201,
+      "rel_volume": 0.216256394215427,
+      "pct_change": -14.046831955922867,
+      "ma_distance": -91.6425146653095,
+      "score": 10.968532495351672,
+      "catalyst": null
+    },
+    {
+      "symbol": "SUGP",
+      "sector": "Commercial Services & Supplies",
+      "close": 3.05,
+      "rel_volume": 35.47684145386841,
+      "pct_change": 9.712230215827338,
+      "ma_distance": 36.36160414896946,
+      "score": 10.93833072574781,
+      "catalyst": null
+    },
+    {
+      "symbol": "EMAT",
+      "sector": "Metals & Mining",
+      "close": 4.1176,
+      "rel_volume": 3.1213906725215295,
+      "pct_change": 22.913432835820906,
+      "ma_distance": 24.87035633055345,
+      "score": 10.386648188326948,
+      "catalyst": null
+    },
+    {
+      "symbol": "ASST",
+      "sector": "Health Care",
+      "close": 18.79,
+      "rel_volume": 2.590683823246333,
+      "pct_change": 16.49101053936764,
+      "ma_distance": 50.05889751831811,
+      "score": 9.701364600997545,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 7.381,
+      "rel_volume": 0.15764517241073703,
+      "pct_change": -1.7177097203728304,
+      "ma_distance": 116.03158668044242,
+      "score": 9.08583164976486,
+      "catalyst": null
+    }
+  ]
+}
