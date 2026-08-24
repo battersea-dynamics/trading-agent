@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-08-24T14:27:51",
+  "universe_size": 2272,
+  "catalyst_flagged": 58,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "XPON",
+      "sector": "Electrical Equipment",
+      "close": 6.4631,
+      "rel_volume": 61.76621445255547,
+      "pct_change": 88.15429403202329,
+      "ma_distance": 79.38729486868125,
+      "score": 63.206604604201274,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDOT",
+      "sector": "Food Products",
+      "close": 26.82,
+      "rel_volume": 17.103083976275126,
+      "pct_change": 103.49013657056145,
+      "ma_distance": 115.56019932486738,
+      "score": 47.71260865659174,
+      "catalyst": null
+    },
+    {
+      "symbol": "BCTX",
+      "sector": "Biotechnology",
+      "close": 3.6903,
+      "rel_volume": 68.35962438378007,
+      "pct_change": -9.329238329238333,
+      "ma_distance": 4.18690005646527,
+      "score": 40.57512930050339,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 4.385,
+      "rel_volume": 16.239569074963747,
+      "pct_change": 36.604361370716504,
+      "ma_distance": 15.409922358205034,
+      "score": 22.476527858770282,
+      "catalyst": null
+    },
+    {
+      "symbol": "DXST",
+      "sector": "Commercial Services & Supplies",
+      "close": 3.14,
+      "rel_volume": 8.699768423391335,
+      "pct_change": 24.603174603174608,
+      "ma_distance": 25.700560448358683,
+      "score": 16.59020086845343,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 6.7083,
+      "rel_volume": 1.4805234990992617,
+      "pct_change": -9.46963562753036,
+      "ma_distance": 161.8895178606286,
+      "score": 16.45330810873303,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 24.99,
+      "rel_volume": 0.00900350936739596,
+      "pct_change": -3.921568627450992,
+      "ma_distance": 138.5851015585841,
+      "score": 12.219659993512066,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPST",
+      "sector": "Beverages",
+      "close": 8.42,
+      "rel_volume": 0.02834066504372145,
+      "pct_change": -12.746113989637308,
+      "ma_distance": 100.41630417577605,
+      "score": 11.25804427052924,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 7.9,
+      "rel_volume": 0.14027092818591091,
+      "pct_change": 3.1331592689295062,
+      "ma_distance": 113.13160471911145,
+      "score": 10.07267905728824,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHG",
+      "sector": "Insurance",
+      "close": 4.13,
+      "rel_volume": 0.002748429543957172,
+      "pct_change": -6.349206349206354,
+      "ma_distance": 97.36732065499186,
+      "score": 9.435264784361085,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZSTK",
+      "sector": "Health Care",
+      "close": 4.5701,
+      "rel_volume": 0.2875851506877349,
+      "pct_change": -2.9702760084925672,
+      "ma_distance": 106.91544270786169,
+      "score": 9.307506659827974,
+      "catalyst": null
+    },
+    {
+      "symbol": "RGNX",
+      "sector": "Biotechnology",
+      "close": 8.08,
+      "rel_volume": 1.4263926003024117,
+      "pct_change": -24.626865671641795,
+      "ma_distance": -23.45041566992728,
+      "score": 9.015648788495898,
+      "catalyst": null
+    },
+    {
+      "symbol": "MRNA",
+      "sector": "Biotechnology",
+      "close": 132.4507,
+      "rel_volume": 0.46894585137350436,
+      "pct_change": -8.736512092606617,
+      "ma_distance": 82.5206876356496,
+      "score": 8.82076489864967,
+      "catalyst": null
+    },
+    {
+      "symbol": "PUSA",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 4.0099,
+      "rel_volume": 2.262277597117478,
+      "pct_change": 16.906705539358597,
+      "ma_distance": 22.701958384332936,
+      "score": 8.620717176286906,
+      "catalyst": null
+    },
+    {
+      "symbol": "YJ",
+      "sector": "Retail",
+      "close": 3.06,
+      "rel_volume": 0.024501885955574794,
+      "pct_change": -15.235457063711907,
+      "ma_distance": 50.27993320891857,
+      "score": 7.754436735858291,
+      "catalyst": null
+    }
+  ]
+}
