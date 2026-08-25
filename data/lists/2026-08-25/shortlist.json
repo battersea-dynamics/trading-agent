@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-08-25T14:27:36",
+  "universe_size": 2254,
+  "catalyst_flagged": 53,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "WVVIP",
+      "sector": "Beverages",
+      "close": 7.62,
+      "rel_volume": 306.0242229633261,
+      "pct_change": 187.54716981132077,
+      "ma_distance": 183.44312724810945,
+      "score": 96.51402799356757,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 3.5529,
+      "rel_volume": 14.065283935156714,
+      "pct_change": 105.3699421965318,
+      "ma_distance": 402.65624447352593,
+      "score": 51.23959770979015,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 9.27,
+      "rel_volume": 4.983956242080693,
+      "pct_change": 80.7017543859649,
+      "ma_distance": 141.6264824710022,
+      "score": 28.3059013626287,
+      "catalyst": null
+    },
+    {
+      "symbol": "JEM",
+      "sector": "Distributors",
+      "close": 5.45,
+      "rel_volume": 11.92155110692322,
+      "pct_change": 42.670157068062835,
+      "ma_distance": 18.253322484404677,
+      "score": 14.52759397079083,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZSTK",
+      "sector": "Health Care",
+      "close": 6.08,
+      "rel_volume": 0.11127880122239094,
+      "pct_change": 20.15810276679843,
+      "ma_distance": 154.32094634162664,
+      "score": 13.509420094516928,
+      "catalyst": null
+    },
+    {
+      "symbol": "DKS",
+      "sector": "Retail",
+      "close": 134.1901,
+      "rel_volume": 6.258443810995819,
+      "pct_change": -25.171415825572968,
+      "ma_distance": -32.38924899672249,
+      "score": 11.947745931551726,
+      "catalyst": null
+    },
+    {
+      "symbol": "SHMD",
+      "sector": "Electrical Equipment",
+      "close": 3.72,
+      "rel_volume": 2.9452578484693634,
+      "pct_change": -23.298969072164937,
+      "ma_distance": -21.407067025827914,
+      "score": 10.799863403265704,
+      "catalyst": {
+        "date": "2026-08-25",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 28.4679,
+      "rel_volume": 0.009366436956743971,
+      "pct_change": 3.181949981877493,
+      "ma_distance": 144.80619155111253,
+      "score": 9.890834210215111,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 13.6743,
+      "rel_volume": 1.9527029409065702,
+      "pct_change": 24.198910081743875,
+      "ma_distance": -63.273215604646474,
+      "score": 9.87105626948019,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMIX",
+      "sector": "Health Care",
+      "close": 7.9,
+      "rel_volume": 1.727568342085939,
+      "pct_change": 47.11359404096835,
+      "ma_distance": 8.32676288094341,
+      "score": 9.678677870561028,
+      "catalyst": null
+    },
+    {
+      "symbol": "BRNX",
+      "sector": "Electrical Equipment",
+      "close": 5.01,
+      "rel_volume": 1.512262108421187,
+      "pct_change": 19.856459330143544,
+      "ma_distance": 67.94046661303297,
+      "score": 8.409830841666858,
+      "catalyst": null
+    },
+    {
+      "symbol": "MRNA",
+      "sector": "Biotechnology",
+      "close": 153.84,
+      "rel_volume": 0.5651455512096586,
+      "pct_change": 10.763913888688904,
+      "ma_distance": 100.49393657020353,
+      "score": 8.32328658271066,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 6.24,
+      "rel_volume": 0.3866522946030979,
+      "pct_change": -0.47846889952152094,
+      "ma_distance": 122.9367631296892,
+      "score": 8.14593445483184,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARCT",
+      "sector": "Biotechnology",
+      "close": 15.54,
+      "rel_volume": 0.44428710795604076,
+      "pct_change": 8.36820083682008,
+      "ma_distance": 95.64396323807124,
+      "score": 7.561186492438565,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDOT",
+      "sector": "Food Products",
+      "close": 15.77,
+      "rel_volume": 0.3573484920551893,
+      "pct_change": -31.908462867012094,
+      "ma_distance": 23.608716099702153,
+      "score": 7.183126892748833,
+      "catalyst": null
+    }
+  ]
+}
