@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-08-26T14:26:19",
+  "universe_size": 2240,
+  "catalyst_flagged": 41,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "CRE",
+      "sector": "Commercial Services & Supplies",
+      "close": 7.37,
+      "rel_volume": 671.5174476570289,
+      "pct_change": 186.77042801556425,
+      "ma_distance": 179.82382868858684,
+      "score": 97.9309470022041,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 5.2199,
+      "rel_volume": 2.3181360908879705,
+      "pct_change": 34.53350515463918,
+      "ma_distance": 513.8711669067709,
+      "score": 39.692095992221816,
+      "catalyst": null
+    },
+    {
+      "symbol": "XPON",
+      "sector": "Electrical Equipment",
+      "close": 9.94,
+      "rel_volume": 3.095287945839742,
+      "pct_change": 88.61480075901329,
+      "ma_distance": 160.30311957838225,
+      "score": 29.620428859032547,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSNYW",
+      "sector": "Automobiles",
+      "close": 5.7199,
+      "rel_volume": 8.148755913028847,
+      "pct_change": 53.348525469168905,
+      "ma_distance": 113.1848964059827,
+      "score": 21.720692839121043,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRML",
+      "sector": "Biotechnology",
+      "close": 5.405,
+      "rel_volume": 4.749488837083698,
+      "pct_change": -44.33573635427395,
+      "ma_distance": -44.43587766640967,
+      "score": 15.805511670055537,
+      "catalyst": null
+    },
+    {
+      "symbol": "BRNX",
+      "sector": "Electrical Equipment",
+      "close": 6.96,
+      "rel_volume": 0.6170685202046188,
+      "pct_change": 25.179856115107924,
+      "ma_distance": 124.93697886368045,
+      "score": 12.332358177524075,
+      "catalyst": null
+    },
+    {
+      "symbol": "ANF",
+      "sector": "Retail",
+      "close": 143.52,
+      "rel_volume": 3.507785083371833,
+      "pct_change": 31.790633608815426,
+      "ma_distance": 32.34846598611227,
+      "score": 11.598910228647519,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMTK",
+      "sector": "Semiconductors",
+      "close": 4.1506,
+      "rel_volume": 14.907634282659913,
+      "pct_change": 12.178378378378369,
+      "ma_distance": -38.94156154609982,
+      "score": 10.047315091329162,
+      "catalyst": null
+    },
+    {
+      "symbol": "WVVIP",
+      "sector": "Beverages",
+      "close": 3.775,
+      "rel_volume": 7.162508459078378,
+      "pct_change": 13.356555161852137,
+      "ma_distance": 39.03237152396052,
+      "score": 9.484198584317728,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZSTK",
+      "sector": "Health Care",
+      "close": 5.598,
+      "rel_volume": 0.03801104304778088,
+      "pct_change": -13.477588871715609,
+      "ma_distance": 111.51026946967522,
+      "score": 9.293912183679199,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 19.24,
+      "rel_volume": 0.028336371725093824,
+      "pct_change": -32.03814906393501,
+      "ma_distance": 50.00487281941333,
+      "score": 9.077381740140389,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 8.55,
+      "rel_volume": 0.27275423409955946,
+      "pct_change": -10.471204188481673,
+      "ma_distance": 108.81670533642693,
+      "score": 8.53885777980944,
+      "catalyst": null
+    },
+    {
+      "symbol": "PLAB",
+      "sector": "Semiconductors",
+      "close": 31.37,
+      "rel_volume": 4.921206866364087,
+      "pct_change": 6.991814461118692,
+      "ma_distance": -0.36841770945817076,
+      "score": 7.9965753986100445,
+      "catalyst": {
+        "date": "2026-08-26",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CAPR",
+      "sector": "Biotechnology",
+      "close": 9.37,
+      "rel_volume": 0.3925869456216854,
+      "pct_change": 13.02774427020507,
+      "ma_distance": 72.34561088885823,
+      "score": 6.790158879339296,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 5.74,
+      "rel_volume": 0.1056250370557443,
+      "pct_change": -5.280528052805271,
+      "ma_distance": 90.22369511184756,
+      "score": 6.423120650723539,
+      "catalyst": null
+    }
+  ]
+}
