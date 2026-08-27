@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-08-27T21:31:35",
+  "universe_size": 2302,
+  "catalyst_flagged": 25,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "WNW",
+      "sector": "Retail",
+      "close": 3.31,
+      "rel_volume": 22.599693372159443,
+      "pct_change": 33.46774193548387,
+      "ma_distance": 28.593378800740478,
+      "score": 43.92872418003073,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 5.76,
+      "rel_volume": 0.9824784325597526,
+      "pct_change": 11.844660194174745,
+      "ma_distance": 435.9485638253327,
+      "score": 33.240255930886526,
+      "catalyst": null
+    },
+    {
+      "symbol": "BRNX",
+      "sector": "Electrical Equipment",
+      "close": 3.86,
+      "rel_volume": 12.902543065301973,
+      "pct_change": -38.14102564102564,
+      "ma_distance": 19.29043822238705,
+      "score": 31.918286669906415,
+      "catalyst": null
+    },
+    {
+      "symbol": "BBW",
+      "sector": "Retail",
+      "close": 28.44,
+      "rel_volume": 13.193026876592214,
+      "pct_change": -27.263427109974426,
+      "ma_distance": -23.14448242781283,
+      "score": 31.77888032925987,
+      "catalyst": {
+        "date": "2026-08-27",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 8.07,
+      "rel_volume": 3.2373396014844915,
+      "pct_change": 34.949832775919724,
+      "ma_distance": 148.99722307929656,
+      "score": 25.92473199589624,
+      "catalyst": null
+    },
+    {
+      "symbol": "OKTA",
+      "sector": "Technology",
+      "close": 172.91,
+      "rel_volume": 5.839125293233798,
+      "pct_change": 28.634131825621196,
+      "ma_distance": 21.12530034395075,
+      "score": 19.948511244128497,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRM",
+      "sector": "Technology",
+      "close": 252.05,
+      "rel_volume": 4.660611185118798,
+      "pct_change": 22.58048827935026,
+      "ma_distance": 28.32816982798781,
+      "score": 17.209922261932537,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSNYW",
+      "sector": "Automobiles",
+      "close": 6.23,
+      "rel_volume": 2.3566088326583636,
+      "pct_change": 15.799256505576217,
+      "ma_distance": 119.67017739336477,
+      "score": 16.11135016718955,
+      "catalyst": null
+    },
+    {
+      "symbol": "HQY",
+      "sector": "Health Care",
+      "close": 93.39,
+      "rel_volume": 4.9821638317478145,
+      "pct_change": -10.563110515226969,
+      "ma_distance": -10.439387873019363,
+      "score": 15.433891929900273,
+      "catalyst": {
+        "date": "2026-08-27",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "HRL",
+      "sector": "Food Products",
+      "close": 21.28,
+      "rel_volume": 4.8150235967096515,
+      "pct_change": -10.248840151834667,
+      "ma_distance": -13.314459131922519,
+      "score": 15.324036987004439,
+      "catalyst": {
+        "date": "2026-08-27",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "DFDV",
+      "sector": "Financial Services",
+      "close": 5.28,
+      "rel_volume": 3.1800649731945283,
+      "pct_change": 17.33333333333334,
+      "ma_distance": 64.31961409787598,
+      "score": 15.048335511461387,
+      "catalyst": null
+    },
+    {
+      "symbol": "BURL",
+      "sector": "Retail",
+      "close": 290.0,
+      "rel_volume": 4.348293620726303,
+      "pct_change": -7.640370712443074,
+      "ma_distance": -17.190768198399496,
+      "score": 14.251426752343733,
+      "catalyst": {
+        "date": "2026-08-27",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PURR",
+      "sector": "Biotechnology",
+      "close": 12.83,
+      "rel_volume": 2.687487243613904,
+      "pct_change": 10.98615916955017,
+      "ma_distance": 62.31260674299449,
+      "score": 13.760926816607805,
+      "catalyst": {
+        "date": "2026-08-27",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "VEEV",
+      "sector": "Health Care",
+      "close": 282.13,
+      "rel_volume": 3.7336450250775335,
+      "pct_change": 15.197419460209874,
+      "ma_distance": 20.95424077237856,
+      "score": 13.031659433919229,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 7.94,
+      "rel_volume": 0.2031198117043061,
+      "pct_change": 26.23211446740859,
+      "ma_distance": 71.37923591625298,
+      "score": 12.911376208388893,
+      "catalyst": null
+    }
+  ]
+}
