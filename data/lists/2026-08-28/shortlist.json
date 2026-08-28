@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-08-28T21:38:10",
+  "universe_size": 2263,
+  "catalyst_flagged": 2,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "QNRX",
+      "sector": "Biotechnology",
+      "close": 6.12,
+      "rel_volume": 1278.1659260544686,
+      "pct_change": 18.719689621726477,
+      "ma_distance": 21.206119720750614,
+      "score": 58.712701598681335,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 4.64,
+      "rel_volume": 0.16746937961714772,
+      "pct_change": -19.444444444444446,
+      "ma_distance": 249.23980129459582,
+      "score": 26.197841510850257,
+      "catalyst": null
+    },
+    {
+      "symbol": "VISN",
+      "sector": "Communications",
+      "close": 6.06,
+      "rel_volume": 3.3064525609761994,
+      "pct_change": 60.317460317460316,
+      "ma_distance": 63.16420080505106,
+      "score": 24.74583747484772,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 3.12,
+      "rel_volume": 1.2185889746247602,
+      "pct_change": 41.176470588235304,
+      "ma_distance": 102.20349967595594,
+      "score": 19.89653627677846,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 5.72,
+      "rel_volume": 0.30518449497911504,
+      "pct_change": -50.26086956521739,
+      "ma_distance": -58.93680791112549,
+      "score": 17.921253885593377,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 9.9,
+      "rel_volume": 0.3531151524744637,
+      "pct_change": 24.68513853904282,
+      "ma_distance": 107.39499319157851,
+      "score": 16.033559625345543,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 3.54,
+      "rel_volume": 12.258121068461696,
+      "pct_change": -30.451866404715126,
+      "ma_distance": -38.364571816591074,
+      "score": 15.536259041850235,
+      "catalyst": null
+    },
+    {
+      "symbol": "RDIB",
+      "sector": "Media",
+      "close": 18.31,
+      "rel_volume": 1.469761120953935,
+      "pct_change": 18.896103896103885,
+      "ma_distance": 92.15027809843635,
+      "score": 13.577449508038473,
+      "catalyst": null
+    },
+    {
+      "symbol": "ESTC",
+      "sector": "Technology",
+      "close": 99.91,
+      "rel_volume": 4.072567186471493,
+      "pct_change": 19.309768330546934,
+      "ma_distance": 26.695283323928287,
+      "score": 11.960976303847545,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 6.76,
+      "rel_volume": 0.7165881971688023,
+      "pct_change": -16.232961586121444,
+      "ma_distance": 89.75438596491227,
+      "score": 11.651868015862618,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRE",
+      "sector": "Commercial Services & Supplies",
+      "close": 3.91,
+      "rel_volume": 0.09876131507703274,
+      "pct_change": -33.728813559322035,
+      "ma_distance": 29.510938871499313,
+      "score": 11.080721275770546,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 9.3,
+      "rel_volume": 0.6115391532705837,
+      "pct_change": 12.318840579710162,
+      "ma_distance": 83.08420101464084,
+      "score": 10.70380353135882,
+      "catalyst": null
+    },
+    {
+      "symbol": "FINV",
+      "sector": "Financial Services",
+      "close": 3.4,
+      "rel_volume": 5.5829875027459215,
+      "pct_change": -15.422885572139297,
+      "ma_distance": -25.077126487439404,
+      "score": 10.217491711978784,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSNYW",
+      "sector": "Automobiles",
+      "close": 5.32,
+      "rel_volume": 0.38622032959185626,
+      "pct_change": -14.60674157303371,
+      "ma_distance": 75.95094540559668,
+      "score": 10.054373155909,
+      "catalyst": null
+    },
+    {
+      "symbol": "LPTH",
+      "sector": "Electrical Equipment",
+      "close": 11.23,
+      "rel_volume": 3.5611744924027957,
+      "pct_change": -18.56417693981145,
+      "ma_distance": -14.428315617022905,
+      "score": 9.391782652793884,
+      "catalyst": null
+    }
+  ]
+}

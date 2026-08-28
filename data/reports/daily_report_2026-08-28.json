@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-28",
+  "events": [
+    {
+      "at_et": "2026-08-28T17:37:33-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-08-28T17:38:10-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "QNRX",
+          "DAIC",
+          "VISN",
+          "SWVL",
+          "WETO",
+          "TJGC",
+          "AEHL",
+          "RDIB",
+          "ESTC",
+          "USDE",
+          "CRE",
+          "XHLD",
+          "FINV",
+          "PSNYW",
+          "LPTH"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-08-28T17:38:10-04:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}
