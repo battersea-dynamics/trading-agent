@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-08-31T18:32:43",
+  "universe_size": 2216,
+  "catalyst_flagged": 41,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 6.5341,
+      "rel_volume": 81.50247259057181,
+      "pct_change": 84.57909604519772,
+      "ma_distance": 17.940849976986183,
+      "score": 68.1040160700362,
+      "catalyst": null
+    },
+    {
+      "symbol": "XAIR",
+      "sector": "Health Care",
+      "close": 4.1997,
+      "rel_volume": 63.411843590718675,
+      "pct_change": -6.256696428571437,
+      "ma_distance": -24.55741680513766,
+      "score": 36.23414318793087,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 8.023,
+      "rel_volume": 6.116988752688284,
+      "pct_change": 40.26223776223776,
+      "ma_distance": -41.71766885204221,
+      "score": 22.956340559419225,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 8.76,
+      "rel_volume": 0.7701805485329511,
+      "pct_change": 29.585798816568047,
+      "ma_distance": 129.1993720565149,
+      "score": 21.403473933181612,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 3.63,
+      "rel_volume": 0.09499759314213162,
+      "pct_change": -21.76724137931034,
+      "ma_distance": 137.62765121759622,
+      "score": 19.522646311356638,
+      "catalyst": null
+    },
+    {
+      "symbol": "NEOV",
+      "sector": "Electrical Equipment",
+      "close": 4.3,
+      "rel_volume": 5.31059256269662,
+      "pct_change": 28.74251497005988,
+      "ma_distance": 34.33302093095909,
+      "score": 18.556438145776454,
+      "catalyst": null
+    },
+    {
+      "symbol": "DPRO",
+      "sector": "Aerospace & Defense",
+      "close": 5.32,
+      "rel_volume": 10.378031750236648,
+      "pct_change": 19.148936170212778,
+      "ma_distance": 18.86276043121266,
+      "score": 16.45683470841545,
+      "catalyst": null
+    },
+    {
+      "symbol": "EIX",
+      "sector": "Utilities",
+      "close": 53.66,
+      "rel_volume": 4.205472428539573,
+      "pct_change": -23.5285734644435,
+      "ma_distance": -24.810133677101145,
+      "score": 15.071020953931765,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 9.79,
+      "rel_volume": 0.11483450373278398,
+      "pct_change": 11.24999999999998,
+      "ma_distance": 103.09096566746186,
+      "score": 13.45232960996194,
+      "catalyst": null
+    },
+    {
+      "symbol": "PCG",
+      "sector": "Utilities",
+      "close": 13.545,
+      "rel_volume": 3.716604595147093,
+      "pct_change": -18.40361445783133,
+      "ma_distance": -22.893006575014933,
+      "score": 12.686356147817708,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSNYW",
+      "sector": "Automobiles",
+      "close": 5.97,
+      "rel_volume": 0.7205223007337724,
+      "pct_change": 12.218045112781944,
+      "ma_distance": 87.99774528667294,
+      "score": 12.254731996738608,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSQL",
+      "sector": "unknown",
+      "close": 19.235,
+      "rel_volume": 2.7322189318414356,
+      "pct_change": 0.6541077969649398,
+      "ma_distance": 81.28696307815554,
+      "score": 11.301496808879431,
+      "catalyst": null
+    },
+    {
+      "symbol": "MOVE",
+      "sector": "Technology",
+      "close": 11.41,
+      "rel_volume": 14.220814969150737,
+      "pct_change": -0.6962576153176682,
+      "ma_distance": 5.565064532543829,
+      "score": 10.953910495557292,
+      "catalyst": null
+    },
+    {
+      "symbol": "RDIB",
+      "sector": "Media",
+      "close": 15.84,
+      "rel_volume": 0.07402704606211456,
+      "pct_change": -13.489896231567444,
+      "ma_distance": 58.052284973059265,
+      "score": 9.610576669038517,
+      "catalyst": null
+    },
+    {
+      "symbol": "CHA",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 11.52,
+      "rel_volume": 5.276558402420275,
+      "pct_change": 6.666666666666655,
+      "ma_distance": 9.782246152380031,
+      "score": 9.526701656269456,
+      "catalyst": null
+    }
+  ]
+}
