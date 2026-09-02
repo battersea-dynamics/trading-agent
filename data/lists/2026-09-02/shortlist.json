@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-09-02T15:44:55",
+  "universe_size": 2204,
+  "catalyst_flagged": 29,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "UPC",
+      "sector": "Pharmaceuticals",
+      "close": 4.8151,
+      "rel_volume": 27.019970182542515,
+      "pct_change": 12.765807962529289,
+      "ma_distance": -12.492503407542015,
+      "score": 50.501770698334084,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 10.061,
+      "rel_volume": 8.91890149019578,
+      "pct_change": 52.67071320182094,
+      "ma_distance": 60.530367699266854,
+      "score": 42.441153573846805,
+      "catalyst": null
+    },
+    {
+      "symbol": "JLHL",
+      "sector": "Construction",
+      "close": 6.9501,
+      "rel_volume": 5.789005067006104,
+      "pct_change": 23.667259786476865,
+      "ma_distance": -4.265298391817894,
+      "score": 21.138351992124935,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 3.987,
+      "rel_volume": 0.4698918112200805,
+      "pct_change": -32.87878787878788,
+      "ma_distance": -70.97461097461097,
+      "score": 19.59206690936395,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRDO",
+      "sector": "Semiconductors",
+      "close": 170.64,
+      "rel_volume": 3.1135314742912654,
+      "pct_change": -17.41760634951363,
+      "ma_distance": -28.80470212732668,
+      "score": 16.576146907135747,
+      "catalyst": null
+    },
+    {
+      "symbol": "GTLB",
+      "sector": "Technology",
+      "close": 51.42,
+      "rel_volume": 3.7023173460624585,
+      "pct_change": 14.038589487691281,
+      "ma_distance": 23.145453892301624,
+      "score": 16.251168041877897,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSNYW",
+      "sector": "Automobiles",
+      "close": 5.84,
+      "rel_volume": 2.052283811491509,
+      "pct_change": 14.509803921568631,
+      "ma_distance": 68.17515557641745,
+      "score": 16.079025495927517,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALMS",
+      "sector": "Pharmaceuticals",
+      "close": 10.5,
+      "rel_volume": 2.554627398707753,
+      "pct_change": 10.87645195353748,
+      "ma_distance": -56.21077215005109,
+      "score": 14.79249190744536,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 4.03,
+      "rel_volume": 0.053033895743193456,
+      "pct_change": 5.221932114882511,
+      "ma_distance": 120.45951859956236,
+      "score": 14.549294273089451,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAKT",
+      "sector": "Electrical Equipment",
+      "close": 21.015,
+      "rel_volume": 2.9712092242273918,
+      "pct_change": 8.54855371900827,
+      "ma_distance": 4.617299315494721,
+      "score": 12.145765067602225,
+      "catalyst": {
+        "date": "2026-09-02",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 7.255,
+      "rel_volume": 0.2725043062094198,
+      "pct_change": -13.217703349282292,
+      "ma_distance": 61.27598088251639,
+      "score": 11.544539575788455,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 3.3878,
+      "rel_volume": 0.07185810073698262,
+      "pct_change": -4.56901408450704,
+      "ma_distance": 87.24834254983406,
+      "score": 11.421730335494916,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGCL",
+      "sector": "Professional Services",
+      "close": 4.1872,
+      "rel_volume": 0.2718282935460193,
+      "pct_change": -3.7425287356321806,
+      "ma_distance": -94.95528708732044,
+      "score": 11.352458722940789,
+      "catalyst": null
+    },
+    {
+      "symbol": "MDB",
+      "sector": "Technology",
+      "close": 386.981,
+      "rel_volume": 2.8215344638249125,
+      "pct_change": -10.876995002418182,
+      "ma_distance": -9.212562126172585,
+      "score": 11.312089135550808,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 9.1445,
+      "rel_volume": 0.19457894325751401,
+      "pct_change": -9.280753968253961,
+      "ma_distance": -64.87106842737094,
+      "score": 10.354959721901409,
+      "catalyst": null
+    }
+  ]
+}
