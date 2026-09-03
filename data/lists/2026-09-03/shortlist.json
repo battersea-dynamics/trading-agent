@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-09-03T15:35:03",
+  "universe_size": 2205,
+  "catalyst_flagged": 17,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "TVA",
+      "sector": "N/A",
+      "close": 10.545,
+      "rel_volume": 197.54202349560373,
+      "pct_change": -0.04739336492891736,
+      "ma_distance": 0.0504759157773227,
+      "score": 49.08909563441671,
+      "catalyst": null
+    },
+    {
+      "symbol": "CHPT",
+      "sector": "Electrical Equipment",
+      "close": 7.81,
+      "rel_volume": 53.660819726188585,
+      "pct_change": 50.48169556840075,
+      "ma_distance": 32.72155663182937,
+      "score": 36.12484307931439,
+      "catalyst": null
+    },
+    {
+      "symbol": "RARE",
+      "sector": "Biotechnology",
+      "close": 14.45,
+      "rel_volume": 6.113706945842891,
+      "pct_change": -45.533358462118365,
+      "ma_distance": -44.66463706511957,
+      "score": 25.20648306446118,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 12.28,
+      "rel_volume": 2.457149471896585,
+      "pct_change": 25.948717948717942,
+      "ma_distance": 93.15768777034997,
+      "score": 20.290797811144134,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 4.945,
+      "rel_volume": 0.08176356362186647,
+      "pct_change": -2.6574803149606256,
+      "ma_distance": 145.77534791252486,
+      "score": 16.069437285646053,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 6.7321,
+      "rel_volume": 6.372489572803703,
+      "pct_change": 23.979742173112346,
+      "ma_distance": 24.480644952525353,
+      "score": 15.830834256400564,
+      "catalyst": null
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 3.6037,
+      "rel_volume": 1.685285229784189,
+      "pct_change": 19.724252491694358,
+      "ma_distance": 78.57779980178395,
+      "score": 15.4157298972614,
+      "catalyst": null
+    },
+    {
+      "symbol": "WETO",
+      "sector": "Road & Rail",
+      "close": 3.17,
+      "rel_volume": 0.35646971489275053,
+      "pct_change": -19.338422391857513,
+      "ma_distance": -76.8363749292121,
+      "score": 14.369564450250351,
+      "catalyst": null
+    },
+    {
+      "symbol": "TLYS",
+      "sector": "Retail",
+      "close": 4.1,
+      "rel_volume": 31.031995231290416,
+      "pct_change": 7.611548556430435,
+      "ma_distance": 4.312428444218288,
+      "score": 13.953729275922825,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGCL",
+      "sector": "Professional Services",
+      "close": 3.895,
+      "rel_volume": 0.13414014982359407,
+      "pct_change": -8.782201405152215,
+      "ma_distance": -94.79123134889724,
+      "score": 12.769243646093361,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 3.3934,
+      "rel_volume": 0.17649260948114778,
+      "pct_change": 11.441707717569795,
+      "ma_distance": 76.37626659667195,
+      "score": 11.496449071450238,
+      "catalyst": null
+    },
+    {
+      "symbol": "CPB",
+      "sector": "Food Products",
+      "close": 21.27,
+      "rel_volume": 3.632924437716113,
+      "pct_change": -10.555088309503791,
+      "ma_distance": -8.62813325600877,
+      "score": 10.87235431222434,
+      "catalyst": {
+        "date": "2026-09-03",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CURR",
+      "sector": "Financial Services",
+      "close": 4.31,
+      "rel_volume": 9.955755355591474,
+      "pct_change": 7.481296758104734,
+      "ma_distance": 21.23769338959212,
+      "score": 10.866527766879368,
+      "catalyst": null
+    },
+    {
+      "symbol": "SNOW",
+      "sector": "Technology",
+      "close": 365.66,
+      "rel_volume": 2.6753251448987103,
+      "pct_change": 19.559246664922853,
+      "ma_distance": 12.16977312048297,
+      "score": 10.29116165934422,
+      "catalyst": null
+    },
+    {
+      "symbol": "VSXY",
+      "sector": "Retail",
+      "close": 75.805,
+      "rel_volume": 2.6784852149852774,
+      "pct_change": -10.61785166843532,
+      "ma_distance": -15.08060089394736,
+      "score": 9.904012379173206,
+      "catalyst": {
+        "date": "2026-09-03",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
