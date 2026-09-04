@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-09-04T15:33:32",
+  "universe_size": 2194,
+  "catalyst_flagged": 4,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "AKAN",
+      "sector": "Pharmaceuticals",
+      "close": 3.76,
+      "rel_volume": 12.071881758900807,
+      "pct_change": 2.452316076294274,
+      "ma_distance": -16.887709991158275,
+      "score": 40.85610663962379,
+      "catalyst": null
+    },
+    {
+      "symbol": "LULU",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 100.1931,
+      "rel_volume": 5.558915169181057,
+      "pct_change": -17.719389012071936,
+      "ma_distance": -16.724348584964478,
+      "score": 28.570479715698905,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 16.0148,
+      "rel_volume": 0.8744278720365003,
+      "pct_change": 25.31142410015651,
+      "ma_distance": 142.67606167367506,
+      "score": 28.000673515154254,
+      "catalyst": null
+    },
+    {
+      "symbol": "CHPT",
+      "sector": "Electrical Equipment",
+      "close": 10.1563,
+      "rel_volume": 3.212886188831505,
+      "pct_change": 11.853524229074889,
+      "ma_distance": 68.02547770700636,
+      "score": 23.94885267210862,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSQL",
+      "sector": "unknown",
+      "close": 7.59,
+      "rel_volume": 2.466751069271947,
+      "pct_change": -22.153846153846153,
+      "ma_distance": -32.889763257366425,
+      "score": 21.045500792513177,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 4.9,
+      "rel_volume": 0.02658500160748159,
+      "pct_change": -11.231884057971001,
+      "ma_distance": 120.96956031567079,
+      "score": 20.50946146609522,
+      "catalyst": {
+        "date": "2026-09-07",
+        "hour": "",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 4.07,
+      "rel_volume": 1.2513449390726186,
+      "pct_change": 8.244680851063842,
+      "ma_distance": 91.70984455958549,
+      "score": 16.45826994992155,
+      "catalyst": null
+    },
+    {
+      "symbol": "GWRE",
+      "sector": "Technology",
+      "close": 158.42,
+      "rel_volume": 1.4024818479158916,
+      "pct_change": -21.906733707975956,
+      "ma_distance": -15.125019421272867,
+      "score": 14.371411417070393,
+      "catalyst": null
+    },
+    {
+      "symbol": "SUNB",
+      "sector": "Trading Companies & Distributors",
+      "close": 67.44,
+      "rel_volume": 3.2770788678490512,
+      "pct_change": 2.197302621609339,
+      "ma_distance": -11.757778766388407,
+      "score": 13.958874426667819,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGCL",
+      "sector": "Professional Services",
+      "close": 3.75,
+      "rel_volume": 0.07734165485364138,
+      "pct_change": -4.822335025380709,
+      "ma_distance": -94.37989651516116,
+      "score": 12.681804492360367,
+      "catalyst": null
+    },
+    {
+      "symbol": "RDIB",
+      "sector": "Media",
+      "close": 16.24,
+      "rel_volume": 0.20086052025607543,
+      "pct_change": 18.15205529283375,
+      "ma_distance": 42.63443339261796,
+      "score": 12.446671888725886,
+      "catalyst": null
+    },
+    {
+      "symbol": "ASAN",
+      "sector": "Technology",
+      "close": 8.655,
+      "rel_volume": 1.5852201068697611,
+      "pct_change": -14.22200198216056,
+      "ma_distance": -9.542224080267578,
+      "score": 11.338299086827437,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 7.7399,
+      "rel_volume": 0.27014867265506765,
+      "pct_change": -11.695379349686263,
+      "ma_distance": 52.44275936776796,
+      "score": 10.707582400662051,
+      "catalyst": null
+    },
+    {
+      "symbol": "PL",
+      "sector": "Professional Services",
+      "close": 18.23,
+      "rel_volume": 2.38221690387531,
+      "pct_change": -0.6539509536784796,
+      "ma_distance": -17.578442897187816,
+      "score": 9.995787480136421,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMBA",
+      "sector": "Semiconductors",
+      "close": 61.145,
+      "rel_volume": 2.032437210448476,
+      "pct_change": -3.526349005995581,
+      "ma_distance": -18.112482338839815,
+      "score": 9.733663108312324,
+      "catalyst": null
+    }
+  ]
+}
