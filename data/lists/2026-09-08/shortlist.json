@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-09-08T15:45:54",
+  "universe_size": 2184,
+  "catalyst_flagged": 24,
+  "excluded_held": [
+    "GPRK",
+    "ROIV"
+  ],
+  "shortlist": [
+    {
+      "symbol": "BNC",
+      "sector": "Building",
+      "close": 5.01,
+      "rel_volume": 188.85353583777018,
+      "pct_change": 43.55300859598852,
+      "ma_distance": 76.53276955602536,
+      "score": 71.61668923963038,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 5.95,
+      "rel_volume": 0.05443911743709524,
+      "pct_change": 20.689655172413804,
+      "ma_distance": 148.38238363598418,
+      "score": 22.872485498558632,
+      "catalyst": null
+    },
+    {
+      "symbol": "WYHG",
+      "sector": "unknown",
+      "close": 5.29,
+      "rel_volume": 11.75448252378557,
+      "pct_change": 30.295566502463068,
+      "ma_distance": 2.8982688192958572,
+      "score": 15.865027378244084,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 9.02,
+      "rel_volume": 0.1971889372617836,
+      "pct_change": -40.92992796332678,
+      "ma_distance": 29.22173274596182,
+      "score": 14.818378869416527,
+      "catalyst": null
+    },
+    {
+      "symbol": "DYN",
+      "sector": "Biotechnology",
+      "close": 20.11,
+      "rel_volume": 4.675334393891639,
+      "pct_change": -17.17462932454696,
+      "ma_distance": -22.174922600619187,
+      "score": 12.474518088281274,
+      "catalyst": null
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 4.09,
+      "rel_volume": 0.2884625025936892,
+      "pct_change": 6.788511749347252,
+      "ma_distance": 83.32586284177499,
+      "score": 11.519794124081342,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGCL",
+      "sector": "Professional Services",
+      "close": 3.8658,
+      "rel_volume": 0.06678979794047261,
+      "pct_change": 2.8138297872340514,
+      "ma_distance": -93.47959738731862,
+      "score": 11.515843160319314,
+      "catalyst": null
+    },
+    {
+      "symbol": "NUAI",
+      "sector": "Energy",
+      "close": 6.475,
+      "rel_volume": 1.479981235487658,
+      "pct_change": 19.685767097966718,
+      "ma_distance": 26.156843643448596,
+      "score": 9.245295348826504,
+      "catalyst": null
+    },
+    {
+      "symbol": "PHVS",
+      "sector": "Pharmaceuticals",
+      "close": 38.52,
+      "rel_volume": 5.776849617032765,
+      "pct_change": 9.27659574468086,
+      "ma_distance": 7.788955269822181,
+      "score": 9.08716958018497,
+      "catalyst": null
+    },
+    {
+      "symbol": "NVS",
+      "sector": "Pharmaceuticals",
+      "close": 138.31,
+      "rel_volume": 3.01316378955903,
+      "pct_change": -13.550846927933,
+      "ma_distance": -11.654051291878256,
+      "score": 8.374226782716715,
+      "catalyst": null
+    },
+    {
+      "symbol": "LHSW",
+      "sector": "Electrical Equipment",
+      "close": 4.64,
+      "rel_volume": 2.587488492069405,
+      "pct_change": 3.111111111111104,
+      "ma_distance": 40.18126888217522,
+      "score": 8.156260890252618,
+      "catalyst": null
+    },
+    {
+      "symbol": "EOSE",
+      "sector": "Electrical Equipment",
+      "close": 4.54,
+      "rel_volume": 1.1211123876441254,
+      "pct_change": 17.01030927835052,
+      "ma_distance": 23.386329664356573,
+      "score": 7.674792848185403,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNON",
+      "sector": "Health Care",
+      "close": 3.3394,
+      "rel_volume": 0.09506154075946327,
+      "pct_change": -10.231182795698931,
+      "ma_distance": -40.75790287872525,
+      "score": 7.489580934847593,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 10.46,
+      "rel_volume": 0.6274663653623871,
+      "pct_change": 0.48030739673391654,
+      "ma_distance": 62.89029043058477,
+      "score": 7.447571107791894,
+      "catalyst": null
+    },
+    {
+      "symbol": "CHPT",
+      "sector": "Electrical Equipment",
+      "close": 9.98,
+      "rel_volume": 0.822435130395352,
+      "pct_change": 0.9100101112234564,
+      "ma_distance": 60.24405908798973,
+      "score": 7.313733623948413,
+      "catalyst": null
+    }
+  ]
+}
