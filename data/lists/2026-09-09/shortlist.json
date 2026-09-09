@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-09-09T15:41:40",
+  "universe_size": 2183,
+  "catalyst_flagged": 22,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "SUNE",
+      "sector": "Electrical Equipment",
+      "close": 3.66,
+      "rel_volume": 55.010153738723965,
+      "pct_change": 54.43037974683544,
+      "ma_distance": 56.27668659265586,
+      "score": 70.46659760118845,
+      "catalyst": null
+    },
+    {
+      "symbol": "IRD",
+      "sector": "Biotechnology",
+      "close": 5.48,
+      "rel_volume": 28.28397448934724,
+      "pct_change": 26.267281105990797,
+      "ma_distance": 37.79230575810913,
+      "score": 38.832371854724116,
+      "catalyst": null
+    },
+    {
+      "symbol": "TTAN",
+      "sector": "Technology",
+      "close": 57.69,
+      "rel_volume": 9.83867903455643,
+      "pct_change": -29.284138269183625,
+      "ma_distance": -37.79903016515225,
+      "score": 25.393639787243718,
+      "catalyst": null
+    },
+    {
+      "symbol": "ODD",
+      "sector": "Consumer products",
+      "close": 15.075,
+      "rel_volume": 8.350856568299298,
+      "pct_change": 15.738963531669858,
+      "ma_distance": 11.388196176226085,
+      "score": 19.566055322382113,
+      "catalyst": {
+        "date": "2026-09-09",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "TYRA",
+      "sector": "Biotechnology",
+      "close": 21.35,
+      "rel_volume": 5.98069125241289,
+      "pct_change": -20.12719790497568,
+      "ma_distance": -17.4671898254634,
+      "score": 16.95464454909236,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 6.375,
+      "rel_volume": 0.025965331360350213,
+      "pct_change": -0.7009345794392512,
+      "ma_distance": 140.88418666162858,
+      "score": 16.808654946055338,
+      "catalyst": null
+    },
+    {
+      "symbol": "SIG",
+      "sector": "Retail",
+      "close": 98.899,
+      "rel_volume": 2.8290824271204813,
+      "pct_change": 19.63106326357808,
+      "ma_distance": 16.31823768443213,
+      "score": 15.786482768630203,
+      "catalyst": {
+        "date": "2026-09-09",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "EVMN",
+      "sector": "Biotechnology",
+      "close": 10.915,
+      "rel_volume": 4.9896927895388075,
+      "pct_change": -16.551987767584105,
+      "ma_distance": -19.556325312304242,
+      "score": 15.187873590385895,
+      "catalyst": null
+    },
+    {
+      "symbol": "CASY",
+      "sector": "Retail",
+      "close": 623.41,
+      "rel_volume": 4.091133059099324,
+      "pct_change": -15.00770289983504,
+      "ma_distance": -22.65509365233564,
+      "score": 14.33728482598869,
+      "catalyst": null
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 4.7,
+      "rel_volume": 0.37215991868457565,
+      "pct_change": -5.9999999999999964,
+      "ma_distance": 96.1602671118531,
+      "score": 13.112375836214433,
+      "catalyst": null
+    },
+    {
+      "symbol": "XHLD",
+      "sector": "Media",
+      "close": 11.1962,
+      "rel_volume": 0.8826847521680231,
+      "pct_change": 19.362473347547958,
+      "ma_distance": 44.51837748878635,
+      "score": 13.086243695963683,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 10.31,
+      "rel_volume": 1.2206403362562503,
+      "pct_change": 15.453527435610312,
+      "ma_distance": 46.049509508800504,
+      "score": 12.127402358976335,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGCL",
+      "sector": "Professional Services",
+      "close": 3.49,
+      "rel_volume": 0.08625948750486992,
+      "pct_change": -3.856749311294757,
+      "ma_distance": -93.20274422160222,
+      "score": 11.736397866820957,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNC",
+      "sector": "Building",
+      "close": 4.62,
+      "rel_volume": 1.0149321076905191,
+      "pct_change": -11.999999999999998,
+      "ma_distance": 55.03355704697987,
+      "score": 11.00489303817199,
+      "catalyst": null
+    },
+    {
+      "symbol": "TH",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 18.9,
+      "rel_volume": 5.180996076964642,
+      "pct_change": -6.666666666666673,
+      "ma_distance": 5.784568885903788,
+      "score": 10.621048836121348,
+      "catalyst": null
+    }
+  ]
+}
