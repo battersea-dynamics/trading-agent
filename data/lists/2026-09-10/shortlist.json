@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-09-10T15:37:17",
+  "universe_size": 2187,
+  "catalyst_flagged": 6,
+  "excluded_held": [
+    "AVAV"
+  ],
+  "shortlist": [
+    {
+      "symbol": "DBGI",
+      "sector": "Retail",
+      "close": 5.7099,
+      "rel_volume": 38.84799472030412,
+      "pct_change": 52.26400000000001,
+      "ma_distance": -32.92728767766944,
+      "score": 52.59760586550141,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNON",
+      "sector": "Health Care",
+      "close": 4.28,
+      "rel_volume": 17.75643731792864,
+      "pct_change": 75.40983606557378,
+      "ma_distance": -19.509080616921512,
+      "score": 43.42188538997931,
+      "catalyst": null
+    },
+    {
+      "symbol": "SKYQ",
+      "sector": "Energy",
+      "close": 3.3014,
+      "rel_volume": 25.564512066126138,
+      "pct_change": 23.647940074906373,
+      "ma_distance": 21.163409487108922,
+      "score": 33.03172834368938,
+      "catalyst": null
+    },
+    {
+      "symbol": "HGTY",
+      "sector": "Insurance",
+      "close": 13.09,
+      "rel_volume": 36.55534163114678,
+      "pct_change": -1.2820512820512815,
+      "ma_distance": -0.5923450789793527,
+      "score": 30.64662447758178,
+      "catalyst": null
+    },
+    {
+      "symbol": "PCLA",
+      "sector": "Communications",
+      "close": 9.77,
+      "rel_volume": 13.738538879578229,
+      "pct_change": 31.671159029649594,
+      "ma_distance": 41.155903589217544,
+      "score": 29.558174958937176,
+      "catalyst": null
+    },
+    {
+      "symbol": "RWT",
+      "sector": "Real Estate",
+      "close": 3.435,
+      "rel_volume": 11.053151127696525,
+      "pct_change": -19.366197183098585,
+      "ma_distance": -25.91394370753801,
+      "score": 20.742016150945265,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 6.97,
+      "rel_volume": 0.02026710870301259,
+      "pct_change": -1.8309859154929564,
+      "ma_distance": 137.96517582792765,
+      "score": 17.4694881039986,
+      "catalyst": null
+    },
+    {
+      "symbol": "CMRC",
+      "sector": "Technology",
+      "close": 3.15,
+      "rel_volume": 2.5960945304326835,
+      "pct_change": 21.153846153846146,
+      "ma_distance": 35.48387096774192,
+      "score": 15.361198796469473,
+      "catalyst": null
+    },
+    {
+      "symbol": "NAVN",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 20.48,
+      "rel_volume": 3.211045662928636,
+      "pct_change": -20.8960988798764,
+      "ma_distance": -28.25551964828389,
+      "score": 14.716216697474572,
+      "catalyst": null
+    },
+    {
+      "symbol": "COO",
+      "sector": "Health Care",
+      "close": 54.78,
+      "rel_volume": 4.376816500080082,
+      "pct_change": -13.705103969754248,
+      "ma_distance": -24.62954554835515,
+      "score": 13.958535474370558,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGCL",
+      "sector": "Professional Services",
+      "close": 3.15,
+      "rel_volume": 0.08156689147029884,
+      "pct_change": -8.430232558139537,
+      "ma_distance": -92.64512739690045,
+      "score": 13.478286735086083,
+      "catalyst": null
+    },
+    {
+      "symbol": "SUNE",
+      "sector": "Electrical Equipment",
+      "close": 3.935,
+      "rel_volume": 1.0461226585015964,
+      "pct_change": -12.74944567627494,
+      "ma_distance": 61.36969448431411,
+      "score": 12.13330631863488,
+      "catalyst": null
+    },
+    {
+      "symbol": "BKV",
+      "sector": "Energy",
+      "close": 24.065,
+      "rel_volume": 9.80876551418901,
+      "pct_change": -0.14522821576763545,
+      "ma_distance": -5.127042636652144,
+      "score": 11.383816222472703,
+      "catalyst": null
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 4.08,
+      "rel_volume": 0.211559496410163,
+      "pct_change": -7.482993197278913,
+      "ma_distance": 61.16926723286588,
+      "score": 10.003372485462636,
+      "catalyst": null
+    },
+    {
+      "symbol": "SHOE",
+      "sector": "Retail",
+      "close": 12.265,
+      "rel_volume": 3.036916597494718,
+      "pct_change": -5.143078112915694,
+      "ma_distance": -15.220847445911373,
+      "score": 9.639511396448425,
+      "catalyst": {
+        "date": "2026-09-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
