@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-09-11T15:38:24",
+  "universe_size": 2208,
+  "catalyst_flagged": 3,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "AENT",
+      "sector": "Distributors",
+      "close": 7.0,
+      "rel_volume": 330.19876169962987,
+      "pct_change": 27.041742286751365,
+      "ma_distance": 29.2759163584821,
+      "score": 63.12457451352428,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNON",
+      "sector": "Health Care",
+      "close": 9.015,
+      "rel_volume": 6.535296533594106,
+      "pct_change": 70.09433962264153,
+      "ma_distance": 70.08246594105697,
+      "score": 36.10030330384345,
+      "catalyst": null
+    },
+    {
+      "symbol": "ACVA",
+      "sector": "Commercial Services & Supplies",
+      "close": 10.425,
+      "rel_volume": 19.91793643453422,
+      "pct_change": 44.39058171745154,
+      "ma_distance": 42.45695545230937,
+      "score": 26.397645133044843,
+      "catalyst": null
+    },
+    {
+      "symbol": "FGL",
+      "sector": "Construction",
+      "close": 6.99,
+      "rel_volume": 1.2486782432191883,
+      "pct_change": 37.058823529411775,
+      "ma_distance": -69.16153795248493,
+      "score": 19.7811917301876,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWVL",
+      "sector": "Road & Rail",
+      "close": 7.11,
+      "rel_volume": 0.07852912277922716,
+      "pct_change": -10.453400503778337,
+      "ma_distance": 118.39963139302718,
+      "score": 17.804148067469026,
+      "catalyst": null
+    },
+    {
+      "symbol": "PCLA",
+      "sector": "Communications",
+      "close": 11.34,
+      "rel_volume": 7.622425606891905,
+      "pct_change": 16.666666666666657,
+      "ma_distance": 60.22776645460743,
+      "score": 17.693666592598547,
+      "catalyst": null
+    },
+    {
+      "symbol": "BCAT",
+      "sector": "N/A",
+      "close": 14.555,
+      "rel_volume": 5.516515739481851,
+      "pct_change": -8.516656191074798,
+      "ma_distance": -8.418800729881086,
+      "score": 8.646817622334488,
+      "catalyst": null
+    },
+    {
+      "symbol": "RWT",
+      "sector": "Real Estate",
+      "close": 3.5399,
+      "rel_volume": 5.455908269351817,
+      "pct_change": -2.482093663911848,
+      "ma_distance": -22.7517730496454,
+      "score": 8.342299751497148,
+      "catalyst": null
+    },
+    {
+      "symbol": "NHIC",
+      "sector": "unknown",
+      "close": 10.65,
+      "rel_volume": 26.012817485556706,
+      "pct_change": 0.2824858757062254,
+      "ma_distance": 0.28956847234975325,
+      "score": 8.3031069579079,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNC",
+      "sector": "Building",
+      "close": 5.16,
+      "rel_volume": 0.35083316964579947,
+      "pct_change": 3.4068136272545075,
+      "ma_distance": 61.07382550335573,
+      "score": 8.270406391809662,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALMS",
+      "sector": "Pharmaceuticals",
+      "close": 9.385,
+      "rel_volume": 0.2839285627284347,
+      "pct_change": -5.202020202020208,
+      "ma_distance": -50.82396709371479,
+      "score": 7.616451288191285,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 7.61,
+      "rel_volume": 0.27062802241093,
+      "pct_change": 14.264264264264268,
+      "ma_distance": 24.851318649768267,
+      "score": 7.59794303785538,
+      "catalyst": null
+    },
+    {
+      "symbol": "BBOT",
+      "sector": "Biotechnology",
+      "close": 5.11,
+      "rel_volume": 1.3325745223415637,
+      "pct_change": -7.427536231884045,
+      "ma_distance": -41.68497332458418,
+      "score": 7.576150165921728,
+      "catalyst": null
+    },
+    {
+      "symbol": "CMRC",
+      "sector": "Technology",
+      "close": 3.33,
+      "rel_volume": 0.5175997926338148,
+      "pct_change": 8.116883116883116,
+      "ma_distance": 40.447068747363986,
+      "score": 7.396016611173841,
+      "catalyst": null
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 3.96,
+      "rel_volume": 0.09071658862913812,
+      "pct_change": 3.1250000000000027,
+      "ma_distance": 50.6276150627615,
+      "score": 6.997739711638712,
+      "catalyst": null
+    }
+  ]
+}
