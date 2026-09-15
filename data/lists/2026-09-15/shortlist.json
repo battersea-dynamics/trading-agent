@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-09-15T15:59:58",
+  "universe_size": 2222,
+  "catalyst_flagged": 6,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "VEEA",
+      "sector": "Technology",
+      "close": 5.9599,
+      "rel_volume": 87.62107395965934,
+      "pct_change": 160.25764192139738,
+      "ma_distance": 180.1494782363448,
+      "score": 95.00470735226176,
+      "catalyst": null
+    },
+    {
+      "symbol": "VRA",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 3.77,
+      "rel_volume": 71.03533389567022,
+      "pct_change": 24.013157894736842,
+      "ma_distance": 17.702154230408983,
+      "score": 42.70814272267607,
+      "catalyst": {
+        "date": "2026-09-15",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PSIG",
+      "sector": "Logistics & Transportation",
+      "close": 3.3158,
+      "rel_volume": 3.796010483709666,
+      "pct_change": 30.543307086614163,
+      "ma_distance": 66.58126098970106,
+      "score": 19.585527964103846,
+      "catalyst": null
+    },
+    {
+      "symbol": "FTFT",
+      "sector": "Financial Services",
+      "close": 5.44,
+      "rel_volume": 0.4565504088915146,
+      "pct_change": -32.33830845771143,
+      "ma_distance": 104.66901183242724,
+      "score": 18.287765402850948,
+      "catalyst": null
+    },
+    {
+      "symbol": "INDP",
+      "sector": "Biotechnology",
+      "close": 3.53,
+      "rel_volume": 0.6987524822778024,
+      "pct_change": 12.420382165605085,
+      "ma_distance": 139.59736782268433,
+      "score": 17.923813934071735,
+      "catalyst": null
+    },
+    {
+      "symbol": "MNR",
+      "sector": "Energy",
+      "close": 11.27,
+      "rel_volume": 22.84353053727082,
+      "pct_change": -9.767814251401125,
+      "ma_distance": -10.50938976456109,
+      "score": 16.087857185768414,
+      "catalyst": null
+    },
+    {
+      "symbol": "SWMR",
+      "sector": "Aerospace & Defense",
+      "close": 24.815,
+      "rel_volume": 4.867781298732813,
+      "pct_change": -22.838930348258693,
+      "ma_distance": -33.83681168887437,
+      "score": 14.138679393943363,
+      "catalyst": null
+    },
+    {
+      "symbol": "PLAY",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 6.9701,
+      "rel_volume": 4.89031919019581,
+      "pct_change": -17.708382526564346,
+      "ma_distance": -24.663856463467347,
+      "score": 12.040311511976837,
+      "catalyst": null
+    },
+    {
+      "symbol": "EDHL",
+      "sector": "Media",
+      "close": 4.63,
+      "rel_volume": 6.163249983813404,
+      "pct_change": 4.161979752530924,
+      "ma_distance": 14.472345533415165,
+      "score": 9.505056316205872,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRBP",
+      "sector": "Biotechnology",
+      "close": 6.6201,
+      "rel_volume": 2.1064123769769068,
+      "pct_change": -18.068069306930695,
+      "ma_distance": -35.79730876469875,
+      "score": 9.303313207644628,
+      "catalyst": null
+    },
+    {
+      "symbol": "FPS",
+      "sector": "Electrical Equipment",
+      "close": 31.285,
+      "rel_volume": 3.2170648788417022,
+      "pct_change": 9.235335195530725,
+      "ma_distance": -2.0445863861231093,
+      "score": 8.561214827670353,
+      "catalyst": {
+        "date": "2026-09-15",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PDM",
+      "sector": "Real Estate",
+      "close": 9.53,
+      "rel_volume": 7.9029407117242325,
+      "pct_change": 3.5869565217391313,
+      "ma_distance": -0.7291666666666696,
+      "score": 8.506219611035618,
+      "catalyst": null
+    },
+    {
+      "symbol": "FGL",
+      "sector": "Construction",
+      "close": 4.74,
+      "rel_volume": 0.085876506095706,
+      "pct_change": -4.914744232698096,
+      "ma_distance": -74.65884334193186,
+      "score": 8.459974222388636,
+      "catalyst": null
+    },
+    {
+      "symbol": "TRMD",
+      "sector": "Energy",
+      "close": 34.09,
+      "rel_volume": 5.935159198843522,
+      "pct_change": -3.5370684776457266,
+      "ma_distance": 10.045838982503732,
+      "score": 8.411273489893558,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALHC",
+      "sector": "Health Care",
+      "close": 10.54,
+      "rel_volume": 2.008787850822237,
+      "pct_change": -18.547140649149927,
+      "ma_distance": -20.789102865194938,
+      "score": 7.667984526017725,
+      "catalyst": null
+    }
+  ]
+}
