@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-09-16T15:53:20",
+  "universe_size": 2228,
+  "catalyst_flagged": 2,
+  "excluded_held": [
+    "ALVO"
+  ],
+  "shortlist": [
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 9.94,
+      "rel_volume": 39.65606380785766,
+      "pct_change": 513.5802469135803,
+      "ma_distance": 779.0547950051292,
+      "score": 121.5686103678635,
+      "catalyst": null
+    },
+    {
+      "symbol": "RETO",
+      "sector": "Construction",
+      "close": 10.395,
+      "rel_volume": 7.531330549038025,
+      "pct_change": 271.25,
+      "ma_distance": 736.8487151413666,
+      "score": 63.95590379309111,
+      "catalyst": null
+    },
+    {
+      "symbol": "FTFT",
+      "sector": "Financial Services",
+      "close": 7.87,
+      "rel_volume": 0.9651502030136472,
+      "pct_change": 37.10801393728222,
+      "ma_distance": 183.6087136705166,
+      "score": 11.174620512391243,
+      "catalyst": null
+    },
+    {
+      "symbol": "BWIN",
+      "sector": "Insurance",
+      "close": 32.035,
+      "rel_volume": 3.8875026035232025,
+      "pct_change": -1.4004309018159597,
+      "ma_distance": 4.374032744155718,
+      "score": 8.527024226637417,
+      "catalyst": null
+    },
+    {
+      "symbol": "FANG",
+      "sector": "Energy",
+      "close": 191.8,
+      "rel_volume": 3.453818859516146,
+      "pct_change": -9.3251388724737,
+      "ma_distance": -6.047977741502123,
+      "score": 7.921228798677215,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEA",
+      "sector": "Technology",
+      "close": 5.95,
+      "rel_volume": 0.9268893291211762,
+      "pct_change": 4.203152364273208,
+      "ma_distance": 161.05651105651103,
+      "score": 7.593489827292114,
+      "catalyst": null
+    },
+    {
+      "symbol": "JBHT",
+      "sector": "Road & Rail",
+      "close": 238.21,
+      "rel_volume": 2.8787837947114476,
+      "pct_change": -12.759567844717084,
+      "ma_distance": -11.078676389617327,
+      "score": 6.881610438392132,
+      "catalyst": null
+    },
+    {
+      "symbol": "VRA",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 4.305,
+      "rel_volume": 2.6305296082339527,
+      "pct_change": 5.256723716381415,
+      "ma_distance": 32.5023084025854,
+      "score": 6.549072848814652,
+      "catalyst": null
+    },
+    {
+      "symbol": "BBNX",
+      "sector": "Health Care",
+      "close": 20.71,
+      "rel_volume": 2.5606024539611782,
+      "pct_change": 7.696307852314095,
+      "ma_distance": 9.323655559221375,
+      "score": 5.618839245266828,
+      "catalyst": null
+    },
+    {
+      "symbol": "INDP",
+      "sector": "Biotechnology",
+      "close": 3.146,
+      "rel_volume": 0.4420115820263786,
+      "pct_change": -13.571428571428577,
+      "ma_distance": 95.97521966230715,
+      "score": 5.257532756218437,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSIG",
+      "sector": "Logistics & Transportation",
+      "close": 3.7891,
+      "rel_volume": 0.5314408912681385,
+      "pct_change": 10.792397660818713,
+      "ma_distance": 79.79122182680902,
+      "score": 4.372107800017256,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALHC",
+      "sector": "Health Care",
+      "close": 9.39,
+      "rel_volume": 1.544750102940589,
+      "pct_change": -9.45033751205399,
+      "ma_distance": -28.60265744102494,
+      "score": 3.8083352766785628,
+      "catalyst": null
+    },
+    {
+      "symbol": "KNX",
+      "sector": "Road & Rail",
+      "close": 65.93,
+      "rel_volume": 1.8684195322282615,
+      "pct_change": -3.737771937509108,
+      "ma_distance": -4.443735868746018,
+      "score": 3.2271813658937787,
+      "catalyst": null
+    },
+    {
+      "symbol": "FGL",
+      "sector": "Construction",
+      "close": 4.5,
+      "rel_volume": 0.054249615198821446,
+      "pct_change": 0.671140939597321,
+      "ma_distance": -73.30367074527253,
+      "score": 3.1878623133097514,
+      "catalyst": null
+    },
+    {
+      "symbol": "EAF",
+      "sector": "Electrical Equipment",
+      "close": 8.2,
+      "rel_volume": 1.1577199537644818,
+      "pct_change": 15.00701262272089,
+      "ma_distance": 21.454491594460478,
+      "score": 3.0550500123832203,
+      "catalyst": null
+    }
+  ]
+}
