@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-09-17T15:59:27",
+  "universe_size": 2248,
+  "catalyst_flagged": 0,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "AEMD",
+      "sector": "Health Care",
+      "close": 6.9701,
+      "rel_volume": 24.868279291151364,
+      "pct_change": 387.4195804195805,
+      "ma_distance": 242.59523224379458,
+      "score": 78.45508436744018,
+      "catalyst": null
+    },
+    {
+      "symbol": "PAAI",
+      "sector": "Media",
+      "close": 3.34,
+      "rel_volume": 30.27262985601074,
+      "pct_change": 271.15235026114004,
+      "ma_distance": 240.75895384960694,
+      "score": 72.27175871088036,
+      "catalyst": null
+    },
+    {
+      "symbol": "MNOV",
+      "sector": "Biotechnology",
+      "close": 3.32,
+      "rel_volume": 38.0214084058598,
+      "pct_change": 31.74603174603174,
+      "ma_distance": 103.49371743794052,
+      "score": 46.66330437534802,
+      "catalyst": null
+    },
+    {
+      "symbol": "DAIC",
+      "sector": "Technology",
+      "close": 5.06,
+      "rel_volume": 4.538195220169977,
+      "pct_change": 151.74129353233832,
+      "ma_distance": 78.82860197382952,
+      "score": 27.438232057763972,
+      "catalyst": null
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 4.69,
+      "rel_volume": 0.4146038007453697,
+      "pct_change": -22.734761120263588,
+      "ma_distance": 243.52431038776498,
+      "score": 20.666845868570572,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLOO",
+      "sector": "Technology",
+      "close": 4.62,
+      "rel_volume": 8.043148041794968,
+      "pct_change": 13.513513513513509,
+      "ma_distance": 40.16990291262135,
+      "score": 14.878807538866779,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEA",
+      "sector": "Technology",
+      "close": 5.9229,
+      "rel_volume": 1.0226246046052871,
+      "pct_change": -2.90327868852458,
+      "ma_distance": 142.21567905778434,
+      "score": 11.767859999016009,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSIG",
+      "sector": "Logistics & Transportation",
+      "close": 4.73,
+      "rel_volume": 1.1875085381766015,
+      "pct_change": 23.498694516971288,
+      "ma_distance": 113.11106104978602,
+      "score": 11.263110283706704,
+      "catalyst": null
+    },
+    {
+      "symbol": "GNRC",
+      "sector": "Electrical Equipment",
+      "close": 209.19,
+      "rel_volume": 4.995152865692737,
+      "pct_change": 19.4620524241905,
+      "ma_distance": 9.897845804690856,
+      "score": 10.571247845139448,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 12.475,
+      "rel_volume": 0.8048166420503666,
+      "pct_change": 35.303687635574825,
+      "ma_distance": 93.02928319987622,
+      "score": 10.510472681988794,
+      "catalyst": null
+    },
+    {
+      "symbol": "FLNC",
+      "sector": "Electrical Equipment",
+      "close": 7.775,
+      "rel_volume": 3.712810153425222,
+      "pct_change": -14.088397790055252,
+      "ma_distance": -26.362646209215313,
+      "score": 9.909678663153338,
+      "catalyst": null
+    },
+    {
+      "symbol": "FTFT",
+      "sector": "Financial Services",
+      "close": 6.18,
+      "rel_volume": 0.04365884611702245,
+      "pct_change": -11.714285714285719,
+      "ma_distance": 108.5442397246406,
+      "score": 9.785647820168686,
+      "catalyst": null
+    },
+    {
+      "symbol": "INDP",
+      "sector": "Biotechnology",
+      "close": 3.429,
+      "rel_volume": 0.20625282604320638,
+      "pct_change": 6.822429906542052,
+      "ma_distance": 99.4764397905759,
+      "score": 8.179619901297873,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDGR",
+      "sector": "Health Care",
+      "close": 27.9,
+      "rel_volume": 2.4661927338986924,
+      "pct_change": 16.590054325114913,
+      "ma_distance": 37.954905063291136,
+      "score": 7.973669841404179,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 8.23,
+      "rel_volume": 0.08974274160326379,
+      "pct_change": -6.47727272727273,
+      "ma_distance": -87.64691799609894,
+      "score": 7.468559743996103,
+      "catalyst": null
+    }
+  ]
+}
