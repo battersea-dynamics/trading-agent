@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-09-18T15:34:13",
+  "universe_size": 2261,
+  "catalyst_flagged": 1,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "IMCC",
+      "sector": "Pharmaceuticals",
+      "close": 5.49,
+      "rel_volume": 906.0832148176352,
+      "pct_change": 215.51724137931038,
+      "ma_distance": 113.83500817948118,
+      "score": 103.36669122567282,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEMD",
+      "sector": "Health Care",
+      "close": 6.061,
+      "rel_volume": 0.20002051493764714,
+      "pct_change": -10.604719764011804,
+      "ma_distance": 171.24636383978523,
+      "score": 18.44165304637361,
+      "catalyst": null
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 3.74,
+      "rel_volume": 1.029067461066368,
+      "pct_change": -19.396551724137918,
+      "ma_distance": 145.12374161073828,
+      "score": 17.597662121622765,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNMG",
+      "sector": "Media",
+      "close": 3.715,
+      "rel_volume": 25.063433574681998,
+      "pct_change": 38.10408921933085,
+      "ma_distance": 5.269123418483717,
+      "score": 13.49884350167827,
+      "catalyst": null
+    },
+    {
+      "symbol": "XENE",
+      "sector": "Biotechnology",
+      "close": 40.34,
+      "rel_volume": 13.52647884457877,
+      "pct_change": -29.659982563208366,
+      "ma_distance": -32.33133156641056,
+      "score": 13.171875408265535,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLOO",
+      "sector": "Technology",
+      "close": 5.48,
+      "rel_volume": 4.305372677337118,
+      "pct_change": 11.608961303462326,
+      "ma_distance": 62.37037037037039,
+      "score": 12.854234858148455,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 7.07,
+      "rel_volume": 0.09408797366771712,
+      "pct_change": -17.551020408163257,
+      "ma_distance": -88.60629345160011,
+      "score": 11.409322471978415,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 14.2774,
+      "rel_volume": 0.3406980609452237,
+      "pct_change": 29.67665758401454,
+      "ma_distance": 55.18913043478262,
+      "score": 11.207578084120613,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNC",
+      "sector": "Building",
+      "close": 6.21,
+      "rel_volume": 0.8780843558445861,
+      "pct_change": 14.575645756457565,
+      "ma_distance": 62.65060240963856,
+      "score": 11.059652738949632,
+      "catalyst": {
+        "date": "2026-09-21",
+        "hour": "",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "CYPH",
+      "sector": "Biotechnology",
+      "close": 3.5832,
+      "rel_volume": 1.015737134554367,
+      "pct_change": 16.716612377850172,
+      "ma_distance": 75.13196480938414,
+      "score": 10.65653564316729,
+      "catalyst": null
+    },
+    {
+      "symbol": "INDP",
+      "sector": "Biotechnology",
+      "close": 3.7651,
+      "rel_volume": 0.24055111101044985,
+      "pct_change": -4.195928753180668,
+      "ma_distance": 101.50388011774152,
+      "score": 10.602199538746834,
+      "catalyst": null
+    },
+    {
+      "symbol": "MNOV",
+      "sector": "Biotechnology",
+      "close": 3.44,
+      "rel_volume": 1.671696407541672,
+      "pct_change": -0.2898550724637748,
+      "ma_distance": 98.27089337175791,
+      "score": 10.397921754797785,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEA",
+      "sector": "Technology",
+      "close": 3.97,
+      "rel_volume": 0.11135149259716248,
+      "pct_change": -25.515947467166978,
+      "ma_distance": 53.33513576146154,
+      "score": 10.041432874379115,
+      "catalyst": null
+    },
+    {
+      "symbol": "FTFT",
+      "sector": "Financial Services",
+      "close": 5.8106,
+      "rel_volume": 0.04330400215575601,
+      "pct_change": -7.104716227018384,
+      "ma_distance": 87.24240715379038,
+      "score": 9.803965961520896,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSIG",
+      "sector": "Logistics & Transportation",
+      "close": 4.18,
+      "rel_volume": 0.939075780486158,
+      "pct_change": -5.855855855855871,
+      "ma_distance": 78.6706561231032,
+      "score": 8.726159351284377,
+      "catalyst": null
+    }
+  ]
+}
