@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-09-21T17:33:52",
+  "universe_size": 2393,
+  "catalyst_flagged": 13,
+  "excluded_held": [
+    "CRML",
+    "NUAI",
+    "WBD"
+  ],
+  "shortlist": [
+    {
+      "symbol": "VEEE",
+      "sector": "Leisure Products",
+      "close": 18.7,
+      "rel_volume": 676.517320798691,
+      "pct_change": 117.94871794871793,
+      "ma_distance": 94.06392694063928,
+      "score": 79.24028971971383,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRML",
+      "sector": "Biotechnology",
+      "close": 9.83,
+      "rel_volume": 158.48381028528402,
+      "pct_change": 244.91228070175438,
+      "ma_distance": 100.8274171305991,
+      "score": 63.252924701047476,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEMD",
+      "sector": "Health Care",
+      "close": 6.175,
+      "rel_volume": 0.07877342884048907,
+      "pct_change": -2.139461172741677,
+      "ma_distance": 155.6935817805383,
+      "score": 15.704375277966653,
+      "catalyst": null
+    },
+    {
+      "symbol": "PRTH",
+      "sector": "Financial Services",
+      "close": 7.76,
+      "rel_volume": 36.894657046644504,
+      "pct_change": 33.10463121783876,
+      "ma_distance": 37.90039539739659,
+      "score": 15.593898232677718,
+      "catalyst": null
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 3.8708,
+      "rel_volume": 0.11818631654043786,
+      "pct_change": 2.9468085106383044,
+      "ma_distance": 135.8431936439077,
+      "score": 13.663431937045647,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 12.88,
+      "rel_volume": 0.8123835966336047,
+      "pct_change": 26.39842983316979,
+      "ma_distance": 73.57905730938985,
+      "score": 11.257710697639194,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRAL",
+      "sector": "Biotechnology",
+      "close": 106.875,
+      "rel_volume": 2.8087217303443586,
+      "pct_change": 32.32016837934877,
+      "ma_distance": 35.3662011969222,
+      "score": 11.042236898973458,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNC",
+      "sector": "Building",
+      "close": 6.62,
+      "rel_volume": 0.6277685206575309,
+      "pct_change": 10.70234113712374,
+      "ma_distance": 66.24811652435962,
+      "score": 10.112232502031375,
+      "catalyst": {
+        "date": "2026-09-21",
+        "hour": "",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SST",
+      "sector": "Media",
+      "close": 4.3098,
+      "rel_volume": 0.38994350591737914,
+      "pct_change": 29.423423423423422,
+      "ma_distance": 43.827799098948766,
+      "score": 8.88169043814358,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 6.2,
+      "rel_volume": 0.03747546634794593,
+      "pct_change": 1.1419249592169702,
+      "ma_distance": -89.15055874622456,
+      "score": 8.568831687657964,
+      "catalyst": null
+    },
+    {
+      "symbol": "MNOV",
+      "sector": "Biotechnology",
+      "close": 3.19,
+      "rel_volume": 0.6391678151193192,
+      "pct_change": -3.9156626506024064,
+      "ma_distance": 74.07912687585265,
+      "score": 8.055894357525045,
+      "catalyst": null
+    },
+    {
+      "symbol": "MX",
+      "sector": "Semiconductors",
+      "close": 3.1983,
+      "rel_volume": 10.522482203767401,
+      "pct_change": 16.301818181818188,
+      "ma_distance": 4.948318293683341,
+      "score": 7.934920123330844,
+      "catalyst": null
+    },
+    {
+      "symbol": "FGL",
+      "sector": "Construction",
+      "close": 4.159,
+      "rel_volume": 0.09386393228027927,
+      "pct_change": -9.586956521739127,
+      "ma_distance": -66.19042780205264,
+      "score": 7.909142542180929,
+      "catalyst": null
+    },
+    {
+      "symbol": "INDP",
+      "sector": "Biotechnology",
+      "close": 3.2999,
+      "rel_volume": 0.23231076637163114,
+      "pct_change": -7.045070422535204,
+      "ma_distance": 66.91451694486598,
+      "score": 7.880185016242621,
+      "catalyst": null
+    },
+    {
+      "symbol": "SECZ",
+      "sector": "Financial Services",
+      "close": 11.95,
+      "rel_volume": 1.1267021851520378,
+      "pct_change": 10.036832412523019,
+      "ma_distance": 59.930406852248396,
+      "score": 7.4098203492474175,
+      "catalyst": null
+    }
+  ]
+}
