@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-09-23T15:52:27",
+  "universe_size": 2402,
+  "catalyst_flagged": 9,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "WHLR",
+      "sector": "Real Estate",
+      "close": 5.91,
+      "rel_volume": 63.14287818948419,
+      "pct_change": 216.04278074866306,
+      "ma_distance": 12.427949093537766,
+      "score": 90.90969270038408,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPDN",
+      "sector": "Professional Services",
+      "close": 5.395,
+      "rel_volume": 13.951108453180096,
+      "pct_change": 38.33333333333332,
+      "ma_distance": 49.11759421771998,
+      "score": 26.354116460796348,
+      "catalyst": null
+    },
+    {
+      "symbol": "JAGX",
+      "sector": "Pharmaceuticals",
+      "close": 13.6,
+      "rel_volume": 5.322818718305334,
+      "pct_change": -60.53395240858966,
+      "ma_distance": 49.95148628384935,
+      "score": 23.78365045319188,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRML",
+      "sector": "Biotechnology",
+      "close": 11.725,
+      "rel_volume": 2.2408563509695707,
+      "pct_change": -17.137809187279156,
+      "ma_distance": 128.16832887375332,
+      "score": 18.71109067310342,
+      "catalyst": null
+    },
+    {
+      "symbol": "INNV",
+      "sector": "Health Care",
+      "close": 9.125,
+      "rel_volume": 13.554856978570207,
+      "pct_change": -14.359455654622238,
+      "ma_distance": -15.558126084441875,
+      "score": 17.520076838189986,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 22.43,
+      "rel_volume": 0.1550100771864221,
+      "pct_change": 32.72189349112427,
+      "ma_distance": 103.98326664241544,
+      "score": 16.832068472521392,
+      "catalyst": null
+    },
+    {
+      "symbol": "DCOY",
+      "sector": "Biotechnology",
+      "close": 3.97,
+      "rel_volume": 4.4796378518386915,
+      "pct_change": 28.064516129032263,
+      "ma_distance": 39.5675865705748,
+      "score": 16.658578011756,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEMD",
+      "sector": "Health Care",
+      "close": 6.46,
+      "rel_volume": 0.02132024022811831,
+      "pct_change": -1.674277016742775,
+      "ma_distance": 131.45825868864208,
+      "score": 13.522876709801237,
+      "catalyst": null
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 3.955,
+      "rel_volume": 0.026872775067729907,
+      "pct_change": -7.48538011695907,
+      "ma_distance": 104.86814365115956,
+      "score": 11.951504418590607,
+      "catalyst": null
+    },
+    {
+      "symbol": "TLSI",
+      "sector": "Biotechnology",
+      "close": 5.3897,
+      "rel_volume": 6.4406969958077624,
+      "pct_change": 9.32454361054768,
+      "ma_distance": 9.764268621760621,
+      "score": 11.709418824556952,
+      "catalyst": null
+    },
+    {
+      "symbol": "SECZ",
+      "sector": "Financial Services",
+      "close": 14.425,
+      "rel_volume": 1.3165853416283655,
+      "pct_change": 10.961538461538467,
+      "ma_distance": 76.49577878380033,
+      "score": 10.863536392804573,
+      "catalyst": null
+    },
+    {
+      "symbol": "NNBR",
+      "sector": "Machinery",
+      "close": 3.77,
+      "rel_volume": 3.66615224684209,
+      "pct_change": 11.869436201780413,
+      "ma_distance": 8.833718244803697,
+      "score": 9.568053268961656,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRAL",
+      "sector": "Biotechnology",
+      "close": 108.52,
+      "rel_volume": 3.2702168099847335,
+      "pct_change": 0.5094007594702206,
+      "ma_distance": 35.01878716998035,
+      "score": 9.199857197675332,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 5.8027,
+      "rel_volume": 0.12203860556648799,
+      "pct_change": -3.2883333333333375,
+      "ma_distance": -87.71741178114145,
+      "score": 9.021801311200084,
+      "catalyst": null
+    },
+    {
+      "symbol": "FTFT",
+      "sector": "Financial Services",
+      "close": 4.895,
+      "rel_volume": 0.0636872047054286,
+      "pct_change": 21.76616915422886,
+      "ma_distance": 43.59049574655324,
+      "score": 8.923695974004069,
+      "catalyst": null
+    }
+  ]
+}
