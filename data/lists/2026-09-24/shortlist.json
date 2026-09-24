@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-09-24T16:15:11",
+  "universe_size": 2390,
+  "catalyst_flagged": 5,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "APUS",
+      "sector": "Biotechnology",
+      "close": 5.885,
+      "rel_volume": 446.80935439134254,
+      "pct_change": 156.98689956331876,
+      "ma_distance": 131.4878552463369,
+      "score": 96.7535836358325,
+      "catalyst": null
+    },
+    {
+      "symbol": "SRZN",
+      "sector": "Biotechnology",
+      "close": 31.27,
+      "rel_volume": 50.07437873712003,
+      "pct_change": 93.50247524752476,
+      "ma_distance": 57.238396942726396,
+      "score": 34.2019003160463,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 4.44,
+      "rel_volume": 5.6737041235007375,
+      "pct_change": 52.57731958762887,
+      "ma_distance": 193.89376137679963,
+      "score": 32.78512133889839,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRML",
+      "sector": "Biotechnology",
+      "close": 15.74,
+      "rel_volume": 1.5404435030078194,
+      "pct_change": 40.66130473637177,
+      "ma_distance": 201.95194475085128,
+      "score": 26.898679062692686,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 25.5,
+      "rel_volume": 0.1266690849768329,
+      "pct_change": 9.536082474226799,
+      "ma_distance": 115.51724137931036,
+      "score": 12.477483436312681,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEMD",
+      "sector": "Health Care",
+      "close": 6.45,
+      "rel_volume": 0.008733494544363042,
+      "pct_change": -5.286343612334794,
+      "ma_distance": 114.17898057446456,
+      "score": 11.061657720525234,
+      "catalyst": null
+    },
+    {
+      "symbol": "SKYQ",
+      "sector": "Energy",
+      "close": 3.035,
+      "rel_volume": 8.87328974276256,
+      "pct_change": 19.488188976377955,
+      "ma_distance": 8.625626342161778,
+      "score": 10.346145983701291,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 4.68,
+      "rel_volume": 0.06835542961306046,
+      "pct_change": -13.812154696132598,
+      "ma_distance": -88.88421772682253,
+      "score": 10.0616734992472,
+      "catalyst": null
+    },
+    {
+      "symbol": "WHLR",
+      "sector": "Real Estate",
+      "close": 3.415,
+      "rel_volume": 0.4249066720638502,
+      "pct_change": -37.22426470588236,
+      "ma_distance": -29.865275609956466,
+      "score": 9.727311466324359,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 14.225,
+      "rel_volume": 0.6549004074259859,
+      "pct_change": 10.528360528360531,
+      "ma_distance": 69.67347547338599,
+      "score": 8.687739651380586,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARTL",
+      "sector": "Pharmaceuticals",
+      "close": 4.73,
+      "rel_volume": 0.6145197690504927,
+      "pct_change": -35.29411764705881,
+      "ma_distance": -14.205127740039721,
+      "score": 7.973030345407371,
+      "catalyst": null
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 3.52,
+      "rel_volume": 0.013338444842221566,
+      "pct_change": -8.093994778067886,
+      "ma_distance": 71.37209653312301,
+      "score": 7.939980716517519,
+      "catalyst": null
+    },
+    {
+      "symbol": "VKTX",
+      "sector": "Biotechnology",
+      "close": 35.6599,
+      "rel_volume": 3.766415888228944,
+      "pct_change": -14.381992797118844,
+      "ma_distance": 7.790825965389571,
+      "score": 7.879915775689298,
+      "catalyst": null
+    },
+    {
+      "symbol": "INDP",
+      "sector": "Biotechnology",
+      "close": 3.9968,
+      "rel_volume": 0.17908269235953275,
+      "pct_change": 6.015915119363393,
+      "ma_distance": 70.63934251254136,
+      "score": 7.873993862344781,
+      "catalyst": null
+    },
+    {
+      "symbol": "SECZ",
+      "sector": "Financial Services",
+      "close": 14.635,
+      "rel_volume": 1.5655078453131026,
+      "pct_change": 1.9150417827298076,
+      "ma_distance": 71.07954877549825,
+      "score": 7.689924477838768,
+      "catalyst": null
+    }
+  ]
+}
