@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-09-28T19:03:13",
+  "universe_size": 2427,
+  "catalyst_flagged": 16,
+  "excluded_held": [
+    "KOD"
+  ],
+  "shortlist": [
+    {
+      "symbol": "CLRO",
+      "sector": "Communications",
+      "close": 4.85,
+      "rel_volume": 340.2671606603352,
+      "pct_change": 40.57971014492752,
+      "ma_distance": 5.1376544548016305,
+      "score": 50.43297243726734,
+      "catalyst": null
+    },
+    {
+      "symbol": "BEAG",
+      "sector": "N/A",
+      "close": 10.7,
+      "rel_volume": 263.0050204853298,
+      "pct_change": -0.09337068160599031,
+      "ma_distance": -0.7428516300435837,
+      "score": 33.13278181326446,
+      "catalyst": null
+    },
+    {
+      "symbol": "SCYX",
+      "sector": "Pharmaceuticals",
+      "close": 4.54,
+      "rel_volume": 127.16428632689471,
+      "pct_change": 3.4168564920273434,
+      "ma_distance": -5.4166666666666625,
+      "score": 19.076302553116022,
+      "catalyst": null
+    },
+    {
+      "symbol": "MSGY",
+      "sector": "Construction",
+      "close": 3.17,
+      "rel_volume": 2.7260924816520427,
+      "pct_change": -60.718711276332094,
+      "ma_distance": 40.23477158763901,
+      "score": 18.628000392378933,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 4.415,
+      "rel_volume": 0.7689099969342037,
+      "pct_change": -20.306859205776174,
+      "ma_distance": 130.51820911108211,
+      "score": 15.924944060551113,
+      "catalyst": null
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 4.015,
+      "rel_volume": 2.206893712158206,
+      "pct_change": 29.099678456591633,
+      "ma_distance": 77.71305648752242,
+      "score": 14.938442368878032,
+      "catalyst": null
+    },
+    {
+      "symbol": "APUS",
+      "sector": "Biotechnology",
+      "close": 6.46,
+      "rel_volume": 0.11670069312195333,
+      "pct_change": -10.896551724137932,
+      "ma_distance": 137.21656109428076,
+      "score": 14.665525619907472,
+      "catalyst": null
+    },
+    {
+      "symbol": "VWAV",
+      "sector": "Aerospace & Defense",
+      "close": 4.445,
+      "rel_volume": 34.038477941437506,
+      "pct_change": -8.72689938398357,
+      "ma_distance": -53.58720280669513,
+      "score": 14.00983010809647,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 29.565,
+      "rel_volume": 0.08105499411287781,
+      "pct_change": 12.671493902439035,
+      "ma_distance": 113.58136174823916,
+      "score": 13.204590114169559,
+      "catalyst": null
+    },
+    {
+      "symbol": "YDES",
+      "sector": "Biotechnology",
+      "close": 7.1101,
+      "rel_volume": 0.5898870656784384,
+      "pct_change": 24.085514834205927,
+      "ma_distance": 86.07956032452238,
+      "score": 13.033605966190162,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRML",
+      "sector": "Biotechnology",
+      "close": 12.225,
+      "rel_volume": 0.34650174331594186,
+      "pct_change": -16.609822646657573,
+      "ma_distance": 97.96769361564309,
+      "score": 12.308329691041433,
+      "catalyst": null
+    },
+    {
+      "symbol": "MX",
+      "sector": "Semiconductors",
+      "close": 3.87,
+      "rel_volume": 7.1539766691246545,
+      "pct_change": 17.27272727272728,
+      "ma_distance": 27.323572956078312,
+      "score": 11.247551998370966,
+      "catalyst": null
+    },
+    {
+      "symbol": "DCX",
+      "sector": "Automobiles",
+      "close": 6.61,
+      "rel_volume": 0.3827511603408328,
+      "pct_change": -16.371457489878537,
+      "ma_distance": -90.16070354691007,
+      "score": 11.072348698624133,
+      "catalyst": null
+    },
+    {
+      "symbol": "OCUL",
+      "sector": "Pharmaceuticals",
+      "close": 7.845,
+      "rel_volume": 5.398158637013867,
+      "pct_change": -18.70466321243524,
+      "ma_distance": -24.719316764226093,
+      "score": 10.34951723471023,
+      "catalyst": null
+    },
+    {
+      "symbol": "ITG",
+      "sector": "Construction",
+      "close": 7.55,
+      "rel_volume": 1.6810291924025538,
+      "pct_change": -27.95801526717558,
+      "ma_distance": -38.632853775501914,
+      "score": 9.603100439620409,
+      "catalyst": null
+    }
+  ]
+}
