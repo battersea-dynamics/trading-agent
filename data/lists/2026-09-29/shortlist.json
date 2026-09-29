@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-09-29T17:24:09",
+  "universe_size": 2422,
+  "catalyst_flagged": 13,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "DXST",
+      "sector": "Commercial Services & Supplies",
+      "close": 3.1599,
+      "rel_volume": 1322.8588934267598,
+      "pct_change": 62.04615384615385,
+      "ma_distance": 26.573202483476855,
+      "score": 72.42806609628182,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDEV",
+      "sector": "Pharmaceuticals",
+      "close": 3.2809,
+      "rel_volume": 61.10634817218747,
+      "pct_change": 108.97452229299363,
+      "ma_distance": 225.73817040964235,
+      "score": 55.38141296618349,
+      "catalyst": null
+    },
+    {
+      "symbol": "IOVA",
+      "sector": "Biotechnology",
+      "close": 15.045,
+      "rel_volume": 3.9016850471362843,
+      "pct_change": 36.897179253867144,
+      "ma_distance": 59.206349206349216,
+      "score": 19.53436396989644,
+      "catalyst": null
+    },
+    {
+      "symbol": "DCX",
+      "sector": "Automobiles",
+      "close": 3.65,
+      "rel_volume": 0.639011648648011,
+      "pct_change": -40.84278768233388,
+      "ma_distance": -94.07223108229692,
+      "score": 18.541417098426944,
+      "catalyst": null
+    },
+    {
+      "symbol": "QURE",
+      "sector": "Biotechnology",
+      "close": 24.0,
+      "rel_volume": 16.277038856359475,
+      "pct_change": -38.63462030171312,
+      "ma_distance": -45.41795067147292,
+      "score": 18.44667057217444,
+      "catalyst": null
+    },
+    {
+      "symbol": "MSGY",
+      "sector": "Construction",
+      "close": 3.97,
+      "rel_volume": 6.953614478380508,
+      "pct_change": 26.83706070287541,
+      "ma_distance": 71.08418677911394,
+      "score": 18.19013171949356,
+      "catalyst": null
+    },
+    {
+      "symbol": "FICO",
+      "sector": "Technology",
+      "close": 620.5,
+      "rel_volume": 7.409648825627276,
+      "pct_change": -26.20913555875323,
+      "ma_distance": -36.15581890065568,
+      "score": 14.035294510140638,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 88.595,
+      "rel_volume": 1.3663500134768574,
+      "pct_change": -1.473532028469754,
+      "ma_distance": 140.7701819466525,
+      "score": 13.109538282652077,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 12.95,
+      "rel_volume": 12.453986206176486,
+      "pct_change": 22.458628841607567,
+      "ma_distance": 22.766270085794176,
+      "score": 13.003569971137466,
+      "catalyst": null
+    },
+    {
+      "symbol": "APUS",
+      "sector": "Biotechnology",
+      "close": 5.11,
+      "rel_volume": 0.0988009648390608,
+      "pct_change": -20.031298904538332,
+      "ma_distance": 79.34544178292533,
+      "score": 12.373755435917388,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 4.5186,
+      "rel_volume": 0.32918087988937356,
+      "pct_change": 0.6369710467706003,
+      "ma_distance": 118.31622176591377,
+      "score": 11.042989086915847,
+      "catalyst": null
+    },
+    {
+      "symbol": "EGG",
+      "sector": "Professional Services",
+      "close": 3.72,
+      "rel_volume": 7.160337256977127,
+      "pct_change": -12.470588235294112,
+      "ma_distance": 31.309565831274288,
+      "score": 10.56616958916582,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLPT",
+      "sector": "Health Care",
+      "close": 11.94,
+      "rel_volume": 3.1772677314181377,
+      "pct_change": -22.011757021554544,
+      "ma_distance": -16.078017923036384,
+      "score": 9.778182043231915,
+      "catalyst": null
+    },
+    {
+      "symbol": "YDES",
+      "sector": "Biotechnology",
+      "close": 7.45,
+      "rel_volume": 0.25092771828984195,
+      "pct_change": 4.781997187060476,
+      "ma_distance": 89.25441381938269,
+      "score": 9.587049661164805,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 29.04,
+      "rel_volume": 0.02770856923354946,
+      "pct_change": 1.751927119831815,
+      "ma_distance": 96.55487495346712,
+      "score": 9.438500348256282,
+      "catalyst": null
+    }
+  ]
+}
