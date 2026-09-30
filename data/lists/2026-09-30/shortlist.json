@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-09-30T17:22:12",
+  "universe_size": 2416,
+  "catalyst_flagged": 9,
+  "excluded_held": [
+    "CAPR"
+  ],
+  "shortlist": [
+    {
+      "symbol": "LGHL",
+      "sector": "Financial Services",
+      "close": 5.26,
+      "rel_volume": 110.78155571554865,
+      "pct_change": 16.629711751662974,
+      "ma_distance": -30.634770969464796,
+      "score": 55.43410892073918,
+      "catalyst": null
+    },
+    {
+      "symbol": "VBIO",
+      "sector": "Health Care",
+      "close": 3.2199,
+      "rel_volume": 60.835784941772275,
+      "pct_change": 13.777385159010597,
+      "ma_distance": 25.287937743190668,
+      "score": 35.07414724700766,
+      "catalyst": null
+    },
+    {
+      "symbol": "MSGY",
+      "sector": "Construction",
+      "close": 5.9099,
+      "rel_volume": 2.0344026246089326,
+      "pct_change": 33.10585585585585,
+      "ma_distance": 141.46729615382262,
+      "score": 27.1937818116893,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNON",
+      "sector": "Health Care",
+      "close": 4.089,
+      "rel_volume": 3.4470648189981246,
+      "pct_change": 49.780219780219795,
+      "ma_distance": 4.271324748183116,
+      "score": 23.1555532871303,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 5.235,
+      "rel_volume": 0.43814157149843946,
+      "pct_change": 10.210526315789481,
+      "ma_distance": 133.86196113468844,
+      "score": 16.354217934162364,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 15.555,
+      "rel_volume": 3.329993802197489,
+      "pct_change": 20.5813953488372,
+      "ma_distance": 45.816733067729075,
+      "score": 16.21145256909482,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 92.86,
+      "rel_volume": 0.9199070657884191,
+      "pct_change": 1.9095697980684754,
+      "ma_distance": 135.17791566417628,
+      "score": 13.61970464791502,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLAS",
+      "sector": "Consumer products",
+      "close": 5.5694,
+      "rel_volume": 3.303578902878948,
+      "pct_change": -17.976435935198822,
+      "ma_distance": -29.701483117702743,
+      "score": 13.322315594742001,
+      "catalyst": null
+    },
+    {
+      "symbol": "SCTX",
+      "sector": "Biotechnology",
+      "close": 17.765,
+      "rel_volume": 1.9950435001090876,
+      "pct_change": -22.86148501953973,
+      "ma_distance": -37.11504424778761,
+      "score": 13.313061703653522,
+      "catalyst": null
+    },
+    {
+      "symbol": "LQDA",
+      "sector": "Pharmaceuticals",
+      "close": 53.22,
+      "rel_volume": 2.1963248152309633,
+      "pct_change": -24.713537982741546,
+      "ma_distance": -22.09702740583249,
+      "score": 12.968740167047185,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 33.71,
+      "rel_volume": 0.04586529733330898,
+      "pct_change": -3.1182641184078195,
+      "ma_distance": 110.55261473118784,
+      "score": 11.850927364880679,
+      "catalyst": null
+    },
+    {
+      "symbol": "FEAM",
+      "sector": "Metals & Mining",
+      "close": 3.4314,
+      "rel_volume": 0.820972172444518,
+      "pct_change": 12.504918032786891,
+      "ma_distance": 69.13863216266172,
+      "score": 11.286002699402655,
+      "catalyst": null
+    },
+    {
+      "symbol": "QTTB",
+      "sector": "Biotechnology",
+      "close": 8.59,
+      "rel_volume": 4.581482993004246,
+      "pct_change": -9.863588667366209,
+      "ma_distance": -21.62408759124087,
+      "score": 11.169945348258963,
+      "catalyst": null
+    },
+    {
+      "symbol": "TARA",
+      "sector": "Biotechnology",
+      "close": 3.02,
+      "rel_volume": 7.057023002242545,
+      "pct_change": -5.919003115264796,
+      "ma_distance": -17.744790957374377,
+      "score": 10.336798392328888,
+      "catalyst": null
+    },
+    {
+      "symbol": "DNA",
+      "sector": "Life Sciences Tools & Services",
+      "close": 13.065,
+      "rel_volume": 1.3491845953220447,
+      "pct_change": 9.239130434782597,
+      "ma_distance": 62.13700670141474,
+      "score": 9.879748616350955,
+      "catalyst": null
+    }
+  ]
+}
