@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-10-01T17:49:27",
+  "universe_size": 2440,
+  "catalyst_flagged": 3,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "NXL",
+      "sector": "Health Care",
+      "close": 7.53,
+      "rel_volume": 3301.7715382938995,
+      "pct_change": 75.93457943925233,
+      "ma_distance": 56.45826688705189,
+      "score": 78.14666090015574,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 12.0999,
+      "rel_volume": 12.260764138360718,
+      "pct_change": -84.41738570508693,
+      "ma_distance": -85.29414981860609,
+      "score": 33.523635594138014,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDEV",
+      "sector": "Pharmaceuticals",
+      "close": 3.66,
+      "rel_volume": 7.158299977361109,
+      "pct_change": 41.31274131274132,
+      "ma_distance": 202.48683851665743,
+      "score": 33.107151433723175,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEA",
+      "sector": "Technology",
+      "close": 3.18,
+      "rel_volume": 5.04197416724239,
+      "pct_change": 46.54377880184333,
+      "ma_distance": 6.4078969382633595,
+      "score": 16.86769418448711,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 19.765,
+      "rel_volume": 2.033863487543043,
+      "pct_change": 20.51829268292684,
+      "ma_distance": 80.30468892537858,
+      "score": 13.813769744105958,
+      "catalyst": null
+    },
+    {
+      "symbol": "LONA",
+      "sector": "Pharmaceuticals",
+      "close": 4.48,
+      "rel_volume": 43.39933796954327,
+      "pct_change": 25.49019607843139,
+      "ma_distance": -27.431764801166263,
+      "score": 13.48453516082679,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 98.785,
+      "rel_volume": 0.8126682126977773,
+      "pct_change": 4.203586497890295,
+      "ma_distance": 133.13744925894457,
+      "score": 13.12184074837695,
+      "catalyst": null
+    },
+    {
+      "symbol": "LQDA",
+      "sector": "Pharmaceuticals",
+      "close": 26.15,
+      "rel_volume": 6.852440850162463,
+      "pct_change": -13.582286847323207,
+      "ma_distance": -60.666784490830395,
+      "score": 13.074766572342273,
+      "catalyst": null
+    },
+    {
+      "symbol": "ACN",
+      "sector": "Technology",
+      "close": 216.58,
+      "rel_volume": 3.883893742633042,
+      "pct_change": 18.11092326989148,
+      "ma_distance": 17.847105650490665,
+      "score": 12.409153355916505,
+      "catalyst": {
+        "date": "2026-10-01",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "MEDS",
+      "sector": "Health Care",
+      "close": 3.95,
+      "rel_volume": 2.068590554969438,
+      "pct_change": 24.605678233438493,
+      "ma_distance": 49.27742169548918,
+      "score": 12.137524899834611,
+      "catalyst": null
+    },
+    {
+      "symbol": "TJGC",
+      "sector": "Media",
+      "close": 33.551,
+      "rel_volume": 0.05520820997320836,
+      "pct_change": 11.096026490066233,
+      "ma_distance": 97.13559645695318,
+      "score": 11.678362135523106,
+      "catalyst": null
+    },
+    {
+      "symbol": "MSGY",
+      "sector": "Construction",
+      "close": 4.94,
+      "rel_volume": 0.07820152520825821,
+      "pct_change": -12.720848056537099,
+      "ma_distance": 87.15701298922711,
+      "score": 11.416850916471864,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 4.415,
+      "rel_volume": 0.22514798194580365,
+      "pct_change": -13.937621832358671,
+      "ma_distance": 82.02432488146773,
+      "score": 11.267287097010694,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGHL",
+      "sector": "Financial Services",
+      "close": 4.148,
+      "rel_volume": 0.162344112869081,
+      "pct_change": -26.971830985915496,
+      "ma_distance": -43.897045397677715,
+      "score": 10.758785459129616,
+      "catalyst": null
+    },
+    {
+      "symbol": "YDES",
+      "sector": "Biotechnology",
+      "close": 8.0945,
+      "rel_volume": 0.254739266170483,
+      "pct_change": 9.090296495956874,
+      "ma_distance": 87.64416111272092,
+      "score": 10.311571285388645,
+      "catalyst": null
+    }
+  ]
+}
