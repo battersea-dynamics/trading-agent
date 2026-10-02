@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-10-02T17:10:58",
+  "universe_size": 2437,
+  "catalyst_flagged": 1,
+  "excluded_held": [
+    "NNBR",
+    "SYNA"
+  ],
+  "shortlist": [
+    {
+      "symbol": "AMOD",
+      "sector": "Technology",
+      "close": 3.31,
+      "rel_volume": 177.51956956334269,
+      "pct_change": 182.9059829059829,
+      "ma_distance": 77.38478027867095,
+      "score": 77.88821091144239,
+      "catalyst": null
+    },
+    {
+      "symbol": "CYCU",
+      "sector": "Professional Services",
+      "close": 3.951,
+      "rel_volume": 202.9972098409726,
+      "pct_change": 46.877323420074354,
+      "ma_distance": 24.186704384724198,
+      "score": 52.08345550460304,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDEV",
+      "sector": "Pharmaceuticals",
+      "close": 6.07,
+      "rel_volume": 5.518800820454441,
+      "pct_change": 65.84699453551913,
+      "ma_distance": 349.6246338003652,
+      "score": 43.642630560497196,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 40.861,
+      "rel_volume": 9.416300615732837,
+      "pct_change": 74.3960734101579,
+      "ma_distance": 252.0299812617114,
+      "score": 38.85256374478652,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 3.63,
+      "rel_volume": 10.416271031941966,
+      "pct_change": 25.17241379310345,
+      "ma_distance": 191.2165712658294,
+      "score": 24.96068723858001,
+      "catalyst": null
+    },
+    {
+      "symbol": "GOW",
+      "sector": "unknown",
+      "close": 3.915,
+      "rel_volume": 7.757434488098333,
+      "pct_change": 31.3758389261745,
+      "ma_distance": -48.41554016439829,
+      "score": 14.915153660889125,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 12.121,
+      "rel_volume": 4.8041593177395825,
+      "pct_change": -3.5719968178202057,
+      "ma_distance": -84.54141398682559,
+      "score": 11.872636649484768,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 90.395,
+      "rel_volume": 0.3901808127238035,
+      "pct_change": -8.19114361161893,
+      "ma_distance": 99.0202553940995,
+      "score": 9.183601393179307,
+      "catalyst": null
+    },
+    {
+      "symbol": "FEAM",
+      "sector": "Metals & Mining",
+      "close": 3.765,
+      "rel_volume": 1.5696223262167608,
+      "pct_change": 16.563467492260067,
+      "ma_distance": 70.69024141448487,
+      "score": 9.165106536845109,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNMG",
+      "sector": "Media",
+      "close": 4.51,
+      "rel_volume": 4.862594753219256,
+      "pct_change": 8.674698795180708,
+      "ma_distance": 20.02980784585086,
+      "score": 8.150345954442818,
+      "catalyst": null
+    },
+    {
+      "symbol": "MSGY",
+      "sector": "Construction",
+      "close": 4.14,
+      "rel_volume": 0.044356141180232414,
+      "pct_change": -19.92263056092844,
+      "ma_distance": 47.62015977921157,
+      "score": 7.760029533507387,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIRD",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 3.65,
+      "rel_volume": 2.911877907473789,
+      "pct_change": 4.584527220630363,
+      "ma_distance": 47.90801337250534,
+      "score": 7.411937188970688,
+      "catalyst": null
+    },
+    {
+      "symbol": "DCX",
+      "sector": "Automobiles",
+      "close": 3.88,
+      "rel_volume": 0.5470839847227768,
+      "pct_change": 3.743315508021382,
+      "ma_distance": -91.37750952251848,
+      "score": 7.177067467086496,
+      "catalyst": null
+    },
+    {
+      "symbol": "THRM",
+      "sector": "Auto Components",
+      "close": 29.95,
+      "rel_volume": 6.078544570602606,
+      "pct_change": -5.101394169835233,
+      "ma_distance": -13.237445501817819,
+      "score": 7.165227598720046,
+      "catalyst": null
+    },
+    {
+      "symbol": "CABO",
+      "sector": "Media",
+      "close": 12.25,
+      "rel_volume": 1.9940827107062669,
+      "pct_change": 18.24324324324325,
+      "ma_distance": -31.569980169259555,
+      "score": 7.053509683682149,
+      "catalyst": null
+    }
+  ]
+}
