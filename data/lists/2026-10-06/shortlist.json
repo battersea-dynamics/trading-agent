@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-10-06T17:41:19",
+  "universe_size": 2394,
+  "catalyst_flagged": 13,
+  "excluded_held": [
+    "OPCH",
+    "WBD"
+  ],
+  "shortlist": [
+    {
+      "symbol": "AVBP",
+      "sector": "Biotechnology",
+      "close": 14.67,
+      "rel_volume": 19.935215187051494,
+      "pct_change": -48.45397048489108,
+      "ma_distance": -49.66632927896244,
+      "score": 46.073516648055275,
+      "catalyst": null
+    },
+    {
+      "symbol": "IPDN",
+      "sector": "Professional Services",
+      "close": 4.42,
+      "rel_volume": 20.227670862362242,
+      "pct_change": 42.58064516129031,
+      "ma_distance": 20.079328425113427,
+      "score": 42.027046066255906,
+      "catalyst": null
+    },
+    {
+      "symbol": "APUS",
+      "sector": "Biotechnology",
+      "close": 7.03,
+      "rel_volume": 3.9713034234542737,
+      "pct_change": 53.159041394335524,
+      "ma_distance": 119.91084695393761,
+      "score": 34.369813831509674,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 3.55,
+      "rel_volume": 2.268706914946223,
+      "pct_change": -6.578947368421052,
+      "ma_distance": 133.63025215614397,
+      "score": 19.151126856222955,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 18.725,
+      "rel_volume": 1.8105817997777087,
+      "pct_change": -51.55239327296248,
+      "ma_distance": 29.533230721339272,
+      "score": 18.97895984873489,
+      "catalyst": null
+    },
+    {
+      "symbol": "MI",
+      "sector": "Media",
+      "close": 3.36,
+      "rel_volume": 0.5372562249992601,
+      "pct_change": -52.0,
+      "ma_distance": 43.500822140126836,
+      "score": 17.988019499599403,
+      "catalyst": null
+    },
+    {
+      "symbol": "DNA",
+      "sector": "Life Sciences Tools & Services",
+      "close": 12.5978,
+      "rel_volume": 4.514299197589272,
+      "pct_change": -15.902536715620835,
+      "ma_distance": 35.48935254893525,
+      "score": 17.077918459339354,
+      "catalyst": null
+    },
+    {
+      "symbol": "JAGX",
+      "sector": "Pharmaceuticals",
+      "close": 5.7394,
+      "rel_volume": 5.183767420483314,
+      "pct_change": 21.340380549682862,
+      "ma_distance": -9.82166705947051,
+      "score": 16.4918268411119,
+      "catalyst": null
+    },
+    {
+      "symbol": "SDEV",
+      "sector": "Pharmaceuticals",
+      "close": 3.66,
+      "rel_volume": 1.739309339335088,
+      "pct_change": -7.106598984771568,
+      "ma_distance": 99.78384043493924,
+      "score": 14.418663002385053,
+      "catalyst": null
+    },
+    {
+      "symbol": "TNXP",
+      "sector": "Biotechnology",
+      "close": 7.86,
+      "rel_volume": 4.337756864391484,
+      "pct_change": -2.602230483271375,
+      "ma_distance": -26.593509222507585,
+      "score": 12.376606387893906,
+      "catalyst": null
+    },
+    {
+      "symbol": "SAIQ",
+      "sector": "unknown",
+      "close": 4.839,
+      "rel_volume": 0.7606856534417864,
+      "pct_change": -27.451274362818584,
+      "ma_distance": -48.00626202737971,
+      "score": 12.243006200266777,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 13.885,
+      "rel_volume": 1.2205912546864097,
+      "pct_change": 12.06618240516545,
+      "ma_distance": -80.38869507492834,
+      "score": 12.072623061847978,
+      "catalyst": null
+    },
+    {
+      "symbol": "LGHL",
+      "sector": "Financial Services",
+      "close": 3.9,
+      "rel_volume": 3.5494441765398776,
+      "pct_change": 1.5625000000000013,
+      "ma_distance": -41.852230116071894,
+      "score": 11.901199765734642,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMOD",
+      "sector": "Technology",
+      "close": 2.63,
+      "rel_volume": 0.2460810931069034,
+      "pct_change": -30.423280423280424,
+      "ma_distance": 30.780706116360008,
+      "score": 11.319246054229787,
+      "catalyst": null
+    },
+    {
+      "symbol": "CEG",
+      "sector": "Utilities",
+      "close": 308.25,
+      "rel_volume": 2.7870461246009968,
+      "pct_change": 15.181974441372093,
+      "ma_distance": 15.393794191003416,
+      "score": 10.801144274307774,
+      "catalyst": null
+    }
+  ]
+}
