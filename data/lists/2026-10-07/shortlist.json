@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-10-07T18:14:56",
+  "universe_size": 2323,
+  "catalyst_flagged": 8,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "SXTC",
+      "sector": "Pharmaceuticals",
+      "close": 7.025,
+      "rel_volume": 83.89014024021789,
+      "pct_change": 462.0,
+      "ma_distance": 191.52401701421314,
+      "score": 68.81834133352422,
+      "catalyst": null
+    },
+    {
+      "symbol": "PFAI",
+      "sector": "Machinery",
+      "close": 3.2,
+      "rel_volume": 9748.307266155456,
+      "pct_change": 36.752136752136764,
+      "ma_distance": 14.605997116942898,
+      "score": 57.575027296541435,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 4.45,
+      "rel_volume": 1.0873715965735,
+      "pct_change": 14.990051422517386,
+      "ma_distance": 167.83188583741105,
+      "score": 17.55391504617204,
+      "catalyst": null
+    },
+    {
+      "symbol": "APUS",
+      "sector": "Biotechnology",
+      "close": 7.7,
+      "rel_volume": 2.066218032630242,
+      "pct_change": 7.994389901823286,
+      "ma_distance": 123.95113793354177,
+      "score": 14.02401197435314,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 26.3668,
+      "rel_volume": 1.7584966465912157,
+      "pct_change": 37.32708333333334,
+      "ma_distance": 77.08615276122035,
+      "score": 12.07225276763545,
+      "catalyst": null
+    },
+    {
+      "symbol": "CANG",
+      "sector": "Retail",
+      "close": 3.64,
+      "rel_volume": 3.1275803802511732,
+      "pct_change": 20.529801324503314,
+      "ma_distance": 62.46373577326491,
+      "score": 11.072579887450793,
+      "catalyst": null
+    },
+    {
+      "symbol": "AIFA",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 7.3,
+      "rel_volume": 1.4891186083037802,
+      "pct_change": -4.823989569752283,
+      "ma_distance": 89.30307941653159,
+      "score": 9.41188026323933,
+      "catalyst": null
+    },
+    {
+      "symbol": "PENG",
+      "sector": "Semiconductors",
+      "close": 72.04,
+      "rel_volume": 7.818723003583883,
+      "pct_change": 12.194362248870913,
+      "ma_distance": 33.35678122194352,
+      "score": 8.820687559768936,
+      "catalyst": null
+    },
+    {
+      "symbol": "BULL",
+      "sector": "Financial Services",
+      "close": 5.895,
+      "rel_volume": 5.446886205058223,
+      "pct_change": -19.02472527472528,
+      "ma_distance": -25.346672576457934,
+      "score": 8.226336491141689,
+      "catalyst": null
+    },
+    {
+      "symbol": "SAIQ",
+      "sector": "unknown",
+      "close": 3.71,
+      "rel_volume": 0.23665148382910994,
+      "pct_change": -28.100775193798448,
+      "ma_distance": -59.01182028395638,
+      "score": 8.11536174728305,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 14.415,
+      "rel_volume": 0.8471279962898768,
+      "pct_change": 3.6304816678648386,
+      "ma_distance": -78.54958594674227,
+      "score": 7.690673019804731,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 92.49,
+      "rel_volume": 0.18088683956483043,
+      "pct_change": 0.162443144899276,
+      "ma_distance": 70.92800842719988,
+      "score": 6.966239180655736,
+      "catalyst": null
+    },
+    {
+      "symbol": "HESM",
+      "sector": "Energy",
+      "close": 33.085,
+      "rel_volume": 6.607743320367262,
+      "pct_change": -14.48694753166192,
+      "ma_distance": -15.268778651368855,
+      "score": 6.832518426597188,
+      "catalyst": null
+    },
+    {
+      "symbol": "SPAI",
+      "sector": "Aerospace & Defense",
+      "close": 4.5999,
+      "rel_volume": 58.01312525780584,
+      "pct_change": 12.192682926829274,
+      "ma_distance": 3.987792472024418,
+      "score": 6.305055268405114,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZSQR",
+      "sector": "Biotechnology",
+      "close": 4.86,
+      "rel_volume": 1.4290016782403927,
+      "pct_change": 11.46788990825688,
+      "ma_distance": 45.47631519868294,
+      "score": 6.033455991375973,
+      "catalyst": null
+    }
+  ]
+}
