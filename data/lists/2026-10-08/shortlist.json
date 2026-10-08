@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-10-08T18:17:30",
+  "universe_size": 2312,
+  "catalyst_flagged": 6,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "INHD",
+      "sector": "Metals & Mining",
+      "close": 3.56,
+      "rel_volume": 184.4596321455851,
+      "pct_change": 5.637982195845695,
+      "ma_distance": 5.794947994056472,
+      "score": 53.27461190866853,
+      "catalyst": null
+    },
+    {
+      "symbol": "PCRX",
+      "sector": "Pharmaceuticals",
+      "close": 36.305,
+      "rel_volume": 43.7217562730735,
+      "pct_change": 44.06746031746032,
+      "ma_distance": 45.569366479550915,
+      "score": 34.74242432959748,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 4.49,
+      "rel_volume": 0.6349739569874638,
+      "pct_change": -1.3186813186813102,
+      "ma_distance": 143.95677238126802,
+      "score": 16.804317175974056,
+      "catalyst": null
+    },
+    {
+      "symbol": "ANGO",
+      "sector": "Health Care",
+      "close": 11.41,
+      "rel_volume": 3.372700483571522,
+      "pct_change": -19.591261451726563,
+      "ma_distance": -25.483281086729363,
+      "score": 14.986012626654905,
+      "catalyst": {
+        "date": "2026-10-08",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "APUS",
+      "sector": "Biotechnology",
+      "close": 5.2101,
+      "rel_volume": 0.086458740593082,
+      "pct_change": -26.097872340425532,
+      "ma_distance": 41.723223393403615,
+      "score": 13.51412075368798,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLAS",
+      "sector": "Consumer products",
+      "close": 4.34,
+      "rel_volume": 2.6317862694716028,
+      "pct_change": -15.399610136452244,
+      "ma_distance": -37.77331708366192,
+      "score": 11.704488554177791,
+      "catalyst": null
+    },
+    {
+      "symbol": "PFAI",
+      "sector": "Machinery",
+      "close": 4.0501,
+      "rel_volume": 0.39903378288153996,
+      "pct_change": -20.116370808678514,
+      "ma_distance": 39.02700661649231,
+      "score": 11.185567046110794,
+      "catalyst": null
+    },
+    {
+      "symbol": "HAE",
+      "sector": "Health Care",
+      "close": 118.535,
+      "rel_volume": 3.3967624686216844,
+      "pct_change": 16.542129584111695,
+      "ma_distance": 12.370361943765056,
+      "score": 10.974644295045406,
+      "catalyst": null
+    },
+    {
+      "symbol": "AIFA",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 6.55,
+      "rel_volume": 0.8837804521774889,
+      "pct_change": -11.6059379217274,
+      "ma_distance": 60.66719813576993,
+      "score": 10.856205238921191,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 6.0001,
+      "rel_volume": 16.20575510685774,
+      "pct_change": -2.5957792207792267,
+      "ma_distance": -18.12928534879754,
+      "score": 10.807134610334192,
+      "catalyst": null
+    },
+    {
+      "symbol": "MANE",
+      "sector": "Pharmaceuticals",
+      "close": 125.055,
+      "rel_volume": 3.3845340106102975,
+      "pct_change": 12.71293375394322,
+      "ma_distance": 12.339817730206576,
+      "score": 9.703542984263365,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 14.05,
+      "rel_volume": 0.8288613771026726,
+      "pct_change": -2.7681660899653884,
+      "ma_distance": -77.93880963783533,
+      "score": 9.504177918601007,
+      "catalyst": null
+    },
+    {
+      "symbol": "NFE",
+      "sector": "Energy",
+      "close": 4.4214,
+      "rel_volume": 0.5159611656437473,
+      "pct_change": -10.768920282542883,
+      "ma_distance": -51.595369077921006,
+      "score": 9.123528587722124,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 94.04,
+      "rel_volume": 0.21748206980848936,
+      "pct_change": 3.249890206411955,
+      "ma_distance": 65.05340014567668,
+      "score": 8.676224205877825,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 22.775,
+      "rel_volume": 0.8330518174619433,
+      "pct_change": -8.93642542982808,
+      "ma_distance": 45.87436550255399,
+      "score": 8.312374861166917,
+      "catalyst": null
+    }
+  ]
+}
