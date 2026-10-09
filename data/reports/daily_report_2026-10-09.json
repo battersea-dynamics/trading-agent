@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-09",
+  "events": [
+    {
+      "at_et": "2026-10-09T13:47:53-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-10-09T13:49:39-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "WFF",
+          "VIVK",
+          "VEEA",
+          "XRPNW",
+          "CABO",
+          "SAIQ",
+          "CANG",
+          "SMXT",
+          "ASTS",
+          "CTVA",
+          "ZSQR",
+          "FEAM",
+          "KOD",
+          "GRRR",
+          "DNA"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-10-09T13:50:14-04:00",
+      "type": "check_shortlist",
+      "detail": {
+        "ok": false,
+        "error": "ImportError: Google Gen AI native provider not available, to install: uv add \"crewai[google-genai]\""
+      }
+    },
+    {
+      "at_et": "2026-10-09T18:04:25-04:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}

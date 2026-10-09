@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-10-09T17:49:39",
+  "universe_size": 2311,
+  "catalyst_flagged": 1,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "WFF",
+      "sector": "Machinery",
+      "close": 7.4494,
+      "rel_volume": 258.74645799942465,
+      "pct_change": 263.3853658536585,
+      "ma_distance": 242.85582786790937,
+      "score": 108.56440789339226,
+      "catalyst": null
+    },
+    {
+      "symbol": "VIVK",
+      "sector": "Energy",
+      "close": 3.93,
+      "rel_volume": 192.50482459848897,
+      "pct_change": -1.9950124688279212,
+      "ma_distance": -48.19711459246419,
+      "score": 37.82295711553499,
+      "catalyst": null
+    },
+    {
+      "symbol": "VEEA",
+      "sector": "Technology",
+      "close": 5.48,
+      "rel_volume": 3.5532135972811525,
+      "pct_change": 41.60206718346254,
+      "ma_distance": 45.03109699616252,
+      "score": 15.01852261739701,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 4.34,
+      "rel_volume": 0.6730011141916236,
+      "pct_change": -5.240174672489087,
+      "ma_distance": 114.58696952766145,
+      "score": 12.189849001788419,
+      "catalyst": null
+    },
+    {
+      "symbol": "CABO",
+      "sector": "Media",
+      "close": 10.34,
+      "rel_volume": 2.781149244067415,
+      "pct_change": -32.76983094928479,
+      "ma_distance": -32.39178762913561,
+      "score": 11.122539797876575,
+      "catalyst": null
+    },
+    {
+      "symbol": "SAIQ",
+      "sector": "unknown",
+      "close": 4.755,
+      "rel_volume": 3.198062355739339,
+      "pct_change": -13.702359346642467,
+      "ma_distance": -44.83048281159176,
+      "score": 9.961235980936411,
+      "catalyst": null
+    },
+    {
+      "symbol": "CANG",
+      "sector": "Retail",
+      "close": 3.58,
+      "rel_volume": 3.4503769343190402,
+      "pct_change": 0.5617977528089892,
+      "ma_distance": 48.51690520638873,
+      "score": 8.61621347367891,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMXT",
+      "sector": "Electrical Equipment",
+      "close": 4.225,
+      "rel_volume": 0.18257328786586124,
+      "pct_change": -9.334763948497866,
+      "ma_distance": 69.20304365238286,
+      "score": 8.477212174845745,
+      "catalyst": null
+    },
+    {
+      "symbol": "ASTS",
+      "sector": "Telecommunication",
+      "close": 48.57,
+      "rel_volume": 3.6532762644351484,
+      "pct_change": -14.684700509397505,
+      "ma_distance": -19.147696533355536,
+      "score": 8.369260212368502,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 13.39,
+      "rel_volume": 0.6645400571788205,
+      "pct_change": -2.6181818181818137,
+      "ma_distance": -77.73880082128696,
+      "score": 8.011629439964434,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZSQR",
+      "sector": "Biotechnology",
+      "close": 5.58,
+      "rel_volume": 0.5509898749370735,
+      "pct_change": 12.727272727272727,
+      "ma_distance": 59.030993943712154,
+      "score": 7.782540848001706,
+      "catalyst": null
+    },
+    {
+      "symbol": "FEAM",
+      "sector": "Metals & Mining",
+      "close": 3.94,
+      "rel_volume": 1.0619723345551704,
+      "pct_change": 19.03323262839879,
+      "ma_distance": 44.83962871059644,
+      "score": 7.477239450241053,
+      "catalyst": null
+    },
+    {
+      "symbol": "KOD",
+      "sector": "Biotechnology",
+      "close": 99.39,
+      "rel_volume": 0.2780570943353252,
+      "pct_change": 5.442393380012725,
+      "ma_distance": 65.52585560829377,
+      "score": 7.286504632479676,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRRR",
+      "sector": "Technology",
+      "close": 11.12,
+      "rel_volume": 3.190618332759175,
+      "pct_change": -6.867671691792297,
+      "ma_distance": -16.081805146781377,
+      "score": 6.053472510420359,
+      "catalyst": null
+    },
+    {
+      "symbol": "DNA",
+      "sector": "Life Sciences Tools & Services",
+      "close": 13.26,
+      "rel_volume": 0.9569168551372137,
+      "pct_change": 16.93121693121693,
+      "ma_distance": 32.15727313499775,
+      "score": 5.889626860650434,
+      "catalyst": null
+    }
+  ]
+}
