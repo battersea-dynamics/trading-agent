@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-10-12T20:41:05",
+  "universe_size": 2337,
+  "catalyst_flagged": 34,
+  "excluded_held": [
+    "CCC",
+    "FIGS"
+  ],
+  "shortlist": [
+    {
+      "symbol": "MNDR",
+      "sector": "Health Care",
+      "close": 3.04,
+      "rel_volume": 559.8650484529657,
+      "pct_change": 257.64705882352945,
+      "ma_distance": 133.66012443938862,
+      "score": 67.41414547087453,
+      "catalyst": null
+    },
+    {
+      "symbol": "GIXI",
+      "sector": "Media",
+      "close": 4.72,
+      "rel_volume": 1989.4815757143624,
+      "pct_change": 21.33676092544986,
+      "ma_distance": -0.824709775699953,
+      "score": 54.15331575520031,
+      "catalyst": null
+    },
+    {
+      "symbol": "WFF",
+      "sector": "Machinery",
+      "close": 17.28,
+      "rel_volume": 4.5072322001361345,
+      "pct_change": 40.60211554109034,
+      "ma_distance": 543.3956995252724,
+      "score": 47.57677223013532,
+      "catalyst": null
+    },
+    {
+      "symbol": "BMBL",
+      "sector": "Media",
+      "close": 3.8,
+      "rel_volume": 18.678703225889876,
+      "pct_change": 49.606299212598415,
+      "ma_distance": 40.93648585999072,
+      "score": 15.409533846087415,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTNM",
+      "sector": "Pharmaceuticals",
+      "close": 8.565,
+      "rel_volume": 10.29581150810212,
+      "pct_change": -35.986547085201806,
+      "ma_distance": -34.635784332430276,
+      "score": 12.299273791590549,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 5.27,
+      "rel_volume": 1.0012461426376373,
+      "pct_change": 13.333333333333316,
+      "ma_distance": 139.21978942303542,
+      "score": 11.704017126159911,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMXT",
+      "sector": "Electrical Equipment",
+      "close": 4.84,
+      "rel_volume": 0.4774896129470345,
+      "pct_change": 13.615023474178406,
+      "ma_distance": 86.65638256845352,
+      "score": 8.211488912388205,
+      "catalyst": null
+    },
+    {
+      "symbol": "SAIQ",
+      "sector": "unknown",
+      "close": 3.71,
+      "rel_volume": 0.27945756891148604,
+      "pct_change": -20.726495726495724,
+      "ma_distance": -55.42145946056362,
+      "score": 6.915855783737706,
+      "catalyst": null
+    },
+    {
+      "symbol": "TRAX",
+      "sector": "Biotechnology",
+      "close": 34.05,
+      "rel_volume": 9.07556651663217,
+      "pct_change": 6.907378335949751,
+      "ma_distance": -4.603811645058945,
+      "score": 5.785953687950181,
+      "catalyst": null
+    },
+    {
+      "symbol": "SVC",
+      "sector": "Real Estate",
+      "close": 5.93,
+      "rel_volume": 2.9008361219437258,
+      "pct_change": -17.06293706293707,
+      "ma_distance": -9.299479963291523,
+      "score": 5.756426658959226,
+      "catalyst": null
+    },
+    {
+      "symbol": "BLCO",
+      "sector": "Health Care",
+      "close": 16.07,
+      "rel_volume": 9.05377914526194,
+      "pct_change": -7.109826589595378,
+      "ma_distance": -5.916103158572644,
+      "score": 5.7371832285537305,
+      "catalyst": null
+    },
+    {
+      "symbol": "CMCT",
+      "sector": "Real Estate",
+      "close": 4.38,
+      "rel_volume": 0.03768795027793056,
+      "pct_change": 13.178294573643404,
+      "ma_distance": 50.59308922124806,
+      "score": 5.716958401486814,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIAF",
+      "sector": "Biotechnology",
+      "close": 3.9,
+      "rel_volume": 0.07336773225671418,
+      "pct_change": -17.460317460317455,
+      "ma_distance": -44.12607449856733,
+      "score": 5.638325389146781,
+      "catalyst": null
+    },
+    {
+      "symbol": "MMED",
+      "sector": "Health Care",
+      "close": 18.8,
+      "rel_volume": 5.840645917649225,
+      "pct_change": -4.616945712836125,
+      "ma_distance": -8.560311284046684,
+      "score": 5.444087683463857,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 13.3,
+      "rel_volume": 0.8767417042337672,
+      "pct_change": 0.45317220543807024,
+      "ma_distance": -76.50861497973204,
+      "score": 5.269955722916615,
+      "catalyst": null
+    }
+  ]
+}
