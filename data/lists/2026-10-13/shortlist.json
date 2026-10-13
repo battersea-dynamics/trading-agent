@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-10-13T18:44:12",
+  "universe_size": 2288,
+  "catalyst_flagged": 41,
+  "excluded_held": [
+    "BMBL",
+    "FRMI"
+  ],
+  "shortlist": [
+    {
+      "symbol": "PFAI",
+      "sector": "Machinery",
+      "close": 4.755,
+      "rel_volume": 22.55767146355561,
+      "pct_change": 82.18390804597702,
+      "ma_distance": 60.82036990376144,
+      "score": 62.169535315697615,
+      "catalyst": null
+    },
+    {
+      "symbol": "FLYE",
+      "sector": "Automobiles",
+      "close": 3.58,
+      "rel_volume": 4.518657413002771,
+      "pct_change": 74.63414634146343,
+      "ma_distance": 128.27992985812213,
+      "score": 42.68053357731931,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZURA",
+      "sector": "Biotechnology",
+      "close": 4.245,
+      "rel_volume": 9.156986244599201,
+      "pct_change": 6.125000000000003,
+      "ma_distance": 0.10611956137248368,
+      "score": 17.67936585199469,
+      "catalyst": null
+    },
+    {
+      "symbol": "CANG",
+      "sector": "Retail",
+      "close": 3.47,
+      "rel_volume": 3.4781016866355414,
+      "pct_change": 14.900662251655636,
+      "ma_distance": 35.918527222875056,
+      "score": 15.21520714523534,
+      "catalyst": null
+    },
+    {
+      "symbol": "FUN",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 10.175,
+      "rel_volume": 3.709530843427405,
+      "pct_change": -14.639261744966436,
+      "ma_distance": -14.431082331174833,
+      "score": 13.213230730796361,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 4.425,
+      "rel_volume": 0.43024176406627707,
+      "pct_change": -16.034155597722958,
+      "ma_distance": 83.19226493948445,
+      "score": 12.813902179932228,
+      "catalyst": null
+    },
+    {
+      "symbol": "SNDX",
+      "sector": "Biotechnology",
+      "close": 13.71,
+      "rel_volume": 2.545088616542972,
+      "pct_change": -17.160120845921448,
+      "ma_distance": -22.568620806506264,
+      "score": 11.395082524260548,
+      "catalyst": null
+    },
+    {
+      "symbol": "CIFR",
+      "sector": "Technology",
+      "close": 11.495,
+      "rel_volume": 2.497123511895794,
+      "pct_change": -11.576923076923084,
+      "ma_distance": -29.275683324873498,
+      "score": 10.429649854622388,
+      "catalyst": null
+    },
+    {
+      "symbol": "CDNL",
+      "sector": "Construction",
+      "close": 17.705,
+      "rel_volume": 1.6864312796595164,
+      "pct_change": -15.368068833652023,
+      "ma_distance": -38.02831691139152,
+      "score": 10.019650858518288,
+      "catalyst": null
+    },
+    {
+      "symbol": "ENGS",
+      "sector": "Construction",
+      "close": 3.5,
+      "rel_volume": 3.2942272231807173,
+      "pct_change": 4.1666666666666705,
+      "ma_distance": 16.763969974979148,
+      "score": 9.892984187274815,
+      "catalyst": null
+    },
+    {
+      "symbol": "VTEX",
+      "sector": "Technology",
+      "close": 4.215,
+      "rel_volume": 2.9143286201810854,
+      "pct_change": 4.850746268656724,
+      "ma_distance": 13.596550330144192,
+      "score": 8.680288249967413,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMXT",
+      "sector": "Electrical Equipment",
+      "close": 4.82,
+      "rel_volume": 0.12840488351022739,
+      "pct_change": -0.41322314049585895,
+      "ma_distance": 75.88031381134832,
+      "score": 8.290917540892837,
+      "catalyst": null
+    },
+    {
+      "symbol": "SCNX",
+      "sector": "Health Care",
+      "close": 3.41,
+      "rel_volume": 1.0398413834884617,
+      "pct_change": -12.787723785166241,
+      "ma_distance": -43.05277221108884,
+      "score": 8.231614073027572,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 13.51,
+      "rel_volume": 0.3439140339543178,
+      "pct_change": 1.5789473684210458,
+      "ma_distance": -74.58352538355173,
+      "score": 8.03110473905055,
+      "catalyst": null
+    },
+    {
+      "symbol": "EFXT",
+      "sector": "Energy",
+      "close": 27.46,
+      "rel_volume": 1.6232960030391022,
+      "pct_change": 14.03654485049835,
+      "ma_distance": 17.010397136526336,
+      "score": 7.820487627102721,
+      "catalyst": null
+    }
+  ]
+}
