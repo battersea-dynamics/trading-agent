@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-10-14T16:17:56",
+  "universe_size": 2257,
+  "catalyst_flagged": 33,
+  "excluded_held": [
+    "BMBL"
+  ],
+  "shortlist": [
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 26.2,
+      "rel_volume": 9.476784122981954,
+      "pct_change": 206.43274853801165,
+      "ma_distance": 172.42714913306816,
+      "score": 81.45665267852895,
+      "catalyst": null
+    },
+    {
+      "symbol": "VSTM",
+      "sector": "Biotechnology",
+      "close": 8.275,
+      "rel_volume": 9.176646772434903,
+      "pct_change": 11.073825503355707,
+      "ma_distance": 4.789945230632861,
+      "score": 31.151299967183775,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 3.9201,
+      "rel_volume": 3.940287761056153,
+      "pct_change": 77.38009049773757,
+      "ma_distance": 21.82736384119338,
+      "score": 30.0153214136784,
+      "catalyst": null
+    },
+    {
+      "symbol": "BSP",
+      "sector": "Technology",
+      "close": 52.79,
+      "rel_volume": 3.6723883430878144,
+      "pct_change": 39.43475964078183,
+      "ma_distance": 48.11281713159426,
+      "score": 24.640052365931233,
+      "catalyst": null
+    },
+    {
+      "symbol": "LQDA",
+      "sector": "Pharmaceuticals",
+      "close": 33.6,
+      "rel_volume": 2.6736508630712725,
+      "pct_change": 25.326370757180168,
+      "ma_distance": -30.50815908667866,
+      "score": 15.773531645724102,
+      "catalyst": null
+    },
+    {
+      "symbol": "CANG",
+      "sector": "Retail",
+      "close": 3.763,
+      "rel_volume": 2.965523485300694,
+      "pct_change": 7.514285714285711,
+      "ma_distance": 42.80834914611004,
+      "score": 15.589253351411392,
+      "catalyst": null
+    },
+    {
+      "symbol": "FLYE",
+      "sector": "Automobiles",
+      "close": 3.59,
+      "rel_volume": 0.5712405552154665,
+      "pct_change": 1.1267605633802829,
+      "ma_distance": 116.2324951061587,
+      "score": 12.021399398885812,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 13.385,
+      "rel_volume": 0.32188814679908095,
+      "pct_change": -12.687540769732554,
+      "ma_distance": 99.82085541539149,
+      "score": 11.359110213925819,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMXT",
+      "sector": "Electrical Equipment",
+      "close": 5.665,
+      "rel_volume": 0.169166070411635,
+      "pct_change": 8.94230769230769,
+      "ma_distance": 94.740460639395,
+      "score": 11.312149316026956,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRWV",
+      "sector": "Technology",
+      "close": 64.94,
+      "rel_volume": 2.015674044779999,
+      "pct_change": -16.540290451098834,
+      "ma_distance": -23.913298183948445,
+      "score": 10.20380638474185,
+      "catalyst": null
+    },
+    {
+      "symbol": "CAMT",
+      "sector": "Semiconductors",
+      "close": 135.455,
+      "rel_volume": 2.7352564638544354,
+      "pct_change": -5.130270345986824,
+      "ma_distance": -9.826516482931243,
+      "score": 9.953505935988108,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 3.5,
+      "rel_volume": 0.5019398235816103,
+      "pct_change": -27.083333333333332,
+      "ma_distance": 34.46049646657024,
+      "score": 8.263207151524517,
+      "catalyst": null
+    },
+    {
+      "symbol": "CDNL",
+      "sector": "Construction",
+      "close": 15.75,
+      "rel_volume": 1.1272203344382195,
+      "pct_change": -15.41353383458647,
+      "ma_distance": -43.375876325723524,
+      "score": 8.147012796544194,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRML",
+      "sector": "Biotechnology",
+      "close": 7.0899,
+      "rel_volume": 0.9438788930166064,
+      "pct_change": 27.97653429602888,
+      "ma_distance": -14.129473747956144,
+      "score": 7.839628706792256,
+      "catalyst": null
+    },
+    {
+      "symbol": "NUAI",
+      "sector": "Energy",
+      "close": 3.535,
+      "rel_volume": 0.9095425575674617,
+      "pct_change": -17.599067599067595,
+      "ma_distance": -41.75797017876266,
+      "score": 7.791439857672167,
+      "catalyst": null
+    }
+  ]
+}
