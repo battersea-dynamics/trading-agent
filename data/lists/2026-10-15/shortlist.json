@@ -1,0 +1,165 @@
+{
+  "generated_at": "2026-10-15T16:06:13",
+  "universe_size": 2254,
+  "catalyst_flagged": 26,
+  "excluded_held": [
+    "BMBL",
+    "CCC"
+  ],
+  "shortlist": [
+    {
+      "symbol": "SPRC",
+      "sector": "Pharmaceuticals",
+      "close": 4.21,
+      "rel_volume": 1529.2318658198478,
+      "pct_change": 15.97796143250689,
+      "ma_distance": -7.6298612253853415,
+      "score": 57.07273971101682,
+      "catalyst": null
+    },
+    {
+      "symbol": "FMC",
+      "sector": "Chemicals",
+      "close": 5.425,
+      "rel_volume": 3.5147399559413905,
+      "pct_change": -32.94190358467244,
+      "ma_distance": -40.63382285351602,
+      "score": 18.492132698601925,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 13.82,
+      "rel_volume": 0.6259325154683579,
+      "pct_change": 8.990536277602528,
+      "ma_distance": 97.18912748805023,
+      "score": 11.927756757019669,
+      "catalyst": null
+    },
+    {
+      "symbol": "FLYE",
+      "sector": "Automobiles",
+      "close": 3.5401,
+      "rel_volume": 0.2227673491729473,
+      "pct_change": -1.6638888888888967,
+      "ma_distance": 101.28500355366027,
+      "score": 10.631327317988672,
+      "catalyst": null
+    },
+    {
+      "symbol": "MAN",
+      "sector": "Professional Services",
+      "close": 44.01,
+      "rel_volume": 1.8286003873802772,
+      "pct_change": -15.300230946882223,
+      "ma_distance": -20.116893253226362,
+      "score": 10.127088261018557,
+      "catalyst": {
+        "date": "2026-10-15",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SMXT",
+      "sector": "Electrical Equipment",
+      "close": 4.94,
+      "rel_volume": 0.08258672405390255,
+      "pct_change": -10.830324909747285,
+      "ma_distance": 59.92230495305926,
+      "score": 9.79780281970924,
+      "catalyst": null
+    },
+    {
+      "symbol": "SAIQ",
+      "sector": "unknown",
+      "close": 3.38,
+      "rel_volume": 0.05384374460690751,
+      "pct_change": -12.886597938144332,
+      "ma_distance": -53.69158872102471,
+      "score": 9.541967799570212,
+      "catalyst": null
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 12.725,
+      "rel_volume": 0.2897935393629129,
+      "pct_change": -5.037313432835826,
+      "ma_distance": -72.4998649305743,
+      "score": 8.693271693789391,
+      "catalyst": null
+    },
+    {
+      "symbol": "CABO",
+      "sector": "Media",
+      "close": 8.33,
+      "rel_volume": 0.5160159137011936,
+      "pct_change": -13.229166666666664,
+      "ma_distance": -38.428560869243846,
+      "score": 8.209023944420322,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLND",
+      "sector": "Energy",
+      "close": 3.07,
+      "rel_volume": 0.27240298305815636,
+      "pct_change": -21.282051282051285,
+      "ma_distance": -8.433375587204523,
+      "score": 8.07572718320189,
+      "catalyst": null
+    },
+    {
+      "symbol": "BSP",
+      "sector": "unknown",
+      "close": 57.535,
+      "rel_volume": 1.0625156669200473,
+      "pct_change": 7.622521511410392,
+      "ma_distance": 58.25774819317705,
+      "score": 7.806425247570757,
+      "catalyst": null
+    },
+    {
+      "symbol": "PAG",
+      "sector": "Retail",
+      "close": 211.42,
+      "rel_volume": 4.229655230074121,
+      "pct_change": 8.537399250474868,
+      "ma_distance": 3.9940973930152364,
+      "score": 7.315164278816566,
+      "catalyst": null
+    },
+    {
+      "symbol": "VICR",
+      "sector": "Electrical Equipment",
+      "close": 212.5125,
+      "rel_volume": 0.9402979764505697,
+      "pct_change": -13.383941308335034,
+      "ma_distance": -21.910597486587786,
+      "score": 6.697126385781848,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPNW",
+      "sector": "unknown",
+      "close": 3.72,
+      "rel_volume": 0.18444285718992962,
+      "pct_change": -8.034610630407904,
+      "ma_distance": 34.99071938804207,
+      "score": 6.526583564589092,
+      "catalyst": null
+    },
+    {
+      "symbol": "CANG",
+      "sector": "Retail",
+      "close": 3.8532,
+      "rel_volume": 1.8911065461538235,
+      "pct_change": 4.991825613079026,
+      "ma_distance": 42.07964601769911,
+      "score": 6.476089589551527,
+      "catalyst": null
+    }
+  ]
+}
