@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-10-16T15:54:33",
+  "universe_size": 2238,
+  "catalyst_flagged": 20,
+  "excluded_held": [
+    "BMBL"
+  ],
+  "shortlist": [
+    {
+      "symbol": "VRNS",
+      "sector": "Technology",
+      "close": 48.705,
+      "rel_volume": 15.798399441647183,
+      "pct_change": 2.8833967046894693,
+      "ma_distance": 1.6763391925180517,
+      "score": 45.19536265507051,
+      "catalyst": null
+    },
+    {
+      "symbol": "FLYE",
+      "sector": "Automobiles",
+      "close": 4.26,
+      "rel_volume": 0.1849402295728249,
+      "pct_change": 26.035502958579883,
+      "ma_distance": 130.6755110328956,
+      "score": 22.21345043647301,
+      "catalyst": null
+    },
+    {
+      "symbol": "TLK",
+      "sector": "Telecommunication",
+      "close": 11.285,
+      "rel_volume": 3.466767360897198,
+      "pct_change": -11.697965571205001,
+      "ma_distance": -13.663835972764144,
+      "score": 16.410522708692103,
+      "catalyst": null
+    },
+    {
+      "symbol": "SITC",
+      "sector": "Real Estate",
+      "close": 3.505,
+      "rel_volume": 2.8237120816371744,
+      "pct_change": 16.445182724252497,
+      "ma_distance": 12.034521336103566,
+      "score": 16.383523353484623,
+      "catalyst": null
+    },
+    {
+      "symbol": "CANG",
+      "sector": "Retail",
+      "close": 3.31,
+      "rel_volume": 2.3301341260355257,
+      "pct_change": -13.123359580052494,
+      "ma_distance": 18.468146027201147,
+      "score": 13.134502096443725,
+      "catalyst": null
+    },
+    {
+      "symbol": "ENGS",
+      "sector": "Construction",
+      "close": 3.72,
+      "rel_volume": 2.917662009571868,
+      "pct_change": 2.7624309392265216,
+      "ma_distance": 19.518072289156642,
+      "score": 12.539791923137681,
+      "catalyst": null
+    },
+    {
+      "symbol": "OMER",
+      "sector": "Pharmaceuticals",
+      "close": 16.03,
+      "rel_volume": 1.7453576588725306,
+      "pct_change": -14.688664183076094,
+      "ma_distance": -16.510416666666657,
+      "score": 10.80408481229317,
+      "catalyst": null
+    },
+    {
+      "symbol": "JAGX",
+      "sector": "Pharmaceuticals",
+      "close": 3.765,
+      "rel_volume": 0.10537384701891817,
+      "pct_change": -17.97385620915032,
+      "ma_distance": -41.718266253869956,
+      "score": 10.276911006605303,
+      "catalyst": null
+    },
+    {
+      "symbol": "BMGL",
+      "sector": "Health Care",
+      "close": 3.87,
+      "rel_volume": 2.726215642432015,
+      "pct_change": -1.0230179028133002,
+      "ma_distance": 5.420866248978475,
+      "score": 9.178596861715349,
+      "catalyst": null
+    },
+    {
+      "symbol": "FOXF",
+      "sector": "Auto Components",
+      "close": 17.045,
+      "rel_volume": 2.1299238491623265,
+      "pct_change": -7.864864864864855,
+      "ma_distance": -7.976784991226882,
+      "score": 9.114716408379474,
+      "catalyst": null
+    },
+    {
+      "symbol": "SLS",
+      "sector": "Biotechnology",
+      "close": 9.815,
+      "rel_volume": 1.4281340133635931,
+      "pct_change": -13.447971781305117,
+      "ma_distance": -15.830546265328877,
+      "score": 9.01584568414085,
+      "catalyst": null
+    },
+    {
+      "symbol": "DFNS",
+      "sector": "Technology",
+      "close": 5.1152,
+      "rel_volume": 0.6919132073541184,
+      "pct_change": -16.690553745928337,
+      "ma_distance": -26.262072942194038,
+      "score": 8.937938768412,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMI",
+      "sector": "Health Care",
+      "close": 9.86,
+      "rel_volume": 1.839070663517648,
+      "pct_change": -1.4000000000000057,
+      "ma_distance": 36.40450992598741,
+      "score": 8.60172552585413,
+      "catalyst": null
+    },
+    {
+      "symbol": "AIXI",
+      "sector": "Technology",
+      "close": 3.01,
+      "rel_volume": 0.15980716393911115,
+      "pct_change": 7.11743772241992,
+      "ma_distance": 55.33479551025672,
+      "score": 8.511423666678363,
+      "catalyst": null
+    },
+    {
+      "symbol": "BSP",
+      "sector": "Technology",
+      "close": 47.74,
+      "rel_volume": 0.5209559501342871,
+      "pct_change": -14.398422090729785,
+      "ma_distance": 28.27729822322238,
+      "score": 8.22042742016771,
+      "catalyst": null
+    }
+  ]
+}
