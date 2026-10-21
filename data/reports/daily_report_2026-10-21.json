@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-21",
+  "events": [
+    {
+      "at_et": "2026-10-21T12:22:51-04:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-10-21T12:22:52-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": false,
+        "error": "ValidationError: 6 validation errors for list[Asset]\n1733.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n2875.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n7451.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n8709.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n9223.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n11597.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum"
+      }
+    },
+    {
+      "at_et": "2026-10-21T16:16:20-04:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": false,
+        "error": "ValidationError: 6 validation errors for list[Asset]\n1756.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n3085.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n7726.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n8966.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n9474.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum\n11625.exchange\n  Input should be 'AMEX', 'ARCA', 'ASCX', 'BATS', 'NYSE', 'NASDAQ', 'NYSEARCA', 'FTXU', 'CBSE', 'GNSS', 'ERSX', 'OTC', 'CRYPTO' or '' [type=enum, input_value='TXSE', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/enum"
+      }
+    },
+    {
+      "at_et": "2026-10-21T16:16:20-04:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": false
+      }
+    }
+  ]
+}
