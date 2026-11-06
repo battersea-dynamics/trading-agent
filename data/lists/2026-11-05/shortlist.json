@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-11-05T19:22:33",
+  "universe_size": 2312,
+  "catalyst_flagged": 293,
+  "excluded_held": [
+    "ADMA",
+    "DNUT",
+    "PTLO",
+    "U"
+  ],
+  "shortlist": [
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 16.2701,
+      "rel_volume": 20.186634906548736,
+      "pct_change": 159.49122807017545,
+      "ma_distance": 86.62651984400091,
+      "score": 62.5273631596841,
+      "catalyst": null
+    },
+    {
+      "symbol": "MNTN",
+      "sector": "Media",
+      "close": 4.77,
+      "rel_volume": 12.201859079393563,
+      "pct_change": -54.001928640308584,
+      "ma_distance": -51.68152350081038,
+      "score": 30.999599627923278,
+      "catalyst": null
+    },
+    {
+      "symbol": "VCYT",
+      "sector": "Biotechnology",
+      "close": 22.55,
+      "rel_volume": 9.458506249008291,
+      "pct_change": -57.06397562833207,
+      "ma_distance": -51.94664052677563,
+      "score": 27.836054303842232,
+      "catalyst": null
+    },
+    {
+      "symbol": "OXLC",
+      "sector": "N/A",
+      "close": 4.985,
+      "rel_volume": 8.517356528933012,
+      "pct_change": -23.542944785276063,
+      "ma_distance": -31.476721329502805,
+      "score": 19.733531497854216,
+      "catalyst": null
+    },
+    {
+      "symbol": "APP",
+      "sector": "Media",
+      "close": 354.7775,
+      "rel_volume": 4.167805197829781,
+      "pct_change": 30.55289788408463,
+      "ma_distance": 35.02525223692574,
+      "score": 16.823943457116037,
+      "catalyst": null
+    },
+    {
+      "symbol": "XERS",
+      "sector": "Pharmaceuticals",
+      "close": 13.175,
+      "rel_volume": 3.8182462731193016,
+      "pct_change": 25.956022944550668,
+      "ma_distance": 25.989146286069477,
+      "score": 16.676910331355028,
+      "catalyst": {
+        "date": "2026-11-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "HIMX",
+      "sector": "Semiconductors",
+      "close": 7.585,
+      "rel_volume": 3.054257533948976,
+      "pct_change": -27.346743295019156,
+      "ma_distance": -35.58933423913043,
+      "score": 13.92161930812311,
+      "catalyst": {
+        "date": "2026-11-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "JAN",
+      "sector": "Real Estate",
+      "close": 30.42,
+      "rel_volume": 6.9544953947065915,
+      "pct_change": 1.1639507815098151,
+      "ma_distance": 6.1780104712042,
+      "score": 13.729679652390427,
+      "catalyst": null
+    },
+    {
+      "symbol": "TRIP",
+      "sector": "Media",
+      "close": 7.865,
+      "rel_volume": 3.692593887623761,
+      "pct_change": -22.892156862745093,
+      "ma_distance": -14.841783287767635,
+      "score": 13.46735797305125,
+      "catalyst": {
+        "date": "2026-11-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "GIL",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 34.68,
+      "rel_volume": 4.668237034099259,
+      "pct_change": -19.852091518373012,
+      "ma_distance": -15.513545117910743,
+      "score": 12.802399992616847,
+      "catalyst": null
+    },
+    {
+      "symbol": "PGEN",
+      "sector": "Biotechnology",
+      "close": 4.03,
+      "rel_volume": 3.4124014215050322,
+      "pct_change": -20.276953511374867,
+      "ma_distance": -38.68391023202738,
+      "score": 12.051635304515187,
+      "catalyst": null
+    },
+    {
+      "symbol": "WRBY",
+      "sector": "Retail",
+      "close": 27.32,
+      "rel_volume": 2.3487568249184045,
+      "pct_change": 28.323156411460786,
+      "ma_distance": 10.495449949443877,
+      "score": 11.717255477308333,
+      "catalyst": {
+        "date": "2026-11-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "MGNI",
+      "sector": "Media",
+      "close": 27.79,
+      "rel_volume": 3.17098728632435,
+      "pct_change": 21.939447125932425,
+      "ma_distance": 19.30366840534912,
+      "score": 11.702186009968656,
+      "catalyst": null
+    },
+    {
+      "symbol": "STVN",
+      "sector": "Life Sciences Tools & Services",
+      "close": 13.2755,
+      "rel_volume": 4.387268984407388,
+      "pct_change": -1.2239583333333357,
+      "ma_distance": -29.434433636315315,
+      "score": 11.389847755596085,
+      "catalyst": null
+    },
+    {
+      "symbol": "ENOV",
+      "sector": "Health Care",
+      "close": 28.015,
+      "rel_volume": 2.1509695103005075,
+      "pct_change": 14.721539721539717,
+      "ma_distance": 37.60836996831791,
+      "score": 11.042707196463837,
+      "catalyst": {
+        "date": "2026-11-05",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
