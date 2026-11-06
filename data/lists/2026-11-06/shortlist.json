@@ -1,0 +1,168 @@
+{
+  "generated_at": "2026-11-06T23:34:05",
+  "universe_size": 2397,
+  "catalyst_flagged": 120,
+  "excluded_held": [
+    "KRMN"
+  ],
+  "shortlist": [
+    {
+      "symbol": "GOGO",
+      "sector": "Telecommunication",
+      "close": 3.885,
+      "rel_volume": 18.702382208775244,
+      "pct_change": 71.52317880794699,
+      "ma_distance": 71.7506631299735,
+      "score": 44.794971729445905,
+      "catalyst": {
+        "date": "2026-11-06",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "STLN",
+      "sector": "Health Care",
+      "close": 3.62,
+      "rel_volume": 17.730235123689752,
+      "pct_change": -45.97014925373134,
+      "ma_distance": -45.38734253601871,
+      "score": 35.54697698782006,
+      "catalyst": null
+    },
+    {
+      "symbol": "STAK",
+      "sector": "Energy",
+      "close": 3.26,
+      "rel_volume": 4.556401655731618,
+      "pct_change": 82.12290502793294,
+      "ma_distance": 142.55952380952382,
+      "score": 33.05777827002939,
+      "catalyst": null
+    },
+    {
+      "symbol": "IRTC",
+      "sector": "Health Care",
+      "close": 90.22,
+      "rel_volume": 10.266776566066447,
+      "pct_change": -30.701282740609876,
+      "ma_distance": -23.562777733062788,
+      "score": 22.281500073575916,
+      "catalyst": null
+    },
+    {
+      "symbol": "PRAA",
+      "sector": "Financial Services",
+      "close": 12.92,
+      "rel_volume": 4.615327937889476,
+      "pct_change": -36.7286973555338,
+      "ma_distance": -34.78123698590376,
+      "score": 17.35274151902727,
+      "catalyst": null
+    },
+    {
+      "symbol": "OBX",
+      "sector": "Biotechnology",
+      "close": 13.865,
+      "rel_volume": 5.383145277703216,
+      "pct_change": 44.42708333333334,
+      "ma_distance": 6.13541547058599,
+      "score": 17.056174115426714,
+      "catalyst": null
+    },
+    {
+      "symbol": "FLY",
+      "sector": "Aerospace & Defense",
+      "close": 20.76,
+      "rel_volume": 4.703455643299402,
+      "pct_change": 36.80395387149918,
+      "ma_distance": 16.26832444239089,
+      "score": 15.756354117236098,
+      "catalyst": null
+    },
+    {
+      "symbol": "AZUL",
+      "sector": "Airlines",
+      "close": 4.36,
+      "rel_volume": 8.767720000143914,
+      "pct_change": -0.9090909090909097,
+      "ma_distance": -20.517728557105087,
+      "score": 15.253752815347642,
+      "catalyst": null
+    },
+    {
+      "symbol": "TILE",
+      "sector": "Commercial Services & Supplies",
+      "close": 30.74,
+      "rel_volume": 4.5427522123516075,
+      "pct_change": -18.720253833950295,
+      "ma_distance": -15.651410383053463,
+      "score": 14.754471062907882,
+      "catalyst": {
+        "date": "2026-11-06",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "NRDS",
+      "sector": "Financial Services",
+      "close": 7.89,
+      "rel_volume": 3.928403425524001,
+      "pct_change": -30.971128608923888,
+      "ma_distance": -25.434140578854112,
+      "score": 14.721387806540507,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARDT",
+      "sector": "Health Care",
+      "close": 17.3,
+      "rel_volume": 5.811755258242261,
+      "pct_change": 8.805031446540882,
+      "ma_distance": 41.966190710651574,
+      "score": 14.42667083050011,
+      "catalyst": null
+    },
+    {
+      "symbol": "AORT",
+      "sector": "Health Care",
+      "close": 20.21,
+      "rel_volume": 5.832303810855736,
+      "pct_change": -20.21318594551914,
+      "ma_distance": -11.950507558924754,
+      "score": 14.269207010392577,
+      "catalyst": null
+    },
+    {
+      "symbol": "DKNG",
+      "sector": "Hotels, Restaurants & Leisure",
+      "close": 18.51,
+      "rel_volume": 5.672693581949206,
+      "pct_change": -21.301020408163257,
+      "ma_distance": -10.363196125907976,
+      "score": 14.134130208070246,
+      "catalyst": null
+    },
+    {
+      "symbol": "TMDX",
+      "sector": "Health Care",
+      "close": 88.24,
+      "rel_volume": 4.033317494394118,
+      "pct_change": 27.921136561322108,
+      "ma_distance": 22.926040984634234,
+      "score": 13.984972978425922,
+      "catalyst": null
+    },
+    {
+      "symbol": "AXON",
+      "sector": "Aerospace & Defense",
+      "close": 313.0,
+      "rel_volume": 5.036318029786778,
+      "pct_change": -18.1827687160184,
+      "ma_distance": -24.288603136822342,
+      "score": 13.937080299026139,
+      "catalyst": null
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-06",
+  "events": [
+    {
+      "at_et": "2026-11-06T13:43:37-05:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-11-06T13:47:10-05:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": false,
+        "error": "APIError: {\"message\":\"backend request timeout\"}\n"
+      }
+    },
+    {
+      "at_et": "2026-11-06T18:34:05-05:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "GOGO",
+          "STLN",
+          "STAK",
+          "IRTC",
+          "PRAA",
+          "OBX",
+          "FLY",
+          "AZUL",
+          "TILE",
+          "NRDS",
+          "ARDT",
+          "AORT",
+          "DKNG",
+          "TMDX",
+          "AXON"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-11-06T18:34:05-05:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}
