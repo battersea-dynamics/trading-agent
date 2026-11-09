@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-11-09T21:50:12",
+  "universe_size": 2415,
+  "catalyst_flagged": 244,
+  "excluded_held": [
+    "GFR",
+    "TTD"
+  ],
+  "shortlist": [
+    {
+      "symbol": "CKX",
+      "sector": "Real Estate",
+      "close": 16.4,
+      "rel_volume": 7332.3844267320665,
+      "pct_change": 58.14850530376084,
+      "ma_distance": 54.69144245053883,
+      "score": 69.15212063974613,
+      "catalyst": {
+        "date": "2026-11-09",
+        "hour": "",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "WCT",
+      "sector": "Technology",
+      "close": 4.47,
+      "rel_volume": 881.2715624430624,
+      "pct_change": 92.17540842648322,
+      "ma_distance": 26.688112007028753,
+      "score": 28.28224389635447,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMX",
+      "sector": "Electrical Equipment",
+      "close": 9.35,
+      "rel_volume": 20.31528826499035,
+      "pct_change": 89.73214285714285,
+      "ma_distance": 59.01090117515007,
+      "score": 24.653910399681735,
+      "catalyst": null
+    },
+    {
+      "symbol": "STAK",
+      "sector": "Energy",
+      "close": 4.09,
+      "rel_volume": 1.1081479523943871,
+      "pct_change": 25.460122699386506,
+      "ma_distance": 181.4865794907089,
+      "score": 18.223982530937512,
+      "catalyst": null
+    },
+    {
+      "symbol": "TLS",
+      "sector": "Technology",
+      "close": 7.17,
+      "rel_volume": 5.094745554446977,
+      "pct_change": 48.75518672199169,
+      "ma_distance": 48.209394863314564,
+      "score": 18.17996131655689,
+      "catalyst": {
+        "date": "2026-11-09",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "FTH",
+      "sector": "Biotechnology",
+      "close": 12.68,
+      "rel_volume": 10.611670805259392,
+      "pct_change": -42.49433106575964,
+      "ma_distance": -35.88836080493477,
+      "score": 15.640143036657932,
+      "catalyst": null
+    },
+    {
+      "symbol": "ONCO",
+      "sector": "Biotechnology",
+      "close": 3.58,
+      "rel_volume": 2.032551704350297,
+      "pct_change": -48.489208633093526,
+      "ma_distance": -31.48063083754402,
+      "score": 15.418117089471938,
+      "catalyst": {
+        "date": "2026-11-11",
+        "hour": "",
+        "days_until": 2
+      }
+    },
+    {
+      "symbol": "DCTH",
+      "sector": "Health Care",
+      "close": 20.27,
+      "rel_volume": 10.211467529790166,
+      "pct_change": 35.76691225720027,
+      "ma_distance": 38.206115978590674,
+      "score": 15.04172019065573,
+      "catalyst": {
+        "date": "2026-11-09",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "JANX",
+      "sector": "Biotechnology",
+      "close": 12.76,
+      "rel_volume": 6.8277110210832035,
+      "pct_change": -27.623369256948383,
+      "ma_distance": -26.09967277676426,
+      "score": 12.114025313906925,
+      "catalyst": null
+    },
+    {
+      "symbol": "IONS",
+      "sector": "Biotechnology",
+      "close": 31.0,
+      "rel_volume": 7.233574297067266,
+      "pct_change": -21.35971588026383,
+      "ma_distance": -27.647855108995,
+      "score": 11.088966199410283,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARWR",
+      "sector": "Biotechnology",
+      "close": 49.24,
+      "rel_volume": 4.995136382701109,
+      "pct_change": -15.33700137551581,
+      "ma_distance": -16.39925974974108,
+      "score": 11.082264949924928,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "amc",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "HIMS",
+      "sector": "Health Care",
+      "close": 22.94,
+      "rel_volume": 4.754967772777066,
+      "pct_change": -11.769230769230763,
+      "ma_distance": -17.891082198400046,
+      "score": 10.543318475770207,
+      "catalyst": {
+        "date": "2026-11-09",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ACAD",
+      "sector": "Biotechnology",
+      "close": 16.5,
+      "rel_volume": 6.357191011001937,
+      "pct_change": -22.27979274611399,
+      "ma_distance": -18.142580741181725,
+      "score": 10.503087548420769,
+      "catalyst": null
+    },
+    {
+      "symbol": "FRVO",
+      "sector": "Utilities",
+      "close": 11.38,
+      "rel_volume": 2.602766005791603,
+      "pct_change": 26.09418282548477,
+      "ma_distance": 23.05363321799307,
+      "score": 9.951375595865587,
+      "catalyst": {
+        "date": "2026-11-09",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PAYS",
+      "sector": "Financial Services",
+      "close": 12.51,
+      "rel_volume": 2.9801909335326515,
+      "pct_change": -14.84002722940776,
+      "ma_distance": -15.865222947071086,
+      "score": 9.426337500986683,
+      "catalyst": {
+        "date": "2026-11-09",
+        "hour": "amc",
+        "days_until": 0
+      }
+    }
+  ]
+}
