@@ -1,0 +1,180 @@
+{
+  "generated_at": "2026-11-10T19:11:53",
+  "universe_size": 2386,
+  "catalyst_flagged": 151,
+  "excluded_held": [
+    "ZIP"
+  ],
+  "shortlist": [
+    {
+      "symbol": "PXLW",
+      "sector": "Technology",
+      "close": 7.01,
+      "rel_volume": 756.7768079097955,
+      "pct_change": 34.419942473633746,
+      "ma_distance": 32.83433606518545,
+      "score": 64.43735358923365,
+      "catalyst": {
+        "date": "2026-11-11",
+        "hour": "",
+        "days_until": 1
+      }
+    },
+    {
+      "symbol": "PEPG",
+      "sector": "Biotechnology",
+      "close": 4.775,
+      "rel_volume": 82.99353986875231,
+      "pct_change": 99.7907949790795,
+      "ma_distance": 89.89858818850668,
+      "score": 39.33353456639004,
+      "catalyst": {
+        "date": "2026-11-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "STAK",
+      "sector": "Energy",
+      "close": 6.611,
+      "rel_volume": 1.3538120038353558,
+      "pct_change": 61.63814180929096,
+      "ma_distance": 312.60727102512084,
+      "score": 35.88539117241602,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMX",
+      "sector": "Electrical Equipment",
+      "close": 15.99,
+      "rel_volume": 34.85173218558712,
+      "pct_change": 71.01604278074866,
+      "ma_distance": 173.77324247508815,
+      "score": 34.08957578285573,
+      "catalyst": null
+    },
+    {
+      "symbol": "FF",
+      "sector": "Energy",
+      "close": 3.01,
+      "rel_volume": 10.845153709571909,
+      "pct_change": -40.631163708086795,
+      "ma_distance": -45.93138135440992,
+      "score": 16.682312678050586,
+      "catalyst": null
+    },
+    {
+      "symbol": "XGN",
+      "sector": "Biotechnology",
+      "close": 5.07,
+      "rel_volume": 3.5849481095553526,
+      "pct_change": -28.591549295774637,
+      "ma_distance": -35.55357823821024,
+      "score": 14.280077391219153,
+      "catalyst": {
+        "date": "2026-11-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "APPS",
+      "sector": "Technology",
+      "close": 7.155,
+      "rel_volume": 4.723538553549647,
+      "pct_change": -36.681415929203546,
+      "ma_distance": -27.457987985704502,
+      "score": 14.126667948658739,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRPN",
+      "sector": "Retail",
+      "close": 11.73,
+      "rel_volume": 3.4168442359480626,
+      "pct_change": -27.815384615384612,
+      "ma_distance": -29.08530318602261,
+      "score": 11.389304145735009,
+      "catalyst": null
+    },
+    {
+      "symbol": "GILT",
+      "sector": "Communications",
+      "close": 5.87,
+      "rel_volume": 3.021611716996816,
+      "pct_change": -22.559366754617415,
+      "ma_distance": -23.418134377038495,
+      "score": 11.242911918983841,
+      "catalyst": {
+        "date": "2026-11-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "HIMS",
+      "sector": "Health Care",
+      "close": 18.915,
+      "rel_volume": 3.7350132142163757,
+      "pct_change": -17.54577157802965,
+      "ma_distance": -31.351733899504612,
+      "score": 9.853612551694273,
+      "catalyst": null
+    },
+    {
+      "symbol": "SECZ",
+      "sector": "Financial Services",
+      "close": 8.59,
+      "rel_volume": 4.181430960323961,
+      "pct_change": 23.24246771879484,
+      "ma_distance": 0.4795882559363712,
+      "score": 9.628844470798775,
+      "catalyst": null
+    },
+    {
+      "symbol": "XRPN",
+      "sector": "N/A",
+      "close": 7.64,
+      "rel_volume": 1.503957281179338,
+      "pct_change": -26.609029779058602,
+      "ma_distance": -45.35245520546476,
+      "score": 9.301342242379562,
+      "catalyst": null
+    },
+    {
+      "symbol": "SENS",
+      "sector": "Health Care",
+      "close": 10.825,
+      "rel_volume": 5.635022444461201,
+      "pct_change": 10.459183673469372,
+      "ma_distance": 27.521719923428062,
+      "score": 8.829265545998176,
+      "catalyst": null
+    },
+    {
+      "symbol": "JBI",
+      "sector": "Building",
+      "close": 3.855,
+      "rel_volume": 2.1384765617943664,
+      "pct_change": -19.0126050420168,
+      "ma_distance": -13.603765127745401,
+      "score": 8.402601501554692,
+      "catalyst": {
+        "date": "2026-11-10",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PAYS",
+      "sector": "Financial Services",
+      "close": 10.24,
+      "rel_volume": 2.6393889531645915,
+      "pct_change": -18.14548361310951,
+      "ma_distance": -30.510314875135723,
+      "score": 8.208107099144211,
+      "catalyst": null
+    }
+  ]
+}
