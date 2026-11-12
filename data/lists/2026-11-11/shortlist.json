@@ -1,0 +1,178 @@
+{
+  "generated_at": "2026-11-11T19:11:40",
+  "universe_size": 2393,
+  "catalyst_flagged": 94,
+  "excluded_held": [
+    "ANGX",
+    "CAPR",
+    "ERAS"
+  ],
+  "shortlist": [
+    {
+      "symbol": "NXXT",
+      "sector": "Energy",
+      "close": 3.55,
+      "rel_volume": 124.11961851858143,
+      "pct_change": 1803.4852546916889,
+      "ma_distance": -9.92305398907659,
+      "score": 101.87901369645724,
+      "catalyst": null
+    },
+    {
+      "symbol": "FOSL",
+      "sector": "Textiles, Apparel & Luxury Goods",
+      "close": 9.98,
+      "rel_volume": 7.566259775798384,
+      "pct_change": 26.810673443456167,
+      "ma_distance": 42.57652059002107,
+      "score": 13.297640935970174,
+      "catalyst": {
+        "date": "2026-11-11",
+        "hour": "",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "BGS",
+      "sector": "Food Products",
+      "close": 3.52,
+      "rel_volume": 5.360438439995723,
+      "pct_change": 32.33082706766916,
+      "ma_distance": 52.01900237529691,
+      "score": 11.451393541377861,
+      "catalyst": null
+    },
+    {
+      "symbol": "PEPG",
+      "sector": "Biotechnology",
+      "close": 5.165,
+      "rel_volume": 2.028829234592028,
+      "pct_change": 12.039045553145328,
+      "ma_distance": 97.13740458015266,
+      "score": 10.764731767394364,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMX",
+      "sector": "Electrical Equipment",
+      "close": 12.9,
+      "rel_volume": 1.0977990898668382,
+      "pct_change": -32.98701298701299,
+      "ma_distance": 105.65634665051175,
+      "score": 10.607185539222424,
+      "catalyst": null
+    },
+    {
+      "symbol": "IMXI",
+      "sector": "Financial Services",
+      "close": 6.3,
+      "rel_volume": 8.280079887314125,
+      "pct_change": -3.002309468822175,
+      "ma_distance": -29.47695407606414,
+      "score": 10.233437135850206,
+      "catalyst": null
+    },
+    {
+      "symbol": "HGTY",
+      "sector": "Insurance",
+      "close": 16.66,
+      "rel_volume": 15.133929853980959,
+      "pct_change": -1.6528925619834778,
+      "ma_distance": 2.9920870425321575,
+      "score": 10.052527998821954,
+      "catalyst": null
+    },
+    {
+      "symbol": "RSKD",
+      "sector": "Technology",
+      "close": 9.845,
+      "rel_volume": 4.464342630876707,
+      "pct_change": 16.096698113207548,
+      "ma_distance": 13.441262891052613,
+      "score": 9.151473402921974,
+      "catalyst": {
+        "date": "2026-11-11",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "REZI",
+      "sector": "Building",
+      "close": 22.485,
+      "rel_volume": 3.8891363982557934,
+      "pct_change": 15.604113110539847,
+      "ma_distance": 23.03693570451437,
+      "score": 7.622904191415944,
+      "catalyst": null
+    },
+    {
+      "symbol": "OSG",
+      "sector": "Insurance",
+      "close": 5.105,
+      "rel_volume": 5.712512406058805,
+      "pct_change": -5.637707948243987,
+      "ma_distance": 4.0244523688232245,
+      "score": 6.60053249407782,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMN",
+      "sector": "Biotechnology",
+      "close": 3.85,
+      "rel_volume": 0.10894740489668937,
+      "pct_change": -3.2663316582914548,
+      "ma_distance": -43.74429223744292,
+      "score": 6.469458461032629,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "amc",
+        "days_until": 1
+      }
+    },
+    {
+      "symbol": "TNXP",
+      "sector": "Biotechnology",
+      "close": 3.95,
+      "rel_volume": 2.7784379176841205,
+      "pct_change": -3.658536585365841,
+      "ma_distance": -25.415407854984895,
+      "score": 5.915304040029534,
+      "catalyst": null
+    },
+    {
+      "symbol": "RDAC",
+      "sector": "unknown",
+      "close": 11.15,
+      "rel_volume": 0.02497230203199208,
+      "pct_change": -0.17905102954341606,
+      "ma_distance": 62.45320364273992,
+      "score": 5.733072501599231,
+      "catalyst": null
+    },
+    {
+      "symbol": "FIP",
+      "sector": "Road & Rail",
+      "close": 4.35,
+      "rel_volume": 0.5548928115083337,
+      "pct_change": 13.281249999999995,
+      "ma_distance": 57.238387854690046,
+      "score": 5.348950376779313,
+      "catalyst": null
+    },
+    {
+      "symbol": "FTFT",
+      "sector": "Financial Services",
+      "close": 3.67,
+      "rel_volume": 0.0625014069881449,
+      "pct_change": 15.047021943573668,
+      "ma_distance": 32.77858176555715,
+      "score": 5.31161389616416,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "",
+        "days_until": 1
+      }
+    }
+  ]
+}
