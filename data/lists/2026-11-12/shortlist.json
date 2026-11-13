@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-11-12T19:28:46",
+  "universe_size": 2388,
+  "catalyst_flagged": 76,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "ADXN",
+      "sector": "Pharmaceuticals",
+      "close": 4.735,
+      "rel_volume": 3304.364628838591,
+      "pct_change": 63.84083044982699,
+      "ma_distance": 60.917040213967,
+      "score": 76.2621970580246,
+      "catalyst": null
+    },
+    {
+      "symbol": "CDNL",
+      "sector": "Construction",
+      "close": 5.55,
+      "rel_volume": 12.626404927941861,
+      "pct_change": -62.975316877918615,
+      "ma_distance": -62.75667695611327,
+      "score": 28.868488972620536,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ADIG",
+      "sector": "Electrical Equipment",
+      "close": 10.01,
+      "rel_volume": 7.592092128674745,
+      "pct_change": -48.87640449438202,
+      "ma_distance": -42.57357581320636,
+      "score": 23.082037636512002,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PSFE",
+      "sector": "Financial Services",
+      "close": 4.015,
+      "rel_volume": 4.577655387248052,
+      "pct_change": -41.12903225806453,
+      "ma_distance": -33.055439766569414,
+      "score": 20.051738241385415,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SMX",
+      "sector": "Electrical Equipment",
+      "close": 4.63,
+      "rel_volume": 0.8288317012218557,
+      "pct_change": -58.62377122430742,
+      "ma_distance": -26.89896900705748,
+      "score": 17.87791333188879,
+      "catalyst": null
+    },
+    {
+      "symbol": "BZ",
+      "sector": "Professional Services",
+      "close": 12.765,
+      "rel_volume": 3.174729702347407,
+      "pct_change": -23.654306220095688,
+      "ma_distance": -23.85241745458884,
+      "score": 11.25223292850475,
+      "catalyst": null
+    },
+    {
+      "symbol": "RETO",
+      "sector": "Construction",
+      "close": 7.06,
+      "rel_volume": 12.482728818312829,
+      "pct_change": 14.054927302100149,
+      "ma_distance": 25.93425019175541,
+      "score": 10.955883673088325,
+      "catalyst": null
+    },
+    {
+      "symbol": "LUNR",
+      "sector": "Aerospace & Defense",
+      "close": 13.505,
+      "rel_volume": 2.8259026554360314,
+      "pct_change": 10.878489326765198,
+      "ma_distance": 24.538915529324985,
+      "score": 10.071798496108984,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "NBIS",
+      "sector": "Technology",
+      "close": 127.03,
+      "rel_volume": 2.1882373671408732,
+      "pct_change": -17.88092313659577,
+      "ma_distance": -18.87758197336364,
+      "score": 9.739055072935466,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PEPG",
+      "sector": "Biotechnology",
+      "close": 5.005,
+      "rel_volume": 1.3897759025513547,
+      "pct_change": -4.847908745247147,
+      "ma_distance": 80.88182146729307,
+      "score": 9.03493378605908,
+      "catalyst": null
+    },
+    {
+      "symbol": "BRUN",
+      "sector": "Technology",
+      "close": 6.02,
+      "rel_volume": 1.3286004345512243,
+      "pct_change": -18.428184281842825,
+      "ma_distance": -20.86236361246222,
+      "score": 8.79089898893675,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "MBGL",
+      "sector": "Professional Services",
+      "close": 22.9,
+      "rel_volume": 1.2549213632360796,
+      "pct_change": 14.959839357429702,
+      "ma_distance": 19.93296323452392,
+      "score": 8.34635401537041,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CTVA",
+      "sector": "Chemicals",
+      "close": 9.72,
+      "rel_volume": 2.0685295468699603,
+      "pct_change": -19.934102141680395,
+      "ma_distance": -20.25596849618508,
+      "score": 8.237653713265773,
+      "catalyst": null
+    },
+    {
+      "symbol": "PMN",
+      "sector": "Biotechnology",
+      "close": 3.52,
+      "rel_volume": 0.22161994152526163,
+      "pct_change": -6.382978723404249,
+      "ma_distance": -46.80770683792973,
+      "score": 7.937344249368253,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "YETI",
+      "sector": "Leisure Products",
+      "close": 39.02,
+      "rel_volume": 3.01543544013505,
+      "pct_change": -8.810469735919598,
+      "ma_distance": -11.302054919076197,
+      "score": 7.843685993506982,
+      "catalyst": {
+        "date": "2026-11-12",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
