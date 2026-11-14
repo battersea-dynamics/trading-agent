@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-11-13T19:03:31",
+  "universe_size": 2371,
+  "catalyst_flagged": 24,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "FCUV",
+      "sector": "Electrical Equipment",
+      "close": 5.9693,
+      "rel_volume": 8883.229207808748,
+      "pct_change": 98.97666666666666,
+      "ma_distance": 82.88128479211284,
+      "score": 87.12808169732536,
+      "catalyst": null
+    },
+    {
+      "symbol": "VTSI",
+      "sector": "Aerospace & Defense",
+      "close": 4.2391,
+      "rel_volume": 49.43578430679356,
+      "pct_change": 61.7977099236641,
+      "ma_distance": 59.55931201785636,
+      "score": 26.658834558748364,
+      "catalyst": null
+    },
+    {
+      "symbol": "LFTO",
+      "sector": "Media",
+      "close": 22.7,
+      "rel_volume": 8.797223884162486,
+      "pct_change": 21.32549438802778,
+      "ma_distance": 36.15642994241842,
+      "score": 13.518377479646917,
+      "catalyst": null
+    },
+    {
+      "symbol": "CDNL",
+      "sector": "Construction",
+      "close": 6.45,
+      "rel_volume": 3.867786117737605,
+      "pct_change": 14.361702127659584,
+      "ma_distance": -55.17097581317765,
+      "score": 13.23979279093575,
+      "catalyst": null
+    },
+    {
+      "symbol": "CADL",
+      "sector": "Biotechnology",
+      "close": 6.3021,
+      "rel_volume": 3.6782519873552886,
+      "pct_change": -24.885578069129917,
+      "ma_distance": -26.178985592128384,
+      "score": 12.679589400483245,
+      "catalyst": null
+    },
+    {
+      "symbol": "RMIX",
+      "sector": "Construction",
+      "close": 6.235,
+      "rel_volume": 1.9350967352661474,
+      "pct_change": -23.214285714285705,
+      "ma_distance": -35.19216277317256,
+      "score": 12.522610533519504,
+      "catalyst": {
+        "date": "2026-11-13",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "NMAX",
+      "sector": "Media",
+      "close": 9.1227,
+      "rel_volume": 5.245538591883701,
+      "pct_change": 25.13991769547325,
+      "ma_distance": 14.678818353236958,
+      "score": 12.386793090249924,
+      "catalyst": null
+    },
+    {
+      "symbol": "MOD",
+      "sector": "Building",
+      "close": 138.8,
+      "rel_volume": 2.9084116928862955,
+      "pct_change": 30.819981149858645,
+      "ma_distance": 11.055103494075212,
+      "score": 11.883721629681764,
+      "catalyst": null
+    },
+    {
+      "symbol": "HAWK",
+      "sector": "Aerospace & Defense",
+      "close": 17.5,
+      "rel_volume": 2.743584576483082,
+      "pct_change": 19.29107021131561,
+      "ma_distance": 30.271336583913346,
+      "score": 10.503583990938484,
+      "catalyst": null
+    },
+    {
+      "symbol": "VIR",
+      "sector": "Biotechnology",
+      "close": 9.875,
+      "rel_volume": 6.514964524966117,
+      "pct_change": -18.523102310231017,
+      "ma_distance": -13.88143981511763,
+      "score": 10.294006859301016,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 5.29,
+      "rel_volume": 0.8996921940487005,
+      "pct_change": -13.703099510603586,
+      "ma_distance": -39.08337171810226,
+      "score": 9.313651447018627,
+      "catalyst": {
+        "date": "2026-11-16",
+        "hour": "",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "ADXN",
+      "sector": "Pharmaceuticals",
+      "close": 4.28,
+      "rel_volume": 0.4193362738565059,
+      "pct_change": -19.09262759924385,
+      "ma_distance": 40.051897735936755,
+      "score": 8.925408651090498,
+      "catalyst": null
+    },
+    {
+      "symbol": "XGN",
+      "sector": "Biotechnology",
+      "close": 4.295,
+      "rel_volume": 5.236303533834083,
+      "pct_change": -2.6077097505668982,
+      "ma_distance": -41.39918818432991,
+      "score": 8.819211341891954,
+      "catalyst": null
+    },
+    {
+      "symbol": "PEPG",
+      "sector": "Biotechnology",
+      "close": 4.55,
+      "rel_volume": 0.4682722671314442,
+      "pct_change": -9.722222222222227,
+      "ma_distance": 57.30337078651684,
+      "score": 8.164245339145527,
+      "catalyst": null
+    },
+    {
+      "symbol": "STLN",
+      "sector": "Health Care",
+      "close": 3.62,
+      "rel_volume": 3.447959675164197,
+      "pct_change": -3.4666666666666637,
+      "ma_distance": -39.062368487501054,
+      "score": 7.984582912065582,
+      "catalyst": null
+    }
+  ]
+}
