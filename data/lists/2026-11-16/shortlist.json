@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-11-16T21:29:10",
+  "universe_size": 2390,
+  "catalyst_flagged": 85,
+  "excluded_held": [
+    "DRTS",
+    "LFTO",
+    "RMIX",
+    "TU"
+  ],
+  "shortlist": [
+    {
+      "symbol": "LXEO",
+      "sector": "Biotechnology",
+      "close": 3.23,
+      "rel_volume": 31.278655468064823,
+      "pct_change": 12.543554006968636,
+      "ma_distance": 8.361989432189883,
+      "score": 48.38188730682664,
+      "catalyst": {
+        "date": "2026-11-16",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "CGON",
+      "sector": "Biotechnology",
+      "close": 84.78,
+      "rel_volume": 8.160868796141068,
+      "pct_change": 13.951612903225799,
+      "ma_distance": 28.061629092556927,
+      "score": 20.22641954979943,
+      "catalyst": null
+    },
+    {
+      "symbol": "HELP",
+      "sector": "Pharmaceuticals",
+      "close": 7.67,
+      "rel_volume": 8.963633537773969,
+      "pct_change": -13.528748590755349,
+      "ma_distance": -21.5806558801728,
+      "score": 18.9486907493824,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLRO",
+      "sector": "Communications",
+      "close": 4.78,
+      "rel_volume": 1.9152761723366096,
+      "pct_change": 41.839762611275965,
+      "ma_distance": 19.979919678714854,
+      "score": 16.222506873474046,
+      "catalyst": null
+    },
+    {
+      "symbol": "SMMT",
+      "sector": "Biotechnology",
+      "close": 11.82,
+      "rel_volume": 5.0418415627328494,
+      "pct_change": -16.46643109540636,
+      "ma_distance": -24.991671029460758,
+      "score": 15.247843491093976,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRTO",
+      "sector": "Media",
+      "close": 19.57,
+      "rel_volume": 4.446854579240476,
+      "pct_change": 8.541320022185243,
+      "ma_distance": 25.74292414945225,
+      "score": 13.989005285052425,
+      "catalyst": null
+    },
+    {
+      "symbol": "USDE",
+      "sector": "Technology",
+      "close": 4.03,
+      "rel_volume": 1.5279052250467025,
+      "pct_change": -23.962264150943387,
+      "ma_distance": -52.10079039638676,
+      "score": 13.780945575659123,
+      "catalyst": {
+        "date": "2026-11-16",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SUPX",
+      "sector": "Diversified Consumer Services",
+      "close": 4.41,
+      "rel_volume": 4.68149330372632,
+      "pct_change": -12.673267326732669,
+      "ma_distance": -23.177423569375485,
+      "score": 13.610713914681185,
+      "catalyst": null
+    },
+    {
+      "symbol": "NPCE",
+      "sector": "Health Care",
+      "close": 7.97,
+      "rel_volume": 4.159043251106012,
+      "pct_change": 5.423280423280426,
+      "ma_distance": -36.42310146777281,
+      "score": 13.348239758394703,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSFE",
+      "sector": "Financial Services",
+      "close": 3.1,
+      "rel_volume": 2.306138310719125,
+      "pct_change": -22.885572139303473,
+      "ma_distance": -46.79025060075523,
+      "score": 13.11726170350257,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCT",
+      "sector": "Marine",
+      "close": 8.96,
+      "rel_volume": 0.9684326567783806,
+      "pct_change": 43.93574297188757,
+      "ma_distance": -8.908837672702122,
+      "score": 13.082578381665277,
+      "catalyst": null
+    },
+    {
+      "symbol": "GDS",
+      "sector": "Technology",
+      "close": 16.9,
+      "rel_volume": 3.84453612066499,
+      "pct_change": -14.68955073195356,
+      "ma_distance": -24.18039681916577,
+      "score": 12.989063069726196,
+      "catalyst": null
+    },
+    {
+      "symbol": "FCUV",
+      "sector": "Electrical Equipment",
+      "close": 4.72,
+      "rel_volume": 0.3546949826347232,
+      "pct_change": -33.333333333333336,
+      "ma_distance": 37.168231605071725,
+      "score": 12.8610351183965,
+      "catalyst": null
+    },
+    {
+      "symbol": "BTDR",
+      "sector": "Technology",
+      "close": 4.495,
+      "rel_volume": 2.5990016096210424,
+      "pct_change": -19.73214285714285,
+      "ma_distance": -34.56583448577043,
+      "score": 11.923786775036657,
+      "catalyst": null
+    },
+    {
+      "symbol": "VTSI",
+      "sector": "Aerospace & Defense",
+      "close": 3.94,
+      "rel_volume": 3.2630956311587633,
+      "pct_change": -7.075471698113213,
+      "ma_distance": 44.2560288219152,
+      "score": 11.655328697390317,
+      "catalyst": null
+    }
+  ]
+}
