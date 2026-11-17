@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-11-17T20:18:15",
+  "universe_size": 2332,
+  "catalyst_flagged": 65,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "SLS",
+      "sector": "Biotechnology",
+      "close": 19.355,
+      "rel_volume": 14.090426336089958,
+      "pct_change": 159.10307898259708,
+      "ma_distance": 101.2738853503185,
+      "score": 65.4926997156661,
+      "catalyst": null
+    },
+    {
+      "symbol": "SPAI",
+      "sector": "Aerospace & Defense",
+      "close": 3.0702,
+      "rel_volume": 39.484059055163925,
+      "pct_change": 24.299595141700387,
+      "ma_distance": -0.9533026857004587,
+      "score": 51.556949781282825,
+      "catalyst": null
+    },
+    {
+      "symbol": "ABX",
+      "sector": "Insurance",
+      "close": 6.64,
+      "rel_volume": 6.719818481435865,
+      "pct_change": -23.236994219653187,
+      "ma_distance": -23.223680407007002,
+      "score": 17.50193993059553,
+      "catalyst": null
+    },
+    {
+      "symbol": "DUOT",
+      "sector": "Technology",
+      "close": 3.305,
+      "rel_volume": 3.769464903279515,
+      "pct_change": -29.229122055674512,
+      "ma_distance": -41.71846757483578,
+      "score": 17.184878909041007,
+      "catalyst": null
+    },
+    {
+      "symbol": "PICS",
+      "sector": "Financial Services",
+      "close": 4.94,
+      "rel_volume": 3.1834021935439654,
+      "pct_change": -27.777777777777768,
+      "ma_distance": -42.51469133647524,
+      "score": 15.428814233652469,
+      "catalyst": null
+    },
+    {
+      "symbol": "BILL",
+      "sector": "Technology",
+      "close": 64.44,
+      "rel_volume": 5.115328373091023,
+      "pct_change": 11.816762103071309,
+      "ma_distance": 25.563858497091797,
+      "score": 14.897996984590858,
+      "catalyst": null
+    },
+    {
+      "symbol": "OMER",
+      "sector": "Pharmaceuticals",
+      "close": 13.81,
+      "rel_volume": 4.030470209004169,
+      "pct_change": -17.206235011990405,
+      "ma_distance": -20.796054140857994,
+      "score": 13.040572680099695,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSIG",
+      "sector": "Logistics & Transportation",
+      "close": 3.56,
+      "rel_volume": 2.7190468392676763,
+      "pct_change": -28.514056224899605,
+      "ma_distance": -28.080808080808083,
+      "score": 13.0299776304532,
+      "catalyst": null
+    },
+    {
+      "symbol": "NSIT",
+      "sector": "Electrical Equipment",
+      "close": 155.56,
+      "rel_volume": 7.327753850924416,
+      "pct_change": 0.17386824650654276,
+      "ma_distance": -8.204692442052588,
+      "score": 12.142112363146687,
+      "catalyst": null
+    },
+    {
+      "symbol": "VTSI",
+      "sector": "Aerospace & Defense",
+      "close": 4.61,
+      "rel_volume": 0.6563063490126282,
+      "pct_change": 17.00507614213199,
+      "ma_distance": 64.9813635477077,
+      "score": 10.948905917304145,
+      "catalyst": null
+    },
+    {
+      "symbol": "LOMA",
+      "sector": "Construction",
+      "close": 8.185,
+      "rel_volume": 4.179890542269478,
+      "pct_change": 1.4250309789343272,
+      "ma_distance": -9.682758620689649,
+      "score": 9.244108576419979,
+      "catalyst": null
+    },
+    {
+      "symbol": "ENR",
+      "sector": "Consumer products",
+      "close": 26.885,
+      "rel_volume": 1.9639026365684484,
+      "pct_change": 10.45603944124898,
+      "ma_distance": 13.611392832995284,
+      "score": 9.056705099173321,
+      "catalyst": {
+        "date": "2026-11-17",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "TTEC",
+      "sector": "Professional Services",
+      "close": 3.195,
+      "rel_volume": 0.5506129233220353,
+      "pct_change": 4.071661237785016,
+      "ma_distance": 75.14046868576128,
+      "score": 8.907566006087537,
+      "catalyst": null
+    },
+    {
+      "symbol": "DLB",
+      "sector": "Technology",
+      "close": 58.845,
+      "rel_volume": 3.292768934527334,
+      "pct_change": -3.785153695225634,
+      "ma_distance": -7.191861840548845,
+      "score": 8.812651204226796,
+      "catalyst": {
+        "date": "2026-11-17",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SMX",
+      "sector": "Electrical Equipment",
+      "close": 3.42,
+      "rel_volume": 2.4676669572723973,
+      "pct_change": -6.557377049180333,
+      "ma_distance": -42.59818731117825,
+      "score": 8.727458326952556,
+      "catalyst": null
+    }
+  ]
+}
