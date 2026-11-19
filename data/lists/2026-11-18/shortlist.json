@@ -1,0 +1,176 @@
+{
+  "generated_at": "2026-11-18T19:48:43",
+  "universe_size": 2312,
+  "catalyst_flagged": 46,
+  "excluded_held": [
+    "AES",
+    "BLSH",
+    "BRBR",
+    "TJX",
+    "ZIM"
+  ],
+  "shortlist": [
+    {
+      "symbol": "CUE",
+      "sector": "Biotechnology",
+      "close": 4.29,
+      "rel_volume": 31.98081759016871,
+      "pct_change": 51.590106007067135,
+      "ma_distance": -76.27999557668916,
+      "score": 64.5730024273368,
+      "catalyst": null
+    },
+    {
+      "symbol": "SKYA",
+      "sector": "Technology",
+      "close": 3.53,
+      "rel_volume": 5.614907841805635,
+      "pct_change": 62.67281105990783,
+      "ma_distance": 26.251788268955632,
+      "score": 29.98143814767049,
+      "catalyst": null
+    },
+    {
+      "symbol": "CLRO",
+      "sector": "Communications",
+      "close": 7.315,
+      "rel_volume": 2.4257875137617266,
+      "pct_change": 54.97881355932205,
+      "ma_distance": 70.9711347434849,
+      "score": 25.70223577316429,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCPL",
+      "sector": "Financial Services",
+      "close": 3.12,
+      "rel_volume": 0.8830958358887581,
+      "pct_change": 31.645569620253163,
+      "ma_distance": 90.59254734270007,
+      "score": 17.572994572217265,
+      "catalyst": null
+    },
+    {
+      "symbol": "ARDT",
+      "sector": "Health Care",
+      "close": 14.325,
+      "rel_volume": 6.695232035544955,
+      "pct_change": -19.295774647887328,
+      "ma_distance": -1.886921680764364,
+      "score": 17.273462982275014,
+      "catalyst": null
+    },
+    {
+      "symbol": "PSIG",
+      "sector": "Logistics & Transportation",
+      "close": 3.64,
+      "rel_volume": 4.921722360883935,
+      "pct_change": 7.374631268436578,
+      "ma_distance": -25.72186511580451,
+      "score": 13.747935354769409,
+      "catalyst": null
+    },
+    {
+      "symbol": "SLS",
+      "sector": "Biotechnology",
+      "close": 18.81,
+      "rel_volume": 2.1634698531853567,
+      "pct_change": -1.7754569190600515,
+      "ma_distance": 88.57615479084687,
+      "score": 12.56596264447109,
+      "catalyst": null
+    },
+    {
+      "symbol": "GLBE",
+      "sector": "Retail",
+      "close": 37.89,
+      "rel_volume": 3.92123480282875,
+      "pct_change": -4.822908816880185,
+      "ma_distance": -9.806652027207962,
+      "score": 12.18694870725418,
+      "catalyst": {
+        "date": "2026-11-18",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PONY",
+      "sector": "Technology",
+      "close": 3.7317,
+      "rel_volume": 2.5667294029963448,
+      "pct_change": -6.47368421052632,
+      "ma_distance": -20.87150127226462,
+      "score": 9.898967176000147,
+      "catalyst": {
+        "date": "2026-11-18",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "RMIX",
+      "sector": "Construction",
+      "close": 7.7,
+      "rel_volume": 1.3989163994736005,
+      "pct_change": 27.27272727272728,
+      "ma_distance": -14.14155492989157,
+      "score": 9.533106986181258,
+      "catalyst": null
+    },
+    {
+      "symbol": "JRVR",
+      "sector": "Insurance",
+      "close": 3.085,
+      "rel_volume": 3.718653114559786,
+      "pct_change": 2.1523178807947003,
+      "ma_distance": -15.96867551923731,
+      "score": 9.506722660627076,
+      "catalyst": null
+    },
+    {
+      "symbol": "NUAI",
+      "sector": "Energy",
+      "close": 3.775,
+      "rel_volume": 1.074433144548089,
+      "pct_change": 17.968749999999993,
+      "ma_distance": 39.75011568718186,
+      "score": 9.464593749441587,
+      "catalyst": null
+    },
+    {
+      "symbol": "PRMB",
+      "sector": "Beverages",
+      "close": 22.775,
+      "rel_volume": 3.3754869242433716,
+      "pct_change": -6.08247422680413,
+      "ma_distance": 5.349584846312175,
+      "score": 9.299525880020397,
+      "catalyst": null
+    },
+    {
+      "symbol": "BIPC",
+      "sector": "Utilities",
+      "close": 41.765,
+      "rel_volume": 3.1996832185445103,
+      "pct_change": 3.9447486311597837,
+      "ma_distance": 8.822533156153092,
+      "score": 8.583319815828066,
+      "catalyst": null
+    },
+    {
+      "symbol": "TGT",
+      "sector": "Retail",
+      "close": 168.975,
+      "rel_volume": 2.1677327655604666,
+      "pct_change": 5.9205165172694745,
+      "ma_distance": 8.158882662254324,
+      "score": 8.181401581651725,
+      "catalyst": {
+        "date": "2026-11-18",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    }
+  ]
+}
