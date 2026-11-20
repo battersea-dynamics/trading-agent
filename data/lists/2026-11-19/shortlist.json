@@ -1,0 +1,161 @@
+{
+  "generated_at": "2026-11-19T19:49:01",
+  "universe_size": 2290,
+  "catalyst_flagged": 21,
+  "excluded_held": [
+    "PDD",
+    "SVRA"
+  ],
+  "shortlist": [
+    {
+      "symbol": "INHD",
+      "sector": "Metals & Mining",
+      "close": 3.16,
+      "rel_volume": 62.829238786155706,
+      "pct_change": 37.39130434782611,
+      "ma_distance": 0.6369426751592504,
+      "score": 62.519922657501596,
+      "catalyst": null
+    },
+    {
+      "symbol": "MPU",
+      "sector": "Media",
+      "close": 4.09,
+      "rel_volume": 3.405834336841362,
+      "pct_change": 44.014084507042256,
+      "ma_distance": 166.99044970591885,
+      "score": 35.3071863062417,
+      "catalyst": null
+    },
+    {
+      "symbol": "NCPL",
+      "sector": "Financial Services",
+      "close": 3.9,
+      "rel_volume": 1.2570524081335648,
+      "pct_change": 34.94809688581314,
+      "ma_distance": 129.00763358778627,
+      "score": 24.218834124785765,
+      "catalyst": null
+    },
+    {
+      "symbol": "POAS",
+      "sector": "Electrical Equipment",
+      "close": 3.0987,
+      "rel_volume": 2.0582959945594825,
+      "pct_change": 33.56465517241381,
+      "ma_distance": 100.17183240526609,
+      "score": 22.97240130907467,
+      "catalyst": null
+    },
+    {
+      "symbol": "SA",
+      "sector": "Metals & Mining",
+      "close": 18.2,
+      "rel_volume": 7.3220966901388405,
+      "pct_change": -28.767123287671236,
+      "ma_distance": -28.328115462618385,
+      "score": 19.853961820920826,
+      "catalyst": null
+    },
+    {
+      "symbol": "SNEX",
+      "sector": "Financial Services",
+      "close": 39.8899,
+      "rel_volume": 3.7903485545240225,
+      "pct_change": -25.89652610068735,
+      "ma_distance": -28.506317770409538,
+      "score": 16.06500635940387,
+      "catalyst": null
+    },
+    {
+      "symbol": "INSM",
+      "sector": "Biotechnology",
+      "close": 144.86,
+      "rel_volume": 3.0794261920160704,
+      "pct_change": 20.918196994991668,
+      "ma_distance": 31.397355453611603,
+      "score": 15.046429806699738,
+      "catalyst": null
+    },
+    {
+      "symbol": "HY",
+      "sector": "Machinery",
+      "close": 16.01,
+      "rel_volume": 5.941719867925545,
+      "pct_change": 3.6917098445595995,
+      "ma_distance": -42.447336257099714,
+      "score": 13.10828709239499,
+      "catalyst": null
+    },
+    {
+      "symbol": "SLS",
+      "sector": "Biotechnology",
+      "close": 14.325,
+      "rel_volume": 2.056975906188969,
+      "pct_change": -20.194986072423397,
+      "ma_distance": 39.548476656681515,
+      "score": 12.31351621885061,
+      "catalyst": null
+    },
+    {
+      "symbol": "BRBR",
+      "sector": "Consumer products",
+      "close": 15.255,
+      "rel_volume": 1.571514700673086,
+      "pct_change": 11.67642752562226,
+      "ma_distance": 52.9706693406869,
+      "score": 10.688939699144868,
+      "catalyst": null
+    },
+    {
+      "symbol": "CUE",
+      "sector": "Biotechnology",
+      "close": 4.38,
+      "rel_volume": 1.8668920607770858,
+      "pct_change": -7.983193277310923,
+      "ma_distance": -74.79354300348172,
+      "score": 10.249810244788515,
+      "catalyst": null
+    },
+    {
+      "symbol": "FISN",
+      "sector": "Utilities",
+      "close": 3.1962,
+      "rel_volume": 0.9491613297349654,
+      "pct_change": 17.940959409594104,
+      "ma_distance": 32.59489732420661,
+      "score": 9.833965393586965,
+      "catalyst": null
+    },
+    {
+      "symbol": "WSM",
+      "sector": "Retail",
+      "close": 218.29,
+      "rel_volume": 2.8574613784852305,
+      "pct_change": -16.07135991387596,
+      "ma_distance": -14.800192810961343,
+      "score": 9.631029052923777,
+      "catalyst": null
+    },
+    {
+      "symbol": "PS",
+      "sector": "Financial Services",
+      "close": 37.45,
+      "rel_volume": 3.6855935836556197,
+      "pct_change": -7.758620689655168,
+      "ma_distance": -19.61708110196503,
+      "score": 9.271045270663425,
+      "catalyst": null
+    },
+    {
+      "symbol": "MFC",
+      "sector": "Insurance",
+      "close": 42.33,
+      "rel_volume": 7.3902120593517395,
+      "pct_change": -1.5810276679841893,
+      "ma_distance": -4.699724207800992,
+      "score": 9.229952038246655,
+      "catalyst": null
+    }
+  ]
+}
