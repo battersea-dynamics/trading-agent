@@ -1,0 +1,176 @@
+{
+  "generated_at": "2026-11-20T19:29:08",
+  "universe_size": 2241,
+  "catalyst_flagged": 21,
+  "excluded_held": [
+    "TIGR"
+  ],
+  "shortlist": [
+    {
+      "symbol": "ABVX",
+      "sector": "Biotechnology",
+      "close": 72.835,
+      "rel_volume": 15.23381559705375,
+      "pct_change": -9.690018598884082,
+      "ma_distance": -16.10924744806139,
+      "score": 35.757237603960775,
+      "catalyst": null
+    },
+    {
+      "symbol": "BILL",
+      "sector": "Technology",
+      "close": 61.505,
+      "rel_volume": 10.087614833578124,
+      "pct_change": -4.018414481897621,
+      "ma_distance": 14.682876348346566,
+      "score": 25.456985848656924,
+      "catalyst": null
+    },
+    {
+      "symbol": "MPU",
+      "sector": "Media",
+      "close": 4.315,
+      "rel_volume": 1.002858673480457,
+      "pct_change": -9.348739495798307,
+      "ma_distance": 156.4796019959641,
+      "score": 17.806187315010042,
+      "catalyst": null
+    },
+    {
+      "symbol": "YSWY",
+      "sector": "Retail",
+      "close": 20.02,
+      "rel_volume": 5.347627331693324,
+      "pct_change": 3.7305699481865227,
+      "ma_distance": -18.121958202118527,
+      "score": 16.201491725586905,
+      "catalyst": null
+    },
+    {
+      "symbol": "CSIQ",
+      "sector": "Semiconductors",
+      "close": 5.95,
+      "rel_volume": 2.362479868454025,
+      "pct_change": -25.81047381546134,
+      "ma_distance": -37.90602415925278,
+      "score": 13.936864242702033,
+      "catalyst": null
+    },
+    {
+      "symbol": "SVRA",
+      "sector": "Biotechnology",
+      "close": 4.375,
+      "rel_volume": 3.561633000669094,
+      "pct_change": -16.02687140115163,
+      "ma_distance": -7.831674303470805,
+      "score": 12.838254453567734,
+      "catalyst": null
+    },
+    {
+      "symbol": "GAP",
+      "sector": "Retail",
+      "close": 20.875,
+      "rel_volume": 2.8895615136813935,
+      "pct_change": 11.096327833954236,
+      "ma_distance": -3.1614594205923954,
+      "score": 11.046548965707402,
+      "catalyst": null
+    },
+    {
+      "symbol": "WRD",
+      "sector": "Auto Components",
+      "close": 3.065,
+      "rel_volume": 2.115602344353918,
+      "pct_change": -6.12557427258806,
+      "ma_distance": -26.731608199366523,
+      "score": 9.008542156472341,
+      "catalyst": {
+        "date": "2026-11-20",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "NOAH",
+      "sector": "Financial Services",
+      "close": 6.26,
+      "rel_volume": 2.485499911481949,
+      "pct_change": -3.98773006134969,
+      "ma_distance": -6.983655274888556,
+      "score": 8.094394368566247,
+      "catalyst": {
+        "date": "2026-11-23",
+        "hour": "",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "FSCO",
+      "sector": "N/A",
+      "close": 4.985,
+      "rel_volume": 2.138982374726032,
+      "pct_change": 0.6867299535447525,
+      "ma_distance": -0.6140595717532629,
+      "score": 8.010678007333686,
+      "catalyst": {
+        "date": "2026-11-23",
+        "hour": "amc",
+        "days_until": 3
+      }
+    },
+    {
+      "symbol": "GRRR",
+      "sector": "Technology",
+      "close": 5.12,
+      "rel_volume": 1.2696135892349438,
+      "pct_change": -18.471337579617835,
+      "ma_distance": -33.146177449892264,
+      "score": 7.813708704822556,
+      "catalyst": null
+    },
+    {
+      "symbol": "BSP",
+      "sector": "Technology",
+      "close": 40.96,
+      "rel_volume": 2.3953970593865126,
+      "pct_change": -1.7745803357314196,
+      "ma_distance": -6.177703461071525,
+      "score": 7.757045913831165,
+      "catalyst": {
+        "date": "2026-11-20",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "SA",
+      "sector": "Metals & Mining",
+      "close": 17.4301,
+      "rel_volume": 2.420526839185357,
+      "pct_change": -3.487818383167216,
+      "ma_distance": -30.434036439105196,
+      "score": 7.740877142515124,
+      "catalyst": null
+    },
+    {
+      "symbol": "IREN",
+      "sector": "Technology",
+      "close": 12.0948,
+      "rel_volume": 1.1074356131241425,
+      "pct_change": -16.066620402498273,
+      "ma_distance": -43.236888419570576,
+      "score": 7.712372617272823,
+      "catalyst": null
+    },
+    {
+      "symbol": "PXLW",
+      "sector": "Technology",
+      "close": 6.98,
+      "rel_volume": 0.3048977937082888,
+      "pct_change": 13.128038897893038,
+      "ma_distance": 25.224255471833523,
+      "score": 7.706523242471477,
+      "catalyst": null
+    }
+  ]
+}
