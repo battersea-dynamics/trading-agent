@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-23",
+  "events": [
+    {
+      "at_et": "2026-11-23T18:08:51-05:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-11-23T18:09:18-05:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "BNAI",
+          "OTLY",
+          "RSSS",
+          "CUE",
+          "MPU",
+          "KYMR",
+          "ZS",
+          "EROK",
+          "SUPX",
+          "GRRR",
+          "NUAI",
+          "CRWD",
+          "NVDA",
+          "HPE",
+          "BIP"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-11-23T18:09:18-05:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}

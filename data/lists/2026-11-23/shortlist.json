@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-11-23T23:09:18",
+  "universe_size": 2286,
+  "catalyst_flagged": 44,
+  "excluded_held": [],
+  "shortlist": [
+    {
+      "symbol": "BNAI",
+      "sector": "Technology",
+      "close": 7.32,
+      "rel_volume": 176.19531287200778,
+      "pct_change": 117.85714285714289,
+      "ma_distance": 76.93981145757797,
+      "score": 70.45246161274649,
+      "catalyst": {
+        "date": "2026-11-23",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "OTLY",
+      "sector": "Food Products",
+      "close": 14.5,
+      "rel_volume": 71.14501537263939,
+      "pct_change": 109.0843547224225,
+      "ma_distance": 78.56593085188263,
+      "score": 45.36863242515038,
+      "catalyst": null
+    },
+    {
+      "symbol": "RSSS",
+      "sector": "Technology",
+      "close": 3.13,
+      "rel_volume": 132.1353842000151,
+      "pct_change": 45.58139534883721,
+      "ma_distance": 62.872381943541036,
+      "score": 45.232584951120515,
+      "catalyst": null
+    },
+    {
+      "symbol": "CUE",
+      "sector": "Biotechnology",
+      "close": 5.75,
+      "rel_volume": 8.361421786294322,
+      "pct_change": 38.55421686746987,
+      "ma_distance": -63.907981043843954,
+      "score": 17.590069791122346,
+      "catalyst": null
+    },
+    {
+      "symbol": "MPU",
+      "sector": "Media",
+      "close": 4.79,
+      "rel_volume": 0.1758662052237987,
+      "pct_change": 6.4444444444444455,
+      "ma_distance": 162.37302432838803,
+      "score": 17.078253219349293,
+      "catalyst": null
+    },
+    {
+      "symbol": "KYMR",
+      "sector": "Biotechnology",
+      "close": 150.37,
+      "rel_volume": 7.689306142256011,
+      "pct_change": 30.404995230248893,
+      "ma_distance": 19.193224288879286,
+      "score": 12.556933500443881,
+      "catalyst": null
+    },
+    {
+      "symbol": "ZS",
+      "sector": "Technology",
+      "close": 229.24,
+      "rel_volume": 8.17585178017512,
+      "pct_change": 17.66759059644801,
+      "ma_distance": 7.002867148453418,
+      "score": 9.213701935454107,
+      "catalyst": null
+    },
+    {
+      "symbol": "EROK",
+      "sector": "Energy",
+      "close": 21.22,
+      "rel_volume": 16.991055468539198,
+      "pct_change": 7.715736040609135,
+      "ma_distance": 5.443613505925601,
+      "score": 9.12749902478503,
+      "catalyst": null
+    },
+    {
+      "symbol": "SUPX",
+      "sector": "Diversified Consumer Services",
+      "close": 3.13,
+      "rel_volume": 2.516681143012231,
+      "pct_change": -15.405405405405412,
+      "ma_distance": -39.81926552586041,
+      "score": 9.122737091991713,
+      "catalyst": null
+    },
+    {
+      "symbol": "GRRR",
+      "sector": "Technology",
+      "close": 7.59,
+      "rel_volume": 1.8296683206148738,
+      "pct_change": 44.433872502378684,
+      "ma_distance": 1.1629069341241431,
+      "score": 8.789204856029038,
+      "catalyst": null
+    },
+    {
+      "symbol": "NUAI",
+      "sector": "Energy",
+      "close": 4.34,
+      "rel_volume": 1.5302449842810413,
+      "pct_change": 14.814814814814817,
+      "ma_distance": 52.22728867064188,
+      "score": 8.083099829058042,
+      "catalyst": null
+    },
+    {
+      "symbol": "CRWD",
+      "sector": "Technology",
+      "close": 208.97,
+      "rel_volume": 4.589433690904966,
+      "pct_change": -8.921722454672246,
+      "ma_distance": -12.239515526176529,
+      "score": 7.919984750072269,
+      "catalyst": null
+    },
+    {
+      "symbol": "NVDA",
+      "sector": "Semiconductors",
+      "close": 165.05,
+      "rel_volume": 2.705905427026214,
+      "pct_change": 31.482514140046213,
+      "ma_distance": -9.041811558661271,
+      "score": 7.8367827253596865,
+      "catalyst": null
+    },
+    {
+      "symbol": "HPE",
+      "sector": "Technology",
+      "close": 48.02,
+      "rel_volume": 3.0182012297257903,
+      "pct_change": 17.37961378636032,
+      "ma_distance": -4.548933082878624,
+      "score": 7.488446046940096,
+      "catalyst": {
+        "date": "2026-11-23",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "BIP",
+      "sector": "Utilities",
+      "close": 45.24,
+      "rel_volume": 5.329841763655704,
+      "pct_change": 5.67624386825508,
+      "ma_distance": 16.18619582664527,
+      "score": 7.416416469875032,
+      "catalyst": null
+    }
+  ]
+}
