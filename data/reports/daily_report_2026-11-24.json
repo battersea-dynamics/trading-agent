@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-24",
+  "events": [
+    {
+      "at_et": "2026-11-24T16:47:12-05:00",
+      "type": "session",
+      "detail": {
+        "open_et": "09:30",
+        "close_et": "16:00",
+        "submit_mode": false
+      }
+    },
+    {
+      "at_et": "2026-11-24T16:47:39-05:00",
+      "type": "daily_scan",
+      "detail": {
+        "ok": true,
+        "shortlist": [
+          "JAGX",
+          "EMBC",
+          "INSM",
+          "MPU",
+          "AMBA",
+          "ALTG",
+          "SHOE",
+          "PARA",
+          "DY",
+          "RBNE",
+          "DC",
+          "CSIQ",
+          "ADI",
+          "OTLY",
+          "BNAI"
+        ]
+      }
+    },
+    {
+      "at_et": "2026-11-24T16:47:39-05:00",
+      "type": "day_complete",
+      "detail": {
+        "premarket_done": false,
+        "exec_done": false,
+        "daily_scan_done": true
+      }
+    }
+  ]
+}

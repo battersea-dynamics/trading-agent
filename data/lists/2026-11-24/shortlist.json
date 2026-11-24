@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-11-24T21:47:39",
+  "universe_size": 2272,
+  "catalyst_flagged": 26,
+  "excluded_held": [
+    "AMTM",
+    "ANF",
+    "KYMR"
+  ],
+  "shortlist": [
+    {
+      "symbol": "JAGX",
+      "sector": "Pharmaceuticals",
+      "close": 12.8,
+      "rel_volume": 339.0628276018732,
+      "pct_change": 109.21869892121607,
+      "ma_distance": -31.016456347698618,
+      "score": 74.84455704532711,
+      "catalyst": null
+    },
+    {
+      "symbol": "EMBC",
+      "sector": "Health Care",
+      "close": 8.08,
+      "rel_volume": 8.296959659810366,
+      "pct_change": 40.644038294168844,
+      "ma_distance": 28.422140104104592,
+      "score": 17.926600538982733,
+      "catalyst": {
+        "date": "2026-11-24",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "INSM",
+      "sector": "Biotechnology",
+      "close": 170.15,
+      "rel_volume": 17.72646581796049,
+      "pct_change": 14.125695888389563,
+      "ma_distance": 44.31629993871966,
+      "score": 13.648688506739854,
+      "catalyst": null
+    },
+    {
+      "symbol": "MPU",
+      "sector": "Media",
+      "close": 4.69,
+      "rel_volume": 0.2773457251829561,
+      "pct_change": -2.087682672233813,
+      "ma_distance": 135.83897578501947,
+      "score": 13.54348473266486,
+      "catalyst": null
+    },
+    {
+      "symbol": "AMBA",
+      "sector": "Semiconductors",
+      "close": 44.47,
+      "rel_volume": 4.145873452493522,
+      "pct_change": -19.960403167746584,
+      "ma_distance": -25.62519076628465,
+      "score": 12.488207897091888,
+      "catalyst": {
+        "date": "2026-11-24",
+        "hour": "amc",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "ALTG",
+      "sector": "Trading Companies & Distributors",
+      "close": 6.14,
+      "rel_volume": 7.207809001985919,
+      "pct_change": 33.18872017353577,
+      "ma_distance": 3.210623634224237,
+      "score": 12.01812700849435,
+      "catalyst": null
+    },
+    {
+      "symbol": "SHOE",
+      "sector": "Retail",
+      "close": 11.58,
+      "rel_volume": 5.984725067855387,
+      "pct_change": -18.393234672304438,
+      "ma_distance": -20.679498595794232,
+      "score": 11.989176108628342,
+      "catalyst": {
+        "date": "2026-11-24",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "PARA",
+      "sector": "Technology",
+      "close": 3.04,
+      "rel_volume": 0.5107070186016659,
+      "pct_change": 11.764705882352935,
+      "ma_distance": -97.10010826898403,
+      "score": 10.838748455608743,
+      "catalyst": null
+    },
+    {
+      "symbol": "DY",
+      "sector": "Construction",
+      "close": 179.01,
+      "rel_volume": 3.0282291606938863,
+      "pct_change": -18.024453908503922,
+      "ma_distance": -18.889344512989453,
+      "score": 9.881129977351272,
+      "catalyst": {
+        "date": "2026-11-24",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "RBNE",
+      "sector": "Marine",
+      "close": 3.18,
+      "rel_volume": 1.1460328238306534,
+      "pct_change": 18.083921277385816,
+      "ma_distance": 64.9163749513808,
+      "score": 9.785686062893978,
+      "catalyst": null
+    },
+    {
+      "symbol": "DC",
+      "sector": "Metals & Mining",
+      "close": 3.58,
+      "rel_volume": 3.086072278054806,
+      "pct_change": -18.07780320366133,
+      "ma_distance": -32.491042805958884,
+      "score": 9.243634546333867,
+      "catalyst": null
+    },
+    {
+      "symbol": "CSIQ",
+      "sector": "Semiconductors",
+      "close": 4.84,
+      "rel_volume": 2.393478500353597,
+      "pct_change": -14.93848857644992,
+      "ma_distance": -47.75333963027932,
+      "score": 8.918536436940059,
+      "catalyst": null
+    },
+    {
+      "symbol": "ADI",
+      "sector": "Semiconductors",
+      "close": 312.95,
+      "rel_volume": 2.340265358127648,
+      "pct_change": -17.372937293729375,
+      "ma_distance": -20.9990546140263,
+      "score": 8.82325307817385,
+      "catalyst": {
+        "date": "2026-11-24",
+        "hour": "bmo",
+        "days_until": 0
+      }
+    },
+    {
+      "symbol": "OTLY",
+      "sector": "Food Products",
+      "close": 12.75,
+      "rel_volume": 1.6990059670922018,
+      "pct_change": -12.068965517241379,
+      "ma_distance": 54.34433919438308,
+      "score": 8.632694617854604,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNAI",
+      "sector": "Technology",
+      "close": 6.65,
+      "rel_volume": 1.8269131546861492,
+      "pct_change": -9.153005464480874,
+      "ma_distance": 56.286721504112826,
+      "score": 8.464664941588127,
+      "catalyst": null
+    }
+  ]
+}
