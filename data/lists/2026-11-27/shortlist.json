@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-11-27T20:31:26",
+  "universe_size": 2239,
+  "catalyst_flagged": 3,
+  "excluded_held": [
+    "INTR"
+  ],
+  "shortlist": [
+    {
+      "symbol": "POM",
+      "sector": "Health Care",
+      "close": 3.12,
+      "rel_volume": 77.82621432300813,
+      "pct_change": 93.7888198757764,
+      "ma_distance": 90.21490626428898,
+      "score": 78.115645704495,
+      "catalyst": null
+    },
+    {
+      "symbol": "RETO",
+      "sector": "Construction",
+      "close": 5.48,
+      "rel_volume": 35.24668061819173,
+      "pct_change": 43.45549738219897,
+      "ma_distance": 19.260065288356902,
+      "score": 35.43164113969074,
+      "catalyst": null
+    },
+    {
+      "symbol": "MPU",
+      "sector": "Media",
+      "close": 7.18,
+      "rel_volume": 0.4770782090113346,
+      "pct_change": 42.74353876739561,
+      "ma_distance": 210.48648648648646,
+      "score": 30.283615946757216,
+      "catalyst": null
+    },
+    {
+      "symbol": "AEHL",
+      "sector": "Media",
+      "close": 12.9,
+      "rel_volume": 3.116326746567984,
+      "pct_change": 80.67226890756304,
+      "ma_distance": 46.711779591140434,
+      "score": 28.291631439291912,
+      "catalyst": null
+    },
+    {
+      "symbol": "BNAI",
+      "sector": "Technology",
+      "close": 9.38,
+      "rel_volume": 0.9278338253008666,
+      "pct_change": 15.092024539877306,
+      "ma_distance": 107.36155631701116,
+      "score": 13.763714774427662,
+      "catalyst": null
+    },
+    {
+      "symbol": "FISN",
+      "sector": "Utilities",
+      "close": 3.8,
+      "rel_volume": 0.5917548701193331,
+      "pct_change": 34.27561837455829,
+      "ma_distance": 51.43967320912621,
+      "score": 12.980456050993265,
+      "catalyst": null
+    },
+    {
+      "symbol": "OTLY",
+      "sector": "Food Products",
+      "close": 13.89,
+      "rel_volume": 0.47390656483680715,
+      "pct_change": -13.619402985074613,
+      "ma_distance": 59.89869629032722,
+      "score": 9.73727198483908,
+      "catalyst": null
+    },
+    {
+      "symbol": "TTEC",
+      "sector": "Professional Services",
+      "close": 3.56,
+      "rel_volume": 0.504583231312031,
+      "pct_change": 19.865319865319858,
+      "ma_distance": 53.564110859484536,
+      "score": 9.574010134629226,
+      "catalyst": null
+    },
+    {
+      "symbol": "DV",
+      "sector": "Media",
+      "close": 13.62,
+      "rel_volume": 8.209188644026002,
+      "pct_change": 0.14705882352940863,
+      "ma_distance": 0.40545521562844034,
+      "score": 9.038653411111085,
+      "catalyst": null
+    },
+    {
+      "symbol": "IQMX",
+      "sector": "Technology",
+      "close": 7.76,
+      "rel_volume": 3.1711296688653605,
+      "pct_change": 17.575757575757578,
+      "ma_distance": 4.649202656687225,
+      "score": 8.736277839468983,
+      "catalyst": null
+    },
+    {
+      "symbol": "ALVO",
+      "sector": "Biotechnology",
+      "close": 3.69,
+      "rel_volume": 2.5452183865979197,
+      "pct_change": -12.351543942992874,
+      "ma_distance": -18.331212305649313,
+      "score": 8.43510208026067,
+      "catalyst": null
+    },
+    {
+      "symbol": "XP",
+      "sector": "Financial Services",
+      "close": 16.99,
+      "rel_volume": 2.1866475840548945,
+      "pct_change": 18.06810284920082,
+      "ma_distance": 16.7196221554315,
+      "score": 7.99582991303525,
+      "catalyst": null
+    },
+    {
+      "symbol": "NUAI",
+      "sector": "Energy",
+      "close": 4.92,
+      "rel_volume": 0.45915898566761465,
+      "pct_change": 9.576837416481062,
+      "ma_distance": 62.886939248468785,
+      "score": 7.941157477311977,
+      "catalyst": null
+    },
+    {
+      "symbol": "NWCL",
+      "sector": "Electrical Equipment",
+      "close": 3.04,
+      "rel_volume": 2.947344837023977,
+      "pct_change": 7.801418439716319,
+      "ma_distance": -26.459026307831873,
+      "score": 7.82142355750409,
+      "catalyst": null
+    },
+    {
+      "symbol": "VERA",
+      "sector": "Biotechnology",
+      "close": 34.26,
+      "rel_volume": 1.9698365072113961,
+      "pct_change": 16.135593220338976,
+      "ma_distance": 18.31233974220618,
+      "score": 7.224830954887692,
+      "catalyst": null
+    }
+  ]
+}
